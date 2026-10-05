@@ -1,0 +1,324 @@
+{
+  "id": "DR-033",
+  "extracted": {
+    "trigger": "Improper class, invalid or expired licence",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants with an improper licence class for the vehicle, or a currently invalid or expired licence",
+    "ruleType": "decline",
+    "definedTerms": [
+      "improper class of licence",
+      "invalid or expired"
+    ],
+    "undefinedTerms": [
+      "currently"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on licence status. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "FSRA guidance restricts using administrative licence lapses, such as a licence that expired through oversight, except where every driver on the policy is unlicensed. This rule applies to the applicant alone, so it could decline a named insured whose licence lapsed administratively while other listed drivers are licensed. The guidance could not be verified.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "whose licence is currently invalid or expired"
+        }
+      ],
+      "citationIds": [
+        "FSRA_ADMIN_LAPSE",
+        "HTA"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Licence class and validity is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "The rule matches AP-12 (Kestrel Point Insurance, 2017): improper class of licence or invalid licence. DR-033 adds \"expired\", and AP-09 (Tamarack General Insurance, 2021) shows that approved rules may limit licence declines to cases where no driver holds a valid licence.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "improper class of licence for the vehicle to be insured, or whose licence is currently invalid or expired"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A valid, appropriate licence is a basic condition of lawful driving and relevant to risk. The rule reflects the applicant's own status.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Operating a vehicle without a valid and appropriate licence is a legal violation"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Licence validity does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "A named insured who lets a licence expire through oversight, or who no longer drives but owns the car for a licensed spouse, could be refused. Most affected consumers can fix the problem by renewing.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "invalid or expired"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Insuring unlicensed drivers would expose other policyholders to unlawful-driving losses. The rule prevents that cost.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule mirrors approved practice and targets a clear legal requirement. It is balanced, subject to the administrative-lapse point.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on licence status and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "improper class of licence"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Licence class and expiry date is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "improper class of licence"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows the licensing system's own categories. It has no invented threshold.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Driving without the right licence links directly to legal and claims exposure. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "voids the basis of the insurance contract"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is legal rather than statistical. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "It is not clear whether \"applicant\" means the named insured only or every listed driver, or whether an expired licence renewed before the policy starts still counts. The answer decides the administrative-lapse question.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "currently invalid or expired"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Requiring a valid licence is basic and long-standing; the only issue is aligning it with the administrative-lapse guidance.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-12",
+      "similarity": 0.829,
+      "relation": "same",
+      "explanation": "Same trigger: improper licence class or invalid licence. DR-033 adds \"expired\", which is a form of invalid licence but raises the administrative-lapse point."
+    },
+    {
+      "refId": "AP-09",
+      "similarity": 0.456,
+      "relation": "similar",
+      "explanation": "Approved rule declines only when no driver of the vehicle holds a valid Canadian licence. AP-09 shows the narrower wording that fits the administrative-lapse guidance."
+    },
+    {
+      "refId": "DR-090",
+      "similarity": 0.203,
+      "relation": "materially_different",
+      "explanation": "Pending Birchwood Insurance Group rule declines past medical licence refusals even after reinstatement. DR-033 looks at current status only, which is the key difference."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants whose licence is the wrong class, invalid or expired at the time of application.",
+    "likelyConsequence": "Most can renew and reapply. A named insured whose licence lapsed administratively, with other licensed drivers on the policy, could be refused unnecessarily.",
+    "vulnerableGroups": [
+      "Older owners who no longer drive but insure a car for a spouse"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Does the rule apply only to the named insured or to all listed drivers?",
+    "Will an applicant whose licence expired through oversight be allowed to renew before a decision?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Aligning the wording with AP-09 (no driver holds a valid licence) for expiry cases would remove the Level 1 concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions: align expiry cases with the administrative-lapse guidance.",
+      "owner": "Analyst",
+      "reason": "Substance matches AP-12."
+    },
+    {
+      "action": "Confirm the administrative-lapse guidance applies to current status.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern triggers senior review."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "FSRA administrative lapse guidance could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

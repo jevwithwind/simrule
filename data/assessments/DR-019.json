@@ -1,0 +1,336 @@
+{
+  "id": "DR-019",
+  "extracted": {
+    "trigger": "Vehicle age over 25 years",
+    "thresholdCount": 25,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles more than 25 years old",
+    "ruleType": "decline",
+    "definedTerms": [
+      "more than 25 years old"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle age. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on vehicle age. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 25 years old"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle age is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Vehicle characteristics are a named risk factor, but age alone does not describe a vehicle's condition or use. Many vehicles over 25 years old are collector cars driven rarely and carefully.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may lack modern safety features"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Very old daily-use vehicles are more common among lower-income and rural owners. The effect is indirect and small, but worth checking.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 25 years old"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Owners of older vehicles, whether collectors or people who cannot afford newer cars, would lose access to this insurer. Specialty classic-car products exist but do not cover daily drivers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any vehicle that is more than 25 years old"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The valuation concern could be handled with agreed-value coverage or by limiting physical damage coverage. Refusing the whole policy goes further than needed.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "more difficult to value accurately for claims purposes"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer's concerns are disputes and valuation, which affect physical damage claims. Mandatory liability coverage is not affected by vehicle value.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "increasing the likelihood of disputes"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on vehicle age and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 25 years old"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Model year is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No reason is given for 25 years. Safety features arrived gradually, so a fixed age line does not match any single change in risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 25 years old"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale links age to missing safety features and valuation difficulty. Both are real for some vehicles but say little about collision frequency.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may lack modern safety features and are more difficult to value accurately"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data on claims for vehicles over 25 years old is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle age is determined from the model year and the threshold is precise. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 25 years old"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Maybe: the valuation concern is legitimate, but refusing mandatory liability coverage because a car is old goes beyond it. The effect on low-income owners needs checking.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-097",
+      "similarity": 0.482,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines imported vehicles under 15 years old. Both use vehicle age as a threshold; DR-097 combines it with import status."
+    },
+    {
+      "refId": "DR-062",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule declines vehicles worth under $3,000. Overlaps heavily with DR-019 because very old vehicles are usually low value; same accessibility concern."
+    },
+    {
+      "refId": "NC-03",
+      "similarity": 0.254,
+      "relation": "materially_different",
+      "explanation": "Non-compliant example declines red cars on an assumed link. DR-019 gives plausible mechanisms (safety features, valuation), but they still need data."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners of vehicles more than 25 years old, including collectors and people who cannot afford a newer car.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Low-income drivers",
+      "Rural drivers",
+      "Classic car owners"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "What claims data supports a 25-year cut-off?",
+    "Would agreed-value coverage or limits on physical damage coverage address the valuation concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Narrowing the rule to physical damage coverage (an eligibility rule) or offering agreed value would remove most concerns."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request claims data and ask whether an agreed-value approach is possible.",
+      "owner": "Insurer",
+      "reason": "The stated concern is valuation, not liability."
+    },
+    {
+      "action": "Review with DR-062 for consistent treatment of low-value and old vehicles.",
+      "owner": "Analyst",
+      "reason": "Overlapping populations."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

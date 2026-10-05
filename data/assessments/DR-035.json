@@ -1,0 +1,324 @@
+{
+  "id": "DR-035",
+  "extracted": {
+    "trigger": "Use for a purpose the vehicle was not designed for",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles used for purposes they were not designed for, such as passenger vehicles converted to carry cargo commercially",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "originally designed"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on use of a vehicle outside its design purpose. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "used for the purpose for which it was not originally designed"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle use is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "The rule matches AP-08 (Harbourview Assurance, 2019): vehicles used for the purpose for which they were not designed. DR-035 adds \"originally\" and an example of commercial cargo conversion, which clarifies rather than widens the approved wording.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "used for the purpose for which it was not originally designed"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Using a vehicle outside its design changes how it behaves and how it is loaded, which is a vehicle risk factor. The rule reflects actual use.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Vehicles used outside their design parameters present safety and liability risks"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle use does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The example given involves commercial conversion, which has its own coverage options. Ordinary drivers are not affected.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "a passenger vehicle converted to carry cargo commercially"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Keeping misused or converted vehicles out of the standard pool avoids passing their losses to other policyholders. No new cost is created.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows approved practice and targets a clear change in use. It is balanced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The example helps consumers understand what the rule covers. The insurer can explain the specific use that triggered a decline.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "(e.g., a passenger vehicle converted to carry cargo commercially)"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Deciding what a vehicle was \"originally designed\" for, and when a use departs from it, involves some judgment. The example reduces but does not remove it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "originally designed"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no numeric threshold and mirrors an approved rule. It is not arbitrary.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Overloading or converting a vehicle beyond its design links directly to safety and liability exposure. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "safety and liability risks that fall outside standard personal auto coverage assumptions"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is qualitative. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "Apart from the example, \"not originally designed\" is open. A roof rack or a camping trip should not count, and the filing should say so.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "not originally designed"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. The rule mirrors an approved rule and targets commercial conversion.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-08",
+      "similarity": 0.516,
+      "relation": "same",
+      "explanation": "Same trigger and wording, with \"originally\" and an example added. Same group affected; the example clarifies scope."
+    },
+    {
+      "refId": "AP-06",
+      "similarity": 0.327,
+      "relation": "similar",
+      "explanation": "Approved commercial-use rule. The example in DR-035 (commercial cargo) overlaps with commercial use."
+    },
+    {
+      "refId": "DR-095",
+      "similarity": 0.253,
+      "relation": "similar",
+      "explanation": "Same insurer (Beacon Fire & Casualty) proposes declining vehicles converted into dwellings. Another conversion away from design purpose; review together for consistent definitions."
+    },
+    {
+      "refId": "DR-079",
+      "similarity": 0.301,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance commercial towing rule. Related commercial-use extension."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners using a vehicle in a way it was not designed for, mainly commercial conversions.",
+    "likelyConsequence": "They would need commercial or specialty coverage. Ordinary drivers are unaffected.",
+    "vulnerableGroups": [],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Please confirm that ordinary personal uses such as roof racks or light towing within the manufacturer's rating are not caught."
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If the insurer applied the rule to ordinary personal uses, it would become overbroad."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite AP-08.",
+      "owner": "Analyst",
+      "reason": "Same as an approved rule."
+    },
+    {
+      "action": "Add a definition and examples of excluded ordinary uses.",
+      "owner": "Insurer",
+      "reason": "Standard definitions condition."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurer and year are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

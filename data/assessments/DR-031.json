@@ -1,0 +1,336 @@
+{
+  "id": "DR-031",
+  "extracted": {
+    "trigger": "Not-at-fault claims",
+    "thresholdCount": 3,
+    "lookbackYears": 5,
+    "populationAffected": "Applicants with 3 or more not-at-fault claims in the preceding 5 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "not-at-fault claims",
+      "preceding 5 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on claims history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Ontario's auto insurance rules are understood to limit how insurers may use incidents where the insured was not at fault. A decline triggered by not-at-fault claims may conflict with those limits; the specific provision could not be verified and needs confirmation.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "3 or more not-at-fault claims"
+        }
+      ],
+      "citationIds": [
+        "REG_664",
+        "FSRA_UW_VARIABLES"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Claims history is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Approved claims-history rules (AP-02) use at-fault accidents only.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The principle ties risk profiles to driving behaviour; not-at-fault claims, by definition, were caused by someone else. The rule penalises the applicant for others' conduct.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "individual not-at-fault claims do not indicate driver error"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "People who drive in dense, high-traffic areas are hit more often through no fault of their own. Those areas can correlate with protected groups.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Victims of repeated collisions would be refused coverage. That would leave careful drivers in busy areas exposed to losing access.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "3 or more not-at-fault claims"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "The cost of not-at-fault claims is generally recoverable from the at-fault party's insurer. Penalising the victim shifts cost the system already allocates elsewhere.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Using the claims system as a reason to refuse people who were wronged undermines the purpose of insurance. It protects the insurer's loss ratio at the expense of innocent consumers.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "a pattern of frequent claims regardless of fault"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a count of claims and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "not-at-fault claims"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Claims and fault determinations is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for 3 claims in 5 years. The lookback is longer than the 3 years used in approved at-fault rules.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "3 or more not-at-fault claims in the preceding 5 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The insurer says claims frequency regardless of fault correlates with future claims in its data. Correlation driven by location or exposure is not a characteristic of the driver's behaviour.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "correlates with higher future claims frequency in our data"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale cites the insurer's data without supplying it. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "in our data"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "\"Not-at-fault claims\" is a determinable category based on recorded fault. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "not-at-fault claims"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance to people because others crashed into them would discourage legitimate claims and penalise victims. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-082",
+      "similarity": 0.436,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule declines 2 or more comprehensive claims in 3 years. Same pattern of using claims that are not the driver's fault. Review together."
+    },
+    {
+      "refId": "DR-059",
+      "similarity": 0.375,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule declines recent home or tenant claims. Another rule that treats making a claim as a risk in itself."
+    },
+    {
+      "refId": "AP-02",
+      "similarity": 0.282,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines 2 or more at-fault accidents in 3 years. AP-02 uses fault; DR-031 uses claims where the applicant was not at fault, which is the opposite basis."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers who were victims in 3 or more incidents in 5 years.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Drivers in dense urban areas",
+      "Commuters on high-traffic routes"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "What explains the correlation in the insurer's data: exposure, location or behaviour?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. Exposure differences belong in rating, not in refusing victims."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on public policy and principle grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 4 fail."
+    },
+    {
+      "action": "Confirm the regulatory limit on using not-at-fault incidents.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern on an unverified source."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "The regulatory limit on using not-at-fault incidents could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "id": "DR-034",
+  "extracted": {
+    "trigger": "Subject of a restraining order",
+    "thresholdCount": null,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants who were the subject of a restraining order in the preceding 3 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 3 years"
+    ],
+    "undefinedTerms": [
+      "subject of a restraining order"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a civil restraining order. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subject of a restraining order"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Restraining orders are common in family law disputes, so the rule touches family and marital status. The effect is indirect.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "restraining order"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PRECEDENT_NON_COMPLIANT_MATCH"
+      ],
+      "reasoning": "The closest framework example is NC-04: declining someone accused of a crime they were not convicted of. A restraining order is a civil order, often made without any finding of wrongdoing, so DR-034 shares NC-04's defect and adds a lack of any driving link.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subject of a restraining order"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "A restraining order concerns behaviour towards another person, not driving behaviour, experience, distance, location or vehicle. It does not reflect individual driving risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Restraining orders may indicate behavioural patterns"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Because restraining orders arise often in separation and custody disputes, the rule could fall unevenly on people going through family breakdown. That is linked to marital and family status.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People subject to an order would lose access for 3 years, even if the order was made on consent or without findings. Some may need a vehicle for custody arrangements.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would pay more elsewhere without a driving-risk reason. No cost saving is shown.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rule uses an unrelated legal process as a character judgment. That does not balance the insurer's interests with fair treatment.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "impulsivity and risk-taking"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "The insurer would need to ask about sensitive family-court matters. A decline letter would itself reveal that information.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "restraining order"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Whether an order was made is a matter of court record. The trigger is objective even though it is not risk-relevant.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subject of a restraining order"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for a 3-year lookback. It is not tied to any measured risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 3 years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT",
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "The rationale speculates that orders \"may indicate\" impulsivity linked to driving risk. A civil order is not a finding of wrongdoing and has no demonstrated link to claims.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate behavioural patterns associated with impulsivity and risk-taking"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied for the claimed correlation. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "correlate with elevated driving risk"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not distinguish criminal peace bonds, family court orders and mutual orders. Their meaning differs widely.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "restraining order"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: using family-court orders to refuse compulsory insurance penalises people for legal processes unrelated to driving and could deter people from consenting to orders. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "NC-04",
+      "similarity": 0.236,
+      "relation": "similar",
+      "explanation": "Non-compliant example declines people accused but not convicted. A restraining order is a civil order, often without findings, and the conduct is not driving."
+    },
+    {
+      "refId": "DR-096",
+      "similarity": 0.374,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines child protective services investigations. Same pattern of using family-related legal processes. Review together."
+    },
+    {
+      "refId": "DR-083",
+      "similarity": 0.236,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual rule declines active arrest warrants. Another legal-process trigger without a conviction."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "People subject to any restraining order in the last 3 years, often arising from separation or custody disputes.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People going through separation or custody disputes"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "What data links restraining orders to auto claims?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. Driving-related convictions are already covered by approved rules."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on risk-relevance and allegation grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Confirm the non-compliant-example comparison.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern triggers senior review."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "id": "DR-020",
+  "extracted": {
+    "trigger": "Home-based business client visits",
+    "thresholdCount": 4,
+    "lookbackYears": null,
+    "populationAffected": "Home-based business owners who use their personal vehicle for client visits more than 3 times per week",
+    "ruleType": "decline",
+    "definedTerms": [
+      "more than 3 times per week"
+    ],
+    "undefinedTerms": [
+      "client visits",
+      "home-based business"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on business use of a personal vehicle. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "uses their personal vehicle for client visits"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Business use of a vehicle is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The approved commercial-use rule (AP-06, Oakridge Lane Mutual, 2015) and the framework's business-use example (FX-01) target vehicles used for commercial purposes. Occasional client visits are usually treated as business use within personal coverage, so DR-020 is broader than the precedent and is assessed on its own merits.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 3 times per week"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Business use does change exposure, but personal policies normally rate it as a business-use class. Declining at four client visits a week treats a rating matter as a refusal.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Regular business use of a personal vehicle materially changes the risk profile."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Frequency of business trips does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Self-employed people such as cleaners, tutors and care workers often visit clients several times a week. They would need commercial coverage for what is still mainly personal driving.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "operates a home-based business"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Commercial policies usually cost more than personal policies with a business-use rating. Small operators would bear that cost.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer can price business use rather than refuse it. Refusal is out of proportion to a few extra trips a week.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers may not know whether deliveries, supply runs or meetings count as \"client visits\". They could be declined, or have a later claim questioned, without understanding why.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "client visits"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Visit frequency depends on the applicant's declaration and varies week to week. The insurer would have to judge typical use.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 3 times per week"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The rationale says more than 3 visits a week is \"closer to commercial than personal\" but gives no basis for that line. Kilometres driven would be a more direct measure of exposure.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "More than 3 client visits per week represents a usage pattern closer to commercial than personal."
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "More business trips mean more exposure, so a link exists. But visit count is a rough proxy for distance and conditions, which the insurer could measure directly.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "materially changes the risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data supports the 3-visit threshold. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Home-based business\" and \"client visits\" are not defined. The same tradesperson could be in or out depending on the reading.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "home-based business"
+        },
+        {
+          "source": "ruleText",
+          "quote": "client visits"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Maybe: separating commercial from personal use is accepted practice. Pushing small home-based operators into commercial coverage for routine visits may not be.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "FX-01",
+      "similarity": 0.436,
+      "relation": "similar",
+      "explanation": "Framework common example: personal vehicle used for business purposes. DR-020 applies the same idea but sets the line at more than 3 client visits a week, which reaches occasional business use."
+    },
+    {
+      "refId": "AP-06",
+      "similarity": 0.298,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines vehicles used for commercial purposes. Client visits by a home-based business owner are usually business use, not commercial use, so DR-020 goes further."
+    },
+    {
+      "refId": "DR-003",
+      "similarity": 0.38,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group rule declines vehicles primarily used for food delivery. DR-003 limits itself to primary use; DR-020 uses a weekly count. Review together for a consistent business-use line."
+    },
+    {
+      "refId": "DR-079",
+      "similarity": 0.343,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance commercial towing rule, also extended to part-time use."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Self-employed people who drive to clients more than 3 times a week, such as cleaners, tutors, trades and care workers.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving. Most would be pushed toward a commercial policy.",
+    "vulnerableGroups": [
+      "Self-employed workers",
+      "Home care workers"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Why is a business-use rating class not sufficient?",
+    "How is a \"client visit\" defined, and how will it be verified?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing the visit count with a commercial-use test or a kilometre threshold backed by data would move the rule toward approval."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request the basis for the 3-visit threshold and definitions.",
+      "owner": "Insurer",
+      "reason": "The threshold drives who is affected."
+    },
+    {
+      "action": "Review with DR-003 and DR-079 for a consistent business-use line across insurers.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

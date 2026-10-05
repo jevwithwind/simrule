@@ -1,0 +1,347 @@
+{
+  "id": "DR-030",
+  "extracted": {
+    "trigger": "Employment as a rideshare driver",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Rideshare drivers, even when the insured vehicle is not used for rideshare",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "employed as a rideshare driver"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on the applicant's occupation. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on the applicant's occupation. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "employed as a rideshare driver"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Rideshare driving is disproportionately done by newcomers and racialized workers. The trigger is occupation, so the risk of indirect discrimination is real but secondary.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "employed as a rideshare driver"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The approved commercial-use rule (AP-06, Oakridge Lane Mutual, 2015) declines vehicles used commercially. DR-030 expressly applies when the insured vehicle is not used commercially, so it has a different trigger and is assessed on its own merits.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even if the vehicle to be insured is not used for rideshare purposes"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The insured vehicle is not used for rideshare, so the rule does not reflect its use. Occupation is not one of the risk factors the principle names.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even if the vehicle to be insured is not used for rideshare purposes"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Because rideshare work is concentrated among newcomers, the rule could work as an indirect proxy for place of origin. The insurer has not tested for this.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "rideshare driver"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Rideshare drivers would lose access to personal coverage for a family vehicle they never use for work. Their whole household could be affected.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even if the vehicle to be insured is not used for rideshare purposes"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Affected workers would pay more elsewhere for a personal vehicle. No claims data supports the cost.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Rideshare use of the insured vehicle can already be addressed by commercial-use rules. Extending refusal to the driver's other vehicles goes beyond protecting the insurer.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on the applicant's job and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "employed as a rideshare driver"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Occupation is declared rather than recorded, and people may drive occasionally on several platforms. Applying \"employed as\" would involve judgment.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "employed as a rideshare driver"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no numeric threshold. Its defect is the missing risk link, not an arbitrary line.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT",
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale claims work habits \"carry over\" to personal driving but offers no evidence. A professional driver with a clean record is not shown to be riskier in a personal vehicle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "develop driving habits (extended hours, urban congestion, frequent stops) that carry over to personal driving"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data supports the carry-over claim. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Employed as a rideshare driver\" does not say whether occasional or part-time platform work counts. Most rideshare drivers are contractors, not employees.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "employed as a rideshare driver"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing personal coverage because of someone's job, when the vehicle is not used for that job, penalises a lawful occupation. Gig workers already face insurance gaps.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-06",
+      "similarity": 0.213,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines vehicles used for commercial purposes. DR-030 applies even when the vehicle is not used commercially, which removes the very feature that justifies AP-06."
+    },
+    {
+      "refId": "DR-055",
+      "similarity": 0.219,
+      "relation": "similar",
+      "explanation": "Pending Beacon Fire & Casualty rule declines night-shift workers. Same pattern of declining on occupation rather than vehicle use. Review together."
+    },
+    {
+      "refId": "DR-063",
+      "similarity": 0.219,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual rule declines people fired for cause. Another employment-based rule with no driving link."
+    },
+    {
+      "refId": "DR-003",
+      "similarity": 0.114,
+      "relation": "materially_different",
+      "explanation": "Pending Grandview Insurance Group rule declines vehicles primarily used for delivery. DR-003 targets the vehicle's use, which is the approvable version of this concern."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Rideshare drivers seeking coverage for a personal vehicle they do not use for rideshare.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Gig workers",
+      "Newcomers",
+      "Racialized workers"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "What data shows rideshare drivers have more claims in personal vehicles?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Limiting the rule to vehicles actually used for rideshare (already covered by commercial-use rules) would remove the concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on risk-relevance grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 3 fail."
+    },
+    {
+      "action": "Review the occupation-based cluster (DR-055, DR-063) together.",
+      "owner": "Senior reviewer",
+      "reason": "Consistency; Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

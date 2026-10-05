@@ -1,0 +1,354 @@
+{
+  "id": "DR-027",
+  "extracted": {
+    "trigger": "Lapse in coverage over 90 days",
+    "thresholdCount": 90,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants with a lapse in auto insurance coverage of more than 90 days in the preceding 3 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 3 years"
+    ],
+    "undefinedTerms": [
+      "lapse in auto insurance coverage"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on coverage history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Ontario restricts the use of lapses in coverage: a lapse may be considered only where it resulted from a conviction for driving without insurance, a cancellation for non-payment, or a licence suspension after a driving conviction. This rule applies to any lapse over 90 days for any reason, so it is contrary to that restriction. The source could not be verified and should be confirmed.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "lapse in auto insurance coverage exceeding 90 days"
+        }
+      ],
+      "citationIds": [
+        "FSRA_COVERAGE_LAPSE",
+        "REG_664"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Lapses are common among newcomers, people who lived abroad and people who stopped driving for health reasons. The indirect effect on place of origin and disability is a secondary concern.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "lapse in auto insurance coverage"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PRECEDENT_NON_COMPLIANT_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The framework's non-compliant example NC-01 declines people who have never had insurance. DR-027 penalises a gap in insurance history, which is a milder form of the same defect. Maplewood Mutual's own DR-077 (3 years of continuous coverage) is pending and closely related.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "lapse in auto insurance coverage"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "A lapse often means the person did not own or drive a car, which is not a driving risk. The rule treats non-driving periods as if they were evidence of risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate periods of unlicensed or uninsured driving"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "DISCRIMINATORY_IMPACT_NEW_TO_CANADA"
+      ],
+      "reasoning": "People arriving in Canada or returning from abroad will usually have a recent lapse. The rule would fall on them.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People who sold a car, used transit or were ill for a period would be refused when they return to driving. That narrows access for ordinary life events.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "exceeding 90 days within the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Consumers pushed elsewhere pay more for a gap that carried no claims. The rule adds cost without a risk reason.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer's concern is verifying history, which it can do through driving abstracts and claims databases. Refusing consumers is not needed to address it.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "make it difficult to verify the applicant's recent claims and driving history"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a coverage gap and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "lapse in auto insurance coverage"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A gap between policies is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No reason is given for 90 days or a 3-year window. The thresholds are not tied to measured risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "exceeding 90 days"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "The rationale says lapses \"may indicate\" uninsured driving. That is a suspicion, and convictions for driving without insurance are already a permitted factor.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate periods of unlicensed or uninsured driving"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No claims data for applicants with lapses is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A lapse of more than 90 days in a 3-year window is measurable from insurance records. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "exceeding 90 days within the preceding 3 years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: the restriction on using lapses exists so that people are not penalised for periods without a car. The rule would undo that protection.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FSRA_COVERAGE_LAPSE"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-077",
+      "similarity": 0.452,
+      "relation": "similar",
+      "explanation": "Same insurer (Maplewood Mutual) requires 3 consecutive years of Canadian coverage. Both penalise gaps or absence of insurance history; DR-077 is stricter. Review together."
+    },
+    {
+      "refId": "NC-01",
+      "similarity": 0.298,
+      "relation": "similar",
+      "explanation": "Non-compliant example declines people who have never had insurance. DR-027 penalises a gap rather than total absence; same defect in milder form."
+    },
+    {
+      "refId": "DR-056",
+      "similarity": 0.425,
+      "relation": "materially_different",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines Facility Association denials. Both use insurance history, but DR-056 relies on another insurer's decision."
+    },
+    {
+      "refId": "DR-013",
+      "similarity": 0.181,
+      "relation": "materially_different",
+      "explanation": "Pending Lakefield Mutual rule declines frequent insurer switching. Switching is continuous coverage; a lapse is a gap."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone with a gap of more than 90 days in auto coverage in the last 3 years, including people who had no car, lived abroad or were ill.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Newcomers and returning Canadians",
+      "People recovering from illness",
+      "Former transit users"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Why would the permitted lapse reasons (conviction, non-payment, conviction-based suspension) not cover the insurer's concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Limiting the rule to the lapse reasons that regulation permits would remove the Level 1 fail."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Uses a restricted factor."
+    },
+    {
+      "action": "Verify the lapse restriction against the official text.",
+      "owner": "Senior reviewer",
+      "reason": "Finding relies on an unverified source."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "The coverage lapse restriction could not be fetched and verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
