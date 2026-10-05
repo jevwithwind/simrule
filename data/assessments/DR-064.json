@@ -1,0 +1,346 @@
+{
+  "id": "DR-064",
+  "extracted": {
+    "trigger": "No permanent Ontario address",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants without a permanent residential address in Ontario",
+    "ruleType": "decline",
+    "definedTerms": [
+      "residential address in Ontario"
+    ],
+    "undefinedTerms": [
+      "permanent"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on residence. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on residence in Ontario. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "permanent residential address in Ontario"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "People without a permanent address include people experiencing homelessness, seasonal workers and some newcomers. The rule may have an indirect effect on groups linked to protected grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "permanent residential address"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Garaging location and territory are core rating inputs, and an Ontario address is needed to rate them. The rule protects rating accuracy.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "necessary to verify garaging location, determine appropriate territory rating"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "The word \"permanent\" would catch people in unstable housing, who are disproportionately low-income. The effect is indirect.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "permanent"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Renters on short leases, seasonal workers and people between homes could be refused even though they live and drive in Ontario. That depends on how \"permanent\" is read.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "does not have a permanent residential address in Ontario"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Verifying where a vehicle is kept avoids mispricing that other policyholders would pay for. The concern is legitimate.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Requiring a verifiable Ontario address is reasonable; requiring a \"permanent\" one goes further. The narrower test would balance the insurer's need with fair access.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "permanent"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers would not know what makes an address \"permanent\". They could be refused without understanding what proof would suffice.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "permanent residential address"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Whether an address is \"permanent\" is a judgment call. The insurer would have to decide case by case.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "permanent"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows the insurer's licensed jurisdiction rather than an invented threshold. It is not arbitrary in principle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "falls within our licensed jurisdiction"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The link is to rating accuracy and jurisdiction, not to claims frequency. That is a legitimate product reason rather than a driving-risk link.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "verify garaging location"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is jurisdictional rather than statistical. No actuarial data or analysis is attached to the submission. The rule rests on a legal or administrative requirement rather than a statistical claim, so the gap is unlikely to change the outcome.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Permanent\" is undefined and decides who is affected. Without a definition the rule could reach people who clearly live in Ontario, so the answer could change the outcome.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "permanent residential address"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Maybe: an Ontario address is a fair requirement, but \"permanent\" could exclude people in unstable housing. A definition would settle it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-072",
+      "similarity": 0.393,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule declines only applicants with no physical address at all (post office box only). Same purpose, but DR-072 is narrower and clearer. Review together."
+    },
+    {
+      "refId": "DR-060",
+      "similarity": 0.415,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines vehicles registered outside Ontario. Same jurisdictional purpose, different trigger."
+    },
+    {
+      "refId": "DR-078",
+      "similarity": 0.5,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines vehicles garaged away from the stated address. Same garaging concern."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants without a \"permanent\" Ontario address, possibly including short-term renters, seasonal workers and people between homes.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People in unstable housing",
+      "Seasonal workers",
+      "Newcomers in temporary housing"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "What does \"permanent\" mean, and what proof of address would be accepted?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing \"permanent\" with \"a verifiable Ontario residential address where the vehicle is kept\" would move it to approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request a definition of \"permanent\" and accepted proofs of address.",
+      "owner": "Insurer",
+      "reason": "The definition decides who is affected."
+    },
+    {
+      "action": "Review with DR-072, DR-060 and DR-078 for consistent address rules.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

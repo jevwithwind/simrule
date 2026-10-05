@@ -1,0 +1,329 @@
+{
+  "id": "DR-065",
+  "extracted": {
+    "trigger": "Distracted driving conviction",
+    "thresholdCount": 1,
+    "lookbackYears": 2,
+    "populationAffected": "Applicants with a distracted driving conviction in the preceding 2 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "distracted driving conviction",
+      "preceding 2 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on driving record. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a distracted driving conviction. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "distracted driving conviction"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A driving conviction is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The framework's common example is a pattern of accidents and tickets over 3 years (FX-04), and approved conviction rules use 2 minor convictions combined with other events (AP-03). DR-065 declines on a single conviction, so it is stricter than those patterns and is assessed on its own merits. Clearwater General Insurance's speeding rule (DR-051) is pending and related.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "a distracted driving conviction"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Distracted driving is risky behaviour and a conviction is direct evidence of it. The rule reflects the applicant's own record.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Distracted driving is one of the leading causes of collisions in Ontario."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A driving conviction does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "A single conviction is relatively common, so the rule could reach many drivers with otherwise clean records. Rating would keep them in the market.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "a distracted driving conviction"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Distracted driving contributes to costly collisions. The concern is legitimate.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Approved conviction rules require a pattern. Refusing on one conviction, rather than rating it, leans toward the insurer's interest.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Even a single conviction"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a distracted driving conviction and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "distracted driving conviction"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A conviction is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "A single conviction is a lower threshold than the patterns in approved rules. The rationale asserts that one conviction shows willingness to take risks but gives no data.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Even a single conviction indicates a willingness to engage in behaviour that materially elevates risk."
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Distracted driving links directly to collision risk. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "one of the leading causes of collisions"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The single-conviction threshold is stricter than approved patterns, so data matters. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A distracted driving conviction is a defined offence on the driving record. The example of handheld device use makes it clearer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "(e.g., handheld device use)"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Discouraging distracted driving supports road safety; the only question is the single-conviction threshold.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "FX-04",
+      "similarity": 0.242,
+      "relation": "similar",
+      "explanation": "Framework common example: a pattern of tickets over 3 years. DR-065 uses a single conviction over 2 years, which is stricter than a \"pattern\"."
+    },
+    {
+      "refId": "DR-051",
+      "similarity": 0.42,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule needs 2 serious speeding convictions in 3 years. DR-065 needs only 1 conviction; review together for consistent conviction thresholds."
+    },
+    {
+      "refId": "DR-071",
+      "similarity": 0.408,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines a single racing or stunt conviction in 5 years. Both use a single conviction, but stunt driving is a more severe offence."
+    },
+    {
+      "refId": "AP-03",
+      "similarity": 0.229,
+      "relation": "materially_different",
+      "explanation": "Approved rule requires 2 minor convictions plus 2 non-payment cancellations. DR-065 requires 1 conviction alone."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers with one distracted driving conviction in the last 2 years.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Drivers with a single recent ticket"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "What data supports declining on a single distracted driving conviction rather than rating it?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Data showing a sharp risk increase after one conviction, or raising the threshold to 2, would move it to approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request data for the single-conviction threshold.",
+      "owner": "Insurer",
+      "reason": "Stricter than approved patterns."
+    },
+    {
+      "action": "Review with DR-051 and DR-071 for consistent conviction thresholds.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

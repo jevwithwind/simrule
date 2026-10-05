@@ -64,3 +64,9 @@ Problems found by reading the pilot output, each mapped to a v2 rule:
 - **Result:** all 15 configurations matched all 13 anchors. The anchors are decided mostly by hard stops (Level 1 fails) and high-severity fails, so they cannot tell weightings apart. The smallest margin between a score-decided anchor and a threshold was 5.8 points with the starting values.
 - **Decision:** keep the starting values (Level 2: 40, Level 3: 35, Level 4: 25; approve at 75 or above, request information at 50 to 74). Tuning further on 13 rules would be overfitting. Frozen in `knowledge/framework.json`.
 - **Honest limitation:** the weights are lightly tested. They decide the outcome only for rules with no hard stop and no high-severity fail. Production use would need validation against historical regulator decisions.
+
+## 8. Rule 17 clarification during batch 07
+
+- **Problem found while assessing DR-060 (vehicle registered in another province):** read literally, v2 rule 17 made every rule without a precedent carry a medium-severity actuarial gap. Scoring treats a medium gap as material, so every novel rule would route to Request more information, including administrative rules whose basis is legal (jurisdiction, garaging address) and where no actuarial study could change the outcome.
+- **Change:** rule 17 now says `low` also applies when the rule rests on a legal or administrative requirement rather than a statistical claim. This formalises the existing "or the data could change the outcome" clause; it is a clarification, not a new version.
+- **Effect:** affects only administrative rules assessed from batch 07 on (DR-060, DR-072, DR-089). Earlier `low` findings all had a matching approved precedent, so no earlier finding changed.

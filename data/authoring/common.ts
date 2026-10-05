@@ -50,11 +50,13 @@ export function marketNonCompliant(reasoning: string, evidence: string[], pendin
 }
 
 /** Level 3 actuarial support. No submission in the set includes actuarial data. */
-export function actuarial(sev: V, detail: string, evidence: string[] = []): CriterionTuple {
+export function actuarial(sev: V, detail: string, evidence: string[] = [], basis: 'precedent' | 'admin' = 'precedent'): CriterionTuple {
   const tail =
-    sev === 'low'
-      ? 'Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.'
-      : 'The analysis could change the outcome, so it should be obtained before a decision.';
+    sev !== 'low'
+      ? 'The analysis could change the outcome, so it should be obtained before a decision.'
+      : basis === 'admin'
+        ? 'The rule rests on a legal or administrative requirement rather than a statistical claim, so the gap is unlikely to change the outcome.'
+        : 'Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.';
   return ['insuf', sev, ['NO_ACTUARIAL_SUPPORT'], `${detail} No actuarial data or analysis is attached to the submission. ${tail}`, evidence, ['FW_QUESTIONS', 'FSRA_UW_FILING']];
 }
 

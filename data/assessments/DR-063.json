@@ -1,0 +1,335 @@
+{
+  "id": "DR-063",
+  "extracted": {
+    "trigger": "Termination from employment for cause",
+    "thresholdCount": null,
+    "lookbackYears": 1,
+    "populationAffected": "Applicants terminated for cause in the preceding 12 months",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 12 months"
+    ],
+    "undefinedTerms": [
+      "terminated from employment for cause"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on employment history. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "terminated from employment for cause"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Employment termination is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Losing a job for cause says nothing about driving behaviour, experience, distance, location or vehicle. It does not reflect the applicant's driving risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate behavioural characteristics such as negligence or dishonesty"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Terminations can involve disputes linked to disability or other protected grounds. The rule could pick those up indirectly.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People who just lost their job often need a car to find new work. Refusing them for a year makes that harder.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 12 months"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would pay more elsewhere during a period of lost income. No claims saving is shown.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rule uses an employer's decision as a character judgment. That does not balance the insurer's interests with fair treatment.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PRIVACY_INTRUSION",
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "The insurer would have to ask about employment disputes, which is sensitive information unrelated to driving. Consumers would not expect it to affect auto insurance.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "terminated from employment for cause"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT",
+        "COPYCAT_REFERENCE"
+      ],
+      "reasoning": "Whether a dismissal was \"for cause\" is the employer's view and is often disputed. The rule relies on another party's judgment, not a verifiable fact.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "for cause"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for 12 months. It is not tied to any measured risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 12 months"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale speculates that dismissal \"may indicate\" negligence or dishonesty linked to insurance risk. That is not a link to driver behaviour or claims exposure.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate behavioural characteristics"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"For cause\" has a legal meaning that is often contested. The rule does not say whether a disputed or settled dismissal counts.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "for cause"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT",
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance because of an employment dispute would intrude on private matters and penalise people at a vulnerable time. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-030",
+      "similarity": 0.219,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines rideshare drivers. Same pattern of declining on employment rather than vehicle use. Review together."
+    },
+    {
+      "refId": "DR-055",
+      "similarity": 0.28,
+      "relation": "similar",
+      "explanation": "Pending Beacon Fire & Casualty night-shift rule. Another employment-based trigger."
+    },
+    {
+      "refId": "DR-009",
+      "similarity": 0.025,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule relies on another insurer's finding. DR-063 similarly relies on an employer's finding."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "People dismissed for cause in the last 12 months, including those disputing the dismissal.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Recently unemployed people"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "How would the insurer verify the reason for a dismissal?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on risk-relevance grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Review the employment-based cluster (DR-030, DR-055) together.",
+      "owner": "Analyst",
+      "reason": "Consistency."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

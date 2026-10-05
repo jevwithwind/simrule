@@ -1,0 +1,343 @@
+{
+  "id": "DR-062",
+  "extracted": {
+    "trigger": "Vehicle market value under $3,000",
+    "thresholdCount": 3000,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles worth less than $3,000",
+    "ruleType": "decline",
+    "definedTerms": [
+      "market value below $3,000"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle value. This is a decline rule. Its stated concern is physical damage cost, which could be handled as an eligibility rule for optional coverage instead."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on vehicle value. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "market value below $3,000"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Owners of very cheap vehicles are disproportionately low-income, which overlaps with some protected groups. The effect is indirect.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "market value below $3,000"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Vehicle value affects physical damage claims, not liability or accident benefits. Refusing the whole policy treats a coverage-specific cost as overall risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Claims on these vehicles frequently exceed the vehicle's worth"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule falls almost entirely on people who cannot afford a more expensive car. It acts as an indirect proxy for income.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Low-income drivers who rely on an old, cheap car to get to work would be refused compulsory coverage. The principle asks insurers not to block access in this way.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any vehicle with a market value below $3,000"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined owners would pay more elsewhere. The physical damage cost could be managed by limiting optional coverage.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer could decline optional collision coverage for low-value vehicles, which is an eligibility rule. Refusing mandatory coverage is not balanced.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "disproportionately costly to insure relative to their value"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Market value is an estimate that changes over time. Consumers may not know which valuation the insurer used.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "market value"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Market value depends on the valuation source and condition. Applying it involves judgment.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "market value"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for $3,000. The threshold is fixed while vehicle prices change.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "below $3,000"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Low value links to physical damage claims exceeding the vehicle's worth and to missing safety features. Neither is a strong link to liability risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "they often lack modern safety features"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The valuation method is not stated. Different guides could put the same car either side of $3,000.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "market value"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance because a car is cheap would exclude low-income drivers. Limiting optional physical damage coverage would meet the insurer's concern.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-019",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule declines vehicles over 25 years old. Heavy overlap because old vehicles are usually low value. Review together."
+    },
+    {
+      "refId": "NC-02",
+      "similarity": 0.157,
+      "relation": "materially_different",
+      "explanation": "Non-compliant example declines the most stolen vehicles. Both decline by vehicle category for a physical-damage concern; DR-062 targets value rather than theft."
+    },
+    {
+      "refId": "DR-097",
+      "similarity": 0.315,
+      "relation": "materially_different",
+      "explanation": "Pending Maplewood Mutual import rule also cites valuation challenges, but for a different set of vehicles."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners of cars worth under $3,000, mostly low-income drivers.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Low-income drivers",
+      "Students",
+      "Rural workers with older cars"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Would declining optional collision coverage for these vehicles meet the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Refiling as an eligibility rule for optional physical damage coverage would take it out of scope and remove the decline concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and suggest refiling as an eligibility rule.",
+      "owner": "Analyst",
+      "reason": "High-severity fails; the concern is coverage-specific."
+    },
+    {
+      "action": "Review with DR-019 for consistent treatment of old and low-value vehicles.",
+      "owner": "Analyst",
+      "reason": "Overlapping populations."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
