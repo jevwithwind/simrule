@@ -1,0 +1,341 @@
+{
+  "id": "DR-055",
+  "extracted": {
+    "trigger": "Night shift work",
+    "thresholdCount": 4,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who work night shifts more than 3 days per week",
+    "ruleType": "decline",
+    "definedTerms": [
+      "between 11:00 PM and 6:00 AM",
+      "more than 3 days per week"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on work schedule. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on work schedule. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "works night shifts"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Night work is concentrated among health care, cleaning and manufacturing workers, groups with higher shares of women, racialized workers and newcomers. The indirect effect needs testing.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "works night shifts"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Time of driving can affect risk, but the rule uses the job schedule rather than when and how the person actually drives. A nurse who lives next to the hospital is treated like a long-distance commuter.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "commute during hours with higher rates of fatigue-related and impaired-driver collisions"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule could act as an indirect proxy for the groups over-represented in night work. The insurer has not tested for this.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Night workers often have no transit option at those hours and must drive. Refusing them removes access for people who need it most.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "between 11:00 PM and 6:00 AM"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Night workers pushed elsewhere would pay more. The claimed exposure could be rated.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Usage-based rating or a commute-time factor would reflect exposure without refusing coverage. Refusal is not balanced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on work schedule and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "night shifts"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Shift patterns are declared and change over time. Applying the rule would rely on statements the insurer cannot easily verify.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 3 days per week"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for \"more than 3 days per week\". The line does not match a measured change in risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 3 days per week"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The insurer cites higher night-time collision rates and its own claims data. The link runs through driving time and fatigue, which the rule measures only indirectly.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Our data shows elevated claims frequency for this population."
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale refers to the insurer's data without supplying it. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Our data shows"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule defines night shifts by hours and frequency. It is clear on its face.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "(between 11:00 PM and 6:00 AM) more than 3 days per week"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing insurance to night-shift workers would penalise essential workers such as nurses and transit staff. Rating exposure would address the concern.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-030",
+      "similarity": 0.219,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines rideshare drivers even in personal vehicles. Same pattern of declining on occupation rather than vehicle use. Review together."
+    },
+    {
+      "refId": "DR-063",
+      "similarity": 0.28,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual rule declines people fired for cause. Another employment-based trigger."
+    },
+    {
+      "refId": "DR-037",
+      "similarity": 0.096,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual commute-distance rule. Both concern commuting exposure that rating could reflect."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Workers on night shifts more than 3 days a week, such as nurses, cleaners, factory and transit workers.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Health care workers",
+      "Shift workers without night transit",
+      "Women and racialized workers in night-shift jobs"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Please provide the claims data for night-shift workers.",
+    "Why would usage-based or commute-time rating not address the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing refusal with a rating factor tied to actual driving time would remove the concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on accessibility and public policy grounds.",
+      "owner": "Analyst",
+      "reason": "Score below threshold."
+    },
+    {
+      "action": "Review the occupation-based cluster (DR-030, DR-063) together.",
+      "owner": "Senior reviewer",
+      "reason": "Consistency; Level 1 concern."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

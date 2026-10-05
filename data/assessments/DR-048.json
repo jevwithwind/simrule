@@ -1,0 +1,335 @@
+{
+  "id": "DR-048",
+  "extracted": {
+    "trigger": "Non-payment cancellations plus a minor conviction",
+    "thresholdCount": 2,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants with 2 or more non-payment cancellations and 1 or more minor convictions in the preceding 3 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "cancelled for non-payment",
+      "minor convictions",
+      "preceding 3 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on payment and driving history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "FSRA guidance on coverage lapses allows non-payment cancellations to be considered, and convictions are a standard factor. No provision in the registry bars this combination, though it still needs approval under Take All Comers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "2 or more insurance policies cancelled for non-payment"
+        }
+      ],
+      "citationIds": [
+        "FSRA_COVERAGE_LAPSE",
+        "INS_ACT"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Payment and conviction history is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The approved rule closest to this one requires 2 minor convictions and 2 non-payment cancellations in 3 years (AP-03, Fenwick & Hale Mutual, 2019). DR-048 needs only 1 conviction, so it is stricter than the precedent and is assessed on its own merits. Northern Shield Insurance's payment-only DR-022 is pending and related.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "1 or more minor convictions within the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Combining driving convictions with payment history follows the approved design, and the conviction element ties the rule to driving behaviour. The rule reflects the applicant's own record.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "The combination of payment instability and driving infractions indicates a compound risk profile."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Payment and conviction history does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Lowering the conviction requirement from 2 to 1 widens the group refused compared with the approved rule. A single minor ticket plus past payment trouble would be enough.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "1 or more minor convictions"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The combination of payment problems and driving infractions creates both administrative and claims cost. Addressing it supports cost mitigation.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The compound design shows restraint, and the rationale accepts that each factor alone may be manageable. That reflects a balanced approach.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Each factor alone may be manageable"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on cancellations and convictions on record and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cancelled for non-payment"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Cancellations and convictions is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The rule uses 1 conviction where the approved rule uses 2. No reason is given for the stricter threshold.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "1 or more minor convictions"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The conviction element links directly to driving risk and the payment element to administrative exposure. The combined link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "compound risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "Because the rule is stricter than the approved precedent, data for the lower conviction threshold matters. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Minor convictions\" should be defined in the filing. \"Insurance policies\" should be limited to auto policies if that is intended.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "2 or more insurance policies cancelled for non-payment"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. The compound design follows approved practice; only the stricter threshold needs support.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-03",
+      "similarity": 0.766,
+      "relation": "similar",
+      "explanation": "Approved rule: 2 minor convictions and 2 non-payment cancellations in 3 years. DR-048 keeps the payment element and lookback but needs only 1 conviction, so it is stricter and reaches more drivers."
+    },
+    {
+      "refId": "AP-04",
+      "similarity": 0.632,
+      "relation": "similar",
+      "explanation": "Approved rule: 1 at-fault accident (5 years), 1 minor conviction (3 years) and 2 non-payment cancellations. AP-04 also uses 1 conviction, but adds an accident; DR-048 drops the accident."
+    },
+    {
+      "refId": "DR-022",
+      "similarity": 0.48,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule uses the payment element alone. DR-048 is closer to the precedents; review together."
+    },
+    {
+      "refId": "FX-05",
+      "similarity": 0.302,
+      "relation": "similar",
+      "explanation": "Framework common example: accidents or tickets over a short period and cancellations for missed payments. DR-048 fits this pattern."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers with 2 non-payment cancellations and a single minor ticket in 3 years.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Low-income drivers with a minor ticket"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "What data supports a 1-conviction threshold rather than the 2 used in the approved rule?",
+    "Do the cancellations need to be on auto policies?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Raising the conviction threshold to 2, or providing data for 1, would move it to approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request data for the stricter conviction threshold.",
+      "owner": "Insurer",
+      "reason": "Stricter than the approved precedent."
+    },
+    {
+      "action": "Review with DR-022 for consistent payment-history treatment.",
+      "owner": "Analyst",
+      "reason": "Pending similar submission."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurers and years are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

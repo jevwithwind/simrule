@@ -1,0 +1,346 @@
+{
+  "id": "DR-056",
+  "extracted": {
+    "trigger": "Denied by Facility Association",
+    "thresholdCount": null,
+    "lookbackYears": 1,
+    "populationAffected": "Applicants denied coverage by Facility Association in the preceding 12 months",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 12 months"
+    ],
+    "undefinedTerms": [
+      "denied coverage by Facility Association"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on coverage history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "CONTRARY_TO_LEGISLATION"
+      ],
+      "reasoning": "Take All Comers requires the insurer to apply its own approved rules to each applicant. Adopting the residual market's decision as a decline ground risks bypassing that duty, and leaves the consumer with no market at all.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "denied coverage by Facility Association"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "FSRA_TAC_INFO",
+        "FSRA_FA"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A prior Facility Association decision is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "A Facility Association denial may reflect risk, but it may also reflect missing documents or eligibility rules. The rule does not look at the applicant's own profile.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "indicates a risk profile that exceeds even the residual market's tolerance"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A prior residual market decision does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Someone denied by the insurer of last resort and then by voluntary insurers would have nowhere to buy compulsory coverage. The rule could leave people unable to drive legally.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "denied coverage by Facility Association"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "CAIA"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Uninsurable drivers can create costs for the public through uninsured driving. The rule may shift cost rather than reduce it.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "MVACA"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "COPYCAT_REFERENCE"
+      ],
+      "reasoning": "The insurer outsources its judgment to another body's decision. That is convenient for the insurer but does not assess the consumer fairly.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "denied coverage by Facility Association"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "The consumer may not know the reason for the earlier denial. A decline that rests on it would be hard to understand or contest.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "COPYCAT_REFERENCE"
+      ],
+      "reasoning": "The trigger is a decision made by the residual market, not a fact about the applicant. The framework lists rules that rely on another insurer's actions as a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "denied coverage by Facility Association"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for a 12-month lookback. It is not tied to a measured risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 12 months"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale assumes every denial reflects extreme risk. That is an inference about another body's reasons.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "A denial from Facility Association indicates a risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Denied coverage\" is not defined. A refused application, a cancellation or an unanswered quote could all count.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "denied coverage"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: the residual market exists so that every licensed driver can buy compulsory insurance. A rule that stacks on its decisions could leave consumers with no lawful way to drive.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FSRA_FA"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-086",
+      "similarity": 0.455,
+      "relation": "similar",
+      "explanation": "Same insurer (Ridgeline Insurance Co.) proposes declining Facility Association insureds moving to the voluntary market. Both use residual-market status as a decline ground. Review together."
+    },
+    {
+      "refId": "DR-009",
+      "similarity": 0.025,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule relies on another insurer's cancellation decision. Same copycat pattern."
+    },
+    {
+      "refId": "DR-027",
+      "similarity": 0.425,
+      "relation": "materially_different",
+      "explanation": "Pending Maplewood Mutual coverage-lapse rule. Both use insurance history, but DR-027 looks at gaps rather than another body's decision."
+    },
+    {
+      "refId": "NC-01",
+      "similarity": 0.298,
+      "relation": "similar",
+      "explanation": "Non-compliant example declines people with no insurance history. DR-056 could leave applicants with no insurance at all."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants refused by Facility Association in the last 12 months.",
+    "likelyConsequence": "If both the residual market and voluntary insurers refuse, the consumer cannot buy compulsory insurance and cannot drive legally.",
+    "vulnerableGroups": [
+      "High-risk drivers trying to return to the market",
+      "People with documentation problems"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "In what circumstances does Facility Association deny coverage, and how often?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. The insurer's own approved rules already apply to these applicants."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on copycat and public policy grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Assess the Take All Comers concern.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "Facility Association eligibility rules were not verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
