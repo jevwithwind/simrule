@@ -1,0 +1,343 @@
+{
+  "id": "DR-085",
+  "extracted": {
+    "trigger": "Inconsistent information on the application",
+    "thresholdCount": 2,
+    "lookbackYears": null,
+    "populationAffected": "Applicants whose application has inconsistent information across two or more sections",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "inconsistent information"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on application inconsistencies. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "provided inconsistent information"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Honest mistakes on forms are more likely for people with limited English, literacy or disabilities. The rule may have an indirect effect on those groups.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "inconsistent information"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Material misrepresentation matters, but a typo or a date mismatch does not change the risk. The rule does not separate errors from deliberate misstatements.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate carelessness or intentional misrepresentation"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Applicants with language or literacy barriers are more likely to make errors. The effect is indirect.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Any applicant who makes two mistakes could be refused, with no chance to correct them. That limits access for honest consumers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "two or more sections"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Reducing misrepresentation protects other policyholders. The goal is legitimate.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Asking the applicant to correct inconsistencies before deciding would protect the insurer without refusing honest people. The rule skips that step.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "The rule gives the consumer no chance to explain or correct the information. That falls short of clear and fair communication about rights.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "provided inconsistent information across two or more sections"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Deciding what counts as \"inconsistent\" is a judgment call by staff. Two underwriters could read the same application differently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "inconsistent information"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No reason is given for \"two or more sections\". The count is not tied to materiality.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "two or more sections"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Only material, intentional misstatements link to moral hazard. The rule treats carelessness and intent the same.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate carelessness or intentional misrepresentation"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Inconsistent information\" and \"sections\" are not defined, and there is no materiality test. The rule invites many interpretations.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "inconsistent information across two or more sections"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Maybe: preventing misrepresentation is legitimate, but refusing people for uncorrected mistakes is not. A materiality test and a chance to correct would fix it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-009",
+      "similarity": 0.237,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule relies on another insurer's misrepresentation finding. DR-085 relies on the insurer's own application, which is better, but lacks a materiality test."
+    },
+    {
+      "refId": "DR-089",
+      "similarity": 0.058,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule declines refusal to disclose household drivers. Both concern completeness and accuracy of application information."
+    },
+    {
+      "refId": "DR-092",
+      "similarity": 0.14,
+      "relation": "materially_different",
+      "explanation": "Pending Northern Shield Insurance name-similarity rule. Both target suspected fraud, but DR-092 uses a name match rather than the application itself."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants who make two or more inconsistent entries on their application, including honest mistakes.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People with limited English or literacy",
+      "People with disabilities affecting form completion"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Will applicants be allowed to correct inconsistencies before a decision?",
+    "Will the rule apply only to material misstatements?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Adding a materiality test and a correction step would move it toward approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline as written and explain the redraft path: a materiality test, a definition and a correction step.",
+      "owner": "Analyst",
+      "reason": "Score below threshold; the rule cannot be applied consistently as written."
+    },
+    {
+      "action": "Invite a redrafted rule with a materiality test and a correction step.",
+      "owner": "Insurer",
+      "reason": "The underlying concern about misrepresentation is legitimate."
+    },
+    {
+      "action": "Review with DR-009 for consistent treatment of misrepresentation rules.",
+      "owner": "Analyst",
+      "reason": "Consistency."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "id": "DR-080",
+  "extracted": {
+    "trigger": "Child under 16 in the household",
+    "thresholdCount": 16,
+    "lookbackYears": null,
+    "populationAffected": "Applicants with a family member under 16 living in the household",
+    "ruleType": "decline",
+    "definedTerms": [
+      "under the age of 16"
+    ],
+    "undefinedTerms": [
+      "family member"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on household composition. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "family member under the age of 16 residing in the household"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "Having children is family status, a protected ground under the Code. The insurance provision allows family-status distinctions only on reasonable and bona fide grounds, and refusing every parent of a child under 16 is very unlikely to meet that test.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "family member under the age of 16"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Children under 16 cannot hold a driver's licence, so they add no driving risk today. The rule does not reflect any current risk factor.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "present a near-term risk of adding inexperienced drivers"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule uses family status directly. It would refuse most families with children.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "has a family member under the age of 16"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Families with young children are among those who most need a car. The rule would refuse a very large part of the market.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "residing in the household"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Families pushed elsewhere would pay more for a risk that does not yet exist. The future risk can be rated when a teen is licensed.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer can rate a new driver when they are added to the policy. Refusing the family years earlier is not balanced.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "which would materially change the risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on the presence of a child under 16 and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the age of 16"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A household member's age is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The rule refuses households for a child who may not drive for years, or ever. The age line has no connection to current risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the age of 16"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale relies on a possible future change in risk, not a present one. The framework rejects rules not based on a risk-relevant characteristic of the insured.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "near-term risk of adding inexperienced drivers"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Family member\" and \"residing in the household\" are not defined. Visiting grandchildren or shared custody would be unclear.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "family member"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance to families with children would directly penalise family status. A consumer protection regulator cannot approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-026",
+      "similarity": 0.263,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. household-size rule. Same family-status concern. Review together."
+    },
+    {
+      "refId": "DR-007",
+      "similarity": 0.34,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines drivers under 21. DR-080 anticipates the same young-driver risk years before it exists."
+    },
+    {
+      "refId": "DR-089",
+      "similarity": 0.31,
+      "relation": "materially_different",
+      "explanation": "Pending Granite Mutual Insurance rule declines refusal to disclose household drivers. Disclosure is the tool to handle a teen driver when they are licensed."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Every household with a child under 16.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Families with children",
+      "Single parents"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would rating a new driver when they are added to the policy not address the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on family-status and risk-relevance grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Confirm the human rights analysis.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

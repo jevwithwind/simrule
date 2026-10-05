@@ -1,0 +1,314 @@
+{
+  "id": "DR-084",
+  "extracted": {
+    "trigger": "Gross vehicle weight over 4,500 kg on a personal policy",
+    "thresholdCount": 4500,
+    "lookbackYears": null,
+    "populationAffected": "Applicants seeking a personal policy for a vehicle with gross vehicle weight rating above 4,500 kg",
+    "ruleType": "decline",
+    "definedTerms": [
+      "gross vehicle weight rating exceeding 4,500 kg",
+      "under a personal auto policy"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines a personal policy for heavy vehicles. This is a decline rule; the applicant is directed to commercial coverage."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on vehicle weight class. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "gross vehicle weight rating exceeding 4,500 kg"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle weight is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The approved commercial-use rule (AP-06) is about use; DR-084 is about vehicle class.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Heavy vehicles have different damage and liability profiles, which personal auto rating may not reflect. The rule matches the vehicle to a suitable product.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Personal auto policies are not designed to cover the liability and physical damage exposure associated with heavy vehicles."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle weight does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Some heavy-duty pickups used personally, for example to tow a camper, exceed 4,500 kg gross weight. Owners would need commercial coverage for personal use.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "exceeding 4,500 kg"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Rating heavy vehicles correctly avoids cross-subsidy by lighter vehicles. No new cost is created for others.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Directing heavy vehicles to suitable coverage is a reasonable product boundary. It is balanced.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under a personal auto policy"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a vehicle's weight rating and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "gross vehicle weight rating"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Gross vehicle weight rating is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The rationale says vehicles above 4,500 kg \"require commercial rating\", which suggests a recognised classification line. The source of that line is not given and should be confirmed.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Vehicles above this weight threshold require commercial rating and coverage."
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle mass links directly to collision severity and damage to others. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "liability and physical damage exposure associated with heavy vehicles"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale rests on a classification boundary rather than a statistical claim. No actuarial data or analysis is attached to the submission. The rule rests on a legal or administrative requirement rather than a statistical claim, so the gap is unlikely to change the outcome.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Gross vehicle weight rating is a manufacturer specification. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "gross vehicle weight rating exceeding 4,500 kg"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Matching heavy vehicles to commercial coverage is a reasonable product boundary.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-016",
+      "similarity": 0.396,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. engine-size rule. Both use a vehicle specification threshold; DR-084 ties it to a product boundary, DR-016 to claims cost."
+    },
+    {
+      "refId": "AP-06",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Approved commercial-use rule. Same intent of directing commercial-type exposure to commercial coverage, applied by vehicle class."
+    },
+    {
+      "refId": "DR-054",
+      "similarity": 0.401,
+      "relation": "materially_different",
+      "explanation": "Same insurer (Grandview Insurance Group) right-hand drive rule. Another vehicle-type rule, but based on an unproven risk rather than a product boundary."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners of heavy vehicles above 4,500 kg gross weight, including some heavy-duty pickups.",
+    "likelyConsequence": "They would be directed to commercial coverage, usually at higher cost.",
+    "vulnerableGroups": [
+      "Owners of heavy-duty pickups used personally"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "What is the source of the 4,500 kg classification line?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If 4,500 kg does not match any recognised classification boundary, the threshold would need data."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions: confirm the source of the 4,500 kg line.",
+      "owner": "Analyst",
+      "reason": "Reasonable product boundary."
+    },
+    {
+      "action": "Explain the commercial coverage route in decline letters.",
+      "owner": "Insurer",
+      "reason": "Clear consumer communication."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "Whether 4,500 kg matches a legal or industry classification boundary was not verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

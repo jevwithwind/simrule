@@ -1,0 +1,338 @@
+{
+  "id": "DR-082",
+  "extracted": {
+    "trigger": "Comprehensive claims",
+    "thresholdCount": 2,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants with 2 or more comprehensive claims (theft, vandalism, weather) in 3 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "comprehensive claims (theft, vandalism, or weather damage)",
+      "preceding 3 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on claims history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on comprehensive claims history. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "2 or more comprehensive claims"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Claims history is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent declines on claims where the insured was not at fault. Clearwater General Insurance's not-at-fault claims rule (DR-031) is pending and should be reviewed together.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "comprehensive claims"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Theft, vandalism and weather are events that happen to the driver, not driving behaviour. The rule penalises victims rather than reflecting how they drive.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "while not necessarily fault-related"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Theft and vandalism rates vary sharply by neighbourhood. The rule could act as an indirect geographic proxy for income and protected groups.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Two thefts or hailstorms in three years would lead to refusal. People in high-theft areas would lose access through no fault of their own.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "2 or more comprehensive claims"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Victims of crime and weather would pay more elsewhere. The cost of comprehensive claims can be priced into that coverage.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Higher comprehensive deductibles, anti-theft requirements or rating would address the exposure. Refusing the whole policy is not balanced.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "inadequate vehicle security"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on comprehensive claims and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "comprehensive claims"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Claims records is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for 2 claims in 3 years. The threshold is not tied to measured risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "2 or more comprehensive claims"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale admits the claims are \"not necessarily fault-related\" and speculates about inadequate security. The link to the driver's own risk is weak.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "indicate either elevated exposure or patterns of behaviour (such as inadequate vehicle security)"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Comprehensive claims are a defined category, and the rule lists examples. It would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "(theft, vandalism, or weather damage)"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance to victims of theft, vandalism and storms would penalise people for events they did not cause. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-031",
+      "similarity": 0.436,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines 3 or more not-at-fault claims in 5 years. Same pattern of penalising claims the driver did not cause; DR-082 is stricter (2 in 3 years). Review together."
+    },
+    {
+      "refId": "DR-059",
+      "similarity": 0.43,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule declines home or tenant claims. Same approach across lines."
+    },
+    {
+      "refId": "DR-041",
+      "similarity": 0,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance top-10 stolen vehicles rule. Same theft concern addressed by refusal."
+    },
+    {
+      "refId": "AP-02",
+      "similarity": 0.07,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines at-fault accidents. Comprehensive claims involve no fault."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers with 2 or more theft, vandalism or weather claims in 3 years.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Residents of high-theft neighbourhoods",
+      "Victims of crime and severe weather"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Would higher deductibles or anti-theft requirements address the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Moving the concern to comprehensive coverage terms rather than declining the policy would resolve it."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on public policy grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 4 fail."
+    },
+    {
+      "action": "Review with DR-031 and DR-059 for consistent claims-history treatment.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "id": "DR-088",
+  "extracted": {
+    "trigger": "Demerit point warning letter",
+    "thresholdCount": null,
+    "lookbackYears": 2,
+    "populationAffected": "Applicants who received a demerit point warning letter from the Ministry of Transportation in 2 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 2 years"
+    ],
+    "undefinedTerms": [
+      "demerit point accumulation warning letter"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on driving record. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a demerit point warning letter. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "demerit point accumulation warning letter"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Demerit warning thresholds may be lower for drivers in graduated licensing, who are mostly young. If so, the rule would have an indirect effect on age.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "demerit point accumulation warning letter"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HTA"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The framework's common example (FX-04) is a pattern of accidents and tickets, which a warning letter partly reflects.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Demerit points come from traffic convictions, so a warning letter reflects the applicant's own driving record. The link to driving behaviour is direct.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "reflecting a sustained pattern of driving infractions"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "DISCRIMINATORY_IMPACT_NEW_DRIVERS"
+      ],
+      "reasoning": "If novice drivers receive warning letters at fewer points, they would be declined sooner than experienced drivers with the same record. That is a discriminatory impact on new drivers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "warning letter"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "A warning letter is an early notice, not a suspension. Declining at that stage reaches drivers well before the licensing system takes action.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "warning letter"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Drivers accumulating demerits are more likely to claim. The concern is legitimate.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Using the underlying convictions, as approved rules do, would be fairer than using the letter. Rating would also keep these drivers in the market.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a warning letter and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "warning letter"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A warning letter on record is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The rule borrows the licensing authority's warning threshold, which was set for licensing purposes rather than insurance risk. It may differ by licence class.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "demerit point accumulation warning letter"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Accumulated demerits reflect repeated convictions, which link to claims. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "a sustained pattern of driving infractions"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data on claims after warning letters is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "Warning letters may be sent at different point levels for novice and fully licensed drivers. The rule does not say which, and the answer decides whether new drivers are treated more harshly.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "demerit point accumulation warning letter"
+        }
+      ],
+      "citationIds": [
+        "HTA"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Maybe: declining drivers with accumulating convictions is reasonable. Using an early warning letter as the trigger could undercut its purpose of prompting better driving.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "FX-04",
+      "similarity": 0.163,
+      "relation": "similar",
+      "explanation": "Framework common example: a pattern of accidents and tickets over 3 years. A warning letter reflects a pattern of tickets, measured by the licensing authority's points."
+    },
+    {
+      "refId": "DR-073",
+      "similarity": 0.321,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual impoundment rule. Both rely on an administrative step rather than the convictions themselves."
+    },
+    {
+      "refId": "DR-065",
+      "similarity": 0.246,
+      "relation": "similar",
+      "explanation": "Pending Beacon Fire & Casualty single distracted-driving conviction rule. Both decline on a low conviction threshold."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers who received a demerit warning letter in the last 2 years, possibly including novice drivers at lower point levels.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Novice drivers",
+      "Drivers with several minor tickets"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "At what point level are warning letters sent, and does it differ for graduated licence holders?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Using the underlying convictions with a defined threshold would move it toward approval."
+  ],
+  "nextSteps": [
+    {
+      "action": "Ask the insurer to replace the letter with a conviction-based threshold.",
+      "owner": "Insurer",
+      "reason": "Clearer and avoids the new-driver issue."
+    },
+    {
+      "action": "Confirm warning-letter thresholds by licence class.",
+      "owner": "Analyst",
+      "reason": "Could not be verified."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "Demerit warning thresholds by licence class were not verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
