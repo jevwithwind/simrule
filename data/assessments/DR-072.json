@@ -54,8 +54,10 @@
       "label": "Already exists in the market",
       "status": "insufficient_information",
       "severity": "low",
-      "issueCodes": [],
-      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending address rules DR-064 and DR-078 share the purpose.",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending address rules DR-064 and DR-078 share the purpose. Similar submissions from other insurers are pending (DR-064) and should be reviewed together.",
       "evidence": [],
       "citationIds": [
         "FW_APPROVED"
@@ -303,5 +305,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-064 on the market check."
+  ]
 }

@@ -310,6 +310,12 @@
       "similarity": 0.37,
       "relation": "materially_different",
       "explanation": "Approved rule declines unpaid premiums owed to the same insurer. AP-11 concerns a current debt to this insurer; DR-022 concerns past cancellations anywhere."
+    },
+    {
+      "refId": "DR-044",
+      "similarity": 0.358,
+      "relation": "materially_different",
+      "explanation": "Pending Grandview Insurance Group rule declines current unpaid premiums owed to the same insurer group, which matches AP-11 and can be cured by paying (approvable). DR-022 declines on past cancellations anywhere without the driving element approved rules require, so it needs data first."
     }
   ],
   "consumerImpact": {
@@ -349,5 +355,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: added the comparison with DR-044. No explanation on this side of a 0.358-similarity pair with different outcomes."
+  ]
 }

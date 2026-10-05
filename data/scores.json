@@ -1797,7 +1797,7 @@
   "score": 30.5,
   "hardStop": false,
   "reasons": [
-   "High-severity fail at Levels 2-4 (L3_RISK_LINK, L4_PUBLIC_POLICY)."
+   "High-severity fail at Levels 2-4 (L3_NOT_SUBJECTIVE, L3_RISK_LINK, L4_PUBLIC_POLICY)."
   ]
  },
  "DR-050": {

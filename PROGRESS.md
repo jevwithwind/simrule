@@ -5,7 +5,7 @@ Resume rule: find the last phase marked done below and continue from the next on
 ## Phases
 
 - [x] Phase 1: research, scaffold, data and knowledge layer (done)
-- [ ] Phase 2: assessment generation, scoring, consistency audit, spot check
+- [x] Phase 2: assessment generation, scoring, consistency audit, spot check (done)
 - [ ] Phase 3: web app
 - [ ] Phase 4: tests, sample submissions, end-to-end, screenshots
 - [ ] Phase 5: static build into `/docs`, README
@@ -29,6 +29,9 @@ Resume rule: find the last phase marked done below and continue from the next on
 12. Precedents: 14 approved rules (AP-01 to AP-14) from slide 12 with invented insurers from a separate name set and illustrative approval years 2015-2023; 6 framework common examples (FX-01 to FX-06, slide 3); 5 illustrative non-compliant examples (NC-01 to NC-05, slide 5).
 14. Scoring calibration (once): 15 weight/threshold configurations all matched the 13 anchors, so the starting values (40/35/25; 75/50) were kept and frozen. See prompt-log entry 7.
 15. Findings are authored in compact form (`data/authoring/batch-*.ts`) and expanded mechanically; `common.ts` holds standard wording for recurring findings.
+16. Rule 17 (actuarial severity) clarified during batch 07 so administrative rules whose basis is legal are not automatically routed to Request more information. Logged as prompt-log entry 8; no earlier finding changed.
+17. Consistency-audit changes are applied as explicit patches (`data/authoring/audit-fixes.ts`) and recorded per assessment in `auditNotes`, shown in the app.
+18. Scoring outcomes were never tuned by editing findings to hit an expected answer (DR-071, DR-085 left as scored; listed in spot-check as override candidates).
 13. Added a fifth decision option, "Route to eligibility-rule process", used only when the AI recommendation is Out of scope.
 
 ## Open issues
@@ -43,4 +46,12 @@ Resume rule: find the last phase marked done below and continue from the next on
 - Citation registry: 28 entries; 7 verified (framework deck), 21 unverified (official sites blocked).
 - Pilot v1: 1 of 10 passed validation; v2 re-run: 10 of 10 passed; recommendations unchanged between v1 and v2.
 - Calibration: 15 configurations tested, 13 of 13 anchors matched in every one; minimum margin with frozen values 5.8 points.
+- Assessments: 100 of 100 validated. Criterion findings: 1,500 (pass 551, concern 492, fail 278, insufficient information 179). Verbatim evidence quotes: 940. Citation references: 1,560.
+- First-pass validation failures after v2: 9 of 90 (all single-sentence reasoning; fixed by splitting sentences).
+- Recommendation distribution: Approve with conditions 21; Request more information 22; Recommend decline 57; Out of scope 0.
+- Confidence distribution: high 64; medium 36; low 0.
+- Level 1 hard stops: 13. Senior review flagged by the AI: 52 (any Level 1 concern or low confidence).
+- Most frequent issue codes: NO_ACTUARIAL_SUPPORT 100, ACCESSIBILITY_IMPACT 100, PROXY_FOR_PROTECTED_GROUND 74, PUBLIC_POLICY_CONFLICT 69, WEAK_RISK_LINK 67.
+- Consistency audit before -> after: unexplained different-outcome pairs 1 (+8 inadequate on manual review) -> 0; missing pending flags 29 (22 assessments) -> 0; mixed-status code groups without explanation 9 -> 0; findings misapplied 2 -> 0. Assessments changed by audit: 29 (38 changes). Recommendations changed: 0.
+- Spot check (15 rules): 12 agree, 1 partial (DR-071), 2 disagree (DR-085, DR-097). Sanity anchors: 13 of 13 match.
 - Similarity sanity: DR-012 top-1 = AP-07 (0.896); DR-001 top-1 = AP-02 (0.988); DR-013 top-1 = NC-05 (0.557).

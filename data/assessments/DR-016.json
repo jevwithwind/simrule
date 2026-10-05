@@ -54,8 +54,10 @@
       "label": "Already exists in the market",
       "status": "insufficient_information",
       "severity": "low",
-      "issueCodes": [],
-      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The approved rule on vehicles modified for speed (AP-13) targets modifications, not factory engines.",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The approved rule on vehicles modified for speed (AP-13) targets modifications, not factory engines. Similar submissions from other insurers are pending (DR-084) and should be reviewed together.",
       "evidence": [],
       "citationIds": [
         "FW_APPROVED"
@@ -277,7 +279,7 @@
       "refId": "DR-084",
       "similarity": 0.396,
       "relation": "similar",
-      "explanation": "Pending Grandview Insurance Group rule declines vehicles over 4,500 kg gross weight on personal policies. Both use a vehicle specification threshold; DR-084 ties it to commercial classification, DR-016 to claims cost."
+      "explanation": "Pending Grandview Insurance Group rule declines vehicles over 4,500 kg gross weight on personal policies. Both use a vehicle specification threshold, but DR-084 rests on a classification boundary that needs no claims data (approvable), while DR-016 rests on claims-cost data the insurer cites but has not supplied (request more information)."
     },
     {
       "refId": "AP-13",
@@ -329,5 +331,9 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-084 on the market check.",
+    "Consistency audit: rewrote the comparison with DR-084. Explanation described the similarity but not why the outcomes differ."
+  ]
 }

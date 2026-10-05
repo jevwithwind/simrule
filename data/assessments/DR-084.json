@@ -55,8 +55,10 @@
       "label": "Already exists in the market",
       "status": "insufficient_information",
       "severity": "low",
-      "issueCodes": [],
-      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The approved commercial-use rule (AP-06) is about use; DR-084 is about vehicle class.",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The approved commercial-use rule (AP-06) is about use; DR-084 is about vehicle class. Similar submissions from other insurers are pending (DR-016) and should be reviewed together.",
       "evidence": [],
       "citationIds": [
         "FW_APPROVED"
@@ -260,7 +262,7 @@
       "refId": "DR-016",
       "similarity": 0.396,
       "relation": "similar",
-      "explanation": "Pending Ridgeline Insurance Co. engine-size rule. Both use a vehicle specification threshold; DR-084 ties it to a product boundary, DR-016 to claims cost."
+      "explanation": "Pending Ridgeline Insurance Co. engine-size rule. Both use a vehicle specification threshold; DR-084 directs heavy vehicles to suitable commercial coverage, which is a product boundary, while DR-016 refuses on a claims-cost claim that still needs data."
     },
     {
       "refId": "AP-06",
@@ -310,5 +312,9 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-016 on the market check.",
+    "Consistency audit: rewrote the comparison with DR-016. Explanation described the similarity but not why the outcomes differ."
+  ]
 }

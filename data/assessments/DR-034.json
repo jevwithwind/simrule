@@ -64,9 +64,10 @@
       "status": "concern",
       "severity": "high",
       "issueCodes": [
-        "PRECEDENT_NON_COMPLIANT_MATCH"
+        "PRECEDENT_NON_COMPLIANT_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
       ],
-      "reasoning": "The closest framework example is NC-04: declining someone accused of a crime they were not convicted of. A restraining order is a civil order, often made without any finding of wrongdoing, so DR-034 shares NC-04's defect and adds a lack of any driving link.",
+      "reasoning": "The closest framework example is NC-04: declining someone accused of a crime they were not convicted of. A restraining order is a civil order, often made without any finding of wrongdoing, so DR-034 shares NC-04's defect and adds a lack of any driving link. Similar submissions from other insurers are pending (DR-096) and should be reviewed together.",
       "evidence": [
         {
           "source": "ruleText",
@@ -351,5 +352,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-096 on the market check."
+  ]
 }

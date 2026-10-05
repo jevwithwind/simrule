@@ -298,6 +298,12 @@
       "similarity": 0.259,
       "relation": "similar",
       "explanation": "Pending Lakeshore Indemnity rule also relies on \"industry practice\". Both need the same copycat condition."
+    },
+    {
+      "refId": "DR-048",
+      "similarity": 0.431,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule combines 2 non-payment cancellations with 1 minor conviction. DR-048 needs only 1 conviction where the approved AP-03 needs 2, so it is stricter than the precedent and needs data (request more information). DR-040 has no payment element and fits the framework pattern FX-04, so it can be approved with conditions."
     }
   ],
   "consumerImpact": {
@@ -336,5 +342,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: added the comparison with DR-048. No explanation existed for a 0.431-similarity pair with different outcomes."
+  ]
 }

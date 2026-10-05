@@ -57,8 +57,10 @@
       "label": "Already exists in the market",
       "status": "insufficient_information",
       "severity": "low",
-      "issueCodes": [],
-      "reasoning": "The approved commercial-use rule (AP-06, Oakridge Lane Mutual, 2015) and the framework's business-use example (FX-01) target vehicles used for commercial purposes. Occasional client visits are usually treated as business use within personal coverage, so DR-020 is broader than the precedent and is assessed on its own merits.",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The approved commercial-use rule (AP-06, Oakridge Lane Mutual, 2015) and the framework's business-use example (FX-01) target vehicles used for commercial purposes. Occasional client visits are usually treated as business use within personal coverage, so DR-020 is broader than the precedent and is assessed on its own merits. Similar submissions from other insurers are pending (DR-003) and should be reviewed together.",
       "evidence": [
         {
           "source": "ruleText",
@@ -345,5 +347,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-003 on the market check."
+  ]
 }

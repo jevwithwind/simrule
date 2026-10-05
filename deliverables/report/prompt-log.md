@@ -70,3 +70,18 @@ Problems found by reading the pilot output, each mapped to a v2 rule:
 - **Problem found while assessing DR-060 (vehicle registered in another province):** read literally, v2 rule 17 made every rule without a precedent carry a medium-severity actuarial gap. Scoring treats a medium gap as material, so every novel rule would route to Request more information, including administrative rules whose basis is legal (jurisdiction, garaging address) and where no actuarial study could change the outcome.
 - **Change:** rule 17 now says `low` also applies when the rule rests on a legal or administrative requirement rather than a statistical claim. This formalises the existing "or the data could change the outcome" clause; it is a clarification, not a new version.
 - **Effect:** affects only administrative rules assessed from batch 07 on (DR-060, DR-072, DR-089). Earlier `low` findings all had a matching approved precedent, so no earlier finding changed.
+
+## 9. Batch generation (batches 02 to 10)
+
+- **Process:** for each batch of 10, print the rule, rationale and top-5 similarity candidates (`scripts/show-candidates.ts`), write findings under prompt v2, expand, validate, score, review outliers, fix, commit.
+- **First-pass validation:** 9 of the 90 non-pilot assessments failed validation on first run (batches 04 to 10), every time for the same reason: a reasoning field with a single long sentence joined by a comma or colon. Each was fixed by splitting the sentence; no finding changed.
+- **Scoring surprises reviewed, not tuned:** DR-085 (inconsistent application information) scored 46.5 and became a decline when I had expected request more information; DR-071 (stunt driving, 5-year lookback) scored 93 but routes to request more information because rule 17 treats a lookback stricter than the precedent as a material data gap. In both cases I left the findings and the deterministic outcome alone rather than adjusting findings to hit an expected answer, and recorded them in the spot check as candidates for reviewer override.
+- **Result:** 100 of 100 assessments pass validation; 1,500 criterion findings (551 pass, 492 concern, 278 fail, 179 insufficient information); 940 verbatim evidence quotes; recommendations 21 approve with conditions, 22 request more information, 57 recommend decline.
+
+## 10. Consistency audit loop
+
+- **Script:** `scripts/consistency-audit.ts` (similar pairs with different outcomes; mixed statuses for the same criterion and issue code; missing pending-similar flags).
+- **Before:** 16 different-outcome pairs (1 with no explanation; a manual read found 8 more that described similarity but not the reason for the different outcome); 9 mixed-status code groups with no written explanation; 29 missing pending flags across 22 assessments.
+- **Fixes:** applied as explicit patches in `data/authoring/audit-fixes.ts` and recorded in each assessment's `auditNotes`: 14 precedent comparisons rewritten or added, 22 market-check findings given the pending flag, 2 findings corrected (DR-049 severity aligned with the other copycat rules; DR-063 copycat code removed because an employer is not an insurer).
+- **After:** 0 unexplained pairs, 0 missing flags, 9 code groups each with a written explanation. 29 assessments changed (38 changes). No recommendation changed.
+- **Lesson:** the automated "is there an explanation?" check was too weak on its own: it passed 15 of 16 pairs, but reading them showed 8 explanations that never said why the outcomes differed.

@@ -283,7 +283,7 @@
       "refId": "DR-065",
       "similarity": 0.42,
       "relation": "similar",
-      "explanation": "Pending Beacon Fire & Casualty rule declines a single distracted-driving conviction in 2 years. Both are conviction-based; DR-065 has a lower count. Review together for consistent conviction thresholds."
+      "explanation": "Pending Beacon Fire & Casualty rule declines a single distracted-driving conviction in 2 years. DR-051 needs 2 serious speeding convictions in 3 years, which fits the approved pattern FX-04; DR-065 declines on one conviction, which is stricter than approved patterns and needs data. That is why DR-051 is approvable and DR-065 is a request for information."
     },
     {
       "refId": "DR-071",
@@ -331,5 +331,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: rewrote the comparison with DR-065. Explanation described the similarity but not why the outcomes differ."
+  ]
 }

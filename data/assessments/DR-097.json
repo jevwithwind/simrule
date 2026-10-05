@@ -56,8 +56,10 @@
       "label": "Already exists in the market",
       "status": "insufficient_information",
       "severity": "low",
-      "issueCodes": [],
-      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Similar submissions from other insurers are pending (DR-019, DR-054) and should be reviewed together.",
       "evidence": [],
       "citationIds": [
         "FW_APPROVED"
@@ -273,13 +275,13 @@
       "refId": "DR-019",
       "similarity": 0.482,
       "relation": "similar",
-      "explanation": "Pending Granite Mutual Insurance rule declines vehicles over 25 years old. Both use vehicle age thresholds; DR-097 adds import status."
+      "explanation": "Pending Granite Mutual Insurance rule declines vehicles over 25 years old. Both use vehicle age thresholds; DR-019 reaches a limited group and needs data, while DR-097's undefined \"imported\" wording reaches far more owners, which is why DR-097 is a decline as written."
     },
     {
       "refId": "DR-054",
       "similarity": 0.365,
       "relation": "similar",
-      "explanation": "Pending Grandview Insurance Group right-hand drive rule. Many right-hand drive vehicles are private imports; review together."
+      "explanation": "Pending Grandview Insurance Group right-hand drive rule. Both concern imported vehicles; DR-054 is narrow and needs data, while DR-097 is a decline as written because its undefined wording reaches mainstream vehicles."
     },
     {
       "refId": "DR-068",
@@ -324,5 +326,10 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-019, DR-054 on the market check.",
+    "Consistency audit: rewrote the comparison with DR-019. Explanation described the similarity but not why the outcomes differ.",
+    "Consistency audit: rewrote the comparison with DR-054. Explanation described the similarity but not why the outcomes differ."
+  ]
 }

@@ -62,8 +62,10 @@
       "label": "Already exists in the market",
       "status": "insufficient_information",
       "severity": "low",
-      "issueCodes": [],
-      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The pending Maplewood Mutual rule DR-007 (under 21) uses the same ground at the other end of the range.",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The pending Maplewood Mutual rule DR-007 (under 21) uses the same ground at the other end of the range. Similar submissions from other insurers are pending (DR-007) and should be reviewed together.",
       "evidence": [],
       "citationIds": [
         "FW_APPROVED"
@@ -338,5 +340,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-007 on the market check."
+  ]
 }

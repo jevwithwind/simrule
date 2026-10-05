@@ -65,9 +65,10 @@
       "status": "concern",
       "severity": "high",
       "issueCodes": [
-        "PRECEDENT_NON_COMPLIANT_MATCH"
+        "PRECEDENT_NON_COMPLIANT_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
       ],
-      "reasoning": "The closest framework example is NC-04: declining someone accused of a crime they were not convicted of. An investigation is not even an accusation of a driving offence, so DR-096 shares and goes beyond NC-04's defect.",
+      "reasoning": "The closest framework example is NC-04: declining someone accused of a crime they were not convicted of. An investigation is not even an accusation of a driving offence, so DR-096 shares and goes beyond NC-04's defect. Similar submissions from other insurers are pending (DR-034) and should be reviewed together.",
       "evidence": [
         {
           "source": "ruleText",
@@ -371,5 +372,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-034 on the market check."
+  ]
 }

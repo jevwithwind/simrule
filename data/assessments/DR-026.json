@@ -64,8 +64,10 @@
       "label": "Already exists in the market",
       "status": "insufficient_information",
       "severity": "low",
-      "issueCodes": [],
-      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Similar submissions from other insurers are pending (DR-058) and should be reviewed together.",
       "evidence": [],
       "citationIds": [
         "FW_APPROVED"
@@ -288,7 +290,7 @@
       "refId": "DR-058",
       "similarity": 0.532,
       "relation": "similar",
-      "explanation": "Pending Lakeshore Indemnity rule declines when a household member has a suspended licence. Both judge the applicant by other household members; DR-058 at least ties to a risky person."
+      "explanation": "Pending Lakeshore Indemnity rule declines when a household member has a suspended licence. Both judge the applicant by others in the home, but the outcomes differ: DR-026 refuses on household size, a family-status proxy (high-severity fail, so decline), while DR-058 targets vehicle access by a person barred from driving and could be fixed with a driver exclusion (request more information)."
     },
     {
       "refId": "DR-089",
@@ -346,5 +348,9 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-058 on the market check.",
+    "Consistency audit: rewrote the comparison with DR-058. Explanation described the similarity but not why the outcomes differ."
+  ]
 }

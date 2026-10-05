@@ -277,7 +277,7 @@
       "refId": "DR-051",
       "similarity": 0.42,
       "relation": "similar",
-      "explanation": "Pending Clearwater General Insurance rule needs 2 serious speeding convictions in 3 years. DR-065 needs only 1 conviction; review together for consistent conviction thresholds."
+      "explanation": "Pending Clearwater General Insurance rule needs 2 serious speeding convictions in 3 years, which fits the approved pattern FX-04 and is approvable. DR-065 declines on a single conviction, which is stricter than any approved pattern, so it needs supporting data first."
     },
     {
       "refId": "DR-071",
@@ -325,5 +325,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: rewrote the comparison with DR-051. Explanation described the similarity but not why the outcomes differ."
+  ]
 }

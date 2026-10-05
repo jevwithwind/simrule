@@ -180,7 +180,7 @@
       "key": "L3_NOT_SUBJECTIVE",
       "label": "Not subjective",
       "status": "fail",
-      "severity": "medium",
+      "severity": "high",
       "issueCodes": [
         "SUBJECTIVE_JUDGMENT",
         "COPYCAT_REFERENCE"
@@ -347,5 +347,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: changed L3_NOT_SUBJECTIVE. COPYCAT_REFERENCE on L3_NOT_SUBJECTIVE is high severity where the trigger is another insurer's judgment (DR-009, DR-056, DR-086). DR-049 had the same defect at medium."
+  ]
 }

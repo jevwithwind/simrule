@@ -176,8 +176,7 @@
       "status": "fail",
       "severity": "medium",
       "issueCodes": [
-        "SUBJECTIVE_JUDGMENT",
-        "COPYCAT_REFERENCE"
+        "SUBJECTIVE_JUDGMENT"
       ],
       "reasoning": "Whether a dismissal was \"for cause\" is the employer's view and is often disputed. The rule relies on another party's judgment, not a verifiable fact.",
       "evidence": [
@@ -331,5 +330,8 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: changed L3_NOT_SUBJECTIVE. COPYCAT_REFERENCE means reliance on another insurer's actions; an employer is not an insurer. SUBJECTIVE_JUDGMENT already covers the defect."
+  ]
 }

@@ -69,6 +69,7 @@ export const AssessmentSchema = z.object({
     frameworkVersion: z.string(),
     generatedOn: z.string(),
   }),
+  auditNotes: z.array(z.string()).optional(),
 });
 
 export type Status = (typeof STATUS)[number];

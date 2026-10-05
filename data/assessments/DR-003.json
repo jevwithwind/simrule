@@ -57,9 +57,10 @@
       "status": "pass",
       "severity": "low",
       "issueCodes": [
-        "PRECEDENT_APPROVED_MATCH"
+        "PRECEDENT_APPROVED_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
       ],
-      "reasoning": "The framework lists part-time use of a vehicle for package delivery (FX-02) and business use (FX-01) as common decline rules, and AP-06 (Oakridge Lane Mutual, 2015) declines any automobile used for commercial purposes. DR-003 applies the same logic to app-based food delivery and limits it to vehicles \"primarily\" used that way, so it is no broader than the approved commercial-use rule.",
+      "reasoning": "The framework lists part-time use of a vehicle for package delivery (FX-02) and business use (FX-01) as common decline rules, and AP-06 (Oakridge Lane Mutual, 2015) declines any automobile used for commercial purposes. DR-003 applies the same logic to app-based food delivery and limits it to vehicles \"primarily\" used that way, so it is no broader than the approved commercial-use rule. Similar submissions from other insurers are pending (DR-070, DR-020) and should be reviewed together.",
       "evidence": [
         {
           "source": "ruleText",
@@ -307,7 +308,7 @@
       "refId": "DR-020",
       "similarity": 0.38,
       "relation": "similar",
-      "explanation": "Pending Birchwood Insurance Group rule declines home-based business client visits more than 3 times a week. Another business-use rule with a different usage threshold."
+      "explanation": "Pending Birchwood Insurance Group rule declines home-based business owners making more than 3 client visits a week. DR-003 is limited to primary delivery use, which matches the commercial-use precedent (approvable); DR-020 sets an unsupported weekly count that reaches occasional business use, so it needs data."
     }
   ],
   "consumerImpact": {
@@ -347,5 +348,9 @@
     "promptVersion": "v2",
     "frameworkVersion": "1.0.0",
     "generatedOn": "2026-10-05"
-  }
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-070, DR-020 on the market check.",
+    "Consistency audit: rewrote the comparison with DR-020. Explanation described the similarity but not why the outcomes differ."
+  ]
 }

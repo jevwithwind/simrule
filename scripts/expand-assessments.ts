@@ -9,6 +9,7 @@ import framework from '../knowledge/framework.json';
 import { ALL_CRITERIA, type Assessment, type Precedent, type Rule } from '../src/lib/schema';
 import { SimilarityIndex, type SimDoc } from '../src/lib/similarity';
 import type { Draft, CriterionTuple } from '../data/authoring/types';
+import { FINDING_PATCHES, PENDING_FLAGS, PRECEDENT_PATCHES } from '../data/authoring/audit-fixes';
 
 const STATUS_MAP: Record<string, Assessment['criteria'][number]['status']> = {
   pass: 'pass',
@@ -75,16 +76,53 @@ export function expandDraft(d: Draft): Assessment {
   };
 }
 
+function sentenceCount(t: string): number {
+  return t.split(/(?<=[.!?])\s+/).filter((x) => x.trim()).length;
+}
+
+/** Applies consistency-audit patches (data/authoring/audit-fixes.ts) and records each change in auditNotes. */
+export function applyAuditFixes(a: Assessment): Assessment {
+  const notes: string[] = [];
+  const pending = PENDING_FLAGS.find((p) => p.id === a.id);
+  if (pending) {
+    const market = a.criteria.find((c) => c.key === 'L1_MARKET')!;
+    if (!market.issueCodes.includes('PENDING_SIMILAR_SUBMISSION')) market.issueCodes.push('PENDING_SIMILAR_SUBMISSION');
+    const extra = `Similar submissions from other insurers are pending (${pending.others.join(', ')}) and should be reviewed together.`;
+    if (sentenceCount(market.reasoning) < 4) market.reasoning = `${market.reasoning} ${extra}`;
+    notes.push(`Consistency audit: flagged pending similar submission(s) ${pending.others.join(', ')} on the market check.`);
+  }
+  for (const p of PRECEDENT_PATCHES.filter((x) => x.id === a.id)) {
+    const sims = new Map(index.query({ id: a.id, text: rules.find((r) => r.id === a.id)!.ruleText, categories: rules.find((r) => r.id === a.id)!.categories }).map((s) => [s.id, s.score]));
+    const entry = { refId: p.refId, similarity: sims.get(p.refId) ?? 0, relation: p.relation, explanation: p.explanation };
+    const i = a.precedents.findIndex((x) => x.refId === p.refId);
+    if (i >= 0) a.precedents[i] = entry;
+    else a.precedents.push(entry);
+    notes.push(`Consistency audit: ${i >= 0 ? 'rewrote' : 'added'} the comparison with ${p.refId}. ${p.reason}`);
+  }
+  for (const f of FINDING_PATCHES.filter((x) => x.id === a.id)) {
+    const c = a.criteria.find((x) => x.key === f.key)!;
+    if (f.severity) c.severity = f.severity;
+    if (f.removeCodes) c.issueCodes = c.issueCodes.filter((k) => !f.removeCodes!.includes(k));
+    if (f.addCodes) c.issueCodes.push(...f.addCodes.filter((k) => !c.issueCodes.includes(k)));
+    if (f.reasoning) c.reasoning = f.reasoning;
+    notes.push(`Consistency audit: changed ${f.key}. ${f.reason}`);
+  }
+  if (notes.length) a.auditNotes = notes;
+  return a;
+}
+
 async function main() {
   const dir = resolve('data/authoring');
   const files = readdirSync(dir).filter((f) => /^batch-.*\.ts$/.test(f)).sort();
+  const noAudit = process.argv.includes('--no-audit');
   mkdirSync('data/assessments', { recursive: true });
   let count = 0;
   for (const f of files) {
     const mod = await import(pathToFileURL(join(dir, f)).href);
     const drafts: Draft[] = mod.default;
     for (const d of drafts) {
-      writeFileSync(join('data/assessments', `${d.id}.json`), JSON.stringify(expandDraft(d), null, 2) + '\n');
+      const expanded = noAudit ? expandDraft(d) : applyAuditFixes(expandDraft(d));
+      writeFileSync(join('data/assessments', `${d.id}.json`), JSON.stringify(expanded, null, 2) + '\n');
       count++;
     }
   }
