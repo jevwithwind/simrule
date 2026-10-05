@@ -1,0 +1,351 @@
+{
+  "id": "DR-013",
+  "extracted": {
+    "trigger": "Number of insurer changes",
+    "thresholdCount": 4,
+    "lookbackYears": 2,
+    "populationAffected": "Applicants who changed insurance providers more than 3 times in 2 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "more than 3 times",
+      "preceding 2 years"
+    ],
+    "undefinedTerms": [
+      "changed insurance providers"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on the number of times an applicant has changed insurers. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "changed insurance providers more than 3 times"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Insurer switching history is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PRECEDENT_NON_COMPLIANT_MATCH"
+      ],
+      "reasoning": "The framework gives \"changed insurers more than two times in 10 years\" as an illustrative non-compliant rule (NC-05). DR-013 uses the same trigger with a shorter window and a higher count: 4 or more changes in 2 years is more frequent switching than 3 in 10 years. The difference narrows who is affected but does not change the nature of the trigger.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "changed insurance providers more than 3 times in the preceding 2 years"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Changing insurers is consumer behaviour, not driving behaviour. It can reflect price shopping, a move or an insurer leaving the market as easily as hidden risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Frequent switching may indicate adverse selection behaviour"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Insurer switching history does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Consumers who have been non-renewed or who moved often could be locked out even with clean records. That narrows access to mandatory coverage for reasons unrelated to driving.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 3 times"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Penalising switching discourages consumers from shopping for better prices. Less shopping weakens competition and tends to raise costs for everyone.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "If the concern is undisclosed non-renewals, the insurer can ask for the reason for each change and apply its existing approved rules. A blanket decline protects the insurer at the expense of ordinary shoppers.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "non-renewed by other carriers for undisclosed reasons"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on the number of insurer changes and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "changed insurance providers"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The number of policies with different insurers can be counted from insurance history records. Applying the count does not need a judgment call.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 3 times in the preceding 2 years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for \"more than 3 times in 2 years\". The framework treats a similar count-based switching threshold as arbitrary.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 3 times in the preceding 2 years"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK",
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "The rationale speculates that switching \"may indicate\" adverse selection or undisclosed non-renewals. That is an inference about motive, not a demonstrated link to claims exposure.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate adverse selection behaviour"
+        },
+        {
+          "source": "rationale",
+          "quote": "non-renewed by other carriers for undisclosed reasons"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale offers a hypothesis about adverse selection without data. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "It is unclear whether a broker moving a policy, a mid-term rewrite or an insurer merger counts as a change. Different readings would treat the same consumer differently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "changed insurance providers"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: consumers are encouraged to shop around for auto insurance, and a rule that punishes switching cuts against that. The framework already flags a close version of this rule as non-compliant.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FW_QUESTIONS"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "NC-05",
+      "similarity": 0.557,
+      "relation": "similar",
+      "explanation": "Same trigger (number of insurer changes). NC-05 is more than 2 changes in 10 years; DR-013 is more than 3 in 2 years, a stricter definition of frequent switching that affects fewer people. The underlying problem, judging risk by shopping behaviour, is the same."
+    },
+    {
+      "refId": "DR-027",
+      "similarity": 0.181,
+      "relation": "materially_different",
+      "explanation": "Pending Maplewood Mutual rule declines coverage lapses over 90 days. Both use insurance history, but a lapse is a gap in coverage while switching is continuous coverage with different insurers."
+    },
+    {
+      "refId": "DR-086",
+      "similarity": 0.253,
+      "relation": "materially_different",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines Facility Association insureds moving to the voluntary market. Both rely on insurance history rather than driving record, with different triggers."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Consumers who switched insurers 4 or more times in 2 years, including price shoppers and people non-renewed for reasons unrelated to driving.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Price-sensitive consumers",
+      "People who move often, such as students and renters"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "What data shows that switching frequency predicts claims, separate from the reasons for each change?",
+    "Would a change caused by the previous insurer leaving the market count?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing the switching count with the insurer's existing approved rules on cancellations and misrepresentation would address the stated concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and cite the non-compliant example NC-05.",
+      "owner": "Analyst",
+      "reason": "Score below threshold and close match to a non-compliant example."
+    },
+    {
+      "action": "Confirm the material-difference analysis against NC-05.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern triggers senior review."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

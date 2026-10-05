@@ -1,0 +1,343 @@
+{
+  "id": "DR-057",
+  "extracted": {
+    "trigger": "Hazardous materials in a personal vehicle",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who transport any hazardous materials in a personal vehicle, even in small quantities",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "hazardous materials",
+      "small quantities"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on transporting hazardous materials. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "transport hazardous materials"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Carrying hazardous materials is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The closest approved rule is commercial use (AP-06), but DR-057 reaches personal, non-commercial carriage of small quantities, so it is materially broader.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Commercial transport of dangerous goods is a genuine change in risk. But \"even in small quantities\" would catch a jerry can of fuel or a propane cylinder, which do not change a household's risk profile in any material way.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even in small quantities"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Carrying hazardous materials does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Read literally, many ordinary households and rural residents who carry fuel or chemicals for home use could be refused. That would limit access to mandatory coverage for routine activities.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even in small quantities"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Keeping commercial dangerous-goods transport out of personal auto pools avoids passing that exposure to other policyholders. The cost concern is legitimate for the commercial case.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "liability and environmental exposure"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "The rule protects the insurer from a real commercial exposure but overreaches into everyday personal use. Narrowing it would restore the balance.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "regardless of quantity"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers would not know whether carrying fuel, paint or pool chemicals counts. They could be declined, or have a later claim disputed, without realising the rule applied to them.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "hazardous materials, even in small quantities"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Without a definition, deciding what counts as \"hazardous\" would fall to the broker or underwriter. That invites inconsistent judgment calls.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "hazardous materials"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "The rule deliberately has no quantity threshold. A rule that treats a litre of fuel the same as a tank of chemicals is not tied to a measured level of risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "regardless of quantity"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The risk link is strong for commercial carriage of regulated dangerous goods. It is weak or absent for small household quantities.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "liability and environmental exposure that personal auto policies are not designed to cover"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale describes liability exposure without data on small-quantity incidents. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Hazardous materials\" is not defined and \"small quantities\" is open-ended. The rule could be read in many ways, which the framework lists as a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "hazardous materials, even in small quantities"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Maybe: excluding commercial dangerous-goods carriers from personal policies is sensible. Excluding households that carry fuel for a lawnmower would not be.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "FX-01",
+      "similarity": 0.381,
+      "relation": "similar",
+      "explanation": "Framework common example: personal vehicle used for business purposes. The commercial-transport part of DR-057 fits this pattern; the household small-quantity part does not."
+    },
+    {
+      "refId": "AP-06",
+      "similarity": 0.315,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines vehicles used for commercial purposes. DR-057 goes further by covering personal, non-commercial carriage regardless of quantity."
+    },
+    {
+      "refId": "DR-079",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule declines commercial towing including seasonal use. Same pattern of a commercial-use rule extended to occasional use; treat the \"even occasionally\" scope question consistently."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone who carries hazardous materials in a personal vehicle, which read literally includes households carrying fuel or propane.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Rural households",
+      "Tradespeople using personal vehicles"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Please define \"hazardous materials\", for example by reference to regulated dangerous goods and a quantity threshold.",
+    "Is the rule meant to cover commercial transport only?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Narrowing the rule to commercial transport of regulated dangerous goods above a defined quantity would move it towards approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request a definition of hazardous materials and a quantity threshold.",
+      "owner": "Insurer",
+      "reason": "The definition decides who is affected."
+    },
+    {
+      "action": "Review alongside DR-079 for consistent treatment of commercial-use rules with occasional-use extensions.",
+      "owner": "Analyst",
+      "reason": "Consistency across similar submissions."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "The insurer's intended scope (commercial only or all carriage) is unclear from the wording."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

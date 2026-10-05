@@ -1,0 +1,362 @@
+{
+  "id": "DR-002",
+  "extracted": {
+    "trigger": "Licence suspension for impaired driving",
+    "thresholdCount": null,
+    "lookbackYears": 5,
+    "populationAffected": "Applicants whose licence was suspended for impaired driving in the preceding 5 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 5 years"
+    ],
+    "undefinedTerms": [
+      "suspended for impaired driving"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Impaired-driving suspensions in Ontario can follow a conviction or be imposed administratively at the roadside without one. FSRA guidance restricts the use of administrative licence suspensions in underwriting, so the rule may be partly contrary to guidance if it captures suspensions without a conviction. This finding rests on guidance that could not be verified.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "had their licence suspended for impaired driving"
+        }
+      ],
+      "citationIds": [
+        "FSRA_ADMIN_LAPSE",
+        "HTA"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A licence suspension for impaired driving is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "suspended for impaired driving"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The approved rule closest in intent declines 1 or more Criminal Code convictions in 3 years (AP-01, Harbourview Assurance, 2017), which would capture impaired-driving convictions. DR-002 uses suspensions instead of convictions and a 5-year lookback, so no approved rule has the same trigger and it is assessed on its own merits.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Impaired driving is serious driving behaviour and is directly relevant to an individual risk profile. Where a suspension reflects a conviction, the rule reflects the applicant's own conduct.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Impaired driving suspensions are a strong predictor of future high-severity claims."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A suspension for impaired driving does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "A 5-year lookback keeps affected consumers out of this insurer's book longer than the approved 3-year conviction rule. Some may have had a roadside suspension without ever being convicted.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Impaired-driving claims tend to be high severity, so declining confirmed impaired drivers helps limit costs passed to other policyholders. The rule does not add unnecessary cost for accepted consumers.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule targets a serious, well-recognised risk rather than a broad group. Its balance depends on narrowing it to suspensions that follow a conviction.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "sustained elevated risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "A consumer with a roadside administrative suspension would not know from the wording whether it counts. The insurer should explain which suspensions apply and how to correct the record.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "suspended for impaired driving"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A licence suspension is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "licence suspended"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The 5-year lookback is longer than the 3-year lookback in the approved Criminal Code rule. The rationale asserts sustained risk but gives no basis for choosing 5 years.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        },
+        {
+          "source": "rationale",
+          "quote": "A 5-year lookback period reflects the sustained elevated risk profile."
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "Impaired driving links directly to high-severity claims. However, a suspension is not always a conviction, and the framework treats declining someone for an accusation as non-compliant.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "strong predictor of future high-severity claims"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale claims a strong predictive link and a sustained 5-year risk. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "A 5-year lookback period reflects the sustained elevated risk profile."
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say whether \"suspended for impaired driving\" means a suspension following a conviction, an administrative roadside suspension, or both. The answer decides whether the rule relies on convictions or allegations, so it could change the outcome.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "suspended for impaired driving"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Maybe: declining impaired drivers supports road safety. Declining people who were suspended but never convicted would sit uneasily with the presumption of innocence.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-01",
+      "similarity": 0.082,
+      "relation": "similar",
+      "explanation": "Approved rule declines 1 or more Criminal Code convictions in 3 years, which includes impaired-driving convictions. DR-002 shares the intent but uses suspensions (which may not involve a conviction) and a longer 5-year lookback."
+    },
+    {
+      "refId": "NC-04",
+      "similarity": 0.017,
+      "relation": "materially_different",
+      "explanation": "Non-compliant example declines people accused but not convicted. DR-002 is about a recorded sanction for driving conduct, but it risks the same problem if roadside suspensions without a conviction are included."
+    },
+    {
+      "refId": "DR-094",
+      "similarity": 0.265,
+      "relation": "materially_different",
+      "explanation": "Pending Grandview Insurance Group rule declines suspensions for unpaid fines. Both use suspensions, but unpaid fines are administrative and not driving conduct, while impaired driving is a direct safety risk."
+    },
+    {
+      "refId": "DR-073",
+      "similarity": 0.161,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual rule declines vehicle impoundment in 3 years. Both rely on roadside sanctions that may not involve a conviction; treat the definition question the same way in both."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers with any impaired-driving related licence suspension in the last 5 years, possibly including roadside suspensions without a conviction.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People with administrative suspensions who were never convicted"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Does \"suspended for impaired driving\" include administrative roadside suspensions, or only suspensions that follow a conviction?",
+    "What data supports a 5-year lookback rather than the 3 years used in the approved Criminal Code rule?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Limiting the rule to suspensions that follow an impaired-driving conviction, with supporting data for the lookback, would move it towards approval with conditions.",
+    "Confirmation that roadside administrative suspensions are included would move it towards decline."
+  ],
+  "nextSteps": [
+    {
+      "action": "Ask the insurer to define which suspensions the rule covers.",
+      "owner": "Insurer",
+      "reason": "The definition decides whether the rule relies on convictions or on allegations."
+    },
+    {
+      "action": "Confirm how FSRA guidance on administrative suspensions applies.",
+      "owner": "Senior reviewer",
+      "reason": "The Level 1 concern rests on guidance that could not be verified."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "FSRA guidance on administrative licence suspensions could not be fetched and verified.",
+    "The share of impaired-driving suspensions that are administrative is unknown."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

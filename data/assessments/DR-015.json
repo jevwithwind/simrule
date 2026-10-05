@@ -1,0 +1,344 @@
+{
+  "id": "DR-015",
+  "extracted": {
+    "trigger": "Active litigation against an insurer",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants currently in litigation against any insurance company",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "involved in litigation"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "CONTRARY_TO_LEGISLATION"
+      ],
+      "reasoning": "Refusing coverage because a consumer is pursuing a legal claim against an insurer could be seen as an unfair practice that discourages consumers from enforcing their rights. No specific provision in the registry addresses this, so it is flagged for legal review rather than treated as a breach.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "currently involved in litigation against any insurance company"
+        }
+      ],
+      "citationIds": [
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Litigation against an insurer is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Pursuing a legal claim is not driving behaviour, experience, distance, location or vehicle. Many such cases are about accident benefits after the consumer was injured.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Active litigation suggests a pattern of disputed claims"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "People in litigation with insurers are often injured claimants, some with lasting disabilities. The rule could fall disproportionately on people with disabilities.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "litigation against any insurance company"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Injured consumers in disputes may be refused new coverage while their case continues. That can last years.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "currently involved in litigation"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "The insurer is trying to avoid administrative cost, but the cost of exclusion falls on the consumer. Litigation costs are not a risk characteristic of the insured.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "increases administrative cost and claims exposure"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Using its underwriting power against consumers who dispute insurers puts the insurer's convenience ahead of fair treatment. It creates a chilling effect on legitimate claims.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "adversarial behaviour"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on active litigation and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "currently involved in litigation"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Whether a person is a party to litigation is a matter of court record. The trigger is objective even though it is not risk-relevant.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "currently involved in litigation"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "The rule covers litigation against \"any insurance company\" on any line of business. It draws no line between a frivolous suit and a successful claim.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any insurance company"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale links litigation to adversarial behaviour and administrative cost, not to the likelihood or severity of auto claims. The framework rejects rules not based on a risk-relevant characteristic of the insured.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "adversarial behaviour that increases administrative cost"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale asserts higher exposure without data. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Involved in litigation\" could include tribunal applications, class actions or being a witness. The scope is unclear.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "involved in litigation"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: punishing consumers for using the courts against insurers undermines access to justice and the regulator's consumer protection role. It would discourage people from enforcing their policy rights.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-061",
+      "similarity": 0.298,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines consumers who complained to an insurance ombudsman. Same pattern: penalising consumers for using dispute channels. Review together."
+    },
+    {
+      "refId": "DR-069",
+      "similarity": 0.273,
+      "relation": "materially_different",
+      "explanation": "Pending Granite Mutual Insurance rule declines defendants in motor vehicle lawsuits. DR-069 is at least about involvement in a crash; DR-015 penalises the consumer for suing an insurer."
+    },
+    {
+      "refId": "DR-100",
+      "similarity": 0.096,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines people who advocate against mandatory insurance. Both penalise lawful activity directed at the insurance system."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Consumers currently in a legal dispute with any insurer, often over injury or accident benefits.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Injured accident victims",
+      "People with disabilities from accidents"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "What auto claims evidence links active litigation to future claims, separate from administrative cost?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. The trigger penalises the exercise of legal rights."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on public policy and risk-relevance grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails at Levels 3 and 4."
+    },
+    {
+      "action": "Assess whether the rule could be an unfair practice under the UDAP Rule.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern triggers senior review."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "No specific UDAP provision on retaliatory underwriting was verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

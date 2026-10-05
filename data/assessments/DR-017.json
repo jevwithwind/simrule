@@ -1,0 +1,362 @@
+{
+  "id": "DR-017",
+  "extracted": {
+    "trigger": "Receipt of social assistance or disability benefits",
+    "thresholdCount": null,
+    "lookbackYears": 1,
+    "populationAffected": "Applicants who received social assistance or disability benefits in the preceding 12 months",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 12 months"
+    ],
+    "undefinedTerms": [
+      "social assistance",
+      "disability benefits"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Receipt of benefits is financial information about the applicant's means, and Ontario restricts the use of credit and income-related information in auto underwriting. Whether benefit status falls inside that restriction needs confirmation.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "received social assistance or disability benefits"
+        }
+      ],
+      "citationIds": [
+        "REG_664",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND",
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Receiving disability benefits identifies the applicant as a person with a disability, a protected ground. The Code's insurance provision allows distinctions on disability only on reasonable and bona fide grounds, and the rationale (non-payment risk) is not about the disability's effect on driving at all.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "disability benefits"
+        },
+        {
+          "source": "rationale",
+          "quote": "may face financial pressures that increase the likelihood of premium non-payment"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Receiving benefits says nothing about driving behaviour, experience, distance, location or vehicle. The stated risk is late payment, not claims.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "premium non-payment and policy lapse"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND",
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule uses disability directly and uses social assistance as a proxy for disability, family status and low income. The principle bars direct and indirect use of protected grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "social assistance or disability benefits"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People on social assistance or disability benefits often depend on a car for medical appointments and daily life. Refusing them removes access for some of the most vulnerable consumers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant who has received social assistance"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Pushing low-income consumers into the most expensive market adds cost to those least able to bear it. The payment risk could be managed with payment terms instead.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer's concern is administrative cost from non-payment. Approved rules already address actual non-payment history, so refusing people for their income source is not a balanced response.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "creating administrative cost and coverage gaps"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION",
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "The insurer would need to ask about benefit receipt, which is sensitive information. A decline letter would disclose that the reason is the applicant's income support.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "received social assistance or disability benefits"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Benefit receipt is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for a 12-month lookback. It would catch people who have since returned to work.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 12 months"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale speculates about financial pressure and non-payment, not driving risk. The framework rejects rules not based on a characteristic relevant to the risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may face financial pressures"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data on payment or claims by benefit status is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Disability benefits\" could include private long-term disability, workplace insurance and government programs. The scope is unclear.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "disability benefits"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance to people because they receive income support or disability benefits would penalise people for using the social safety net. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-011",
+      "similarity": 0.216,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance credit-score rule. Both use financial means rather than driving risk; DR-017 adds a direct disability ground."
+    },
+    {
+      "refId": "DR-036",
+      "similarity": 0.221,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. bankruptcy rule. Same financial-hardship population."
+    },
+    {
+      "refId": "DR-021",
+      "similarity": 0.058,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines medical conditions that may impair driving. Both engage disability under the Code; DR-021 at least concerns driving ability."
+    },
+    {
+      "refId": "DR-022",
+      "similarity": 0.012,
+      "relation": "materially_different",
+      "explanation": "Pending Northern Shield Insurance rule declines repeated non-payment cancellations. DR-022 uses actual payment history; DR-017 predicts non-payment from income source."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "People who received social assistance or any disability benefit in the last 12 months.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People with disabilities",
+      "Low-income households",
+      "Single parents"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would the insurer's existing non-payment rules not address the stated concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. Disability and income support are not acceptable decline triggers."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 human rights hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Direct use of disability with no driving-risk basis."
+    },
+    {
+      "action": "Confirm whether benefit status falls within the credit and income information restriction.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern on an unverified restriction."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Whether receipt of benefits counts as restricted credit information was not verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

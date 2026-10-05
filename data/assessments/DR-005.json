@@ -1,0 +1,358 @@
+{
+  "id": "DR-005",
+  "extracted": {
+    "trigger": "Primary language",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants whose primary language is not English or French",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "primary language"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations or the UDAP Rule in the registry addresses language directly. The legal problem with this rule is a human rights one and is recorded under the Human Rights Code criterion.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primary language is not English or French"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Language is closely bound to ancestry, place of origin and ethnic origin, which are protected grounds under the Human Rights Code. The Code's insurance provision covers only age, sex, marital status, family status and disability, so it offers no defence here. Asking the regulator to approve a language-based exclusion would also raise Charter equality concerns.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primary language is not English or French"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE",
+        "CHARTER"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Two other pending submissions (DR-028 born outside Canada, DR-081 dual citizenship) target the same protected-ground family.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Language is not driving behaviour, experience, distance, location or vehicle, which are the risk factors the principle names. The rationale is about administrative communication, not about the likelihood or cost of claims.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Communication barriers may result in inaccurate policy information and increased disputes."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND",
+        "DISCRIMINATORY_IMPACT_NEW_TO_CANADA"
+      ],
+      "reasoning": "The rule works as a direct proxy for place of origin and ethnic origin. It would fall most heavily on newcomers to Canada, which the framework lists as a discriminatory impact.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primary language is not English or French"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Many Ontario residents speak a language other than English or French at home. All of them would lose access to this insurer's mandatory coverage regardless of their driving record.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant whose primary language"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers are likely to pay more elsewhere. The insurer's communication concern could be met with translation or interpreters at modest cost.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer's stated concern is disputes caused by miscommunication. Interpreters, translated documents or confirmation of key facts would address this without refusing coverage.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Ensuring clear communication protects both the insurer and the consumer."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "The principle expects insurers to communicate through convenient mediums using current technology. Refusing customers who need another language turns a communication duty into a reason for exclusion.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Communication barriers"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "There is no objective record of someone's \"primary language\". The insurer or broker would have to judge it, likely from accent, name or a conversation.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primary language"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The line drawn between English or French and every other language has no stated risk basis. It reflects administrative convenience rather than a measured threshold.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "not English or French"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The submission does not claim any link between language and claims frequency or severity. The framework's \"not risk-relevant\" rejection reason applies directly.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "inaccurate policy information and increased disputes"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale gives no data on disputes or claims by language. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Primary language\" is not defined, so two brokers could apply the rule differently to the same person. Sign-language users and bilingual applicants show how unclear the boundary is.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primary language"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance because of the language someone speaks conflicts with the regulator's duty to protect consumers and ensure fair treatment. It would also undermine newcomers' ability to drive to work.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "CAIA"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-028",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines applicants born outside Canada. DR-028 uses place of origin directly; DR-005 reaches the same group through language. Both should be treated as protected-ground rules."
+    },
+    {
+      "refId": "DR-081",
+      "similarity": 0.254,
+      "relation": "similar",
+      "explanation": "Same insurer (Clearwater General Insurance) also proposes a dual-citizenship decline. Same protected-ground family (citizenship, place of origin); the pattern across this insurer's filings is worth noting."
+    },
+    {
+      "refId": "DR-053",
+      "similarity": 0.175,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual rule declines newcomers with under 24 months of Canadian licence. Different trigger but the same group of affected consumers."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants whose first language is not English or French, including many newcomers, seniors who speak a heritage language, and Deaf people who use sign language.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Newcomers to Canada",
+      "Racialized communities",
+      "Seniors who speak a heritage language",
+      "Deaf people who use ASL or LSQ"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "How would the insurer or its brokers determine an applicant's primary language?",
+    "What evidence links language to claims, as opposed to administrative disputes?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Withdrawing the rule. The communication concern can be met with translation, interpreters or written confirmation of key facts."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 human rights hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Language is a close proxy for protected grounds not covered by the Code's insurance provision."
+    },
+    {
+      "action": "Suggest translated documents or interpreter support in the decline letter.",
+      "owner": "Insurer",
+      "reason": "Addresses the stated communication concern without excluding consumers."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Human Rights Code sections could not be fetched and verified; the finding is cited at instrument level."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

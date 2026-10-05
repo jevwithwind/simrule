@@ -1,0 +1,349 @@
+{
+  "id": "DR-007",
+  "extracted": {
+    "trigger": "Applicant age",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "All applicants under 21",
+    "ruleType": "decline",
+    "definedTerms": [
+      "under the age of 21"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy on age. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on age as such; the legal question is a human rights one. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the age of 21"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "Age is a protected ground. The Code's insurance provision allows auto insurance contracts to distinguish on age only on reasonable and bona fide grounds, and a blanket refusal is far harder to justify than an age-based premium. Whether this rule could meet that test is a legal judgment for a senior reviewer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the age of 21"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. A pending Lakeshore Indemnity rule (DR-038, over 80) uses the same ground at the other end of the age range.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Age correlates with claims at a group level, but the rule ignores each young driver's own record, training and vehicle. The principle asks for decisions that reflect the individual risk profile.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Drivers under 21 represent a statistically higher-risk group."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND",
+        "DISCRIMINATORY_IMPACT_NEW_DRIVERS"
+      ],
+      "reasoning": "The rule uses a protected ground directly and falls on almost every newly licensed driver. The framework lists declining newly licensed drivers as a discriminatory impact and a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the age of 21"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Young people need insurance to get to work, school and training, especially outside cities. A blanket decline shuts a whole age group out of this insurer's mandatory coverage.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant under the age of 21"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Young drivers pushed to other insurers or the residual market will usually pay more. Age-related risk is already captured in rating, so the decline adds cost without adding accuracy.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer cites its portfolio loss ratios and the affordability of other policyholders' premiums. Rating young drivers, not refusing them, is the balanced way to protect profitability.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Our portfolio cannot sustain the loss ratios associated with this demographic"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on age and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the age of 21"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Age is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No reason is given for choosing 21 rather than another age. A cut-off that is not tied to measured risk change is an arbitrary line.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the age of 21"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Age is a group-level correlate of risk, not individual behaviour. The link exists statistically but the rule does not use any fact about how the applicant drives.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "statistically higher-risk group"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale asserts statistically higher risk and unsustainable loss ratios. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "statistically higher-risk group"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The age threshold is precise and would be applied the same way to every applicant. No term needs further definition.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the age of 21"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: shutting young people out of compulsory insurance conflicts with the regulator's consumer protection mandate. Every driver starts young and inexperienced, so the rule would also block the route to building a driving record.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "CAIA"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-038",
+      "similarity": 0.559,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines drivers over 80. Same protected ground (age) at the other end of the range; the Code's insurance provision applies to both, so they should be reviewed together."
+    },
+    {
+      "refId": "DR-024",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group rule declines G1 and G2 licence holders. Different trigger (licence class) but largely the same affected group of new, young drivers."
+    },
+    {
+      "refId": "DR-018",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines licences held under 12 months. Same discriminatory impact on newly licensed drivers."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Every applicant under 21, whatever their record.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Young drivers",
+      "Students",
+      "Young workers in rural areas without transit"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would age-based rating not address the loss-ratio concern?",
+    "What share of applicants under 21 have a clean record?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing the decline with age-based rating, or narrowing it to young drivers with a poor record, would remove the discriminatory impact."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and record the discriminatory impact on new drivers.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 2 fail."
+    },
+    {
+      "action": "Confirm whether the Code's reasonable and bona fide test could ever support a blanket age decline.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 human rights concern needs a legal judgment."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "The Human Rights Code insurance provision could not be fetched and verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

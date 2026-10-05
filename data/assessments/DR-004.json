@@ -1,0 +1,337 @@
+{
+  "id": "DR-004",
+  "extracted": {
+    "trigger": "Applicant does not own the vehicle",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who are not the owner of the vehicle on the policy",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "own",
+      "listed on the policy"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on vehicle ownership. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "does not own the vehicle listed on the policy"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle ownership is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Ownership is not driving behaviour, and many non-owners have a clear insurable interest, such as people leasing a vehicle or the principal driver of a family car. The rule treats them as higher risk without evidence.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Non-ownership creates ambiguity around insurable interest"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Young adults and lower-income households are more likely to drive a vehicle owned by a parent or partner. The effect is indirect and should be tested with data.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "does not own the vehicle"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT",
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Read literally, the rule would refuse anyone driving a leased or financed vehicle registered to the lessor, and many family arrangements. That is a large group with no link to the stated fraud concern.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant who does not own the vehicle"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Consumers who lease or share a family car would be pushed to other insurers, often at a higher cost. The stated fraud risk could be managed more cheaply.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer's real concern is the absence of insurable interest. Requiring evidence of insurable interest, rather than ownership, would protect the insurer without refusing legitimate drivers.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "ambiguity around insurable interest"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on vehicle ownership and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "does not own the vehicle"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Registered ownership is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "own the vehicle"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no numeric threshold. Its problem is breadth, which is recorded under accessibility and definition.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale links non-ownership to moral hazard and fraud, but gives no evidence that lessees or family drivers commit more fraud. The link is plausible only for applicants with no connection to the vehicle at all.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "increases the likelihood of moral hazard and fraudulent claims"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale asserts more fraud among non-owners without data. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say whether \"own\" means registered owner, lessee or beneficial owner. That choice decides whether leased vehicles and family cars are caught.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "does not own the vehicle listed on the policy"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Maybe: preventing insurance on vehicles a person has no interest in is reasonable. Refusing lessees and family drivers would not be.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-091",
+      "similarity": 0.406,
+      "relation": "materially_different",
+      "explanation": "Pending Clearwater General Insurance rule declines people who own more than 5 vehicles. Both turn on ownership, but DR-091 targets too many vehicles while DR-004 targets having none."
+    },
+    {
+      "refId": "DR-025",
+      "similarity": 0.155,
+      "relation": "similar",
+      "explanation": "Pending Beacon Fire & Casualty rule (same insurer) declines vehicles registered to a business. Both use registration as a stand-in for risk; consider together."
+    },
+    {
+      "refId": "AP-06",
+      "similarity": 0.035,
+      "relation": "materially_different",
+      "explanation": "Approved commercial-use rule is about how the vehicle is used. DR-004 is about who holds title, which is not a use-based risk factor."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants driving a vehicle registered to someone else, including lessees, people with financed vehicles held by a lender, and principal drivers of a family car.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Young adults on family vehicles",
+      "Lower-income households",
+      "People with leased vehicles"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Does \"own\" include lessees and principal drivers with the owner's consent?",
+    "What evidence links non-ownership to fraud in the insurer's book?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Redrafting the rule to decline only applicants with no insurable interest in the vehicle would move it towards approval."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request a definition of \"own\" and evidence for the fraud link.",
+      "owner": "Insurer",
+      "reason": "The definition decides whether the rule is overbroad."
+    },
+    {
+      "action": "Review with DR-025 (same insurer) for a consistent approach to ownership and registration rules.",
+      "owner": "Analyst",
+      "reason": "Consistency."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "Whether leased vehicles are registered to the lessee or lessor in this insurer's process is not stated."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

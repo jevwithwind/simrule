@@ -1,0 +1,352 @@
+{
+  "id": "DR-011",
+  "extracted": {
+    "trigger": "Credit score",
+    "thresholdCount": 600,
+    "lookbackYears": null,
+    "populationAffected": "Applicants with a credit score below 600",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "credit score"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Ontario restricts the use of credit information, including credit scores, in auto insurance underwriting and rating, and the UDAP Rule treats its misuse as an unfair practice. A decline based on a credit score would be contrary to those restrictions. The specific provisions could not be verified and should be confirmed by a senior reviewer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "credit score below 600"
+        }
+      ],
+      "citationIds": [
+        "REG_664",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Credit scores are known to vary with disability, family status and race, so the rule may have an indirect discriminatory effect. This is a constructive discrimination risk rather than direct use of a protected ground.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "credit score"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending Ridgeline Insurance Co. rule DR-036 (bankruptcy) also relies on credit information.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "A credit score measures borrowing behaviour, not driving behaviour, experience, distance, location or vehicle. The rationale relies on a correlation across the book of business rather than individual driving risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Lower credit scores correlate with higher loss ratios across our book of business."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Credit scores act as an indirect proxy for income and for protected grounds such as disability and family status. The principle asks insurers not to use direct or indirect proxies for protected or prohibited variables.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "credit score below 600"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People with low credit scores are often on low incomes and depend on driving for work. Refusing them pushes those least able to pay into the most expensive part of the market.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "below 600"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would face higher premiums elsewhere. The rule shifts cost onto financially vulnerable people without a driving-risk reason.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "The rationale is about loss ratios across the insurer's book of business. Protecting profitability by excluding financially stressed consumers does not balance the insurer's interests with fair treatment.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "higher loss ratios across our book of business"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Many consumers do not know their credit score or which bureau the insurer used. A decline would be hard to understand or correct.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "credit score"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A bureau credit score is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No reason is given for setting the cut-off at 600. Score scales also differ between bureaus.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "below 600"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The claimed link is statistical correlation with loss ratios, not a direct link to driving behaviour. The framework asks for a clear link to driver behaviour or claims exposure.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Credit score is a well-documented predictor of insurance claims frequency."
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale calls credit a well-documented predictor but cites no study or internal data. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "well-documented predictor"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say which credit bureau or scoring model applies. The same consumer could fall either side of 600 depending on the source.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "credit score below 600"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: Ontario has chosen to keep credit information out of auto insurance decisions, and this rule would bring it back as a reason to refuse compulsory coverage. Approving it would conflict with that policy choice.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "REG_664"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-036",
+      "similarity": 0.298,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines bankruptcy in 7 years. Different trigger, same category of financial and credit information; both should be treated under the same Level 1 restriction."
+    },
+    {
+      "refId": "DR-017",
+      "similarity": 0.216,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines recipients of social assistance or disability benefits. Same financial-hardship population, with a more direct protected-ground issue."
+    },
+    {
+      "refId": "DR-066",
+      "similarity": 0.155,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines self-employed applicants without proof of income. Income is also credit information under the restriction."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Consumers with credit scores below 600, regardless of driving record.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Low-income households",
+      "People recovering from illness or job loss",
+      "Newcomers with thin credit files"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "On what basis does the insurer consider credit information permissible in Ontario auto underwriting?",
+    "Which bureau and score model would be used?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Confirmation that the credit restriction does not apply to underwriting declines would remove the Level 1 hard stop, but the Level 2 proxy and accessibility fails would remain."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Credit information is a restricted factor."
+    },
+    {
+      "action": "Verify the Reg. 664 and UDAP provisions on credit information against the official text.",
+      "owner": "Senior reviewer",
+      "reason": "The finding relies on an unverified citation."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "The credit-information restriction could not be fetched and verified; confidence is medium for that reason."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

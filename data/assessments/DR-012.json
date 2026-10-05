@@ -1,0 +1,320 @@
+{
+  "id": "DR-012",
+  "extracted": {
+    "trigger": "Racing or speed competition use",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles used on a racetrack or in organized races, speed tests or competitions",
+    "ruleType": "decline",
+    "definedTerms": [
+      "racetrack",
+      "race, speed test, or competition"
+    ],
+    "undefinedTerms": [
+      "organized"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on the vehicle's use in racing or speed competitions. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "used on a racetrack or in any organized race, speed test, or competition"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Use of the vehicle for racing is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "The rule matches AP-07 (Westerly Indemnity, 2018): used on a racetrack, or in any race, speed test, or competition. The only change is the word \"organized\", which narrows the race element slightly.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "used on a racetrack or in any organized race, speed test, or competition"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "How a vehicle is used is a core risk factor, and racing exposes it to extreme stress and collision risk. The rule reflects the actual use of the insured vehicle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "extreme mechanical stress and collision risk"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The use of a vehicle for racing does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule affects only vehicles used for motorsport, which is a voluntary activity with specialty insurance options. Everyday drivers keep full access to coverage.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "used on a racetrack"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Keeping racing losses out of personal auto pools protects other policyholders from costs that standard premiums do not contemplate. No unnecessary cost is created.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "falls outside the scope of standard personal auto coverage"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule draws a clear line between personal use and motorsport. That balances the insurer's exposure with fair treatment of ordinary drivers.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on racing or competition use and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "racetrack"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Participation in a racetrack event or organized competition is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "organized race"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no numeric threshold and turns on a clear category of use. It mirrors an approved rule.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Racing use has a direct and obvious link to collision and mechanical claims. The framework asks for exactly this kind of link to claims exposure.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Vehicles used in racing or speed competitions are exposed to extreme mechanical stress and collision risk"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale explains the risk qualitatively. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Racetrack use and organized races, speed tests or competitions are clear categories. \"Organized\" is not defined but narrows the rule rather than widening it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "organized race, speed test, or competition"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Separating motorsport from personal auto coverage is long-standing practice and protects ordinary policyholders.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-07",
+      "similarity": 0.896,
+      "relation": "same",
+      "explanation": "Same trigger (racetrack, race, speed test or competition) and same scope. The only wording change is \"organized\", which slightly narrows the race element; who is affected is otherwise identical."
+    },
+    {
+      "refId": "AP-13",
+      "similarity": 0.45,
+      "relation": "similar",
+      "explanation": "Approved rule declines vehicles modified for speed or used for racing. Overlaps on racing use; DR-012 does not cover modifications."
+    },
+    {
+      "refId": "DR-071",
+      "similarity": 0.176,
+      "relation": "materially_different",
+      "explanation": "Pending Clearwater General Insurance rule declines drivers convicted of racing or stunt driving. That rule targets the driver's conviction record on public roads, while DR-012 targets the vehicle's use in motorsport."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners who use the insured vehicle on a racetrack or in organized competitions.",
+    "likelyConsequence": "They would need specialty motorsport coverage or a separate policy for track use. Everyday drivers are not affected.",
+    "vulnerableGroups": [],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Does the rule apply to occasional track days and driving schools, or only to timed competition?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Evidence that the rule is applied to vehicles never used on a track (for example based on a membership or vehicle model) would raise a concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite AP-07 as the market precedent.",
+      "owner": "Analyst",
+      "reason": "Near-identical to an approved rule."
+    },
+    {
+      "action": "File the standard supporting analysis and a definition of \"organized\".",
+      "owner": "Insurer",
+      "reason": "Standard conditions for approval."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurer and approval year are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

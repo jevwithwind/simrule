@@ -1,0 +1,268 @@
+DR-002.json:
+  - L4_PUBLIC_POLICY: non-pass status needs at least one issue code
+DR-005.json:
+  - L3_NOT_ARBITRARY: reasoning has 1 sentences (need 2-4)
+  - L4_PUBLIC_POLICY: reasoning has 1 sentences (need 2-4)
+DR-007.json: schema errors [
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 9, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 12, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 13, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  }
+]
+DR-008.json: schema errors [
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 8, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 13, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 14, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  }
+]
+DR-011.json: schema errors [
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 2, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 9, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 10, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 12, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 13, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  }
+]
+DR-012.json: schema errors [
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 0, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 2, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 4, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 6, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 7, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  }
+]
+DR-013.json: schema errors [
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 2, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 4, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 5, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 7, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 8, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  }
+]
+DR-057.json: schema errors [
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 0, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 4, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 6, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 7, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 10, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  }
+]
+DR-096.json: schema errors [
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 2, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 3, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 4, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 6, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  },
+  {
+    origin: 'string',
+    code: 'too_small',
+    minimum: 20,
+    inclusive: true,
+    path: [ 'criteria', 7, 'reasoning' ],
+    message: 'Too small: expected string to have >=20 characters'
+  }
+]
+Validated 10 assessments: 1 passed, 9 failed.

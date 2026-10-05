@@ -27,6 +27,8 @@ Resume rule: find the last phase marked done below and continue from the next on
 10. Level 4 status maps to the framework's yes / no / maybe: pass = "No (nothing inappropriate)", concern or insufficient = "Maybe", fail = "Yes (conflicts with public policy)".
 11. Similarity = 0.65 x TF-IDF cosine on rule text + 0.35 x feature overlap (categories 0.35, trigger types 0.45, threshold 0.1, lookback 0.1). Top 5 per rule, with the best precedent forced into the list if none made the top 5.
 12. Precedents: 14 approved rules (AP-01 to AP-14) from slide 12 with invented insurers from a separate name set and illustrative approval years 2015-2023; 6 framework common examples (FX-01 to FX-06, slide 3); 5 illustrative non-compliant examples (NC-01 to NC-05, slide 5).
+14. Scoring calibration (once): 15 weight/threshold configurations all matched the 13 anchors, so the starting values (40/35/25; 75/50) were kept and frozen. See prompt-log entry 7.
+15. Findings are authored in compact form (`data/authoring/batch-*.ts`) and expanded mechanically; `common.ts` holds standard wording for recurring findings.
 13. Added a fifth decision option, "Route to eligibility-rule process", used only when the AI recommendation is Out of scope.
 
 ## Open issues
@@ -39,4 +41,6 @@ Resume rule: find the last phase marked done below and continue from the next on
 - Precedent registry: 25 entries (14 approved, 6 framework common examples, 5 illustrative non-compliant).
 - Issue codes: 25. Criteria per assessment: 15 (Level 1: 3, Level 2: 6, Level 3: 5, Level 4: 1).
 - Citation registry: 28 entries; 7 verified (framework deck), 21 unverified (official sites blocked).
+- Pilot v1: 1 of 10 passed validation; v2 re-run: 10 of 10 passed; recommendations unchanged between v1 and v2.
+- Calibration: 15 configurations tested, 13 of 13 anchors matched in every one; minimum margin with frozen values 5.8 points.
 - Similarity sanity: DR-012 top-1 = AP-07 (0.896); DR-001 top-1 = AP-02 (0.988); DR-013 top-1 = NC-05 (0.557).

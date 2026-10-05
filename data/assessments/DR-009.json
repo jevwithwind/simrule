@@ -1,0 +1,354 @@
+{
+  "id": "DR-009",
+  "extracted": {
+    "trigger": "Prior cancellation by another insurer for misrepresentation",
+    "thresholdCount": null,
+    "lookbackYears": 5,
+    "populationAffected": "Applicants cancelled by another insurer for material misrepresentation in the preceding 5 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 5 years"
+    ],
+    "undefinedTerms": [
+      "material misrepresentation",
+      "cancelled by another insurer"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a prior cancellation for misrepresentation. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cancelled by another insurer for material misrepresentation"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A prior cancellation is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The approved fraud rules (AP-05, FX-06) require a conviction, which DR-009 does not.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Misrepresentation is relevant to an insurer, but this rule reflects another insurer's finding rather than the applicant's established conduct. The applicant's own risk profile is not tested.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cancelled by another insurer"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A prior cancellation for misrepresentation does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "One insurer's cancellation, which may be disputed or mistaken, would lock the consumer out of this insurer for 5 years. If other insurers adopt the same rule, a single decision could cascade across the market.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Avoiding applicants who have actually misrepresented facts reduces claims and investigation costs for other policyholders. The cost concern is legitimate when misrepresentation is established.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "elevated moral hazard"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "COPYCAT_REFERENCE"
+      ],
+      "reasoning": "The insurer outsources its judgment to whichever insurer cancelled the policy. That favours the insurer's convenience over a fair look at the consumer's own record.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cancelled by another insurer"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "The consumer may never have accepted that they misrepresented anything. A decline based on another company's finding gives them little way to understand or contest it with this insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "material misrepresentation"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "COPYCAT_REFERENCE",
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "The trigger is another insurer's decision to cancel, which is that insurer's judgment and not a verified fact or legal finding. The framework lists rules that refer to the actions of another insurer as a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cancelled by another insurer for material misrepresentation"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for a 5-year lookback. The approved fraud-conviction rule uses 10 years, but for a conviction, not a cancellation.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "Proven misrepresentation links to moral hazard. A cancellation by another insurer is not proof, so the link depends on that insurer having been right.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "A documented history of misrepresentation"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale relies on the principle of moral hazard, not data. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Material misrepresentation\" is not defined, and different insurers apply it differently. The rule would inherit every other insurer's definition.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "material misrepresentation"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Maybe: protecting the system from misrepresentation is legitimate. Letting one insurer's decision automatically exclude a consumer elsewhere weakens Take All Comers.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FSRA_TAC_INFO"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-05",
+      "similarity": 0.058,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines 1 or more auto insurance fraud convictions in 10 years. AP-05 relies on a court conviction; DR-009 relies on another insurer's cancellation decision, which is the key difference."
+    },
+    {
+      "refId": "DR-049",
+      "similarity": 0.205,
+      "relation": "similar",
+      "explanation": "Same insurer (Granite Mutual Insurance) also proposes declining people who submitted a fraudulent claim without a conviction. Both replace a legal finding with an insurer's view; review together."
+    },
+    {
+      "refId": "DR-056",
+      "similarity": 0.025,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines people denied by Facility Association. Same copycat pattern: relying on another insurer's decision."
+    },
+    {
+      "refId": "DR-085",
+      "similarity": 0.237,
+      "relation": "materially_different",
+      "explanation": "Pending Beacon Fire & Casualty rule declines inconsistent applications. Both concern misrepresentation, but DR-085 relies on the insurer's own application rather than another insurer's decision."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Consumers cancelled by any insurer for alleged misrepresentation in the last 5 years, including those who disputed it.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Consumers who made honest mistakes on applications",
+      "Consumers with limited English or literacy"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "How would the insurer verify the reason for another insurer's cancellation?",
+    "Can the rule rely on the applicant's own misstatements on this application instead?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Redrafting the rule around facts the insurer can verify itself, such as a fraud conviction or a material misstatement on this application, would remove the copycat defect."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on the copycat ground and record the redraft path.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 3 fail."
+    },
+    {
+      "action": "Review with DR-049 and DR-056 for consistent treatment of rules that rely on other insurers' decisions.",
+      "owner": "Analyst",
+      "reason": "Consistency."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
