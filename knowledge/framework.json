@@ -1,0 +1,274 @@
+{
+  "version": "1.0.0",
+  "name": "Simrule assessment framework",
+  "source": {
+    "title": "Auto Insurance Underwriting Rule Assessment: A Regulatory Evaluation Framework",
+    "file": "source/aip-w3-assignmentunderwriting-rule-assessment.pdf",
+    "note": "Academic framework deck. Not representative of the views, positions or policies of FSRA. Extracted into structured data from the PDF itself."
+  },
+  "context": {
+    "takeAllComers": "In Ontario, private insurers may not decline auto insurance to a consumer unless the regulator has approved the ground in advance. This is the Take All Comers rule under the Insurance Act. It keeps mandatory auto insurance broadly available.",
+    "declineRule": "An underwriting decline rule is an insurer's right to decline an auto insurance policy, or a coverage, based on criteria the regulator has approved. It is an approved exception to Take All Comers.",
+    "existingRules": "Underwriting rules differ by insurer but are often similar. An approved rule is not approved forever. A rule that already exists at another insurer is a consideration, not a guarantee of approval.",
+    "evolvingStandards": "Market changes and public policy can change what is allowed. FSRA's principles and fair consumer outcomes set a higher fairness standard, so past practice may not be allowed in future.",
+    "commonDeclineRules": [
+      "Use of personal vehicle for business purposes (consumer needs commercial insurance)",
+      "Part-time use of vehicle for package delivery",
+      "Deny insurance on any rebuilt vehicles",
+      "A pattern of at-fault accidents and tickets over a 3-year period",
+      "A combination of at-fault accidents or tickets over a short period AND cancellations for missed payments",
+      "A previous fraud conviction"
+    ],
+    "pages": { "whatIsARule": 3, "regulatoryContext": 4, "evaluationQuestions": 5, "rejectionReasons": 6, "scope": 7, "levels": 8, "principles": 10, "legislation": 11, "approvedExamples": 12 }
+  },
+  "scope": {
+    "inScope": {
+      "key": "DECLINE_RULE",
+      "label": "Underwriting decline rule",
+      "definition": "The right to decline to offer an auto insurance policy to a consumer."
+    },
+    "outOfScope": {
+      "key": "ELIGIBILITY_RULE",
+      "label": "Underwriting eligibility rule",
+      "definition": "Criteria to be eligible for certain optional coverages or coverage limits. If the consumer does not meet the criteria, the insurer may decline that coverage or limit.",
+      "routing": "Route to the eligibility-rule review process. Simrule does not assess eligibility rules."
+    }
+  },
+  "evaluationQuestions": [
+    {
+      "question": "Is it compliant with all existing regulatory legislation and regulations?",
+      "evaluation": "Check against all legislation and regulations. Check against the Human Rights Code and the Canadian Charter of Rights and Freedoms.",
+      "nonCompliantExample": "Deny insurance on the basis that someone has never had insurance before.",
+      "level": 1
+    },
+    {
+      "question": "Is it aligned with the regulator's principles and fair consumer outcomes?",
+      "evaluation": "Interpretation of the principles and fair consumer outcomes.",
+      "nonCompliantExample": "Deny insurance to anyone with a vehicle that is one of the top three most stolen vehicles in Ontario.",
+      "level": 2
+    },
+    {
+      "question": "Is it subjective? Is it arbitrary? Does it have a direct relationship with the risk? Does it conflict with public policy priorities?",
+      "evaluation": "Do they have actuarial data or analysis? How did they define the rule? Can they demonstrate a clear link to driver behaviour or claims exposure? Does it feel like the right thing to do? Why or why not?",
+      "nonCompliantExample": "Deny insurance to people who drive red cars on the basis that they are likely to drive faster. Deny insurance to someone accused of a crime they were not convicted of. Deny insurance to someone who changed insurers more than two times in 10 years.",
+      "level": 3
+    },
+    {
+      "question": "Does the rule exist already with another insurer?",
+      "evaluation": "Check the current list for the same or very similar rule in language or intent.",
+      "nonCompliantExample": "Usually, if a rule already exists and is not problematic, it will be approved for another insurer with supporting analysis. On re-evaluation of current conditions and guidance, the same rule may be declined.",
+      "level": 1
+    }
+  ],
+  "rejectionReasons": [
+    { "key": "NOT_RISK_RELEVANT", "name": "Not risk-relevant", "description": "The proposed rule is not based on any characteristic of the insured that is relevant to the risk.", "issueCodes": ["NOT_RISK_RELEVANT", "WEAK_RISK_LINK"] },
+    { "key": "VAGUE_LANGUAGE", "name": "Vague language", "description": "The vagueness and ambiguity of the language used in the rule might invite many interpretations.", "issueCodes": ["VAGUE_LANGUAGE", "OVERBROAD_SCOPE", "SUBJECTIVE_JUDGMENT"] },
+    { "key": "COPYCAT_RULE", "name": "Copycat rule", "description": "The rule might inappropriately refer to the actions of another insurer.", "issueCodes": ["COPYCAT_REFERENCE"] },
+    { "key": "HUMAN_RIGHTS_VIOLATION", "name": "Human rights violation", "description": "Any grounds which transgress the Human Rights Code and the Canadian Charter of Rights and Freedoms.", "issueCodes": ["HUMAN_RIGHTS_PROTECTED_GROUND", "PROXY_FOR_PROTECTED_GROUND"] },
+    { "key": "CONTRARY_TO_LEGISLATION", "name": "Contrary to legislation", "description": "The rule is contrary to current legislation such as the Insurance Act, UDAP, or published FSRA guidance.", "issueCodes": ["CONTRARY_TO_LEGISLATION", "PROHIBITED_FACTOR"] },
+    { "key": "DISCRIMINATORY_IMPACT", "name": "Discriminatory impact", "description": "The rule may decline newly licensed drivers or drivers new to Canada.", "issueCodes": ["DISCRIMINATORY_IMPACT_NEW_DRIVERS", "DISCRIMINATORY_IMPACT_NEW_TO_CANADA"] }
+  ],
+  "principles": [
+    { "key": "ACCURATE", "name": "Accurate Pricing and Underwriting", "outcome": "Premiums and coverages closely reflect consumers' individual risk profile. Risk profiles are determined by driving behaviour, experience, driving distance, location, vehicle, and other relevant risk factors." },
+    { "key": "NO_DISCRIMINATION", "name": "Absence of Unfair Discrimination, Bias, or Proxies", "outcome": "Rating and underwriting practices are free from unfair discrimination and bias. Decisions are not directly or indirectly influenced by protected grounds under the Ontario Human Rights Code. Criteria are not used that are direct or indirect proxies for protected or prohibited variables." },
+    { "key": "ACCESSIBLE", "name": "Accessible Products and Coverages", "outcome": "Rating and underwriting practices balance pricing accuracy with accessibility and suitability. Decisions would not unfairly impact the ability of consumers to access critical auto insurance coverages." },
+    { "key": "COST_MITIGATION", "name": "Cost Mitigation", "outcome": "Insurers prevent unnecessary and excessive costs from being passed onto consumers." },
+    { "key": "BALANCED", "name": "Balanced Profitability and Consumer Interests", "outcome": "Insurers balance their needs for sustainable growth and profitability with fair treatment of consumers. Premiums are based on reasonable profit assumptions." },
+    { "key": "CLEAR_COMMUNICATION", "name": "Clear Consumer Communications", "outcome": "Communications impacting policyholder rights are clear and timely. Consumers can access information to understand factors influencing pricing, underwriting and implications for future claims. Communications are delivered through convenient mediums utilizing current technology." }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "name": "Basic Compliance",
+      "required": true,
+      "evaluation": "Test against the Acts, existing legislation, regulation and guidance; the Human Rights Code and the Canadian Charter of Rights and Freedoms; and whether the rule already exists in the market.",
+      "resultExpected": "If not compliant, refer to the relevant Acts, regulations or guidance. If the rule already exists, reference that rule by another insurer and when it was approved (year).",
+      "scoringRole": "Gate. Any Level 1 fail is a full-stop recommendation to decline. Level 1 does not add to the score.",
+      "criteria": [
+        { "key": "L1_LEGISLATION", "label": "Legislation, regulation and guidance", "question": "Is the rule compliant with the Insurance Act, its regulations, the UDAP Rule and published FSRA guidance?" },
+        { "key": "L1_HUMAN_RIGHTS", "label": "Human Rights Code and Charter", "question": "Does the rule use a protected ground, or a close proxy for one, outside what the Human Rights Code allows for insurance contracts?" },
+        { "key": "L1_MARKET", "label": "Already exists in the market", "question": "Has the same or a very similar rule been approved for another insurer? If so, which insurer and when?" }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Interpretation of Principles and Fair Consumer Outcomes",
+      "required": false,
+      "evaluation": "Test against the six principles and fair consumer outcomes in the framework appendix.",
+      "resultExpected": "List any problematic aspects of the proposal against the principles and fair consumer outcomes. Explain what does not seem appropriate.",
+      "scoringRole": "Weighted into the score.",
+      "criteria": [
+        { "key": "L2_ACCURATE", "label": "Accurate pricing and underwriting", "principle": "ACCURATE", "question": "Does the rule reflect the individual applicant's risk profile?" },
+        { "key": "L2_NO_DISCRIMINATION", "label": "Absence of unfair discrimination, bias or proxies", "principle": "NO_DISCRIMINATION", "question": "Is the rule free of direct or indirect use of protected grounds or proxies for them?" },
+        { "key": "L2_ACCESSIBLE", "label": "Accessible products and coverages", "principle": "ACCESSIBLE", "question": "Would the rule unfairly limit consumers' access to mandatory auto insurance?" },
+        { "key": "L2_COST_MITIGATION", "label": "Cost mitigation", "principle": "COST_MITIGATION", "question": "Does the rule avoid passing unnecessary or excessive costs to consumers, including declined consumers?" },
+        { "key": "L2_BALANCED", "label": "Balanced profitability and consumer interests", "principle": "BALANCED", "question": "Does the rule balance the insurer's profitability with fair treatment of consumers?" },
+        { "key": "L2_CLEAR_COMMUNICATION", "label": "Clear consumer communications", "principle": "CLEAR_COMMUNICATION", "question": "Could a consumer understand why they were declined and what they can do about it?" }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Check to Ensure the Risk Is Not Subjective, Arbitrary and Has a Direct Relationship with the Risk",
+      "required": false,
+      "evaluation": "Do they have actuarial data or analysis? How did they define the rule and what informed it? Can they show a clear link to driver behaviour or claims exposure?",
+      "resultExpected": "Explain whether the rule is objective, non-arbitrary, supported and directly linked to risk.",
+      "scoringRole": "Weighted into the score.",
+      "criteria": [
+        { "key": "L3_NOT_SUBJECTIVE", "label": "Not subjective", "question": "Is the rule applied on objective, verifiable facts rather than insurer judgment?" },
+        { "key": "L3_NOT_ARBITRARY", "label": "Not arbitrary", "question": "Are the thresholds and lookback periods reasoned rather than arbitrary?" },
+        { "key": "L3_RISK_LINK", "label": "Direct relationship to risk", "question": "Is there a clear, direct link to driver behaviour or claims exposure?" },
+        { "key": "L3_ACTUARIAL", "label": "Actuarial support", "question": "Has the insurer supplied actuarial data or analysis that supports the rule?" },
+        { "key": "L3_DEFINITION", "label": "Definition clarity", "question": "Are the terms defined clearly enough to be applied the same way every time?" }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "Public Policy Filter",
+      "required": false,
+      "evaluation": "As a government agency responsible for protecting consumers and ensuring fair treatment, is there anything about this proposal that does not seem appropriate?",
+      "resultExpected": "Yes, no or maybe, with an explanation.",
+      "scoringRole": "Weighted into the score.",
+      "criteria": [
+        { "key": "L4_PUBLIC_POLICY", "label": "Public policy filter", "question": "Is there anything about this proposal that does not seem appropriate for a consumer protection regulator to approve?" }
+      ]
+    }
+  ],
+  "publicPolicyAnswers": {
+    "pass": "No: nothing about the proposal appears inappropriate",
+    "concern": "Maybe: some aspects need justification",
+    "insufficient_information": "Maybe: cannot judge without more information",
+    "fail": "Yes: the proposal conflicts with public policy priorities"
+  },
+  "statuses": [
+    { "key": "pass", "label": "Meets standard", "icon": "check" },
+    { "key": "concern", "label": "Concern", "icon": "alert" },
+    { "key": "fail", "label": "Does not meet standard", "icon": "x" },
+    { "key": "insufficient_information", "label": "Insufficient information", "icon": "help" }
+  ],
+  "marketCheckStatusMeaning": {
+    "pass": "An approved rule with the same or similar intent exists in the precedent registry.",
+    "insufficient_information": "No same or similar approved rule found. The rule is assessed on its own merits.",
+    "concern": "The closest match is an illustrative non-compliant example, or the matching precedent may no longer meet current standards.",
+    "fail": "Not used for the market check."
+  },
+  "severities": [
+    { "key": "low", "label": "Low" },
+    { "key": "medium", "label": "Medium" },
+    { "key": "high", "label": "High" }
+  ],
+  "issueCodes": [
+    { "code": "OUT_OF_SCOPE_ELIGIBILITY", "label": "Eligibility rule, not a decline rule", "level": 1, "defaultSeverity": "medium", "remedy": "Refile through the eligibility-rule process for optional coverages or limits." },
+    { "code": "CONTRARY_TO_LEGISLATION", "label": "Contrary to legislation or published guidance", "level": 1, "defaultSeverity": "high", "remedy": "Withdraw the rule or redraft it so it is consistent with the Insurance Act, the UDAP Rule and FSRA guidance." },
+    { "code": "PROHIBITED_FACTOR", "label": "Uses a factor that regulation or guidance restricts", "level": 1, "defaultSeverity": "high", "remedy": "Remove the restricted factor (for example credit information, a coverage lapse or an administrative licence lapse) or limit it to the uses the rules allow." },
+    { "code": "HUMAN_RIGHTS_PROTECTED_GROUND", "label": "Uses a protected ground under the Human Rights Code", "level": 1, "defaultSeverity": "high", "remedy": "Remove the protected ground. Where the Code's insurance provision may apply (age, sex, marital status, family status, disability), show reasonable and bona fide grounds with data." },
+    { "code": "PROXY_FOR_PROTECTED_GROUND", "label": "Acts as a proxy for a protected ground", "level": 2, "defaultSeverity": "high", "remedy": "Replace the proxy with a direct, behaviour-based risk factor and test the rule for disparate impact." },
+    { "code": "DISCRIMINATORY_IMPACT_NEW_DRIVERS", "label": "Declines newly licensed or inexperienced drivers", "level": 2, "defaultSeverity": "high", "remedy": "Address inexperience through rating, not a decline, so new drivers can still buy mandatory coverage." },
+    { "code": "DISCRIMINATORY_IMPACT_NEW_TO_CANADA", "label": "Declines drivers who are new to Canada", "level": 2, "defaultSeverity": "high", "remedy": "Accept verifiable foreign driving history and rate for limited Canadian experience instead of declining." },
+    { "code": "ALLEGATION_NOT_CONVICTION", "label": "Relies on an allegation, charge or investigation, not a conviction", "level": 3, "defaultSeverity": "high", "remedy": "Base the rule on convictions or other final, verifiable outcomes." },
+    { "code": "NOT_RISK_RELEVANT", "label": "Not based on a risk-relevant characteristic of the insured", "level": 3, "defaultSeverity": "high", "remedy": "Tie the rule to driving behaviour, vehicle use or claims exposure, or withdraw it." },
+    { "code": "WEAK_RISK_LINK", "label": "Link to driving risk is indirect or weak", "level": 3, "defaultSeverity": "medium", "remedy": "Provide data showing a direct link to claims frequency or severity, or narrow the rule to the risky behaviour itself." },
+    { "code": "NO_ACTUARIAL_SUPPORT", "label": "No actuarial data or analysis supplied", "level": 3, "defaultSeverity": "medium", "remedy": "Submit the actuarial analysis that supports the trigger, threshold and lookback period." },
+    { "code": "VAGUE_LANGUAGE", "label": "Vague or undefined terms", "level": 3, "defaultSeverity": "medium", "remedy": "Define each key term so the rule is applied the same way to every applicant." },
+    { "code": "SUBJECTIVE_JUDGMENT", "label": "Depends on subjective insurer judgment", "level": 3, "defaultSeverity": "medium", "remedy": "Replace judgment calls with objective, verifiable criteria." },
+    { "code": "OVERBROAD_SCOPE", "label": "Reaches more consumers than the stated risk justifies", "level": 3, "defaultSeverity": "medium", "remedy": "Narrow the rule to the specific behaviour or condition that drives the risk." },
+    { "code": "ARBITRARY_THRESHOLD", "label": "Threshold or lookback period appears arbitrary", "level": 3, "defaultSeverity": "medium", "remedy": "Explain how the threshold and lookback were chosen and show the supporting data." },
+    { "code": "COPYCAT_REFERENCE", "label": "Relies on another insurer's actions or on 'industry practice'", "level": 3, "defaultSeverity": "medium", "remedy": "Justify the rule on the insurer's own risk analysis, not on another insurer's decision or general practice." },
+    { "code": "LESS_RESTRICTIVE_ALTERNATIVE", "label": "A less restrictive tool would address the risk", "level": 2, "defaultSeverity": "medium", "remedy": "Use rating, an endorsement, a driver exclusion or a verification step instead of a full decline." },
+    { "code": "ACCESSIBILITY_IMPACT", "label": "Limits access to mandatory auto insurance", "level": 2, "defaultSeverity": "medium", "remedy": "Show that affected consumers keep reasonable access to coverage, or narrow the rule." },
+    { "code": "UNFAIR_COST_SHIFT", "label": "Shifts unnecessary cost to consumers", "level": 2, "defaultSeverity": "medium", "remedy": "Show the rule does not push consumers into higher-cost markets without a matching risk reason." },
+    { "code": "UNCLEAR_CONSUMER_COMMUNICATION", "label": "Consumer could not easily understand or contest the decline", "level": 2, "defaultSeverity": "low", "remedy": "Explain how declined consumers will be told the reason, the evidence used and how to correct errors." },
+    { "code": "PRIVACY_INTRUSION", "label": "Requires intrusive collection of personal information", "level": 4, "defaultSeverity": "medium", "remedy": "Remove the need to collect sensitive information that is not necessary to assess driving risk." },
+    { "code": "PUBLIC_POLICY_CONFLICT", "label": "Conflicts with public policy priorities", "level": 4, "defaultSeverity": "high", "remedy": "Withdraw the rule. It penalises conduct or circumstances that public policy protects or encourages." },
+    { "code": "PRECEDENT_APPROVED_MATCH", "label": "Matches an approved precedent", "level": 1, "defaultSeverity": "low", "remedy": "No change needed for the match itself. Supply supporting analysis, as approval for another insurer is a consideration, not a guarantee." },
+    { "code": "PRECEDENT_NON_COMPLIANT_MATCH", "label": "Resembles an illustrative non-compliant example", "level": 1, "defaultSeverity": "high", "remedy": "Explain what makes the rule materially different from the non-compliant example, or withdraw it." },
+    { "code": "PENDING_SIMILAR_SUBMISSION", "label": "Similar submission pending from another insurer", "level": 1, "defaultSeverity": "low", "remedy": "No insurer action. Reviewers should assess the similar submissions together for consistency." }
+  ],
+  "scoring": {
+    "statusValues": { "pass": 1, "concern": 0.5, "insufficient_information": 0.5, "fail": 0 },
+    "weights": { "2": 40, "3": 35, "4": 25 },
+    "thresholds": { "approveWithConditions": 75, "requestMoreInformation": 50 },
+    "materialInsufficientSeverities": ["medium", "high"],
+    "formula": "Score = sum over Levels 2 to 4 of (Level weight x average criterion value). Criterion values: pass 1, concern 0.5, insufficient information 0.5, fail 0.",
+    "ruleOrder": [
+      "1. Out of scope (eligibility rule) -> Out of scope: route to the eligibility-rule process.",
+      "2. Any Level 1 criterion fails -> Recommend decline (hard stop, per the framework).",
+      "3. Any high-severity fail at Levels 2 to 4 -> Recommend decline.",
+      "4. Score below 50 -> Recommend decline.",
+      "5. Score 50 to 74, or any material (medium or high severity) insufficient-information finding at Levels 2 to 4 -> Request more information.",
+      "6. Score 75 or above -> Approve with conditions."
+    ],
+    "seniorReviewFlags": [
+      "AI confidence is low.",
+      "Any Level 1 criterion is a concern."
+    ],
+    "calibration": "Weights and thresholds were calibrated once against the sanity anchors after the pilot, then frozen. See PROGRESS.md."
+  },
+  "recommendations": [
+    { "key": "APPROVE_WITH_CONDITIONS", "label": "Approve with conditions", "description": "The rule appears to meet the framework. Approval should carry conditions." },
+    { "key": "REQUEST_MORE_INFORMATION", "label": "Request more information", "description": "The rule may be approvable, but evidence, definitions or narrowing are needed first." },
+    { "key": "RECOMMEND_DECLINE", "label": "Recommend decline", "description": "The rule does not meet the framework as written." },
+    { "key": "OUT_OF_SCOPE", "label": "Out of scope", "description": "This is an eligibility rule, not a decline rule. Route to the eligibility-rule process." }
+  ],
+  "standardConditions": [
+    "Supporting actuarial analysis must be filed before the rule is used. No submission in this set includes actuarial data.",
+    "Key terms must be defined in the filing (definitions and explanations section).",
+    "The insurer must tell declined consumers the specific reason and how to correct inaccurate information."
+  ],
+  "decisionOptions": [
+    { "key": "APPROVE_WITH_CONDITIONS", "label": "Approve with conditions", "matchesRecommendation": "APPROVE_WITH_CONDITIONS" },
+    { "key": "REQUEST_INFORMATION", "label": "Request information from insurer", "matchesRecommendation": "REQUEST_MORE_INFORMATION" },
+    { "key": "DECLINE", "label": "Decline", "matchesRecommendation": "RECOMMEND_DECLINE" },
+    { "key": "ESCALATE", "label": "Escalate", "matchesRecommendation": null },
+    { "key": "ROUTE_OUT_OF_SCOPE", "label": "Route to eligibility-rule process", "matchesRecommendation": "OUT_OF_SCOPE" }
+  ],
+  "seniorSignOffTriggers": [
+    { "key": "DIVERGES_FROM_AI", "label": "Decision differs from the AI recommendation" },
+    { "key": "LEVEL1_OVERRIDDEN", "label": "A Level 1 finding was overridden" },
+    { "key": "LOW_CONFIDENCE", "label": "AI confidence is low" },
+    { "key": "LEVEL1_CONCERN", "label": "AI flagged a Level 1 concern" },
+    { "key": "ESCALATED", "label": "Analyst escalated the decision" }
+  ],
+  "overrideReasonCodes": [
+    { "key": "AI_MISREAD_RULE", "label": "AI misread the rule wording" },
+    { "key": "ADDITIONAL_CONTEXT", "label": "Reviewer has context the AI did not" },
+    { "key": "LEGAL_INTERPRETATION", "label": "Different legal or regulatory interpretation" },
+    { "key": "EVIDENCE_WEIGHT", "label": "Weighs the evidence differently" },
+    { "key": "PRECEDENT_APPLIES_DIFFERENTLY", "label": "Precedent applies differently" },
+    { "key": "POLICY_PRIORITY", "label": "Current public policy priority" },
+    { "key": "OTHER", "label": "Other (explain)" }
+  ],
+  "workflowStages": [
+    { "key": "RECEIVED", "label": "Received", "owner": "System" },
+    { "key": "INTAKE", "label": "Intake and completeness check", "owner": "Analyst" },
+    { "key": "AI_PRE_ASSESSMENT", "label": "AI pre-assessment", "owner": "AI (advisory)" },
+    { "key": "ANALYST_REVIEW", "label": "Analyst review", "owner": "Analyst" },
+    { "key": "INFO_REQUESTED", "label": "Information requested", "owner": "Insurer" },
+    { "key": "SENIOR_SIGN_OFF", "label": "Senior sign-off", "owner": "Senior reviewer" },
+    { "key": "DECIDED", "label": "Decision recorded", "owner": "Analyst or Senior reviewer" },
+    { "key": "CLOSED", "label": "Closed", "owner": "System" }
+  ],
+  "completenessChecklist": {
+    "label": "Prototype checklist",
+    "note": "Items marked 'FSRA filing guideline' are drawn from a summary of FSRA's Filing Guidelines for Underwriting Rules that could not be fetched and verified (network blocked). Treat them as a prototype checklist until confirmed.",
+    "items": [
+      { "key": "INSURER", "label": "Submitting insurer identified", "source": "Framework", "appliesTo": "rule" },
+      { "key": "DATE", "label": "Date submitted", "source": "Framework", "appliesTo": "rule" },
+      { "key": "RULE_TEXT", "label": "Proposed rule wording", "source": "Framework", "appliesTo": "rule" },
+      { "key": "RATIONALE", "label": "Insurer's stated rationale", "source": "Framework", "appliesTo": "rule" },
+      { "key": "CATEGORY", "label": "Rule category", "source": "Framework", "appliesTo": "rule" },
+      { "key": "SCOPE", "label": "Decline rule, not an eligibility rule for optional coverage", "source": "Framework", "appliesTo": "rule" },
+      { "key": "DEFINITIONS", "label": "Definitions and explanations of key terms", "source": "FSRA filing guideline (unverified)", "appliesTo": "rule" },
+      { "key": "ACTUARIAL", "label": "Actuarial data or analysis supporting the rule", "source": "Framework; FSRA filing guideline (unverified)", "appliesTo": "rule" },
+      { "key": "CONSUMER_NOTICE", "label": "How declined consumers are told the reason", "source": "Framework principle: Clear Consumer Communications", "appliesTo": "rule" },
+      { "key": "SUMMARY_FORM", "label": "Summary of information form", "source": "FSRA filing guideline (unverified)", "appliesTo": "package" },
+      { "key": "CERTIFICATE", "label": "Certificate of an official", "source": "FSRA filing guideline (unverified)", "appliesTo": "package" },
+      { "key": "CONSOLIDATED_LIST", "label": "Consolidated list of the insurer's underwriting rules", "source": "FSRA filing guideline (unverified)", "appliesTo": "package" }
+    ]
+  },
+  "productPrinciples": [
+    { "key": "HUMAN_IN_THE_LOOP", "name": "Human-in-the-loop", "summary": "AI augments, never replaces. Reviewers validate, override or approve every recommendation.", "whereInProduct": ["Intake: reviewer confirms or edits the extracted rule before triage", "Rule review: Accept or Override on every criterion, with a mandatory reason", "Senior sign-off when a decision diverges from the AI, a Level 1 finding is overridden, or confidence is low", "Decision rationale is final only after the reviewer confirms ownership", "Role switcher shows who can do what"] },
+    { "key": "TRANSPARENCY", "name": "Transparency", "summary": "Show why something was flagged or recommended, not just that it was.", "whereInProduct": ["Score breakdown by Level with the formula visible", "Issue codes with plain-language labels", "Evidence quotes highlighted in the rule text and rationale", "Citation badges: verified or section not verified", "Provenance: prompt version, framework version, date", "How it works page publishes weights and thresholds"] },
+    { "key": "CONSISTENCY", "name": "Consistency", "summary": "Similar applications are treated similarly.", "whereInProduct": ["One framework and one issue-code list for every rule", "Deterministic scoring code, not the language model, produces the recommendation", "Similar rules panel with same, similar or materially different explanations", "Review together for pending similar submissions", "Consistency monitor flags similar rules with different outcomes"] },
+    { "key": "CONSUMER_PROTECTION", "name": "Consumer protection", "summary": "Keep the consumer visible throughout.", "whereInProduct": ["Consumer lens on every rule: who could be refused, likely consequence, vulnerable groups", "Level 2 principles and Level 4 public policy filter", "Standard condition: declined consumers told the reason and how to correct errors", "Dashboard counts consumer-impact severity"] }
+  ]
+}

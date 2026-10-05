@@ -1,0 +1,1147 @@
+[
+  {
+    "id": "DR-001",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-09-12",
+    "ruleText": "Decline to insure any applicant with 3 or more at-fault accidents in the preceding 3 years.",
+    "rationale": "Historical claims data demonstrates a strong correlation between multiple at-fault accidents and future claims frequency. This threshold reflects an unacceptable level of demonstrated risk.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-002",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-10-03",
+    "ruleText": "Decline to insure any applicant who has had their licence suspended for impaired driving within the preceding 5 years.",
+    "rationale": "Impaired driving suspensions are a strong predictor of future high-severity claims. A 5-year lookback period reflects the sustained elevated risk profile.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-003",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-08-22",
+    "ruleText": "Decline to insure any vehicle primarily used for food delivery through app-based platforms.",
+    "rationale": "App-based food delivery significantly increases kilometres driven, time on the road, and frequency of stops in high-traffic areas, all of which elevate claims exposure beyond what personal auto rating contemplates.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-004",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-11-15",
+    "ruleText": "Decline to insure any applicant who does not own the vehicle listed on the policy.",
+    "rationale": "Non-ownership creates ambiguity around insurable interest and increases the likelihood of moral hazard and fraudulent claims.",
+    "categories": [
+      "Ownership",
+      "Insurable Interest"
+    ],
+    "categoryLabel": "Ownership / Insurable Interest"
+  },
+  {
+    "id": "DR-005",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-07-30",
+    "ruleText": "Decline to insure any applicant whose primary language is not English or French.",
+    "rationale": "Communication barriers may result in inaccurate policy information and increased disputes. Ensuring clear communication protects both the insurer and the consumer.",
+    "categories": [
+      "Demographic"
+    ],
+    "categoryLabel": "Demographic"
+  },
+  {
+    "id": "DR-006",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-09-05",
+    "ruleText": "Decline to insure any vehicle that has been declared a total loss and subsequently rebuilt.",
+    "rationale": "Rebuilt vehicles carry elevated mechanical and structural risk that is difficult to assess through standard inspection. Claims on rebuilt vehicles tend to involve disputes over pre-existing damage versus new damage.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-007",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-10-18",
+    "ruleText": "Decline to insure any applicant under the age of 21.",
+    "rationale": "Drivers under 21 represent a statistically higher-risk group. Our portfolio cannot sustain the loss ratios associated with this demographic without jeopardizing the affordability of premiums for other policyholders.",
+    "categories": [
+      "Demographic"
+    ],
+    "categoryLabel": "Demographic"
+  },
+  {
+    "id": "DR-008",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-08-11",
+    "ruleText": "Decline to insure any applicant with 1 or more Criminal Code convictions related to the operation of a motor vehicle in the preceding 3 years.",
+    "rationale": "Criminal Code driving convictions indicate a pattern of dangerous behaviour that materially elevates risk. This rule is consistent with industry practice.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-009",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-11-02",
+    "ruleText": "Decline to insure any applicant who has been cancelled by another insurer for material misrepresentation on their application within the preceding 5 years.",
+    "rationale": "A documented history of misrepresentation undermines the foundation of the insurance contract and signals elevated moral hazard.",
+    "categories": [
+      "Claims",
+      "Fraud History"
+    ],
+    "categoryLabel": "Claims / Fraud History"
+  },
+  {
+    "id": "DR-010",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-06-20",
+    "ruleText": "Decline to insure any applicant who resides in a postal code where the average claims cost exceeds 150% of the provincial average.",
+    "rationale": "Geographic concentration of high-cost claims creates unsustainable exposure. This rule allows us to manage portfolio risk in areas with demonstrated adverse loss experience.",
+    "categories": [
+      "Geographic"
+    ],
+    "categoryLabel": "Geographic"
+  },
+  {
+    "id": "DR-011",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-09-28",
+    "ruleText": "Decline to insure any applicant with a credit score below 600.",
+    "rationale": "Credit score is a well-documented predictor of insurance claims frequency. Lower credit scores correlate with higher loss ratios across our book of business.",
+    "categories": [
+      "Financial",
+      "Behavioural"
+    ],
+    "categoryLabel": "Financial / Behavioural"
+  },
+  {
+    "id": "DR-012",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-10-14",
+    "ruleText": "Decline to insure any vehicle used on a racetrack or in any organized race, speed test, or competition.",
+    "rationale": "Vehicles used in racing or speed competitions are exposed to extreme mechanical stress and collision risk that falls outside the scope of standard personal auto coverage.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-013",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-07-09",
+    "ruleText": "Decline to insure any applicant who has changed insurance providers more than 3 times in the preceding 2 years.",
+    "rationale": "Frequent switching may indicate adverse selection behaviour, where the applicant is seeking coverage only when they anticipate a claim or is being non-renewed by other carriers for undisclosed reasons.",
+    "categories": [
+      "Behavioural"
+    ],
+    "categoryLabel": "Behavioural"
+  },
+  {
+    "id": "DR-014",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-08-30",
+    "ruleText": "Decline to insure any applicant who has been convicted of insurance fraud within the preceding 10 years.",
+    "rationale": "Fraud convictions represent the most direct evidence of moral hazard. A 10-year lookback is proportionate to the severity of the offence.",
+    "categories": [
+      "Claims",
+      "Fraud History"
+    ],
+    "categoryLabel": "Claims / Fraud History"
+  },
+  {
+    "id": "DR-015",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-11-22",
+    "ruleText": "Decline to insure any applicant who is currently involved in litigation against any insurance company.",
+    "rationale": "Active litigation suggests a pattern of disputed claims and adversarial behaviour that increases administrative cost and claims exposure.",
+    "categories": [
+      "Behavioural"
+    ],
+    "categoryLabel": "Behavioural"
+  },
+  {
+    "id": "DR-016",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-09-17",
+    "ruleText": "Decline to insure any vehicle with an engine displacement exceeding 6.0 litres.",
+    "rationale": "High-displacement engines are associated with higher speeds, greater severity of collisions, and more expensive repairs. This threshold reflects the point at which our actuarial data shows a material increase in claims cost.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-017",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-10-25",
+    "ruleText": "Decline to insure any applicant who has received social assistance or disability benefits within the preceding 12 months.",
+    "rationale": "Applicants receiving social assistance may face financial pressures that increase the likelihood of premium non-payment and policy lapse, creating administrative cost and coverage gaps.",
+    "categories": [
+      "Financial",
+      "Demographic"
+    ],
+    "categoryLabel": "Financial / Demographic"
+  },
+  {
+    "id": "DR-018",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-08-05",
+    "ruleText": "Decline to insure any applicant whose licence has been valid for less than 12 months.",
+    "rationale": "Newly licensed drivers lack a driving history that would allow us to assess their risk profile. The first 12 months of driving represent the highest-risk period statistically.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-019",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-07-22",
+    "ruleText": "Decline to insure any vehicle that is more than 25 years old.",
+    "rationale": "Vehicles over 25 years old may lack modern safety features and are more difficult to value accurately for claims purposes, increasing the likelihood of disputes.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-020",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-11-08",
+    "ruleText": "Decline to insure any applicant who operates a home-based business and uses their personal vehicle for client visits more than 3 times per week.",
+    "rationale": "Regular business use of a personal vehicle materially changes the risk profile. More than 3 client visits per week represents a usage pattern closer to commercial than personal.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-021",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-06-15",
+    "ruleText": "Decline to insure any applicant who has been diagnosed with a medical condition that may impair their ability to drive safely.",
+    "rationale": "Medical conditions that affect driving ability increase accident risk. This rule protects both the applicant and other road users.",
+    "categories": [
+      "Medical",
+      "Demographic"
+    ],
+    "categoryLabel": "Medical / Demographic"
+  },
+  {
+    "id": "DR-022",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-09-30",
+    "ruleText": "Decline to insure any applicant with 2 or more cancellations for non-payment of premium within the preceding 3 years.",
+    "rationale": "Repeated non-payment cancellations indicate a pattern of financial instability that creates administrative burden and coverage gaps that are harmful to both the insurer and the consumer.",
+    "categories": [
+      "Payment History"
+    ],
+    "categoryLabel": "Payment History"
+  },
+  {
+    "id": "DR-023",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-10-07",
+    "ruleText": "Decline to insure any applicant who refuses to consent to the use of telematics monitoring for the first policy term.",
+    "rationale": "Telematics data allows us to price risk more accurately and reward safe driving. Refusal to participate prevents us from assessing the applicant's actual risk profile.",
+    "categories": [
+      "Behavioural"
+    ],
+    "categoryLabel": "Behavioural"
+  },
+  {
+    "id": "DR-024",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-08-19",
+    "ruleText": "Decline to insure any applicant who holds a G1 or G2 graduated licence (not a full G licence).",
+    "rationale": "Graduated licence holders are subject to driving restrictions that reflect their limited experience. Our actuarial data shows significantly higher claims frequency for G1 and G2 drivers.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-025",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-11-01",
+    "ruleText": "Decline to insure any applicant whose vehicle is registered to a business entity rather than an individual.",
+    "rationale": "Business-registered vehicles are more likely to be used by multiple drivers and for commercial purposes, both of which change the risk profile beyond what personal auto rating accommodates.",
+    "categories": [
+      "Ownership",
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Ownership / Vehicle Use"
+  },
+  {
+    "id": "DR-026",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-07-14",
+    "ruleText": "Decline to insure any applicant who lives in a household with more than 4 licensed drivers.",
+    "rationale": "Households with a high number of licensed drivers present challenges in accurately identifying the principal operator and assessing aggregate risk exposure.",
+    "categories": [
+      "Household",
+      "Behavioural"
+    ],
+    "categoryLabel": "Household / Behavioural"
+  },
+  {
+    "id": "DR-027",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-09-22",
+    "ruleText": "Decline to insure any applicant who has had a lapse in auto insurance coverage exceeding 90 days within the preceding 3 years.",
+    "rationale": "Extended coverage lapses may indicate periods of unlicensed or uninsured driving and make it difficult to verify the applicant's recent claims and driving history.",
+    "categories": [
+      "Coverage History"
+    ],
+    "categoryLabel": "Coverage History"
+  },
+  {
+    "id": "DR-028",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-08-28",
+    "ruleText": "Decline to insure any applicant born outside of Canada.",
+    "rationale": "Applicants born outside Canada may have driving experience in jurisdictions with different road rules and safety standards, making risk assessment less reliable.",
+    "categories": [
+      "Demographic"
+    ],
+    "categoryLabel": "Demographic"
+  },
+  {
+    "id": "DR-029",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-10-11",
+    "ruleText": "Decline to insure any vehicle that has been modified with aftermarket performance parts (turbochargers, superchargers, nitrous oxide systems, or suspension lowering kits).",
+    "rationale": "Aftermarket performance modifications increase vehicle speed capability and alter handling characteristics, both of which are directly linked to increased collision severity.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-030",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-06-28",
+    "ruleText": "Decline to insure any applicant who is employed as a rideshare driver, even if the vehicle to be insured is not used for rideshare purposes.",
+    "rationale": "Rideshare drivers develop driving habits (extended hours, urban congestion, frequent stops) that carry over to personal driving and elevate risk even when not working.",
+    "categories": [
+      "Occupation",
+      "Behavioural"
+    ],
+    "categoryLabel": "Occupation / Behavioural"
+  },
+  {
+    "id": "DR-031",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-11-19",
+    "ruleText": "Decline to insure any applicant who has filed 3 or more not-at-fault claims in the preceding 5 years.",
+    "rationale": "While individual not-at-fault claims do not indicate driver error, a pattern of frequent claims regardless of fault correlates with higher future claims frequency in our data.",
+    "categories": [
+      "Claims History"
+    ],
+    "categoryLabel": "Claims History"
+  },
+  {
+    "id": "DR-032",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-07-03",
+    "ruleText": "Decline to insure any applicant who parks their vehicle on the street overnight rather than in a garage or private driveway.",
+    "rationale": "Street-parked vehicles are more susceptible to theft, vandalism, and hit-and-run damage. Our claims data shows a measurable increase in comprehensive claims for street-parked vehicles.",
+    "categories": [
+      "Geographic",
+      "Behavioural"
+    ],
+    "categoryLabel": "Geographic / Behavioural"
+  },
+  {
+    "id": "DR-033",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-08-14",
+    "ruleText": "Decline to insure any applicant with an improper class of licence for the vehicle to be insured, or whose licence is currently invalid or expired.",
+    "rationale": "Operating a vehicle without a valid and appropriate licence is a legal violation and voids the basis of the insurance contract.",
+    "categories": [
+      "Licensing"
+    ],
+    "categoryLabel": "Licensing"
+  },
+  {
+    "id": "DR-034",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-10-29",
+    "ruleText": "Decline to insure any applicant who has been the subject of a restraining order within the preceding 3 years.",
+    "rationale": "Restraining orders may indicate behavioural patterns associated with impulsivity and risk-taking, which correlate with elevated driving risk.",
+    "categories": [
+      "Behavioural",
+      "Legal"
+    ],
+    "categoryLabel": "Behavioural / Legal"
+  },
+  {
+    "id": "DR-035",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-09-08",
+    "ruleText": "Decline to insure any vehicle used for the purpose for which it was not originally designed (e.g., a passenger vehicle converted to carry cargo commercially).",
+    "rationale": "Vehicles used outside their design parameters present safety and liability risks that fall outside standard personal auto coverage assumptions.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-036",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-06-10",
+    "ruleText": "Decline to insure any applicant who has declared bankruptcy within the preceding 7 years.",
+    "rationale": "Bankruptcy is a strong indicator of financial instability that correlates with premium non-payment, policy lapse, and increased moral hazard in our actuarial analysis.",
+    "categories": [
+      "Financial",
+      "Behavioural"
+    ],
+    "categoryLabel": "Financial / Behavioural"
+  },
+  {
+    "id": "DR-037",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-11-04",
+    "ruleText": "Decline to insure any applicant who commutes more than 80 kilometres one way to their place of employment.",
+    "rationale": "Long-distance commuters accumulate significantly more annual kilometres, increasing exposure to collision risk proportionally. Our data shows a clear inflection point at 80 km.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-038",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-07-18",
+    "ruleText": "Decline to insure any applicant over the age of 80.",
+    "rationale": "Drivers over 80 experience age-related declines in reaction time, vision, and cognitive processing that are well documented in medical literature and reflected in our claims data.",
+    "categories": [
+      "Demographic"
+    ],
+    "categoryLabel": "Demographic"
+  },
+  {
+    "id": "DR-039",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-09-14",
+    "ruleText": "Decline to insure any applicant who fails to provide a valid email address at the time of application.",
+    "rationale": "Email is our primary communication channel for policy documents, renewal notices, and claims correspondence. Without a valid email, we cannot ensure timely and clear communication with the policyholder.",
+    "categories": [
+      "Administrative",
+      "Behavioural"
+    ],
+    "categoryLabel": "Administrative / Behavioural"
+  },
+  {
+    "id": "DR-040",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-10-21",
+    "ruleText": "Decline to insure any applicant who has 1 at-fault accident and 2 or more minor convictions within the preceding 3 years.",
+    "rationale": "The combination of an at-fault accident with multiple convictions indicates a pattern of poor driving behaviour that exceeds our risk tolerance. This compound threshold is consistent with industry practice.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-041",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-08-02",
+    "ruleText": "Decline to insure any applicant whose vehicle is listed on the Insurance Bureau of Canada's top 10 most stolen vehicles list for the current year.",
+    "rationale": "Vehicles with the highest theft rates generate disproportionate comprehensive claims costs. Declining these vehicles allows us to maintain affordable premiums for the broader portfolio.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-042",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-11-27",
+    "ruleText": "Decline to insure any applicant who has been charged with but not convicted of a Criminal Code offence related to driving within the preceding 3 years.",
+    "rationale": "Criminal charges, even without conviction, indicate involvement in serious driving incidents that elevate risk. Waiting for conviction outcomes would leave us exposed during the interim period.",
+    "categories": [
+      "Legal",
+      "Driving Record"
+    ],
+    "categoryLabel": "Legal / Driving Record"
+  },
+  {
+    "id": "DR-043",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-06-25",
+    "ruleText": "Decline to insure any applicant who uses their vehicle for volunteer emergency response (e.g., volunteer firefighter responding to calls using a personal vehicle).",
+    "rationale": "Emergency response driving involves high speeds, urgency, and unpredictable conditions that materially increase collision risk beyond standard personal use.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-044",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-09-19",
+    "ruleText": "Decline to insure any applicant who has outstanding unpaid premiums owed to our company or any of our affiliated companies.",
+    "rationale": "Outstanding premium debt represents a direct financial obligation to the insurer. Issuing a new policy while prior obligations remain unpaid is not commercially reasonable.",
+    "categories": [
+      "Payment History"
+    ],
+    "categoryLabel": "Payment History"
+  },
+  {
+    "id": "DR-045",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-10-08",
+    "ruleText": "Decline to insure any applicant whose surname matches a name on a federal sanctions or watchlist.",
+    "rationale": "Compliance with federal anti-money laundering and sanctions requirements is a legal obligation. Name matches warrant a decline pending further verification.",
+    "categories": [
+      "Legal",
+      "Compliance"
+    ],
+    "categoryLabel": "Legal / Compliance"
+  },
+  {
+    "id": "DR-046",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-07-28",
+    "ruleText": "Decline to insure any applicant who identifies as a student and drives more than 15,000 kilometres annually.",
+    "rationale": "Students who drive high annual kilometres represent a combination of inexperience and high exposure that our rating structure does not adequately price.",
+    "categories": [
+      "Demographic",
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Demographic / Vehicle Use"
+  },
+  {
+    "id": "DR-047",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-08-16",
+    "ruleText": "Decline to insure any vehicle used for police work, security patrol, or private investigation.",
+    "rationale": "These uses involve pursuit driving, extended idling, and exposure to confrontational situations that fall outside the scope of personal auto coverage.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-048",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-11-13",
+    "ruleText": "Decline to insure any applicant who has had 2 or more insurance policies cancelled for non-payment within the preceding 3 years AND 1 or more minor convictions within the preceding 3 years.",
+    "rationale": "The combination of payment instability and driving infractions indicates a compound risk profile. Each factor alone may be manageable, but together they exceed our underwriting tolerance.",
+    "categories": [
+      "Payment History",
+      "Driving Record"
+    ],
+    "categoryLabel": "Payment History / Driving Record"
+  },
+  {
+    "id": "DR-049",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-06-30",
+    "ruleText": "Decline to insure any applicant who has previously submitted a fraudulent claim to any insurer, regardless of whether a conviction was obtained.",
+    "rationale": "Fraudulent claims behaviour represents the highest form of moral hazard. A conviction should not be required when the insurer has documented evidence of fraud.",
+    "categories": [
+      "Claims",
+      "Fraud History"
+    ],
+    "categoryLabel": "Claims / Fraud History"
+  },
+  {
+    "id": "DR-050",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-09-25",
+    "ruleText": "Decline to insure any applicant who resides in a rural area more than 50 kilometres from the nearest auto body repair facility.",
+    "rationale": "Remote locations increase towing costs, delay repairs, and require extended rental vehicle periods, all of which inflate claims costs significantly.",
+    "categories": [
+      "Geographic"
+    ],
+    "categoryLabel": "Geographic"
+  },
+  {
+    "id": "DR-051",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-10-16",
+    "ruleText": "Decline to insure any applicant who has received 2 or more speeding convictions exceeding 30 km/h over the posted limit within the preceding 3 years.",
+    "rationale": "Excessive speeding convictions indicate a pattern of high-risk driving behaviour. Speeds exceeding 30 km/h over the limit are associated with significantly higher collision severity in our claims data.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-052",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-08-09",
+    "ruleText": "Decline to insure any applicant whose vehicle has a salvage title from any jurisdiction.",
+    "rationale": "Salvage-titled vehicles have sustained damage significant enough to be written off. Even after repair, structural integrity and safety system reliability cannot be guaranteed to the standard required for accurate risk assessment.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-053",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-11-06",
+    "ruleText": "Decline to insure any applicant who is a newcomer to Canada and has held a Canadian driver's licence for less than 24 months.",
+    "rationale": "Newcomers with limited Canadian driving experience lack a verifiable local driving history, making accurate risk assessment difficult. A 24-month threshold allows sufficient time to establish a domestic driving record.",
+    "categories": [
+      "Driving Record",
+      "Demographic"
+    ],
+    "categoryLabel": "Driving Record / Demographic"
+  },
+  {
+    "id": "DR-054",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-07-12",
+    "ruleText": "Decline to insure any applicant who operates a vehicle equipped with right-hand drive.",
+    "rationale": "Right-hand drive vehicles are designed for left-side-of-road jurisdictions and present visibility and manoeuvrability challenges on Canadian roads that increase collision risk.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-055",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-09-03",
+    "ruleText": "Decline to insure any applicant who works night shifts (between 11:00 PM and 6:00 AM) more than 3 days per week.",
+    "rationale": "Night shift workers commute during hours with higher rates of fatigue-related and impaired-driver collisions. Our data shows elevated claims frequency for this population.",
+    "categories": [
+      "Occupation",
+      "Behavioural"
+    ],
+    "categoryLabel": "Occupation / Behavioural"
+  },
+  {
+    "id": "DR-056",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-10-30",
+    "ruleText": "Decline to insure any applicant who has been denied coverage by Facility Association within the preceding 12 months.",
+    "rationale": "Facility Association serves as the insurer of last resort. A denial from Facility Association indicates a risk profile that exceeds even the residual market's tolerance.",
+    "categories": [
+      "Coverage History"
+    ],
+    "categoryLabel": "Coverage History"
+  },
+  {
+    "id": "DR-057",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-06-18",
+    "ruleText": "Decline to insure any applicant who uses their personal vehicle to transport hazardous materials, even in small quantities.",
+    "rationale": "The transport of hazardous materials introduces liability and environmental exposure that personal auto policies are not designed to cover, regardless of quantity.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-058",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-08-24",
+    "ruleText": "Decline to insure any applicant who has a household member with a suspended licence, even if that person is not listed as a driver on the policy.",
+    "rationale": "Household members with suspended licences represent an undisclosed exposure, as they may operate the insured vehicle without the policyholder's knowledge or consent.",
+    "categories": [
+      "Household",
+      "Behavioural"
+    ],
+    "categoryLabel": "Household / Behavioural"
+  },
+  {
+    "id": "DR-059",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-11-20",
+    "ruleText": "Decline to insure any applicant who has made a claim on a homeowner's or tenant's insurance policy within the preceding 2 years.",
+    "rationale": "Cross-line claims activity indicates a general propensity to file claims. Our internal analysis shows that applicants with recent property claims also have higher auto claims frequency.",
+    "categories": [
+      "Claims History",
+      "Behavioural"
+    ],
+    "categoryLabel": "Claims History / Behavioural"
+  },
+  {
+    "id": "DR-060",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-07-06",
+    "ruleText": "Decline to insure any applicant whose primary vehicle is registered in a province other than Ontario.",
+    "rationale": "Out-of-province registrations create jurisdictional complexity for claims handling and may indicate that the vehicle is not primarily garaged in Ontario, which affects our ability to rate the risk accurately.",
+    "categories": [
+      "Administrative",
+      "Geographic"
+    ],
+    "categoryLabel": "Administrative / Geographic"
+  },
+  {
+    "id": "DR-061",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-09-11",
+    "ruleText": "Decline to insure any applicant who has been the subject of a complaint filed with a provincial insurance ombudsman within the preceding 3 years.",
+    "rationale": "Ombudsman complaints indicate a pattern of disputes with insurers that may signal adversarial behaviour and increase administrative and legal costs.",
+    "categories": [
+      "Behavioural"
+    ],
+    "categoryLabel": "Behavioural"
+  },
+  {
+    "id": "DR-062",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-10-22",
+    "ruleText": "Decline to insure any vehicle with a market value below $3,000.",
+    "rationale": "Very low-value vehicles are disproportionately costly to insure relative to their value. Claims on these vehicles frequently exceed the vehicle's worth, and they often lack modern safety features.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-063",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-08-07",
+    "ruleText": "Decline to insure any applicant who has been terminated from employment for cause within the preceding 12 months.",
+    "rationale": "Termination for cause may indicate behavioural characteristics such as negligence or dishonesty that correlate with elevated insurance risk.",
+    "categories": [
+      "Occupation",
+      "Behavioural"
+    ],
+    "categoryLabel": "Occupation / Behavioural"
+  },
+  {
+    "id": "DR-064",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-11-09",
+    "ruleText": "Decline to insure any applicant who does not have a permanent residential address in Ontario.",
+    "rationale": "A permanent Ontario address is necessary to verify garaging location, determine appropriate territory rating, and ensure the applicant falls within our licensed jurisdiction.",
+    "categories": [
+      "Administrative",
+      "Geographic"
+    ],
+    "categoryLabel": "Administrative / Geographic"
+  },
+  {
+    "id": "DR-065",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-06-22",
+    "ruleText": "Decline to insure any applicant who has received a distracted driving conviction (e.g., handheld device use) within the preceding 2 years.",
+    "rationale": "Distracted driving is one of the leading causes of collisions in Ontario. Even a single conviction indicates a willingness to engage in behaviour that materially elevates risk.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-066",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-09-26",
+    "ruleText": "Decline to insure any applicant who is self-employed and cannot provide proof of income.",
+    "rationale": "Proof of income helps us assess the applicant's ability to maintain premium payments and validates the stated vehicle use. Without it, we cannot adequately assess the risk.",
+    "categories": [
+      "Financial",
+      "Administrative"
+    ],
+    "categoryLabel": "Financial / Administrative"
+  },
+  {
+    "id": "DR-067",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-07-15",
+    "ruleText": "Decline to insure any applicant who has a social media presence that depicts reckless or dangerous driving behaviour.",
+    "rationale": "Publicly available evidence of dangerous driving behaviour is relevant to risk assessment, even if it has not resulted in a conviction or claim.",
+    "categories": [
+      "Behavioural"
+    ],
+    "categoryLabel": "Behavioural"
+  },
+  {
+    "id": "DR-068",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-10-05",
+    "ruleText": "Decline to insure any vehicle equipped with autonomous or semi-autonomous driving features at Level 3 or above.",
+    "rationale": "The liability framework for autonomous vehicles is still evolving. Until regulatory clarity is established, the risk associated with these systems cannot be adequately assessed or priced.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-069",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-08-20",
+    "ruleText": "Decline to insure any applicant who has been the named defendant in a civil lawsuit involving a motor vehicle accident within the preceding 5 years.",
+    "rationale": "Being named as a defendant in a motor vehicle civil suit indicates involvement in a serious incident with unresolved liability, which represents an ongoing exposure.",
+    "categories": [
+      "Legal",
+      "Claims History"
+    ],
+    "categoryLabel": "Legal / Claims History"
+  },
+  {
+    "id": "DR-070",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-11-14",
+    "ruleText": "Decline to insure any applicant who rents their vehicle to others through a peer-to-peer car-sharing platform, even occasionally.",
+    "rationale": "Peer-to-peer car sharing introduces unknown drivers, increased usage, and commercial exposure that personal auto policies do not contemplate.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-071",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-11-25",
+    "ruleText": "Decline to insure any applicant who has received a conviction for racing or stunt driving under the Highway Traffic Act within the preceding 5 years.",
+    "rationale": "Stunt driving and racing convictions represent the most extreme form of dangerous driving behaviour. The 5-year lookback reflects the sustained risk these individuals present.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-072",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-06-14",
+    "ruleText": "Decline to insure any applicant who lists a P.O. Box as their primary mailing address and cannot provide a physical residential address.",
+    "rationale": "A physical address is required to determine garaging location and appropriate territory rating. A P.O. Box alone does not allow us to verify where the vehicle is kept.",
+    "categories": [
+      "Administrative"
+    ],
+    "categoryLabel": "Administrative"
+  },
+  {
+    "id": "DR-073",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-10-02",
+    "ruleText": "Decline to insure any applicant who has had their vehicle impounded within the preceding 3 years.",
+    "rationale": "Vehicle impoundment typically results from serious driving offences such as stunt driving, impaired driving, or driving while suspended. It is a strong indicator of high-risk behaviour.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-074",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-08-26",
+    "ruleText": "Decline to insure any applicant who is married to or lives with someone who has been convicted of insurance fraud.",
+    "rationale": "Cohabitation with a person convicted of fraud increases the risk of collusion and fraudulent claims activity on the shared household vehicle.",
+    "categories": [
+      "Household",
+      "Fraud History"
+    ],
+    "categoryLabel": "Household / Fraud History"
+  },
+  {
+    "id": "DR-075",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-07-20",
+    "ruleText": "Decline to insure any applicant who drives a vehicle with a foreign licence plate and has not re-registered it in Ontario within 90 days of establishing residency.",
+    "rationale": "Failure to re-register a vehicle within the required timeframe is a regulatory violation and creates ambiguity about the applicable jurisdiction for claims and coverage.",
+    "categories": [
+      "Administrative",
+      "Licensing"
+    ],
+    "categoryLabel": "Administrative / Licensing"
+  },
+  {
+    "id": "DR-076",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-09-07",
+    "ruleText": "Decline to insure any applicant who has voluntarily surrendered their licence and subsequently had it reinstated within the preceding 2 years.",
+    "rationale": "Voluntary licence surrender followed by reinstatement may indicate an attempt to reset a problematic driving record or avoid mandatory reporting of medical conditions.",
+    "categories": [
+      "Licensing",
+      "Behavioural"
+    ],
+    "categoryLabel": "Licensing / Behavioural"
+  },
+  {
+    "id": "DR-077",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-11-18",
+    "ruleText": "Decline to insure any applicant who cannot demonstrate at least 3 consecutive years of auto insurance coverage with a Canadian insurer.",
+    "rationale": "A minimum coverage history allows us to verify claims experience, assess risk, and confirm that the applicant has maintained continuous compliance with mandatory insurance requirements.",
+    "categories": [
+      "Coverage History"
+    ],
+    "categoryLabel": "Coverage History"
+  },
+  {
+    "id": "DR-078",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-06-08",
+    "ruleText": "Decline to insure any applicant whose vehicle is primarily garaged at a location different from their stated residential address.",
+    "rationale": "Garaging location is a primary factor in territory rating. A mismatch between residential address and garaging location suggests the risk is not being rated accurately.",
+    "categories": [
+      "Administrative",
+      "Geographic"
+    ],
+    "categoryLabel": "Administrative / Geographic"
+  },
+  {
+    "id": "DR-079",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-10-19",
+    "ruleText": "Decline to insure any applicant who uses their vehicle to tow a trailer commercially, including seasonal or part-time towing.",
+    "rationale": "Commercial towing introduces mechanical stress, liability exposure, and usage patterns that fall outside the scope of personal auto coverage regardless of frequency.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-080",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-08-13",
+    "ruleText": "Decline to insure any applicant who has a family member under the age of 16 residing in the household.",
+    "rationale": "Households with minors approaching driving age present a near-term risk of adding inexperienced drivers to the policy, which would materially change the risk profile.",
+    "categories": [
+      "Household",
+      "Demographic"
+    ],
+    "categoryLabel": "Household / Demographic"
+  },
+  {
+    "id": "DR-081",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-07-25",
+    "ruleText": "Decline to insure any applicant who holds dual citizenship with a country that does not have a reciprocal licence recognition agreement with Ontario.",
+    "rationale": "Dual citizenship with non-reciprocal jurisdictions raises questions about the validity and equivalency of driving experience obtained abroad.",
+    "categories": [
+      "Demographic",
+      "Licensing"
+    ],
+    "categoryLabel": "Demographic / Licensing"
+  },
+  {
+    "id": "DR-082",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-09-16",
+    "ruleText": "Decline to insure any applicant who has made 2 or more comprehensive claims (theft, vandalism, or weather damage) within the preceding 3 years.",
+    "rationale": "Repeated comprehensive claims, while not necessarily fault-related, indicate either elevated exposure or patterns of behaviour (such as inadequate vehicle security) that increase future claims likelihood.",
+    "categories": [
+      "Claims History"
+    ],
+    "categoryLabel": "Claims History"
+  },
+  {
+    "id": "DR-083",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-11-03",
+    "ruleText": "Decline to insure any applicant who has an active warrant for their arrest.",
+    "rationale": "An active warrant indicates unresolved legal matters that may affect the applicant's ability to maintain a valid licence and comply with policy conditions.",
+    "categories": [
+      "Legal"
+    ],
+    "categoryLabel": "Legal"
+  },
+  {
+    "id": "DR-084",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-06-19",
+    "ruleText": "Decline to insure any applicant who operates a vehicle with a gross vehicle weight rating exceeding 4,500 kg under a personal auto policy.",
+    "rationale": "Vehicles above this weight threshold require commercial rating and coverage. Personal auto policies are not designed to cover the liability and physical damage exposure associated with heavy vehicles.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-085",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-10-27",
+    "ruleText": "Decline to insure any applicant who has provided inconsistent information across two or more sections of their application.",
+    "rationale": "Internal inconsistencies in an application undermine the reliability of the information provided and may indicate carelessness or intentional misrepresentation.",
+    "categories": [
+      "Administrative",
+      "Fraud"
+    ],
+    "categoryLabel": "Administrative / Fraud"
+  },
+  {
+    "id": "DR-086",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-08-03",
+    "ruleText": "Decline to insure any applicant who is currently insured through Facility Association and is seeking to transfer to the voluntary market with no change in their risk profile.",
+    "rationale": "Applicants placed in the residual market were placed there because no voluntary market insurer would accept the risk. Without a demonstrated improvement in risk profile, the same conditions that led to residual market placement still apply.",
+    "categories": [
+      "Coverage History"
+    ],
+    "categoryLabel": "Coverage History"
+  },
+  {
+    "id": "DR-087",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-09-21",
+    "ruleText": "Decline to insure any applicant whose occupation involves regular travel to the United States using their personal vehicle.",
+    "rationale": "Cross-border travel introduces jurisdictional complexity, different liability environments, and increased annual kilometres that change the risk profile beyond standard Ontario personal auto assumptions.",
+    "categories": [
+      "Vehicle Use",
+      "Occupation"
+    ],
+    "categoryLabel": "Vehicle Use / Occupation"
+  },
+  {
+    "id": "DR-088",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-07-08",
+    "ruleText": "Decline to insure any applicant who has received a demerit point accumulation warning letter from the Ministry of Transportation within the preceding 2 years.",
+    "rationale": "A demerit point warning letter indicates the applicant is approaching the threshold for licence suspension, reflecting a sustained pattern of driving infractions.",
+    "categories": [
+      "Driving Record"
+    ],
+    "categoryLabel": "Driving Record"
+  },
+  {
+    "id": "DR-089",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-11-11",
+    "ruleText": "Decline to insure any applicant who refuses to disclose the names of all licensed drivers residing in their household.",
+    "rationale": "Full household driver disclosure is essential for accurate risk assessment. Refusal to disclose suggests the applicant may be concealing high-risk drivers who would have access to the insured vehicle.",
+    "categories": [
+      "Administrative",
+      "Household"
+    ],
+    "categoryLabel": "Administrative / Household"
+  },
+  {
+    "id": "DR-090",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-08-29",
+    "ruleText": "Decline to insure any applicant who has been denied a licence renewal by the Ministry of Transportation for medical reasons within the preceding 5 years, even if their licence has since been reinstated.",
+    "rationale": "A medical denial indicates a condition serious enough to warrant government intervention. Even after reinstatement, the underlying condition may present ongoing risk.",
+    "categories": [
+      "Medical",
+      "Licensing"
+    ],
+    "categoryLabel": "Medical / Licensing"
+  },
+  {
+    "id": "DR-091",
+    "insurer": "Clearwater General Insurance",
+    "dateSubmitted": "2024-10-09",
+    "ruleText": "Decline to insure any applicant who owns more than 5 vehicles registered for personal use.",
+    "rationale": "A large personal fleet increases the likelihood of unlisted drivers, inaccurate usage declarations, and difficulty monitoring aggregate exposure across multiple vehicles.",
+    "categories": [
+      "Administrative",
+      "Behavioural"
+    ],
+    "categoryLabel": "Administrative / Behavioural"
+  },
+  {
+    "id": "DR-092",
+    "insurer": "Northern Shield Insurance",
+    "dateSubmitted": "2024-06-27",
+    "ruleText": "Decline to insure any applicant who has a name that is similar to a name on our internal fraud watchlist.",
+    "rationale": "Name similarity to known fraud perpetrators warrants caution. This rule allows us to flag and decline applications that may be linked to organized fraud rings.",
+    "categories": [
+      "Fraud",
+      "Administrative"
+    ],
+    "categoryLabel": "Fraud / Administrative"
+  },
+  {
+    "id": "DR-093",
+    "insurer": "Lakefield Mutual",
+    "dateSubmitted": "2024-09-13",
+    "ruleText": "Decline to insure any applicant who uses their vehicle to transport foster children as part of a government-sponsored foster care arrangement.",
+    "rationale": "Transporting foster children introduces additional passenger liability and may involve frequent short trips to schools, appointments, and agency offices that increase exposure.",
+    "categories": [
+      "Vehicle Use",
+      "Behavioural"
+    ],
+    "categoryLabel": "Vehicle Use / Behavioural"
+  },
+  {
+    "id": "DR-094",
+    "insurer": "Grandview Insurance Group",
+    "dateSubmitted": "2024-07-31",
+    "ruleText": "Decline to insure any applicant who has had a licence suspension for unpaid fines within the preceding 3 years.",
+    "rationale": "A suspension for unpaid fines indicates both a pattern of driving infractions and financial irresponsibility, both of which are relevant to insurance risk.",
+    "categories": [
+      "Driving Record",
+      "Financial"
+    ],
+    "categoryLabel": "Driving Record / Financial"
+  },
+  {
+    "id": "DR-095",
+    "insurer": "Beacon Fire & Casualty",
+    "dateSubmitted": "2024-11-07",
+    "ruleText": "Decline to insure any applicant who has converted a personal vehicle into a mobile dwelling (e.g., van life conversion).",
+    "rationale": "Converted dwelling vehicles present unique liability, contents, and usage risks that personal auto policies are not designed to cover. These vehicles require specialty coverage.",
+    "categories": [
+      "Vehicle Type",
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Type / Vehicle Use"
+  },
+  {
+    "id": "DR-096",
+    "insurer": "Ridgeline Insurance Co.",
+    "dateSubmitted": "2024-08-18",
+    "ruleText": "Decline to insure any applicant who has been the subject of a child protective services investigation within the preceding 5 years.",
+    "rationale": "Child protective services involvement may indicate household instability and behavioural patterns that correlate with elevated risk across multiple insurance lines.",
+    "categories": [
+      "Behavioural",
+      "Demographic"
+    ],
+    "categoryLabel": "Behavioural / Demographic"
+  },
+  {
+    "id": "DR-097",
+    "insurer": "Maplewood Mutual",
+    "dateSubmitted": "2024-10-13",
+    "ruleText": "Decline to insure any applicant who drives a vehicle that has been imported from outside North America and is less than 15 years old.",
+    "rationale": "Recently imported non-North American vehicles may not meet Canadian safety standards, may lack compatible parts for repair, and present valuation challenges for claims purposes.",
+    "categories": [
+      "Vehicle Type"
+    ],
+    "categoryLabel": "Vehicle Type"
+  },
+  {
+    "id": "DR-098",
+    "insurer": "Lakeshore Indemnity",
+    "dateSubmitted": "2024-06-05",
+    "ruleText": "Decline to insure any applicant who has indicated on their application that they intend to use their vehicle for driving instruction, whether paid or unpaid.",
+    "rationale": "Driving instruction involves a learner operating the vehicle under supervision, which introduces a materially different and elevated risk profile compared to standard personal use.",
+    "categories": [
+      "Vehicle Use"
+    ],
+    "categoryLabel": "Vehicle Use"
+  },
+  {
+    "id": "DR-099",
+    "insurer": "Granite Mutual Insurance",
+    "dateSubmitted": "2024-09-29",
+    "ruleText": "Decline to insure any applicant who shares a residential address with 3 or more individuals who each hold separate auto insurance policies with different insurers.",
+    "rationale": "Multiple policyholders at a single address with different insurers creates complexity in determining principal operators and may indicate that drivers are being strategically distributed across carriers to obscure risk.",
+    "categories": [
+      "Household",
+      "Behavioural"
+    ],
+    "categoryLabel": "Household / Behavioural"
+  },
+  {
+    "id": "DR-100",
+    "insurer": "Birchwood Insurance Group",
+    "dateSubmitted": "2024-11-30",
+    "ruleText": "Decline to insure any applicant who has publicly advocated for the elimination of mandatory auto insurance requirements in Ontario.",
+    "rationale": "Public advocacy against mandatory insurance suggests a philosophical opposition to the insurance system that may correlate with non-compliance, moral hazard, and adversarial claims behaviour.",
+    "categories": [
+      "Behavioural",
+      "Political"
+    ],
+    "categoryLabel": "Behavioural / Political"
+  }
+]

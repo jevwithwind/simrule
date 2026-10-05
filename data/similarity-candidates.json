@@ -1,0 +1,6072 @@
+[
+ {
+  "id": "DR-001",
+  "features": {
+   "triggers": [
+    "AT_FAULT_ACCIDENTS"
+   ],
+   "threshold": 3,
+   "lookbackYears": 3,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-02",
+    "kind": "precedent",
+    "score": 0.988,
+    "textScore": 1,
+    "featureScore": 0.967,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-040",
+    "kind": "submission",
+    "score": 0.718,
+    "textScore": 0.705,
+    "featureScore": 0.742,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.555,
+    "textScore": 0.49,
+    "featureScore": 0.675,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-04",
+    "kind": "precedent",
+    "score": 0.455,
+    "textScore": 0.475,
+    "featureScore": 0.418,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-05",
+    "kind": "precedent",
+    "score": 0.355,
+    "textScore": 0.371,
+    "featureScore": 0.325,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-002",
+  "features": {
+   "triggers": [
+    "IMPAIRED_DRIVING",
+    "LICENCE_SUSPENSION"
+   ],
+   "threshold": null,
+   "lookbackYears": 5,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.307,
+    "textScore": 0.364,
+    "featureScore": 0.2,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-094",
+    "kind": "submission",
+    "score": 0.265,
+    "textScore": 0.133,
+    "featureScore": 0.51,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-024",
+    "kind": "submission",
+    "score": 0.26,
+    "textScore": 0.185,
+    "featureScore": 0.4,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-018",
+    "kind": "submission",
+    "score": 0.251,
+    "textScore": 0.171,
+    "featureScore": 0.4,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-12",
+    "kind": "precedent",
+    "score": 0.166,
+    "textScore": 0.229,
+    "featureScore": 0.05,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-003",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-070",
+    "kind": "submission",
+    "score": 0.447,
+    "textScore": 0.203,
+    "featureScore": 0.9,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-02",
+    "kind": "precedent",
+    "score": 0.441,
+    "textScore": 0.195,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-020",
+    "kind": "submission",
+    "score": 0.38,
+    "textScore": 0.127,
+    "featureScore": 0.85,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-057",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-079",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-004",
+  "features": {
+   "triggers": [
+    "OWNERSHIP"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "ownership",
+    "insurable interest"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-091",
+    "kind": "submission",
+    "score": 0.406,
+    "textScore": 0.356,
+    "featureScore": 0.5,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.256,
+    "textScore": 0.34,
+    "featureScore": 0.1,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-041",
+    "kind": "submission",
+    "score": 0.213,
+    "textScore": 0.274,
+    "featureScore": 0.1,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.188,
+    "textScore": 0.235,
+    "featureScore": 0.1,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.035,
+    "textScore": 0,
+    "featureScore": 0.1,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-005",
+  "features": {
+   "triggers": [
+    "ORIGIN_OR_LANGUAGE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-028",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-081",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-053",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.163,
+    "textScore": 0.197,
+    "featureScore": 0.1,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.035,
+    "textScore": 0,
+    "featureScore": 0.1,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-006",
+  "features": {
+   "triggers": [
+    "SALVAGE_REBUILT"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "FX-03",
+    "kind": "precedent",
+    "score": 0.596,
+    "textScore": 0.432,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-052",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-036",
+    "kind": "submission",
+    "score": 0.208,
+    "textScore": 0.293,
+    "featureScore": 0.05,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-019",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-007",
+  "features": {
+   "triggers": [
+    "AGE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-038",
+    "kind": "submission",
+    "score": 0.559,
+    "textScore": 0.376,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-080",
+    "kind": "submission",
+    "score": 0.34,
+    "textScore": 0.255,
+    "featureScore": 0.5,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-005",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-028",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.035,
+    "textScore": 0,
+    "featureScore": 0.1,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-008",
+  "features": {
+   "triggers": [
+    "CRIMINAL_CONVICTION"
+   ],
+   "threshold": 1,
+   "lookbackYears": 3,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-01",
+    "kind": "precedent",
+    "score": 0.702,
+    "textScore": 0.636,
+    "featureScore": 0.825,
+    "insurer": "Harbourview Assurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-042",
+    "kind": "submission",
+    "score": 0.373,
+    "textScore": 0.425,
+    "featureScore": 0.275,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-040",
+    "kind": "submission",
+    "score": 0.259,
+    "textScore": 0.13,
+    "featureScore": 0.5,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-051",
+    "kind": "submission",
+    "score": 0.221,
+    "textScore": 0.07,
+    "featureScore": 0.5,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-05",
+    "kind": "precedent",
+    "score": 0.207,
+    "textScore": 0.127,
+    "featureScore": 0.355,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-009",
+  "features": {
+   "triggers": [
+    "MISREPRESENTATION"
+   ],
+   "threshold": null,
+   "lookbackYears": 5,
+   "categories": [
+    "claims",
+    "fraud history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-085",
+    "kind": "submission",
+    "score": 0.237,
+    "textScore": 0.122,
+    "featureScore": 0.45,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-049",
+    "kind": "submission",
+    "score": 0.205,
+    "textScore": 0.1,
+    "featureScore": 0.4,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-014",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-048",
+    "kind": "submission",
+    "score": 0.149,
+    "textScore": 0.197,
+    "featureScore": 0.06,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.108,
+    "textScore": 0.139,
+    "featureScore": 0.05,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-010",
+  "features": {
+   "triggers": [
+    "GEOGRAPHIC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "geographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-050",
+    "kind": "submission",
+    "score": 0.28,
+    "textScore": 0.067,
+    "featureScore": 0.675,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-032",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-01",
+    "kind": "precedent",
+    "score": 0.094,
+    "textScore": 0.145,
+    "featureScore": 0,
+    "insurer": "Harbourview Assurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-011",
+  "features": {
+   "triggers": [
+    "FINANCIAL"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "financial",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-036",
+    "kind": "submission",
+    "score": 0.298,
+    "textScore": 0,
+    "featureScore": 0.85,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-017",
+    "kind": "submission",
+    "score": 0.216,
+    "textScore": 0,
+    "featureScore": 0.617,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-062",
+    "kind": "submission",
+    "score": 0.184,
+    "textScore": 0.23,
+    "featureScore": 0.1,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-066",
+    "kind": "submission",
+    "score": 0.155,
+    "textScore": 0,
+    "featureScore": 0.442,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.076,
+    "textScore": 0,
+    "featureScore": 0.217,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-012",
+  "features": {
+   "triggers": [
+    "RACING"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-07",
+    "kind": "precedent",
+    "score": 0.896,
+    "textScore": 0.894,
+    "featureScore": 0.9,
+    "insurer": "Westerly Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-13",
+    "kind": "precedent",
+    "score": 0.45,
+    "textScore": 0.424,
+    "featureScore": 0.5,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-071",
+    "kind": "submission",
+    "score": 0.176,
+    "textScore": 0.123,
+    "featureScore": 0.275,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-003",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-035",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-013",
+  "features": {
+   "triggers": [
+    "COVERAGE_HISTORY"
+   ],
+   "threshold": 4,
+   "lookbackYears": 2,
+   "categories": [
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.557,
+    "textScore": 0.469,
+    "featureScore": 0.72,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-086",
+    "kind": "submission",
+    "score": 0.253,
+    "textScore": 0.147,
+    "featureScore": 0.45,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-027",
+    "kind": "submission",
+    "score": 0.181,
+    "textScore": 0,
+    "featureScore": 0.517,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-056",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-039",
+    "kind": "submission",
+    "score": 0.167,
+    "textScore": 0.163,
+    "featureScore": 0.175,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-014",
+  "features": {
+   "triggers": [
+    "CRIMINAL_CONVICTION",
+    "FRAUD"
+   ],
+   "threshold": null,
+   "lookbackYears": 10,
+   "categories": [
+    "claims",
+    "fraud history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-05",
+    "kind": "precedent",
+    "score": 0.634,
+    "textScore": 0.617,
+    "featureScore": 0.667,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-074",
+    "kind": "submission",
+    "score": 0.501,
+    "textScore": 0.52,
+    "featureScore": 0.467,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "FX-06",
+    "kind": "precedent",
+    "score": 0.359,
+    "textScore": 0.31,
+    "featureScore": 0.45,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-04",
+    "kind": "precedent",
+    "score": 0.209,
+    "textScore": 0.294,
+    "featureScore": 0.05,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.204,
+    "textScore": 0.26,
+    "featureScore": 0.1,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-015",
+  "features": {
+   "triggers": [
+    "CIVIL_DISPUTES"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-061",
+    "kind": "submission",
+    "score": 0.298,
+    "textScore": 0,
+    "featureScore": 0.85,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-069",
+    "kind": "submission",
+    "score": 0.273,
+    "textScore": 0.152,
+    "featureScore": 0.5,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-044",
+    "kind": "submission",
+    "score": 0.182,
+    "textScore": 0.226,
+    "featureScore": 0.1,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-023",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-11",
+    "kind": "precedent",
+    "score": 0.12,
+    "textScore": 0.131,
+    "featureScore": 0.1,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-016",
+  "features": {
+   "triggers": [
+    "VEHICLE_SPEC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-084",
+    "kind": "submission",
+    "score": 0.396,
+    "textScore": 0.125,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-019",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-054",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-062",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-017",
+  "features": {
+   "triggers": [
+    "FINANCIAL"
+   ],
+   "threshold": null,
+   "lookbackYears": 1,
+   "categories": [
+    "financial",
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-036",
+    "kind": "submission",
+    "score": 0.221,
+    "textScore": 0,
+    "featureScore": 0.631,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-011",
+    "kind": "submission",
+    "score": 0.216,
+    "textScore": 0,
+    "featureScore": 0.617,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-018",
+    "kind": "submission",
+    "score": 0.163,
+    "textScore": 0.223,
+    "featureScore": 0.05,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-063",
+    "kind": "submission",
+    "score": 0.156,
+    "textScore": 0.159,
+    "featureScore": 0.15,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.029,
+    "textScore": 0,
+    "featureScore": 0.083,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-018",
+  "features": {
+   "triggers": [
+    "LICENCE_EXPERIENCE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-024",
+    "kind": "submission",
+    "score": 0.455,
+    "textScore": 0.216,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-09",
+    "kind": "precedent",
+    "score": 0.256,
+    "textScore": 0.34,
+    "featureScore": 0.1,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.251,
+    "textScore": 0.171,
+    "featureScore": 0.4,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-053",
+    "kind": "submission",
+    "score": 0.249,
+    "textScore": 0.114,
+    "featureScore": 0.5,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-12",
+    "kind": "precedent",
+    "score": 0.209,
+    "textScore": 0.267,
+    "featureScore": 0.1,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-019",
+  "features": {
+   "triggers": [
+    "VEHICLE_SPEC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-097",
+    "kind": "submission",
+    "score": 0.482,
+    "textScore": 0.257,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-054",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-062",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-020",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE"
+   ],
+   "threshold": 4,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "FX-01",
+    "kind": "precedent",
+    "score": 0.436,
+    "textScore": 0.213,
+    "featureScore": 0.85,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-003",
+    "kind": "submission",
+    "score": 0.38,
+    "textScore": 0.127,
+    "featureScore": 0.85,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-02",
+    "kind": "precedent",
+    "score": 0.376,
+    "textScore": 0.121,
+    "featureScore": 0.85,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-057",
+    "kind": "submission",
+    "score": 0.35,
+    "textScore": 0.081,
+    "featureScore": 0.85,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-079",
+    "kind": "submission",
+    "score": 0.343,
+    "textScore": 0.07,
+    "featureScore": 0.85,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-021",
+  "features": {
+   "triggers": [
+    "MEDICAL"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "medical",
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.209,
+    "textScore": 0.295,
+    "featureScore": 0.05,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-090",
+    "kind": "submission",
+    "score": 0.208,
+    "textScore": 0.108,
+    "featureScore": 0.392,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-046",
+    "kind": "submission",
+    "score": 0.113,
+    "textScore": 0.058,
+    "featureScore": 0.217,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.108,
+    "textScore": 0.113,
+    "featureScore": 0.1,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-005",
+    "kind": "submission",
+    "score": 0.096,
+    "textScore": 0,
+    "featureScore": 0.275,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": true
+   }
+  ]
+ },
+ {
+  "id": "DR-022",
+  "features": {
+   "triggers": [
+    "NON_PAYMENT"
+   ],
+   "threshold": 2,
+   "lookbackYears": 3,
+   "categories": [
+    "payment history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-03",
+    "kind": "precedent",
+    "score": 0.756,
+    "textScore": 0.84,
+    "featureScore": 0.6,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-04",
+    "kind": "precedent",
+    "score": 0.633,
+    "textScore": 0.739,
+    "featureScore": 0.435,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-048",
+    "kind": "submission",
+    "score": 0.48,
+    "textScore": 0.415,
+    "featureScore": 0.6,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-11",
+    "kind": "precedent",
+    "score": 0.37,
+    "textScore": 0.138,
+    "featureScore": 0.8,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-044",
+    "kind": "submission",
+    "score": 0.358,
+    "textScore": 0.12,
+    "featureScore": 0.8,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-023",
+  "features": {
+   "triggers": [
+    "MONITORING_CONSENT"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.161,
+    "textScore": 0.099,
+    "featureScore": 0.275,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-015",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-067",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-059",
+    "kind": "submission",
+    "score": 0.147,
+    "textScore": 0.106,
+    "featureScore": 0.225,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.096,
+    "textScore": 0,
+    "featureScore": 0.275,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-024",
+  "features": {
+   "triggers": [
+    "LICENCE_EXPERIENCE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-018",
+    "kind": "submission",
+    "score": 0.455,
+    "textScore": 0.216,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.26,
+    "textScore": 0.185,
+    "featureScore": 0.4,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-053",
+    "kind": "submission",
+    "score": 0.255,
+    "textScore": 0.123,
+    "featureScore": 0.5,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-12",
+    "kind": "precedent",
+    "score": 0.223,
+    "textScore": 0.289,
+    "featureScore": 0.1,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-094",
+    "kind": "submission",
+    "score": 0.188,
+    "textScore": 0.167,
+    "featureScore": 0.225,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": true
+   }
+  ]
+ },
+ {
+  "id": "DR-025",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE",
+    "OWNERSHIP"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "ownership",
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "FX-01",
+    "kind": "precedent",
+    "score": 0.299,
+    "textScore": 0.191,
+    "featureScore": 0.5,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-091",
+    "kind": "submission",
+    "score": 0.267,
+    "textScore": 0.262,
+    "featureScore": 0.275,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-020",
+    "kind": "submission",
+    "score": 0.257,
+    "textScore": 0.154,
+    "featureScore": 0.45,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-003",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-057",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-026",
+  "features": {
+   "triggers": [
+    "HOUSEHOLD"
+   ],
+   "threshold": 5,
+   "lookbackYears": null,
+   "categories": [
+    "household",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.532,
+    "textScore": 0.482,
+    "featureScore": 0.625,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-089",
+    "kind": "submission",
+    "score": 0.443,
+    "textScore": 0.47,
+    "featureScore": 0.392,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-074",
+    "kind": "submission",
+    "score": 0.31,
+    "textScore": 0.306,
+    "featureScore": 0.317,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-080",
+    "kind": "submission",
+    "score": 0.263,
+    "textScore": 0.194,
+    "featureScore": 0.392,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-09",
+    "kind": "precedent",
+    "score": 0.175,
+    "textScore": 0.243,
+    "featureScore": 0.05,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-027",
+  "features": {
+   "triggers": [
+    "COVERAGE_HISTORY"
+   ],
+   "threshold": null,
+   "lookbackYears": 3,
+   "categories": [
+    "coverage history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-077",
+    "kind": "submission",
+    "score": 0.452,
+    "textScore": 0.238,
+    "featureScore": 0.85,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-056",
+    "kind": "submission",
+    "score": 0.425,
+    "textScore": 0.178,
+    "featureScore": 0.883,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-086",
+    "kind": "submission",
+    "score": 0.298,
+    "textScore": 0,
+    "featureScore": 0.85,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-01",
+    "kind": "precedent",
+    "score": 0.298,
+    "textScore": 0,
+    "featureScore": 0.85,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.229,
+    "textScore": 0,
+    "featureScore": 0.655,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-028",
+  "features": {
+   "triggers": [
+    "ORIGIN_OR_LANGUAGE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-005",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-053",
+    "kind": "submission",
+    "score": 0.305,
+    "textScore": 0.199,
+    "featureScore": 0.5,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-081",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-097",
+    "kind": "submission",
+    "score": 0.176,
+    "textScore": 0.216,
+    "featureScore": 0.1,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.035,
+    "textScore": 0,
+    "featureScore": 0.1,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-029",
+  "features": {
+   "triggers": [
+    "MODIFICATION"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-14",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Westerly Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-13",
+    "kind": "precedent",
+    "score": 0.283,
+    "textScore": 0.167,
+    "featureScore": 0.5,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-006",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-019",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": true
+   }
+  ]
+ },
+ {
+  "id": "DR-030",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE",
+    "OCCUPATION_STATUS"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "occupation",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-055",
+    "kind": "submission",
+    "score": 0.219,
+    "textScore": 0,
+    "featureScore": 0.625,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-063",
+    "kind": "submission",
+    "score": 0.219,
+    "textScore": 0,
+    "featureScore": 0.625,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.213,
+    "textScore": 0.153,
+    "featureScore": 0.325,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-01",
+    "kind": "precedent",
+    "score": 0.185,
+    "textScore": 0.11,
+    "featureScore": 0.325,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-066",
+    "kind": "submission",
+    "score": 0.181,
+    "textScore": 0.143,
+    "featureScore": 0.25,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-031",
+  "features": {
+   "triggers": [
+    "CLAIMS_HISTORY"
+   ],
+   "threshold": 3,
+   "lookbackYears": 5,
+   "categories": [
+    "claims history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-082",
+    "kind": "submission",
+    "score": 0.436,
+    "textScore": 0.172,
+    "featureScore": 0.927,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-059",
+    "kind": "submission",
+    "score": 0.375,
+    "textScore": 0.219,
+    "featureScore": 0.665,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-001",
+    "kind": "submission",
+    "score": 0.293,
+    "textScore": 0.365,
+    "featureScore": 0.16,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-02",
+    "kind": "precedent",
+    "score": 0.282,
+    "textScore": 0.365,
+    "featureScore": 0.127,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-040",
+    "kind": "submission",
+    "score": 0.212,
+    "textScore": 0.257,
+    "featureScore": 0.127,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-032",
+  "features": {
+   "triggers": [
+    "GEOGRAPHIC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "geographic",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-078",
+    "kind": "submission",
+    "score": 0.33,
+    "textScore": 0.149,
+    "featureScore": 0.667,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-010",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.233,
+    "textScore": 0,
+    "featureScore": 0.667,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.233,
+    "textScore": 0,
+    "featureScore": 0.667,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.076,
+    "textScore": 0,
+    "featureScore": 0.217,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-033",
+  "features": {
+   "triggers": [
+    "LICENCE_VALIDITY"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "licensing"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-12",
+    "kind": "precedent",
+    "score": 0.829,
+    "textScore": 0.791,
+    "featureScore": 0.9,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-09",
+    "kind": "precedent",
+    "score": 0.456,
+    "textScore": 0.217,
+    "featureScore": 0.9,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-090",
+    "kind": "submission",
+    "score": 0.203,
+    "textScore": 0.192,
+    "featureScore": 0.225,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-024",
+    "kind": "submission",
+    "score": 0.184,
+    "textScore": 0.228,
+    "featureScore": 0.1,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-018",
+    "kind": "submission",
+    "score": 0.172,
+    "textScore": 0.211,
+    "featureScore": 0.1,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-034",
+  "features": {
+   "triggers": [
+    "CHARGES_OR_ALLEGATIONS"
+   ],
+   "threshold": null,
+   "lookbackYears": 3,
+   "categories": [
+    "behavioural",
+    "legal"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-096",
+    "kind": "submission",
+    "score": 0.374,
+    "textScore": 0.211,
+    "featureScore": 0.677,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-061",
+    "kind": "submission",
+    "score": 0.253,
+    "textScore": 0.214,
+    "featureScore": 0.325,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-042",
+    "kind": "submission",
+    "score": 0.251,
+    "textScore": 0,
+    "featureScore": 0.717,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-083",
+    "kind": "submission",
+    "score": 0.236,
+    "textScore": 0,
+    "featureScore": 0.675,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-04",
+    "kind": "precedent",
+    "score": 0.236,
+    "textScore": 0,
+    "featureScore": 0.675,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-035",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE",
+    "SPECIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-08",
+    "kind": "precedent",
+    "score": 0.516,
+    "textScore": 0.431,
+    "featureScore": 0.675,
+    "insurer": "Harbourview Assurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.327,
+    "textScore": 0.14,
+    "featureScore": 0.675,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-01",
+    "kind": "precedent",
+    "score": 0.302,
+    "textScore": 0.101,
+    "featureScore": 0.675,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-079",
+    "kind": "submission",
+    "score": 0.301,
+    "textScore": 0.1,
+    "featureScore": 0.675,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-095",
+    "kind": "submission",
+    "score": 0.253,
+    "textScore": 0.12,
+    "featureScore": 0.5,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": true
+   }
+  ]
+ },
+ {
+  "id": "DR-036",
+  "features": {
+   "triggers": [
+    "FINANCIAL"
+   ],
+   "threshold": null,
+   "lookbackYears": 7,
+   "categories": [
+    "financial",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-011",
+    "kind": "submission",
+    "score": 0.298,
+    "textScore": 0,
+    "featureScore": 0.85,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-017",
+    "kind": "submission",
+    "score": 0.221,
+    "textScore": 0,
+    "featureScore": 0.631,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-006",
+    "kind": "submission",
+    "score": 0.208,
+    "textScore": 0.293,
+    "featureScore": 0.05,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-066",
+    "kind": "submission",
+    "score": 0.137,
+    "textScore": 0,
+    "featureScore": 0.392,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": true
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.065,
+    "textScore": 0,
+    "featureScore": 0.187,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-037",
+  "features": {
+   "triggers": [
+    "OCCUPATION_STATUS",
+    "DISTANCE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-046",
+    "kind": "submission",
+    "score": 0.34,
+    "textScore": 0.133,
+    "featureScore": 0.725,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-087",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-063",
+    "kind": "submission",
+    "score": 0.222,
+    "textScore": 0.194,
+    "featureScore": 0.275,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-038",
+    "kind": "submission",
+    "score": 0.192,
+    "textScore": 0.241,
+    "featureScore": 0.1,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-038",
+  "features": {
+   "triggers": [
+    "AGE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-007",
+    "kind": "submission",
+    "score": 0.559,
+    "textScore": 0.376,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-080",
+    "kind": "submission",
+    "score": 0.32,
+    "textScore": 0.223,
+    "featureScore": 0.5,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-037",
+    "kind": "submission",
+    "score": 0.192,
+    "textScore": 0.241,
+    "featureScore": 0.1,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-005",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.156,
+    "textScore": 0.213,
+    "featureScore": 0.05,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-039",
+  "features": {
+   "triggers": [
+    "ADMINISTRATIVE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "administrative",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-072",
+    "kind": "submission",
+    "score": 0.355,
+    "textScore": 0.277,
+    "featureScore": 0.5,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-075",
+    "kind": "submission",
+    "score": 0.233,
+    "textScore": 0,
+    "featureScore": 0.667,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-085",
+    "kind": "submission",
+    "score": 0.212,
+    "textScore": 0.236,
+    "featureScore": 0.167,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-018",
+    "kind": "submission",
+    "score": 0.194,
+    "textScore": 0.244,
+    "featureScore": 0.1,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.128,
+    "textScore": 0.135,
+    "featureScore": 0.117,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-040",
+  "features": {
+   "triggers": [
+    "AT_FAULT_ACCIDENTS",
+    "TRAFFIC_CONVICTION"
+   ],
+   "threshold": 2,
+   "lookbackYears": 3,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-02",
+    "kind": "precedent",
+    "score": 0.729,
+    "textScore": 0.705,
+    "featureScore": 0.775,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-001",
+    "kind": "submission",
+    "score": 0.718,
+    "textScore": 0.705,
+    "featureScore": 0.742,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-04",
+    "kind": "precedent",
+    "score": 0.642,
+    "textScore": 0.673,
+    "featureScore": 0.585,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.54,
+    "textScore": 0.346,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-03",
+    "kind": "precedent",
+    "score": 0.434,
+    "textScore": 0.385,
+    "featureScore": 0.525,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-041",
+  "features": {
+   "triggers": [
+    "THEFT_RISK"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "NC-02",
+    "kind": "precedent",
+    "score": 0.592,
+    "textScore": 0.426,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-004",
+    "kind": "submission",
+    "score": 0.213,
+    "textScore": 0.274,
+    "featureScore": 0.1,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0.216,
+    "featureScore": 0.1,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-006",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-042",
+  "features": {
+   "triggers": [
+    "CHARGES_OR_ALLEGATIONS"
+   ],
+   "threshold": null,
+   "lookbackYears": 3,
+   "categories": [
+    "legal",
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-01",
+    "kind": "precedent",
+    "score": 0.43,
+    "textScore": 0.419,
+    "featureScore": 0.45,
+    "insurer": "Harbourview Assurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-008",
+    "kind": "submission",
+    "score": 0.373,
+    "textScore": 0.425,
+    "featureScore": 0.275,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-04",
+    "kind": "precedent",
+    "score": 0.343,
+    "textScore": 0.164,
+    "featureScore": 0.675,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-034",
+    "kind": "submission",
+    "score": 0.251,
+    "textScore": 0,
+    "featureScore": 0.717,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-083",
+    "kind": "submission",
+    "score": 0.236,
+    "textScore": 0,
+    "featureScore": 0.675,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-043",
+  "features": {
+   "triggers": [
+    "SPECIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-08",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Harbourview Assurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-10",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-095",
+    "kind": "submission",
+    "score": 0.296,
+    "textScore": 0.064,
+    "featureScore": 0.725,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-093",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-035",
+    "kind": "submission",
+    "score": 0.236,
+    "textScore": 0,
+    "featureScore": 0.675,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-044",
+  "features": {
+   "triggers": [
+    "NON_PAYMENT"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "payment history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-11",
+    "kind": "precedent",
+    "score": 0.655,
+    "textScore": 0.523,
+    "featureScore": 0.9,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-022",
+    "kind": "submission",
+    "score": 0.358,
+    "textScore": 0.12,
+    "featureScore": 0.8,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-03",
+    "kind": "precedent",
+    "score": 0.205,
+    "textScore": 0.101,
+    "featureScore": 0.4,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-015",
+    "kind": "submission",
+    "score": 0.182,
+    "textScore": 0.226,
+    "featureScore": 0.1,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-04",
+    "kind": "precedent",
+    "score": 0.171,
+    "textScore": 0.089,
+    "featureScore": 0.325,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-045",
+  "features": {
+   "triggers": [
+    "WATCHLIST"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "legal",
+    "compliance"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-092",
+    "kind": "submission",
+    "score": 0.336,
+    "textScore": 0.342,
+    "featureScore": 0.325,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-069",
+    "kind": "submission",
+    "score": 0.13,
+    "textScore": 0.11,
+    "featureScore": 0.167,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-089",
+    "kind": "submission",
+    "score": 0.114,
+    "textScore": 0.121,
+    "featureScore": 0.1,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-11",
+    "kind": "precedent",
+    "score": 0.097,
+    "textScore": 0.095,
+    "featureScore": 0.1,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-083",
+    "kind": "submission",
+    "score": 0.096,
+    "textScore": 0,
+    "featureScore": 0.275,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-046",
+  "features": {
+   "triggers": [
+    "OCCUPATION_STATUS",
+    "DISTANCE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "demographic",
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-037",
+    "kind": "submission",
+    "score": 0.34,
+    "textScore": 0.133,
+    "featureScore": 0.725,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-087",
+    "kind": "submission",
+    "score": 0.233,
+    "textScore": 0,
+    "featureScore": 0.667,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-097",
+    "kind": "submission",
+    "score": 0.17,
+    "textScore": 0.208,
+    "featureScore": 0.1,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-050",
+    "kind": "submission",
+    "score": 0.156,
+    "textScore": 0.105,
+    "featureScore": 0.25,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.116,
+    "textScore": 0.124,
+    "featureScore": 0.1,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-047",
+  "features": {
+   "triggers": [
+    "SPECIAL_USE",
+    "CHARGES_OR_ALLEGATIONS"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-10",
+    "kind": "precedent",
+    "score": 0.593,
+    "textScore": 0.549,
+    "featureScore": 0.675,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-043",
+    "kind": "submission",
+    "score": 0.236,
+    "textScore": 0,
+    "featureScore": 0.675,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-08",
+    "kind": "precedent",
+    "score": 0.236,
+    "textScore": 0,
+    "featureScore": 0.675,
+    "insurer": "Harbourview Assurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-035",
+    "kind": "submission",
+    "score": 0.21,
+    "textScore": 0,
+    "featureScore": 0.6,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-096",
+    "kind": "submission",
+    "score": 0.208,
+    "textScore": 0.172,
+    "featureScore": 0.275,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-048",
+  "features": {
+   "triggers": [
+    "TRAFFIC_CONVICTION",
+    "NON_PAYMENT"
+   ],
+   "threshold": 2,
+   "lookbackYears": 3,
+   "categories": [
+    "payment history",
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "AP-03",
+    "kind": "precedent",
+    "score": 0.766,
+    "textScore": 0.64,
+    "featureScore": 1,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-04",
+    "kind": "precedent",
+    "score": 0.632,
+    "textScore": 0.563,
+    "featureScore": 0.76,
+    "insurer": "Silverbirch Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-022",
+    "kind": "submission",
+    "score": 0.48,
+    "textScore": 0.415,
+    "featureScore": 0.6,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-040",
+    "kind": "submission",
+    "score": 0.431,
+    "textScore": 0.38,
+    "featureScore": 0.525,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-05",
+    "kind": "precedent",
+    "score": 0.302,
+    "textScore": 0.115,
+    "featureScore": 0.65,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-049",
+  "features": {
+   "triggers": [
+    "FRAUD",
+    "CLAIMS_HISTORY"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "claims",
+    "fraud history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "FX-06",
+    "kind": "precedent",
+    "score": 0.247,
+    "textScore": 0.111,
+    "featureScore": 0.5,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-009",
+    "kind": "submission",
+    "score": 0.205,
+    "textScore": 0.1,
+    "featureScore": 0.4,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-014",
+    "kind": "submission",
+    "score": 0.193,
+    "textScore": 0,
+    "featureScore": 0.55,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-031",
+    "kind": "submission",
+    "score": 0.189,
+    "textScore": 0.17,
+    "featureScore": 0.225,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-059",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0.12,
+    "featureScore": 0.275,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": true
+   }
+  ]
+ },
+ {
+  "id": "DR-050",
+  "features": {
+   "triggers": [
+    "GEOGRAPHIC",
+    "DISTANCE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "geographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-010",
+    "kind": "submission",
+    "score": 0.28,
+    "textScore": 0.067,
+    "featureScore": 0.675,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-032",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-05",
+    "kind": "precedent",
+    "score": 0.079,
+    "textScore": 0.121,
+    "featureScore": 0,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-051",
+  "features": {
+   "triggers": [
+    "TRAFFIC_CONVICTION"
+   ],
+   "threshold": 2,
+   "lookbackYears": 3,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-065",
+    "kind": "submission",
+    "score": 0.42,
+    "textScore": 0.18,
+    "featureScore": 0.867,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-040",
+    "kind": "submission",
+    "score": 0.337,
+    "textScore": 0.102,
+    "featureScore": 0.775,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-071",
+    "kind": "submission",
+    "score": 0.322,
+    "textScore": 0.153,
+    "featureScore": 0.635,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": true
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.313,
+    "textScore": 0.118,
+    "featureScore": 0.675,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-03",
+    "kind": "precedent",
+    "score": 0.261,
+    "textScore": 0.078,
+    "featureScore": 0.6,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-052",
+  "features": {
+   "triggers": [
+    "SALVAGE_REBUILT"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-006",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-03",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-019",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-029",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-053",
+  "features": {
+   "triggers": [
+    "LICENCE_EXPERIENCE",
+    "ORIGIN_OR_LANGUAGE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "driving record",
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-028",
+    "kind": "submission",
+    "score": 0.305,
+    "textScore": 0.199,
+    "featureScore": 0.5,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-024",
+    "kind": "submission",
+    "score": 0.255,
+    "textScore": 0.123,
+    "featureScore": 0.5,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-018",
+    "kind": "submission",
+    "score": 0.249,
+    "textScore": 0.114,
+    "featureScore": 0.5,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-09",
+    "kind": "precedent",
+    "score": 0.227,
+    "textScore": 0.295,
+    "featureScore": 0.1,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-081",
+    "kind": "submission",
+    "score": 0.189,
+    "textScore": 0.053,
+    "featureScore": 0.442,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-054",
+  "features": {
+   "triggers": [
+    "VEHICLE_SPEC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-068",
+    "kind": "submission",
+    "score": 0.446,
+    "textScore": 0.201,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-084",
+    "kind": "submission",
+    "score": 0.401,
+    "textScore": 0.133,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-097",
+    "kind": "submission",
+    "score": 0.365,
+    "textScore": 0.076,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.352,
+    "textScore": 0.151,
+    "featureScore": 0.725,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-055",
+  "features": {
+   "triggers": [
+    "OCCUPATION_STATUS"
+   ],
+   "threshold": 4,
+   "lookbackYears": null,
+   "categories": [
+    "occupation",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-063",
+    "kind": "submission",
+    "score": 0.28,
+    "textScore": 0,
+    "featureScore": 0.8,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-030",
+    "kind": "submission",
+    "score": 0.219,
+    "textScore": 0,
+    "featureScore": 0.625,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-087",
+    "kind": "submission",
+    "score": 0.137,
+    "textScore": 0,
+    "featureScore": 0.392,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-10",
+    "kind": "precedent",
+    "score": 0.127,
+    "textScore": 0.169,
+    "featureScore": 0.05,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-020",
+    "kind": "submission",
+    "score": 0.111,
+    "textScore": 0.09,
+    "featureScore": 0.15,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-056",
+  "features": {
+   "triggers": [
+    "COVERAGE_HISTORY"
+   ],
+   "threshold": null,
+   "lookbackYears": 1,
+   "categories": [
+    "coverage history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-086",
+    "kind": "submission",
+    "score": 0.455,
+    "textScore": 0.243,
+    "featureScore": 0.85,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-027",
+    "kind": "submission",
+    "score": 0.425,
+    "textScore": 0.178,
+    "featureScore": 0.883,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-077",
+    "kind": "submission",
+    "score": 0.396,
+    "textScore": 0.151,
+    "featureScore": 0.85,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-01",
+    "kind": "precedent",
+    "score": 0.298,
+    "textScore": 0,
+    "featureScore": 0.85,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.222,
+    "textScore": 0,
+    "featureScore": 0.635,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-057",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "FX-01",
+    "kind": "precedent",
+    "score": 0.381,
+    "textScore": 0.101,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-020",
+    "kind": "submission",
+    "score": 0.35,
+    "textScore": 0.081,
+    "featureScore": 0.85,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-003",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-070",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-079",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-058",
+  "features": {
+   "triggers": [
+    "LICENCE_SUSPENSION",
+    "HOUSEHOLD"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "household",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-026",
+    "kind": "submission",
+    "score": 0.532,
+    "textScore": 0.482,
+    "featureScore": 0.625,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-089",
+    "kind": "submission",
+    "score": 0.354,
+    "textScore": 0.346,
+    "featureScore": 0.367,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-080",
+    "kind": "submission",
+    "score": 0.338,
+    "textScore": 0.323,
+    "featureScore": 0.367,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.307,
+    "textScore": 0.364,
+    "featureScore": 0.2,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-09",
+    "kind": "precedent",
+    "score": 0.151,
+    "textScore": 0.179,
+    "featureScore": 0.1,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-059",
+  "features": {
+   "triggers": [
+    "CLAIMS_HISTORY"
+   ],
+   "threshold": null,
+   "lookbackYears": 2,
+   "categories": [
+    "claims history",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-082",
+    "kind": "submission",
+    "score": 0.43,
+    "textScore": 0.288,
+    "featureScore": 0.692,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-031",
+    "kind": "submission",
+    "score": 0.375,
+    "textScore": 0.219,
+    "featureScore": 0.665,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-049",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0.12,
+    "featureScore": 0.275,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-023",
+    "kind": "submission",
+    "score": 0.147,
+    "textScore": 0.106,
+    "featureScore": 0.225,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.058,
+    "textScore": 0,
+    "featureScore": 0.167,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-060",
+  "features": {
+   "triggers": [
+    "GEOGRAPHIC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "administrative",
+    "geographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.415,
+    "textScore": 0.153,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-078",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-072",
+    "kind": "submission",
+    "score": 0.258,
+    "textScore": 0.127,
+    "featureScore": 0.5,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-010",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "NC-02",
+    "kind": "precedent",
+    "score": 0.128,
+    "textScore": 0.144,
+    "featureScore": 0.1,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-061",
+  "features": {
+   "triggers": [
+    "CIVIL_DISPUTES"
+   ],
+   "threshold": null,
+   "lookbackYears": 3,
+   "categories": [
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-015",
+    "kind": "submission",
+    "score": 0.298,
+    "textScore": 0,
+    "featureScore": 0.85,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-034",
+    "kind": "submission",
+    "score": 0.253,
+    "textScore": 0.214,
+    "featureScore": 0.325,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-096",
+    "kind": "submission",
+    "score": 0.207,
+    "textScore": 0.166,
+    "featureScore": 0.285,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-031",
+    "kind": "submission",
+    "score": 0.206,
+    "textScore": 0.285,
+    "featureScore": 0.06,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": true
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.079,
+    "textScore": 0,
+    "featureScore": 0.225,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-062",
+  "features": {
+   "triggers": [
+    "VEHICLE_SPEC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-019",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-054",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-068",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-063",
+  "features": {
+   "triggers": [
+    "OCCUPATION_STATUS"
+   ],
+   "threshold": null,
+   "lookbackYears": 1,
+   "categories": [
+    "occupation",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-055",
+    "kind": "submission",
+    "score": 0.28,
+    "textScore": 0,
+    "featureScore": 0.8,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-037",
+    "kind": "submission",
+    "score": 0.222,
+    "textScore": 0.194,
+    "featureScore": 0.275,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-030",
+    "kind": "submission",
+    "score": 0.219,
+    "textScore": 0,
+    "featureScore": 0.625,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-018",
+    "kind": "submission",
+    "score": 0.193,
+    "textScore": 0.27,
+    "featureScore": 0.05,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.058,
+    "textScore": 0,
+    "featureScore": 0.167,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-064",
+  "features": {
+   "triggers": [
+    "GEOGRAPHIC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "administrative",
+    "geographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-078",
+    "kind": "submission",
+    "score": 0.5,
+    "textScore": 0.285,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.415,
+    "textScore": 0.153,
+    "featureScore": 0.9,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-072",
+    "kind": "submission",
+    "score": 0.393,
+    "textScore": 0.335,
+    "featureScore": 0.5,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-010",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-02",
+    "kind": "precedent",
+    "score": 0.131,
+    "textScore": 0.148,
+    "featureScore": 0.1,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-065",
+  "features": {
+   "triggers": [
+    "TRAFFIC_CONVICTION"
+   ],
+   "threshold": null,
+   "lookbackYears": 2,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-051",
+    "kind": "submission",
+    "score": 0.42,
+    "textScore": 0.18,
+    "featureScore": 0.867,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-071",
+    "kind": "submission",
+    "score": 0.408,
+    "textScore": 0.27,
+    "featureScore": 0.665,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-040",
+    "kind": "submission",
+    "score": 0.31,
+    "textScore": 0.132,
+    "featureScore": 0.642,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-088",
+    "kind": "submission",
+    "score": 0.246,
+    "textScore": 0.109,
+    "featureScore": 0.5,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.242,
+    "textScore": 0,
+    "featureScore": 0.692,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-066",
+  "features": {
+   "triggers": [
+    "OCCUPATION_STATUS",
+    "FINANCIAL"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "financial",
+    "administrative"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-072",
+    "kind": "submission",
+    "score": 0.231,
+    "textScore": 0.207,
+    "featureScore": 0.275,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-030",
+    "kind": "submission",
+    "score": 0.181,
+    "textScore": 0.143,
+    "featureScore": 0.25,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-039",
+    "kind": "submission",
+    "score": 0.159,
+    "textScore": 0.128,
+    "featureScore": 0.217,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-011",
+    "kind": "submission",
+    "score": 0.155,
+    "textScore": 0,
+    "featureScore": 0.442,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.035,
+    "textScore": 0,
+    "featureScore": 0.1,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-067",
+  "features": {
+   "triggers": [
+    "ONLINE_CONDUCT"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.169,
+    "textScore": 0.112,
+    "featureScore": 0.275,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-015",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-023",
+    "kind": "submission",
+    "score": 0.157,
+    "textScore": 0,
+    "featureScore": 0.45,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-061",
+    "kind": "submission",
+    "score": 0.14,
+    "textScore": 0,
+    "featureScore": 0.4,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-013",
+    "kind": "submission",
+    "score": 0.122,
+    "textScore": 0,
+    "featureScore": 0.35,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-068",
+  "features": {
+   "triggers": [
+    "VEHICLE_SPEC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-054",
+    "kind": "submission",
+    "score": 0.446,
+    "textScore": 0.201,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-097",
+    "kind": "submission",
+    "score": 0.348,
+    "textScore": 0.05,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.318,
+    "textScore": 0.099,
+    "featureScore": 0.725,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-019",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-069",
+  "features": {
+   "triggers": [
+    "CIVIL_DISPUTES"
+   ],
+   "threshold": null,
+   "lookbackYears": 5,
+   "categories": [
+    "legal",
+    "claims history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-015",
+    "kind": "submission",
+    "score": 0.273,
+    "textScore": 0.152,
+    "featureScore": 0.5,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-061",
+    "kind": "submission",
+    "score": 0.196,
+    "textScore": 0,
+    "featureScore": 0.56,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-001",
+    "kind": "submission",
+    "score": 0.161,
+    "textScore": 0.215,
+    "featureScore": 0.06,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-02",
+    "kind": "precedent",
+    "score": 0.161,
+    "textScore": 0.215,
+    "featureScore": 0.06,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-092",
+    "kind": "submission",
+    "score": 0.146,
+    "textScore": 0.198,
+    "featureScore": 0.05,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-070",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-003",
+    "kind": "submission",
+    "score": 0.447,
+    "textScore": 0.203,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-057",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-079",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-098",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-071",
+  "features": {
+   "triggers": [
+    "TRAFFIC_CONVICTION",
+    "RACING"
+   ],
+   "threshold": null,
+   "lookbackYears": 5,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-065",
+    "kind": "submission",
+    "score": 0.408,
+    "textScore": 0.27,
+    "featureScore": 0.665,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-051",
+    "kind": "submission",
+    "score": 0.322,
+    "textScore": 0.153,
+    "featureScore": 0.635,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-040",
+    "kind": "submission",
+    "score": 0.269,
+    "textScore": 0.112,
+    "featureScore": 0.56,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.238,
+    "textScore": 0.097,
+    "featureScore": 0.5,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.214,
+    "textScore": 0,
+    "featureScore": 0.61,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-072",
+  "features": {
+   "triggers": [
+    "GEOGRAPHIC",
+    "ADMINISTRATIVE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "administrative"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.393,
+    "textScore": 0.335,
+    "featureScore": 0.5,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-039",
+    "kind": "submission",
+    "score": 0.355,
+    "textScore": 0.277,
+    "featureScore": 0.5,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-078",
+    "kind": "submission",
+    "score": 0.349,
+    "textScore": 0.267,
+    "featureScore": 0.5,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.258,
+    "textScore": 0.127,
+    "featureScore": 0.5,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.035,
+    "textScore": 0,
+    "featureScore": 0.1,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-073",
+  "features": {
+   "triggers": [
+    "TRAFFIC_SANCTION"
+   ],
+   "threshold": null,
+   "lookbackYears": 3,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-088",
+    "kind": "submission",
+    "score": 0.321,
+    "textScore": 0,
+    "featureScore": 0.917,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-065",
+    "kind": "submission",
+    "score": 0.163,
+    "textScore": 0,
+    "featureScore": 0.467,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.161,
+    "textScore": 0,
+    "featureScore": 0.46,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-071",
+    "kind": "submission",
+    "score": 0.161,
+    "textScore": 0,
+    "featureScore": 0.46,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-074",
+  "features": {
+   "triggers": [
+    "CRIMINAL_CONVICTION",
+    "FRAUD",
+    "HOUSEHOLD"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "household",
+    "fraud history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-014",
+    "kind": "submission",
+    "score": 0.501,
+    "textScore": 0.52,
+    "featureScore": 0.467,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-026",
+    "kind": "submission",
+    "score": 0.31,
+    "textScore": 0.306,
+    "featureScore": 0.317,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-06",
+    "kind": "precedent",
+    "score": 0.308,
+    "textScore": 0.245,
+    "featureScore": 0.425,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-05",
+    "kind": "precedent",
+    "score": 0.298,
+    "textScore": 0.234,
+    "featureScore": 0.417,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-04",
+    "kind": "precedent",
+    "score": 0.186,
+    "textScore": 0.233,
+    "featureScore": 0.1,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-075",
+  "features": {
+   "triggers": [
+    "ADMINISTRATIVE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "administrative",
+    "licensing"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-039",
+    "kind": "submission",
+    "score": 0.233,
+    "textScore": 0,
+    "featureScore": 0.667,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.211,
+    "textScore": 0.208,
+    "featureScore": 0.217,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-089",
+    "kind": "submission",
+    "score": 0.189,
+    "textScore": 0.053,
+    "featureScore": 0.442,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-027",
+    "kind": "submission",
+    "score": 0.177,
+    "textScore": 0.245,
+    "featureScore": 0.05,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-12",
+    "kind": "precedent",
+    "score": 0.172,
+    "textScore": 0.117,
+    "featureScore": 0.275,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-076",
+  "features": {
+   "triggers": [
+    "LICENCE_SUSPENSION"
+   ],
+   "threshold": null,
+   "lookbackYears": 2,
+   "categories": [
+    "licensing",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-090",
+    "kind": "submission",
+    "score": 0.308,
+    "textScore": 0.242,
+    "featureScore": 0.432,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-094",
+    "kind": "submission",
+    "score": 0.26,
+    "textScore": 0.094,
+    "featureScore": 0.567,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.187,
+    "textScore": 0.076,
+    "featureScore": 0.392,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-12",
+    "kind": "precedent",
+    "score": 0.184,
+    "textScore": 0.163,
+    "featureScore": 0.225,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.178,
+    "textScore": 0.104,
+    "featureScore": 0.315,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-077",
+  "features": {
+   "triggers": [
+    "COVERAGE_HISTORY"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "coverage history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-027",
+    "kind": "submission",
+    "score": 0.452,
+    "textScore": 0.238,
+    "featureScore": 0.85,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-056",
+    "kind": "submission",
+    "score": 0.396,
+    "textScore": 0.151,
+    "featureScore": 0.85,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-086",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-01",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.299,
+    "textScore": 0.123,
+    "featureScore": 0.625,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-078",
+  "features": {
+   "triggers": [
+    "GEOGRAPHIC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "administrative",
+    "geographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.5,
+    "textScore": 0.285,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-072",
+    "kind": "submission",
+    "score": 0.349,
+    "textScore": 0.267,
+    "featureScore": 0.5,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-032",
+    "kind": "submission",
+    "score": 0.33,
+    "textScore": 0.149,
+    "featureScore": 0.667,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.035,
+    "textScore": 0,
+    "featureScore": 0.1,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-079",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "FX-02",
+    "kind": "precedent",
+    "score": 0.468,
+    "textScore": 0.235,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-020",
+    "kind": "submission",
+    "score": 0.343,
+    "textScore": 0.07,
+    "featureScore": 0.85,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-003",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-057",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-070",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-080",
+  "features": {
+   "triggers": [
+    "AGE",
+    "HOUSEHOLD"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "household",
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-007",
+    "kind": "submission",
+    "score": 0.34,
+    "textScore": 0.255,
+    "featureScore": 0.5,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.338,
+    "textScore": 0.323,
+    "featureScore": 0.367,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-038",
+    "kind": "submission",
+    "score": 0.32,
+    "textScore": 0.223,
+    "featureScore": 0.5,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-089",
+    "kind": "submission",
+    "score": 0.31,
+    "textScore": 0.279,
+    "featureScore": 0.367,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.035,
+    "textScore": 0,
+    "featureScore": 0.1,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-081",
+  "features": {
+   "triggers": [
+    "ORIGIN_OR_LANGUAGE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "demographic",
+    "licensing"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-005",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-028",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.191,
+    "textScore": 0.24,
+    "featureScore": 0.1,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-09",
+    "kind": "precedent",
+    "score": 0.191,
+    "textScore": 0.146,
+    "featureScore": 0.275,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-053",
+    "kind": "submission",
+    "score": 0.189,
+    "textScore": 0.053,
+    "featureScore": 0.442,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-082",
+  "features": {
+   "triggers": [
+    "CLAIMS_HISTORY"
+   ],
+   "threshold": 2,
+   "lookbackYears": 3,
+   "categories": [
+    "claims history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-031",
+    "kind": "submission",
+    "score": 0.436,
+    "textScore": 0.172,
+    "featureScore": 0.927,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-059",
+    "kind": "submission",
+    "score": 0.43,
+    "textScore": 0.288,
+    "featureScore": 0.692,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-049",
+    "kind": "submission",
+    "score": 0.14,
+    "textScore": 0.095,
+    "featureScore": 0.225,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-069",
+    "kind": "submission",
+    "score": 0.082,
+    "textScore": 0,
+    "featureScore": 0.235,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-02",
+    "kind": "precedent",
+    "score": 0.07,
+    "textScore": 0,
+    "featureScore": 0.2,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-083",
+  "features": {
+   "triggers": [
+    "CHARGES_OR_ALLEGATIONS"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "legal"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "NC-04",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-034",
+    "kind": "submission",
+    "score": 0.236,
+    "textScore": 0,
+    "featureScore": 0.675,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-042",
+    "kind": "submission",
+    "score": 0.236,
+    "textScore": 0,
+    "featureScore": 0.675,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-096",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-047",
+    "kind": "submission",
+    "score": 0.114,
+    "textScore": 0,
+    "featureScore": 0.325,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-084",
+  "features": {
+   "triggers": [
+    "VEHICLE_SPEC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-054",
+    "kind": "submission",
+    "score": 0.401,
+    "textScore": 0.133,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.396,
+    "textScore": 0.125,
+    "featureScore": 0.9,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-019",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-062",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-085",
+  "features": {
+   "triggers": [
+    "MISREPRESENTATION"
+   ],
+   "threshold": 2,
+   "lookbackYears": null,
+   "categories": [
+    "administrative",
+    "fraud"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-009",
+    "kind": "submission",
+    "score": 0.237,
+    "textScore": 0.122,
+    "featureScore": 0.45,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-039",
+    "kind": "submission",
+    "score": 0.212,
+    "textScore": 0.236,
+    "featureScore": 0.167,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.143,
+    "textScore": 0.184,
+    "featureScore": 0.067,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-092",
+    "kind": "submission",
+    "score": 0.14,
+    "textScore": 0,
+    "featureScore": 0.4,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-072",
+    "kind": "submission",
+    "score": 0.138,
+    "textScore": 0.09,
+    "featureScore": 0.225,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-086",
+  "features": {
+   "triggers": [
+    "COVERAGE_HISTORY"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "coverage history"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-056",
+    "kind": "submission",
+    "score": 0.455,
+    "textScore": 0.243,
+    "featureScore": 0.85,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-077",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-01",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-027",
+    "kind": "submission",
+    "score": 0.298,
+    "textScore": 0,
+    "featureScore": 0.85,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.298,
+    "textScore": 0.121,
+    "featureScore": 0.625,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-087",
+  "features": {
+   "triggers": [
+    "OCCUPATION_STATUS",
+    "DISTANCE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use",
+    "occupation"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-037",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-046",
+    "kind": "submission",
+    "score": 0.233,
+    "textScore": 0,
+    "featureScore": 0.667,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-01",
+    "kind": "precedent",
+    "score": 0.157,
+    "textScore": 0.093,
+    "featureScore": 0.275,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-057",
+    "kind": "submission",
+    "score": 0.154,
+    "textScore": 0.089,
+    "featureScore": 0.275,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-043",
+    "kind": "submission",
+    "score": 0.139,
+    "textScore": 0.066,
+    "featureScore": 0.275,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-088",
+  "features": {
+   "triggers": [
+    "TRAFFIC_SANCTION"
+   ],
+   "threshold": null,
+   "lookbackYears": 2,
+   "categories": [
+    "driving record"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-073",
+    "kind": "submission",
+    "score": 0.321,
+    "textScore": 0,
+    "featureScore": 0.917,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-065",
+    "kind": "submission",
+    "score": 0.246,
+    "textScore": 0.109,
+    "featureScore": 0.5,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-071",
+    "kind": "submission",
+    "score": 0.214,
+    "textScore": 0.093,
+    "featureScore": 0.44,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-051",
+    "kind": "submission",
+    "score": 0.201,
+    "textScore": 0.084,
+    "featureScore": 0.417,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-04",
+    "kind": "precedent",
+    "score": 0.163,
+    "textScore": 0,
+    "featureScore": 0.467,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-089",
+  "features": {
+   "triggers": [
+    "HOUSEHOLD",
+    "ADMINISTRATIVE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "administrative",
+    "household"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-026",
+    "kind": "submission",
+    "score": 0.443,
+    "textScore": 0.47,
+    "featureScore": 0.392,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.354,
+    "textScore": 0.346,
+    "featureScore": 0.367,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-080",
+    "kind": "submission",
+    "score": 0.31,
+    "textScore": 0.279,
+    "featureScore": 0.367,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-092",
+    "kind": "submission",
+    "score": 0.217,
+    "textScore": 0.218,
+    "featureScore": 0.217,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-09",
+    "kind": "precedent",
+    "score": 0.149,
+    "textScore": 0.175,
+    "featureScore": 0.1,
+    "insurer": "Tamarack General Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-090",
+  "features": {
+   "triggers": [
+    "LICENCE_SUSPENSION",
+    "MEDICAL"
+   ],
+   "threshold": null,
+   "lookbackYears": 5,
+   "categories": [
+    "medical",
+    "licensing"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-076",
+    "kind": "submission",
+    "score": 0.308,
+    "textScore": 0.242,
+    "featureScore": 0.432,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-12",
+    "kind": "precedent",
+    "score": 0.236,
+    "textScore": 0.242,
+    "featureScore": 0.225,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-021",
+    "kind": "submission",
+    "score": 0.208,
+    "textScore": 0.108,
+    "featureScore": 0.392,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-094",
+    "kind": "submission",
+    "score": 0.208,
+    "textScore": 0.14,
+    "featureScore": 0.335,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.206,
+    "textScore": 0.155,
+    "featureScore": 0.3,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-091",
+  "features": {
+   "triggers": [
+    "OWNERSHIP"
+   ],
+   "threshold": 6,
+   "lookbackYears": null,
+   "categories": [
+    "administrative",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-004",
+    "kind": "submission",
+    "score": 0.406,
+    "textScore": 0.356,
+    "featureScore": 0.5,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-025",
+    "kind": "submission",
+    "score": 0.267,
+    "textScore": 0.262,
+    "featureScore": 0.275,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.216,
+    "textScore": 0.242,
+    "featureScore": 0.167,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-075",
+    "kind": "submission",
+    "score": 0.159,
+    "textScore": 0.156,
+    "featureScore": 0.167,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-01",
+    "kind": "precedent",
+    "score": 0.123,
+    "textScore": 0.162,
+    "featureScore": 0.05,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-092",
+  "features": {
+   "triggers": [
+    "FRAUD",
+    "WATCHLIST"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "fraud",
+    "administrative"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-045",
+    "kind": "submission",
+    "score": 0.336,
+    "textScore": 0.342,
+    "featureScore": 0.325,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "FX-06",
+    "kind": "precedent",
+    "score": 0.222,
+    "textScore": 0.167,
+    "featureScore": 0.325,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-089",
+    "kind": "submission",
+    "score": 0.217,
+    "textScore": 0.218,
+    "featureScore": 0.217,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-014",
+    "kind": "submission",
+    "score": 0.18,
+    "textScore": 0.169,
+    "featureScore": 0.2,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-044",
+    "kind": "submission",
+    "score": 0.167,
+    "textScore": 0.203,
+    "featureScore": 0.1,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-093",
+  "features": {
+   "triggers": [
+    "SPECIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-043",
+    "kind": "submission",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": true
+   },
+   {
+    "id": "AP-08",
+    "kind": "precedent",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Harbourview Assurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-10",
+    "kind": "precedent",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-095",
+    "kind": "submission",
+    "score": 0.233,
+    "textScore": 0,
+    "featureScore": 0.667,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-035",
+    "kind": "submission",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-094",
+  "features": {
+   "triggers": [
+    "LICENCE_SUSPENSION"
+   ],
+   "threshold": null,
+   "lookbackYears": 3,
+   "categories": [
+    "driving record",
+    "financial"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-002",
+    "kind": "submission",
+    "score": 0.265,
+    "textScore": 0.133,
+    "featureScore": 0.51,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-076",
+    "kind": "submission",
+    "score": 0.26,
+    "textScore": 0.094,
+    "featureScore": 0.567,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-090",
+    "kind": "submission",
+    "score": 0.208,
+    "textScore": 0.14,
+    "featureScore": 0.335,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-024",
+    "kind": "submission",
+    "score": 0.188,
+    "textScore": 0.167,
+    "featureScore": 0.225,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "AP-12",
+    "kind": "precedent",
+    "score": 0.152,
+    "textScore": 0.207,
+    "featureScore": 0.05,
+    "insurer": "Kestrel Point Insurance",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-095",
+  "features": {
+   "triggers": [
+    "SPECIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type",
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-043",
+    "kind": "submission",
+    "score": 0.296,
+    "textScore": 0.064,
+    "featureScore": 0.725,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-08",
+    "kind": "precedent",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Harbourview Assurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-10",
+    "kind": "precedent",
+    "score": 0.254,
+    "textScore": 0,
+    "featureScore": 0.725,
+    "insurer": "Fenwick & Hale Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-035",
+    "kind": "submission",
+    "score": 0.253,
+    "textScore": 0.12,
+    "featureScore": 0.5,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": true
+   },
+   {
+    "id": "DR-093",
+    "kind": "submission",
+    "score": 0.233,
+    "textScore": 0,
+    "featureScore": 0.667,
+    "insurer": "Lakefield Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-096",
+  "features": {
+   "triggers": [
+    "CHARGES_OR_ALLEGATIONS"
+   ],
+   "threshold": null,
+   "lookbackYears": 5,
+   "categories": [
+    "behavioural",
+    "demographic"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-034",
+    "kind": "submission",
+    "score": 0.374,
+    "textScore": 0.211,
+    "featureScore": 0.677,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-047",
+    "kind": "submission",
+    "score": 0.208,
+    "textScore": 0.172,
+    "featureScore": 0.275,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-061",
+    "kind": "submission",
+    "score": 0.207,
+    "textScore": 0.166,
+    "featureScore": 0.285,
+    "insurer": "Clearwater General Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-042",
+    "kind": "submission",
+    "score": 0.196,
+    "textScore": 0,
+    "featureScore": 0.56,
+    "insurer": "Northern Shield Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-04",
+    "kind": "precedent",
+    "score": 0.175,
+    "textScore": 0,
+    "featureScore": 0.5,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-097",
+  "features": {
+   "triggers": [
+    "VEHICLE_SPEC"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle type"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-019",
+    "kind": "submission",
+    "score": 0.482,
+    "textScore": 0.257,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-054",
+    "kind": "submission",
+    "score": 0.365,
+    "textScore": 0.076,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-068",
+    "kind": "submission",
+    "score": 0.348,
+    "textScore": 0.05,
+    "featureScore": 0.9,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-03",
+    "kind": "precedent",
+    "score": 0.334,
+    "textScore": 0.123,
+    "featureScore": 0.725,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-016",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-098",
+  "features": {
+   "triggers": [
+    "COMMERCIAL_USE"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "vehicle use"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-003",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-057",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Maplewood Mutual",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-070",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-079",
+    "kind": "submission",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "AP-06",
+    "kind": "precedent",
+    "score": 0.315,
+    "textScore": 0,
+    "featureScore": 0.9,
+    "insurer": "Oakridge Lane Mutual",
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-099",
+  "features": {
+   "triggers": [
+    "GEOGRAPHIC",
+    "HOUSEHOLD"
+   ],
+   "threshold": 3,
+   "lookbackYears": null,
+   "categories": [
+    "household",
+    "behavioural"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-078",
+    "kind": "submission",
+    "score": 0.301,
+    "textScore": 0.315,
+    "featureScore": 0.275,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.251,
+    "textScore": 0.238,
+    "featureScore": 0.275,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-058",
+    "kind": "submission",
+    "score": 0.25,
+    "textScore": 0.088,
+    "featureScore": 0.55,
+    "insurer": "Lakeshore Indemnity",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-026",
+    "kind": "submission",
+    "score": 0.24,
+    "textScore": 0,
+    "featureScore": 0.685,
+    "insurer": "Ridgeline Insurance Co.",
+    "sameInsurer": false
+   },
+   {
+    "id": "NC-05",
+    "kind": "precedent",
+    "score": 0.146,
+    "textScore": 0.108,
+    "featureScore": 0.217,
+    "insurer": null,
+    "sameInsurer": false
+   }
+  ]
+ },
+ {
+  "id": "DR-100",
+  "features": {
+   "triggers": [
+    "BELIEFS_OR_EXPRESSION"
+   ],
+   "threshold": null,
+   "lookbackYears": null,
+   "categories": [
+    "behavioural",
+    "political"
+   ]
+  },
+  "candidates": [
+   {
+    "id": "DR-064",
+    "kind": "submission",
+    "score": 0.114,
+    "textScore": 0.122,
+    "featureScore": 0.1,
+    "insurer": "Grandview Insurance Group",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-060",
+    "kind": "submission",
+    "score": 0.112,
+    "textScore": 0.118,
+    "featureScore": 0.1,
+    "insurer": "Birchwood Insurance Group",
+    "sameInsurer": true
+   },
+   {
+    "id": "NC-02",
+    "kind": "precedent",
+    "score": 0.109,
+    "textScore": 0.114,
+    "featureScore": 0.1,
+    "insurer": null,
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-099",
+    "kind": "submission",
+    "score": 0.107,
+    "textScore": 0.076,
+    "featureScore": 0.167,
+    "insurer": "Granite Mutual Insurance",
+    "sameInsurer": false
+   },
+   {
+    "id": "DR-015",
+    "kind": "submission",
+    "score": 0.096,
+    "textScore": 0,
+    "featureScore": 0.275,
+    "insurer": "Beacon Fire & Casualty",
+    "sameInsurer": false
+   }
+  ]
+ }
+]

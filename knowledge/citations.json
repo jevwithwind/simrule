@@ -1,0 +1,286 @@
+{
+  "note": "Citation registry. 'verified' is true only when the reference was checked against the source itself. Official sites (ontario.ca, fsrao.ca, ohrc.on.ca) were blocked by the build environment's network policy, so every legal reference is unverified and cited at instrument level with section null. 'sectionToConfirm' holds the section a human should check; it is never displayed as a citation. Framework entries were verified by reading the supplied PDF.",
+  "retrievalAttempt": "2026-10-05: WebFetch to www.ontario.ca, www.fsrao.ca and www.ohrc.on.ca returned EGRESS_BLOCKED.",
+  "citations": [
+    {
+      "id": "INS_ACT",
+      "instrument": "Insurance Act, R.S.O. 1990, c. I.8",
+      "section": null,
+      "sectionToConfirm": "ss. 237-238 (believed: s. 238(1) bars declining, terminating or refusing to renew auto insurance except on a ground filed with the regulator)",
+      "url": "https://www.ontario.ca/laws/statute/90i08",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Legal basis of Take All Comers: an insurer may decline auto insurance only on grounds filed with and approved by the regulator."
+    },
+    {
+      "id": "REG_664",
+      "instrument": "R.R.O. 1990, Reg. 664: Automobile Insurance",
+      "section": null,
+      "sectionToConfirm": "Provisions restricting credit information and lapses in coverage as underwriting or risk classification factors (section numbers to confirm)",
+      "url": "https://www.ontario.ca/laws/regulation/900664",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Restricts certain factors in auto underwriting and risk classification, believed to include credit information and most lapses in coverage."
+    },
+    {
+      "id": "HRC",
+      "instrument": "Human Rights Code, R.S.O. 1990, c. H.19",
+      "section": null,
+      "sectionToConfirm": "s. 1 (services), s. 3 (contracts), s. 11 (constructive discrimination)",
+      "url": "https://www.ontario.ca/laws/statute/90h19",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Right to equal treatment in services and contracts without discrimination on protected grounds, including race, ancestry, place of origin, colour, ethnic origin, citizenship, creed, sex, sexual orientation, gender identity, gender expression, age, marital status, family status and disability. Indirect (constructive) discrimination is also covered."
+    },
+    {
+      "id": "HRC_INSURANCE",
+      "instrument": "Human Rights Code, R.S.O. 1990, c. H.19: insurance contracts provision",
+      "section": null,
+      "sectionToConfirm": "s. 22",
+      "url": "https://www.ontario.ca/laws/statute/90h19",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Automobile insurance contracts may differentiate on age, sex, marital status, family status or disability only on reasonable and bona fide grounds. The provision does not extend to other grounds such as place of origin, citizenship, ethnic origin, ancestry or creed."
+    },
+    {
+      "id": "CHARTER",
+      "instrument": "Canadian Charter of Rights and Freedoms",
+      "section": null,
+      "sectionToConfirm": "s. 15 (equality rights)",
+      "url": "https://laws-lois.justice.gc.ca/eng/const/page-12.html",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Equality rights bind government action. They apply most directly to the regulator's own approval decisions, not to a private insurer's conduct, which is governed by the Human Rights Code."
+    },
+    {
+      "id": "CAIA",
+      "instrument": "Compulsory Automobile Insurance Act, R.S.O. 1990, c. C.25",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.ontario.ca/laws/statute/90c25",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Auto insurance is compulsory to operate a vehicle in Ontario, so a decline directly affects a consumer's ability to drive legally."
+    },
+    {
+      "id": "FSRA_ACT",
+      "instrument": "Financial Services Regulatory Authority of Ontario Act, 2016, S.O. 2016, c. 37, Sched. 8",
+      "section": null,
+      "sectionToConfirm": "s. 3 (objects, including protecting the rights and interests of consumers)",
+      "url": "https://www.ontario.ca/laws/statute/16f37",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "The regulator's statutory objects include protecting the rights and interests of consumers, which grounds the Level 4 public policy filter."
+    },
+    {
+      "id": "HTA",
+      "instrument": "Highway Traffic Act, R.S.O. 1990, c. H.8",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.ontario.ca/laws/statute/90h08",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Driver licensing (including graduated licences and licence classes), stunt driving and racing offences, demerit points and licence suspensions."
+    },
+    {
+      "id": "MVACA",
+      "instrument": "Motor Vehicle Accident Claims Act, R.S.O. 1990, c. M.41",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.ontario.ca/laws/statute/90m41",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Public fund of last resort for people injured by uninsured drivers, which shows the public cost when drivers cannot obtain insurance."
+    },
+    {
+      "id": "UDAP",
+      "instrument": "FSRA Rule: Unfair or Deceptive Acts or Practices (UDAP)",
+      "section": null,
+      "sectionToConfirm": "Provisions on auto underwriting (declining on unfiled grounds, Take All Comers) and on credit information",
+      "url": "https://www.fsrao.ca/regulation/rules/insurance-rules/unfair-or-deceptive-acts-or-practices-rule",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Declining auto insurance on grounds that are not filed, or using restricted information such as credit information, can be an unfair or deceptive act or practice."
+    },
+    {
+      "id": "FSRA_TAC_INFO",
+      "instrument": "FSRA: Take-All-Comers information for Industry",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/industry/auto-insurance/take-all-comers-information-industry",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Insurers must quote and accept every consumer who meets their approved underwriting rules."
+    },
+    {
+      "id": "FSRA_TAC_REVIEW",
+      "instrument": "FSRA: Take-All-Comers Thematic review report",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/industry/auto-insurance/publications/take-all-comers-thematic-review-report",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Regulator's review of insurer practices that make it harder for some consumers to obtain auto insurance quotes."
+    },
+    {
+      "id": "FSRA_UW_FILING",
+      "instrument": "FSRA: Filing Guidelines for Underwriting Rules",
+      "section": null,
+      "sectionToConfirm": "Required filing contents (summary of information, certificate of an official, rule lists, definitions, supporting justification)",
+      "url": "https://www.fsrao.ca/filing-guidelines-underwriting-rules",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "What an underwriting rule filing must contain. Drives Simrule's prototype completeness checklist."
+    },
+    {
+      "id": "FSRA_UW_TECH",
+      "instrument": "FSRA: Underwriting technical notes",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/underwriting-technical-notes",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Technical expectations for underwriting rule filings, including how rules and terms should be expressed."
+    },
+    {
+      "id": "FSRA_UW_VARIABLES",
+      "instrument": "FSRA: Automobile Insurance Underwriting Rules and Risk Classification Variables",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/automobile-insurance-underwriting-rules-and-risk-classification-variables",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Regulator guidance on which variables may be used in underwriting rules and risk classification."
+    },
+    {
+      "id": "FSRA_ADMIN_LAPSE",
+      "instrument": "FSRA: An Administrative Lapse or a Suspension of a Driver's Licence",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/administrative-lapse-or-suspension-drivers-licence",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Administrative licence lapses or suspensions (not caused by driving convictions, for example unpaid fines or medical reasons) are restricted in underwriting, believed to be allowed only where every driver on the policy is unlicensed."
+    },
+    {
+      "id": "FSRA_COVERAGE_LAPSE",
+      "instrument": "FSRA: Regulation on lapse in automobile insurance coverage",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/regulation-lapse-automobile-insurance-coverage",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "A lapse in coverage may be considered only in limited circumstances, believed to be a conviction for driving without insurance, cancellation for non-payment, or a licence suspension from a driving conviction."
+    },
+    {
+      "id": "FSRA_FA",
+      "instrument": "FSRA: Facility Association amendment to eligibility rules in the residual market",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/facility-association-amendment-eligibility-rules-residual-market",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "The Facility Association residual market is where drivers who cannot obtain voluntary-market coverage go, generally at higher cost."
+    },
+    {
+      "id": "FSRA_FAIR_TREATMENT",
+      "instrument": "FSRA: Fair Treatment of Consumers in Insurance",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/fair-treatment-customers-insurance",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Expectation that insurers treat consumers fairly throughout the product life cycle, including clear disclosure."
+    },
+    {
+      "id": "FSRA_RATING_UW_GUIDANCE",
+      "instrument": "FSRA: Proposed Guidance: Automobile Insurance Rating and Underwriting Supervision Guidance",
+      "section": null,
+      "sectionToConfirm": "Check whether a final version has replaced the proposed guidance",
+      "url": "https://www.fsrao.ca/industry/auto-insurance/regulatory-framework/guidance-auto-insurance/proposed-guidance-automobile-insurance-rating-and-underwriting-supervision-guidance",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "Principles and fair consumer outcomes for rating and underwriting, including accurate pricing and freedom from unfair discrimination and proxies."
+    },
+    {
+      "id": "FSRA_PBR",
+      "instrument": "FSRA: Principles-based Regulation",
+      "section": null,
+      "sectionToConfirm": null,
+      "url": "https://www.fsrao.ca/regulation/guidance/principles-based-regulation",
+      "verified": false,
+      "retrievedOn": null,
+      "supports": "The regulator's outcomes-focused approach, which is why Level 2 tests principles rather than only rules."
+    },
+    {
+      "id": "FW_CONTEXT",
+      "instrument": "Framework deck: What Is an Underwriting Rule; Underwriting Rules and Regulatory Context",
+      "section": "Slides 3-4",
+      "sectionToConfirm": null,
+      "url": "source/aip-w3-assignmentunderwriting-rule-assessment.pdf",
+      "verified": true,
+      "retrievedOn": "2026-10-05",
+      "supports": "Take All Comers context; an existing rule at another insurer is a consideration, not a guarantee; standards evolve."
+    },
+    {
+      "id": "FW_QUESTIONS",
+      "instrument": "Framework deck: How Do We Know If an Underwriting Rule Should Be Approved?",
+      "section": "Slide 5",
+      "sectionToConfirm": null,
+      "url": "source/aip-w3-assignmentunderwriting-rule-assessment.pdf",
+      "verified": true,
+      "retrievedOn": "2026-10-05",
+      "supports": "Key evaluation questions and the illustrative non-compliant examples."
+    },
+    {
+      "id": "FW_REJECTION",
+      "instrument": "Framework deck: Why the Regulator May Reject Proposed Rules",
+      "section": "Slide 6",
+      "sectionToConfirm": null,
+      "url": "source/aip-w3-assignmentunderwriting-rule-assessment.pdf",
+      "verified": true,
+      "retrievedOn": "2026-10-05",
+      "supports": "Six rejection reasons: not risk-relevant, vague language, copycat rule, human rights violation, contrary to legislation, discriminatory impact."
+    },
+    {
+      "id": "FW_SCOPE",
+      "instrument": "Framework deck: What's in Scope for This Project",
+      "section": "Slide 7",
+      "sectionToConfirm": null,
+      "url": "source/aip-w3-assignmentunderwriting-rule-assessment.pdf",
+      "verified": true,
+      "retrievedOn": "2026-10-05",
+      "supports": "Decline rules are in scope; eligibility rules for optional coverages or limits are out of scope."
+    },
+    {
+      "id": "FW_LEVELS",
+      "instrument": "Framework deck: Basic and Stretch Project Scope (Levels 1-4)",
+      "section": "Slide 8",
+      "sectionToConfirm": null,
+      "url": "source/aip-w3-assignmentunderwriting-rule-assessment.pdf",
+      "verified": true,
+      "retrievedOn": "2026-10-05",
+      "supports": "Levels 1-4; Level 1 non-compliance is likely a full-stop refusal; weighting and scoring inform human decisions."
+    },
+    {
+      "id": "FW_PRINCIPLES",
+      "instrument": "Framework deck: Appendix, Principles and Fair Consumer Outcomes",
+      "section": "Slide 10",
+      "sectionToConfirm": null,
+      "url": "source/aip-w3-assignmentunderwriting-rule-assessment.pdf",
+      "verified": true,
+      "retrievedOn": "2026-10-05",
+      "supports": "The six principles and their fair consumer outcomes used at Level 2."
+    },
+    {
+      "id": "FW_APPROVED",
+      "instrument": "Framework deck: More Examples of Approved Underwriting Rules",
+      "section": "Slide 12",
+      "sectionToConfirm": null,
+      "url": "source/aip-w3-assignmentunderwriting-rule-assessment.pdf",
+      "verified": true,
+      "retrievedOn": "2026-10-05",
+      "supports": "List of existing approved underwriting rules used as the precedent registry."
+    }
+  ]
+}
