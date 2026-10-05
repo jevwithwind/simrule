@@ -1,0 +1,318 @@
+{
+  "id": "DR-070",
+  "extracted": {
+    "trigger": "Peer-to-peer car sharing",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who rent their vehicle through a peer-to-peer car-sharing platform, even occasionally",
+    "ruleType": "decline",
+    "definedTerms": [
+      "peer-to-peer car-sharing platform"
+    ],
+    "undefinedTerms": [
+      "even occasionally"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on renting the vehicle to others. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "rents their vehicle to others through a peer-to-peer car-sharing platform"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle rental use is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "Renting a vehicle to others for money is a commercial use, so the rule applies AP-06 (Oakridge Lane Mutual, 2015): any automobile used for commercial purposes. Grandview Insurance Group's delivery rule (DR-003) is pending and uses the same commercial-use logic.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "rents their vehicle to others"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Renting the vehicle to unknown drivers changes who drives it and how much, which are core risk factors. The rule reflects actual use.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "introduces unknown drivers, increased usage, and commercial exposure"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle rental use does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT",
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "\"Even occasionally\" means one rental would trigger a decline. Owners who rent rarely may be covered by the platform's own insurance during rentals, which the insurer has not considered.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even occasionally"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Keeping commercial rental exposure out of personal pools avoids cross-subsidy. No new cost is created for others.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows the approved commercial-use principle. It is balanced, subject to the occasional-use point.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on renting the vehicle through a platform and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "peer-to-peer car-sharing platform"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Listing a vehicle on a car-sharing platform is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows the commercial-use category and has no invented threshold. It is not arbitrary.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Unknown drivers and commercial use link directly to claims exposure. The rationale states the mechanism.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "that personal auto policies do not contemplate"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is qualitative. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Even occasionally\" is undefined. The filing should say whether a single past rental, or only current listing, triggers the rule.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even occasionally"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Separating commercial rental from personal coverage follows the approved commercial-use rule.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-06",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Approved rule declines vehicles used for commercial purposes. Peer-to-peer rental is a commercial use; DR-070 adds \"even occasionally\", which reaches very light use."
+    },
+    {
+      "refId": "DR-003",
+      "similarity": 0.447,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group delivery rule limits itself to primary use, while DR-070 covers occasional use. Review together for a consistent line on occasional commercial use."
+    },
+    {
+      "refId": "DR-079",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance commercial towing rule also extends to part-time use."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners who rent their vehicle through a car-sharing platform, even once.",
+    "likelyConsequence": "They would need a policy that covers rental use or rely on the platform's coverage, likely at higher cost.",
+    "vulnerableGroups": [
+      "Owners earning extra income from their vehicle"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Does platform-provided coverage during rental periods change the insurer's exposure?",
+    "Does one past rental trigger the rule?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If platform coverage fully protects the insurer during rentals, the occasional-use extension would be hard to justify."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite AP-06; ask for a definition of \"occasionally\".",
+      "owner": "Analyst",
+      "reason": "Commercial-use precedent applies."
+    },
+    {
+      "action": "Review with DR-003 and DR-079 for a consistent occasional-use line.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "How car-sharing platform insurance interacts with personal policies was not verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

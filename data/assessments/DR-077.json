@@ -1,0 +1,350 @@
+{
+  "id": "DR-077",
+  "extracted": {
+    "trigger": "Under 3 years of continuous Canadian coverage",
+    "thresholdCount": 3,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants who cannot show 3 consecutive years of auto insurance with a Canadian insurer",
+    "ruleType": "decline",
+    "definedTerms": [
+      "3 consecutive years",
+      "Canadian insurer"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on coverage history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Lacking 3 years of continuous coverage covers any lapse and any absence of insurance history. Ontario restricts the use of lapses in coverage to limited reasons, so this rule is contrary to that restriction. The source could not be verified and should be confirmed.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cannot demonstrate at least 3 consecutive years of auto insurance coverage"
+        }
+      ],
+      "citationIds": [
+        "FSRA_COVERAGE_LAPSE",
+        "REG_664"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Requiring Canadian insurance history excludes newcomers and returning residents by design, which works as a proxy for place of origin. Young drivers are also excluded, which touches age.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "with a Canadian insurer"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PRECEDENT_NON_COMPLIANT_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The framework gives \"deny insurance on the basis that someone has never had insurance before\" as an illustrative non-compliant rule (NC-01). DR-077 goes further: it refuses anyone without 3 continuous years of Canadian coverage, which includes everyone covered by NC-01. Maplewood Mutual's own coverage-lapse rule (DR-027) is pending.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cannot demonstrate at least 3 consecutive years"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Insurance history length is not driving behaviour. A driver with years of clean experience abroad or on a parent's policy would be refused.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "with a Canadian insurer"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "DISCRIMINATORY_IMPACT_NEW_DRIVERS",
+        "DISCRIMINATORY_IMPACT_NEW_TO_CANADA"
+      ],
+      "reasoning": "The rule refuses every new driver and every newcomer, the two groups the framework names as discriminatory impact. It is a direct example of that rejection reason.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "at least 3 consecutive years of auto insurance coverage with a Canadian insurer"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "If adopted widely, nobody without history could ever get insured to build history. It would shut the door on new drivers.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Excluded drivers would pay more in the residual market. No claims saving is shown.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Verification can use driving records and foreign insurance letters. Requiring 3 years of Canadian coverage favours the insurer's convenience.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "allows us to verify claims experience"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on coverage history and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "3 consecutive years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Insurance history is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for 3 consecutive years. Any single gap, however short, resets the count.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "3 consecutive years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale is about verification and compliance, not about claims from people with shorter histories. The link to driving risk is not shown.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "confirm that the applicant has maintained continuous compliance"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Three consecutive years with a Canadian insurer is measurable. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "at least 3 consecutive years of auto insurance coverage with a Canadian insurer"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: a rule that requires insurance history to get insurance blocks new drivers and newcomers from compulsory coverage. The framework already names the narrower version as non-compliant.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FW_QUESTIONS"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "NC-01",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Non-compliant example: deny insurance to someone who has never had insurance. DR-077 includes everyone NC-01 covers, plus anyone with a gap or a short or foreign history."
+    },
+    {
+      "refId": "DR-027",
+      "similarity": 0.452,
+      "relation": "similar",
+      "explanation": "Same insurer (Maplewood Mutual) declines lapses over 90 days in 3 years. DR-077 is stricter: any gap and any short history. Review together."
+    },
+    {
+      "refId": "DR-018",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines licences under 12 months. Same effect on new drivers."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone without 3 continuous years of Canadian auto insurance: new drivers, newcomers, returning residents and people with any gap.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "New drivers",
+      "Newcomers to Canada",
+      "Returning Canadians",
+      "People who took a break from driving"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "How would a new driver ever meet the rule?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Restricted factor and non-compliant match."
+    },
+    {
+      "action": "Review with DR-027 (same insurer) and the coverage-history cluster.",
+      "owner": "Senior reviewer",
+      "reason": "Consistency; Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "The coverage lapse restriction could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
