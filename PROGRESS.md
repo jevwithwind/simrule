@@ -10,7 +10,7 @@ Resume rule: find the last phase marked done below and continue from the next on
 - [x] Phase 4: tests, sample submissions, end-to-end, screenshots (done)
 - [x] Phase 5: static build into `/docs`, README (done)
 - [x] Phase 6: companion deliverables (diagram, chatbot pack, avatar script, recording script, report) (done)
-- [ ] HARD STOP: final tests and build, push, pull request, handoff
+- [x] HARD STOP: final tests and build, push, pull request, handoff (done: https://github.com/jevwithwind/simrule/pull/1). Next: Phase 7 when Kevin returns with the Chatbase script, Help page URL and video URL.
 
 ## Decisions
 
@@ -48,6 +48,10 @@ Resume rule: find the last phase marked done below and continue from the next on
 ## Open issues
 
 1. **Fetch blocked.** The environment's network egress policy blocks `www.ontario.ca`, `www.fsrao.ca` and `www.ohrc.on.ca` (WebFetch returns EGRESS_BLOCKED). No citation could be verified against the official source, so every entry in `knowledge/citations.json` has `verified: false` and `section: null`. Web search result snippets were used only for orientation and are never presented as verified. Full list in `deliverables/VERIFY.md`.
+
+2. **Live assessment not run against the real API.** No API key exists in the build environment (by design). The browser call is tested end to end against a mocked API only.
+3. **Chatbot and avatar links are placeholders** in the app config, report header and README until Phase 7.
+4. **Report author is `<YOUR FULL NAME>`** and 10 highlighted sentences must be rewritten by Kevin (`deliverables/report/reflection-to-personalise.md`).
 
 ## Numbers
 
