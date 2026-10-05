@@ -19,7 +19,6 @@ export interface ScoredCriterion {
   level: 1 | 2 | 3 | 4;
   status: Status;
   severity: Severity;
-  overridden?: boolean;
 }
 
 export interface LevelBreakdown {
