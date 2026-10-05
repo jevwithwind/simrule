@@ -96,3 +96,11 @@ Problems found by reading the pilot output, each mapped to a v2 rule:
 - **Accessibility (axe):** one serious issue on 5 screens (small uppercase labels under 4.5:1 contrast). Darkened the token; 0 violations on 9 screens.
 - **Lesson:** the flow test is the closest thing to a real reviewer. Three of four bugs were invisible to type checks and unit tests.
 
+## 12. Live assessment (stretch): same prompt, new guard rails
+
+- **Prompt:** the live call fills the same v2 prompt (`prompts/assessment-prompt.md`) at run time with the framework, issue codes, citation registry, precedents, the uploaded rule and its similarity candidates. No new prompt version.
+- **Change in what the model sees:** the citation registry sent to the model contains id, instrument, what it supports and a verified flag only. The unconfirmed section numbers kept for the human checker are never sent, so the model cannot cite them.
+- **Constraint moved from words to schema:** in batch generation, "use only these codes and ids" was an instruction checked afterwards. In the live call it is enforced by structured outputs: the output schema's enums only allow the 15 criteria, the 25 issue codes, the 28 citation ids and known precedent ids.
+- **Post-checks:** the same validator as the seeded assessments. Quotes that are not word for word are removed and noted; sentence-count problems are shown as warnings (rejecting a paid run for a five-sentence finding would waste the visitor's money); missing criteria or unknown ids reject the run.
+- **Not done:** no live run was possible from the build environment (no key), so the call is tested against a mocked API. A real run should be spot-checked against the seeded assessment for the same rule before relying on it.
+

@@ -42,7 +42,7 @@ Requires Node.js 20.19 or later (22 recommended).
 ```bash
 npm install
 npm run dev          # development server
-npm test             # 129 unit tests (vitest)
+npm test             # 134 unit tests (vitest)
 npm run build        # type-check and build the static site into /docs
 npm run e2e          # Playwright end-to-end and axe accessibility checks (uses the built site)
 ```
@@ -61,6 +61,7 @@ Data pipeline scripts (already run; outputs are committed): `npm run parse-rules
 
 - Legal citations could not be checked against the official sources from the build environment, so every legal reference is marked "section not verified". See [`deliverables/VERIFY.md`](deliverables/VERIFY.md).
 - The 100 assessments were generated once and frozen; new uploads get keyword triage (low confidence) and similarity search only, and wait for a full assessment.
+- **Optional live assessment (stretch).** On an uploaded rule, a visitor can tick "run it now with your own Anthropic API key". It is off by default. The key is held in that page's memory only (never in browser storage, the store or the audit trail) and is sent directly from the browser to Anthropic's API. The response must match a strict output schema whose enums only allow known criteria, issue codes, citations and precedents; quotes that are not word for word are dropped; Simrule's scoring code, not the model, computes the recommendation; and the rule then goes to Analyst review like any other. Tested end to end against a mocked API.
 - The scoring weights were checked against 13 anchor rules but not against real regulatory decisions.
 - Data is stored only in the visitor's browser. There are no accounts, and roles are a demonstration switch, not access control.
 

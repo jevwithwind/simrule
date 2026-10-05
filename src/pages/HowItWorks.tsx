@@ -226,7 +226,7 @@ export default function HowItWorks() {
         <ul className="list-disc space-y-1 pl-5 text-sm">
           <li>Prototype only: no authentication, no server, and state lives in your browser (reset from the header menu).</li>
           <li>Legal references could not be verified against official sources; see deliverables/VERIFY.md.</li>
-          <li>Assessments are precomputed; new uploads get keyword triage only (low confidence) until a full assessment runs.</li>
+          <li>Assessments are precomputed; new uploads get keyword triage only (low confidence) until a full assessment runs. An optional live assessment is available on an uploaded rule with your own API key: off by default, the key stays in page memory only, and the output goes through the same validation and scoring.</li>
           <li>The weights were calibrated on 13 anchor rules and have not been validated against historical regulator decisions.</li>
           <li>The same AI wrote the findings and the spot check, so agreement there is weak evidence. Human analysts must validate.</li>
           <li>English only; production would need French-language service.</li>
