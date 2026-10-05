@@ -1,0 +1,340 @@
+{
+  "id": "DR-040",
+  "extracted": {
+    "trigger": "At-fault accident plus minor convictions",
+    "thresholdCount": 2,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants with 1 at-fault accident and 2 or more minor convictions in the preceding 3 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "at-fault accident",
+      "minor convictions",
+      "preceding 3 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on driving record. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a combination of at-fault accidents and minor convictions. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "1 at-fault accident and 2 or more minor convictions"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Driving record is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The framework lists \"a pattern of at-fault accidents and tickets over a 3-year period\" as a common decline rule (FX-04), and approved rules combine accidents and minor convictions (AP-04, Silverbirch Casualty, 2020). DR-040 fits that pattern. A related accident-only submission from Lakefield Mutual (DR-001) is pending.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "1 at-fault accident and 2 or more minor convictions within the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "At-fault accidents and traffic convictions are direct evidence of driving behaviour. The rule reflects the applicant's own record.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "indicates a pattern of poor driving behaviour"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A driving record does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The combination of an accident and two convictions in three years affects a limited group with a recent pattern of poor driving. It follows established practice.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "1 at-fault accident and 2 or more minor convictions"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Declining drivers with a recent pattern of incidents limits claims costs shared by other policyholders. It adds no cost for others.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Requiring both an accident and multiple convictions shows a pattern rather than a single event. That balances the insurer's risk with fair treatment.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "This compound threshold"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on accidents and convictions on the driving record and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "minor convictions"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Accidents and convictions on the record is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "COPYCAT_REFERENCE"
+      ],
+      "reasoning": "The 3-year lookback and compound design match the framework's common example. However, the rationale justifies the threshold as \"consistent with industry practice\", and the framework does not accept another insurer's practice as a reason; the insurer should support it with its own analysis.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "This compound threshold is consistent with industry practice."
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A combination of an at-fault accident and repeated convictions links directly to future claims. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "a pattern of poor driving behaviour"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale offers industry practice instead of data. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "consistent with industry practice"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Minor convictions\" is an industry term, but the filing should define which offences count. That keeps the rule consistent across brokers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "minor convictions"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Declining a recent pattern of accidents and convictions matches common, approved practice.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "FX-04",
+      "similarity": 0.54,
+      "relation": "similar",
+      "explanation": "Framework common example: a pattern of at-fault accidents and tickets over 3 years. DR-040 specifies that pattern as 1 accident plus 2 or more minor convictions."
+    },
+    {
+      "refId": "AP-04",
+      "similarity": 0.642,
+      "relation": "similar",
+      "explanation": "Approved rule: 1 at-fault accident (5 years), 1 minor conviction (3 years) and 2 non-payment cancellations. DR-040 drops the payment element but requires a second conviction, so the driving-record bar is higher while the payment bar is gone."
+    },
+    {
+      "refId": "DR-001",
+      "similarity": 0.718,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual rule: 3 or more at-fault accidents in 3 years. Same lookback, different event mix; review together for consistent driving-record thresholds."
+    },
+    {
+      "refId": "DR-008",
+      "similarity": 0.259,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule also relies on \"industry practice\". Both need the same copycat condition."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers with an at-fault accident and 2 or more minor convictions in 3 years.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Drivers with recent poor records"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Please replace \"consistent with industry practice\" with the insurer's own analysis supporting the compound threshold.",
+    "Which offences count as minor convictions?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If the insurer cannot supply its own analysis, approval should wait."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions, including a condition to replace the industry-practice rationale.",
+      "owner": "Analyst",
+      "reason": "Substance matches FX-04; justification relies on others' practice."
+    },
+    {
+      "action": "Review with DR-001 and DR-008 for consistency.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurer and year are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

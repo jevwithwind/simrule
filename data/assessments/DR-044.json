@@ -1,0 +1,312 @@
+{
+  "id": "DR-044",
+  "extracted": {
+    "trigger": "Unpaid premiums owed to the insurer or affiliates",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants with outstanding unpaid premiums owed to the insurer or its affiliates",
+    "ruleType": "decline",
+    "definedTerms": [
+      "outstanding unpaid premiums",
+      "affiliated companies"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on unpaid premium. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on unpaid premiums owed to the insurer. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "outstanding unpaid premiums owed to our company"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "An unpaid premium debt is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "The rule matches AP-11 (Silverbirch Casualty, 2022): failure to pay any outstanding premiums owed to the insurer or its affiliated companies for the same named insured. DR-044 omits \"for the same named insured\", which should be restored so the rule does not reach debts of other people.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "outstanding unpaid premiums owed to our company or any of our affiliated companies"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A current debt to the same insurer is directly relevant to the contract being offered. The rule reflects the applicant's own obligation.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Outstanding premium debt represents a direct financial obligation to the insurer."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "An unpaid premium debt does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The consumer can remove the barrier by paying the debt, and other insurers remain available. The rule mirrors approved practice.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Unpaid premiums are a cost to other policyholders. Requiring them to be settled supports cost mitigation.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Asking a consumer to settle a debt before a new contract is commercially reasonable. The rule is balanced.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "not commercially reasonable"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on an outstanding premium balance and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "outstanding unpaid premiums"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "An outstanding balance is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no threshold and mirrors an approved rule. It is not arbitrary.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "An unpaid balance links directly to the insurer's exposure under a new contract. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "direct financial obligation to the insurer"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is commercial rather than statistical. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say whose debt counts or whether disputed balances count. Approved wording limits it to the same named insured.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant who has outstanding unpaid premiums"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Requiring settlement of a debt to the same insurer group is approved practice.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-11",
+      "similarity": 0.655,
+      "relation": "same",
+      "explanation": "Same trigger: outstanding premiums owed to the insurer or its affiliates. AP-11 adds \"for the same named insured\", which DR-044 should adopt."
+    },
+    {
+      "refId": "DR-022",
+      "similarity": 0.358,
+      "relation": "materially_different",
+      "explanation": "Pending Northern Shield Insurance rule declines past non-payment cancellations anywhere. DR-044 concerns a current debt to this insurer group, which is narrower and can be cured by paying."
+    },
+    {
+      "refId": "AP-03",
+      "similarity": 0.205,
+      "relation": "materially_different",
+      "explanation": "Approved compound rule uses past non-payment cancellations with convictions. DR-044 concerns a current debt."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants who currently owe premium to this insurer or its affiliates.",
+    "likelyConsequence": "They can pay the balance and reapply, or seek coverage elsewhere.",
+    "vulnerableGroups": [],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Will disputed balances count, and will the rule be limited to the same named insured as in AP-11?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If the rule were applied to debts owed by other household members, it would become overbroad."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite AP-11; ask for \"same named insured\" wording.",
+      "owner": "Analyst",
+      "reason": "Matches an approved rule."
+    },
+    {
+      "action": "Confirm treatment of disputed balances.",
+      "owner": "Insurer",
+      "reason": "Definitions condition."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurer and year are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

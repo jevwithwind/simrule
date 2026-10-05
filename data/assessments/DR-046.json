@@ -1,0 +1,352 @@
+{
+  "id": "DR-046",
+  "extracted": {
+    "trigger": "Student driving over 15,000 km a year",
+    "thresholdCount": 15000,
+    "lookbackYears": null,
+    "populationAffected": "Students who drive more than 15,000 km a year",
+    "ruleType": "decline",
+    "definedTerms": [
+      "more than 15,000 kilometres annually"
+    ],
+    "undefinedTerms": [
+      "identifies as a student"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on student status combined with distance. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "identifies as a student and drives more than 15,000 kilometres annually"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Most students are young, so student status acts as a proxy for age. Age is covered by the Code's insurance provision only on reasonable and bona fide grounds, which a refusal rule would struggle to meet.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "identifies as a student"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Distance and inexperience are named risk factors, but both belong in rating. Being a student is not a driving behaviour.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "a combination of inexperience and high exposure"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND",
+        "DISCRIMINATORY_IMPACT_NEW_DRIVERS"
+      ],
+      "reasoning": "Student status stands in for youth and inexperience, so the rule falls on young and new drivers. The framework treats declining new drivers as a discriminatory impact.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "identifies as a student"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Students who commute long distances, often from rural areas or between campus and home, would be refused. A non-student driving the same distance would not be.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "drives more than 15,000 kilometres annually"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Students pushed elsewhere would pay more. Distance and experience can be priced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer says its rating structure does not price this combination well. That argues for fixing the rating, not refusing coverage.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "that our rating structure does not adequately price"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on student status and annual distance and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "identifies as a student"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "\"Identifies as a student\" relies on self-description, and annual kilometres are an estimate. Both require judgment to apply.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "identifies as a student"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No reason is given for 15,000 km or for applying it only to students. The same distance is not a decline trigger for anyone else.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 15,000 kilometres annually"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Distance links to exposure, and inexperience links to claims. Student status itself does not, and a mature student may have decades of experience.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "a combination of inexperience and high exposure"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "Part-time, mature and continuing-education students are not addressed. The same applicant could be in or out.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "identifies as a student"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing students who must drive to attend school would penalise education, especially for rural students. Rating would address the insurer's concern.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-037",
+      "similarity": 0.34,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines commutes over 80 km. Both use distance as a decline trigger; DR-046 adds student status."
+    },
+    {
+      "refId": "DR-007",
+      "similarity": 0.096,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines drivers under 21. DR-046 reaches a similar group through student status."
+    },
+    {
+      "refId": "DR-087",
+      "similarity": 0.233,
+      "relation": "materially_different",
+      "explanation": "Pending Maplewood Mutual rule declines regular cross-border work travel. Also distance-based, but tied to occupation rather than student status."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Students driving more than 15,000 km a year, often rural students commuting to school.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Young drivers",
+      "Rural students",
+      "Students commuting long distances"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Why would distance and experience rating not address the concern?",
+    "Are mature or part-time students included?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Removing student status and rating distance and experience directly would resolve the concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and record the age-proxy finding.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 2 fail."
+    },
+    {
+      "action": "Review with DR-007, DR-018 and DR-024 as part of the new-driver cluster.",
+      "owner": "Senior reviewer",
+      "reason": "Consistency; Level 1 concern."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
