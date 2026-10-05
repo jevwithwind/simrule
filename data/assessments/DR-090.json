@@ -1,0 +1,345 @@
+{
+  "id": "DR-090",
+  "extracted": {
+    "trigger": "Past medical refusal of licence renewal",
+    "thresholdCount": null,
+    "lookbackYears": 5,
+    "populationAffected": "Applicants refused a licence renewal for medical reasons in 5 years, even if since reinstated",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 5 years"
+    ],
+    "undefinedTerms": [
+      "denied a licence renewal for medical reasons"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on licence history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "A medical refusal of renewal is a medical licence lapse, not a suspension for a driving conviction. FSRA guidance restricts using administrative and medical lapses in underwriting, so the rule is contrary to that guidance. The guidance could not be verified and should be confirmed.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "denied a licence renewal by the Ministry of Transportation for medical reasons"
+        }
+      ],
+      "citationIds": [
+        "FSRA_ADMIN_LAPSE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "The trigger is a medical condition, which is a disability under the Code. The insurance provision allows disability distinctions only on reasonable and bona fide grounds, and refusing someone the licensing authority has found fit again would be hard to defend.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even if their licence has since been reinstated"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Reinstatement means the licensing authority now considers the person medically fit. The rule ignores that and the person's record.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even if their licence has since been reinstated"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule uses a past medical condition directly, after it has been resolved. The principle requires decisions not influenced by protected grounds without justification.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "for medical reasons"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People who recovered from an illness would be refused for 5 years after being cleared to drive. That limits access for people with disabilities.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would pay more elsewhere. No claims saving is shown.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Relying on current licence status, which approved rules already do, would protect the insurer. Second-guessing the licensing authority is not balanced.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "the underlying condition may present ongoing risk"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "The insurer would need to ask about past medical licensing decisions, which is sensitive health information. The decline would disclose it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "for medical reasons"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A licensing decision is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for a 5-year lookback after reinstatement. It is not tied to measured risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale says the condition \"may\" present ongoing risk, which contradicts the licensing authority's finding. The framework rejects rules not based on a demonstrated risk-relevant characteristic.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Even after reinstatement, the underlying condition may present ongoing risk."
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A medical refusal of renewal is a recorded licensing decision. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "denied a licence renewal by the Ministry of Transportation for medical reasons"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing people the licensing authority has cleared to drive would override medical fitness decisions and penalise recovery. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-076",
+      "similarity": 0.308,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines voluntary surrender and reinstatement. Same medical and administrative lapse problem. Review together."
+    },
+    {
+      "refId": "DR-021",
+      "similarity": 0.208,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines medical conditions that may impair driving. Both second-guess medical fitness decisions."
+    },
+    {
+      "refId": "DR-033",
+      "similarity": 0.203,
+      "relation": "materially_different",
+      "explanation": "Pending Lakefield Mutual rule declines current invalid licences. DR-033 looks at current status, which is acceptable; DR-090 looks at a past, resolved decision."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "People whose licence renewal was refused for medical reasons in the last 5 years, even after being cleared to drive.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People recovering from illness",
+      "People with disabilities",
+      "Older drivers"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would current licence status not address the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal; current licence rules already cover the concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Restricted factor and disability ground."
+    },
+    {
+      "action": "Review with DR-076 and DR-021 as the medical-licensing cluster.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concerns."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "FSRA administrative lapse guidance could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

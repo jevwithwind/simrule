@@ -1,0 +1,324 @@
+{
+  "id": "DR-095",
+  "extracted": {
+    "trigger": "Vehicle converted into a mobile dwelling",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Owners of personal vehicles converted into a mobile dwelling",
+    "ruleType": "decline",
+    "definedTerms": [
+      "mobile dwelling"
+    ],
+    "undefinedTerms": [
+      "converted"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle conversion. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a living-space conversion. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "converted a personal vehicle into a mobile dwelling"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle conversion is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "A vehicle converted to live in is being used for a purpose it was not designed for, which applies AP-08 (Harbourview Assurance, 2019). DR-095 is a specific case of that approved rule.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "converted a personal vehicle into a mobile dwelling"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A living conversion changes the vehicle's weight, contents and use. The rule reflects the actual vehicle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "unique liability, contents, and usage risks"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle conversion does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Specialty motorhome coverage exists, so access is redirected rather than removed. Some people living in vehicles for economic reasons may struggle to afford it.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "These vehicles require specialty coverage."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Keeping converted dwellings out of personal pools avoids cross-subsidy. No new cost is created for others.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Directing converted vehicles to specialty coverage is a reasonable product boundary. It is balanced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Owners of lightly modified camper vans may not know whether they count. The insurer should explain the test.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "(e.g., van life conversion)"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Deciding when a vehicle becomes a \"dwelling\" involves judgment. A removable mattress and a full kitchen build are very different.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "mobile dwelling"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows the approved design-purpose category. It is not arbitrary.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Fixed installations, gas and electrical systems and added weight link directly to liability and damage exposure. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "unique liability, contents, and usage risks"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is qualitative. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Mobile dwelling\" is illustrated but not defined. The filing should set a test, such as fixed sleeping, cooking or plumbing installations.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "mobile dwelling (e.g., van life conversion)"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Directing converted dwellings to specialty coverage follows the approved design-purpose rule.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-08",
+      "similarity": 0.254,
+      "relation": "similar",
+      "explanation": "Approved rule declines vehicles used for a purpose they were not designed for. A living conversion is one such purpose."
+    },
+    {
+      "refId": "DR-035",
+      "similarity": 0.253,
+      "relation": "similar",
+      "explanation": "Same insurer (Beacon Fire & Casualty) proposes the general design-purpose rule. DR-095 is a specific case; definitions should match."
+    },
+    {
+      "refId": "DR-043",
+      "similarity": 0.296,
+      "relation": "materially_different",
+      "explanation": "Pending Lakefield Mutual volunteer-responder rule. Both concern special use, but DR-043 penalises public service and DR-095 concerns a physical conversion."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners of vans or other vehicles converted for living in.",
+    "likelyConsequence": "They would need specialty motorhome or conversion coverage, usually at higher cost.",
+    "vulnerableGroups": [
+      "People living in vehicles for economic reasons"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "What test defines a \"mobile dwelling\" conversion?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If the rule were applied to lightly modified vehicles with removable equipment, it would become overbroad."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite AP-08; require a definition of \"mobile dwelling\".",
+      "owner": "Analyst",
+      "reason": "Specific case of an approved rule."
+    },
+    {
+      "action": "Align the definition with DR-035 (same insurer).",
+      "owner": "Insurer",
+      "reason": "Consistent definitions across the filing."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

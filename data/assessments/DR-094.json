@@ -1,0 +1,344 @@
+{
+  "id": "DR-094",
+  "extracted": {
+    "trigger": "Licence suspension for unpaid fines",
+    "thresholdCount": null,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants whose licence was suspended for unpaid fines in the preceding 3 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 3 years"
+    ],
+    "undefinedTerms": [
+      "licence suspension for unpaid fines"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on licence history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "A suspension for unpaid fines is an administrative suspension, not one that follows a driving conviction. FSRA guidance restricts using administrative lapses and suspensions in underwriting, so the rule is contrary to that guidance. The guidance could not be verified and should be confirmed.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "licence suspension for unpaid fines"
+        }
+      ],
+      "citationIds": [
+        "FSRA_ADMIN_LAPSE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Unpaid fines are more common among low-income people, who overlap with some protected groups. The effect is indirect.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "unpaid fines"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The fines may be for parking or non-driving offences. Any driving convictions behind them are already captured by conviction rules.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "indicates both a pattern of driving infractions and financial irresponsibility"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule falls mainly on people who could not afford to pay fines. It acts as an indirect proxy for income.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People who paid their fines and had their licence restored would be refused for 3 years. That limits access for low-income drivers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would pay more elsewhere, compounding financial strain. No claims saving is shown.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Conviction rules already address driving infractions. Adding a decline for the act of not paying fines punishes poverty rather than risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "financial irresponsibility"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a past suspension for unpaid fines and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "licence suspension for unpaid fines"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A recorded suspension is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The 3-year lookback matches approved driving-record rules. The defect is the trigger, not the period.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale assumes the fines came from driving infractions, but they need not have. \"Financial irresponsibility\" is not a driving risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "a pattern of driving infractions and financial irresponsibility"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say whether parking or non-driving fines count. The scope is unclear.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "unpaid fines"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: the guidance on administrative suspensions exists so that people are not penalised in insurance for non-driving lapses. The rule would undo that protection.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FSRA_ADMIN_LAPSE"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-076",
+      "similarity": 0.26,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. voluntary-surrender rule. Same administrative lapse problem. Review together."
+    },
+    {
+      "refId": "DR-090",
+      "similarity": 0.208,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group medical-refusal rule. Another administrative or medical licence event."
+    },
+    {
+      "refId": "DR-002",
+      "similarity": 0.265,
+      "relation": "materially_different",
+      "explanation": "Pending Northern Shield Insurance impaired-suspension rule. Impaired driving is driving conduct; unpaid fines are not."
+    },
+    {
+      "refId": "AP-12",
+      "similarity": 0.152,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines invalid licences now. DR-094 applies after the licence has been restored."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers whose licence was suspended for unpaid fines in the last 3 years, even if since restored.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Low-income drivers"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Do parking or non-driving fines count?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal; conviction rules already capture driving infractions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Restricted administrative factor."
+    },
+    {
+      "action": "Verify the administrative lapse guidance.",
+      "owner": "Senior reviewer",
+      "reason": "Unverified source."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "FSRA administrative lapse guidance could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

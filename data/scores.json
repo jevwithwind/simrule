@@ -3234,6 +3234,263 @@
    "Material information gap that could change the outcome (L3_ACTUARIAL, L3_DEFINITION)."
   ]
  },
+ "DR-089": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.917,
+    "points": 36.7,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.7,
+    "points": 24.5,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 1,
+    "points": 25,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [],
+  "seniorReviewRequired": false,
+  "seniorReviewReasons": [],
+  "recommendation": "APPROVE_WITH_CONDITIONS",
+  "score": 86.2,
+  "hardStop": false,
+  "reasons": [
+   "Score 86.2 is 75 or above, with no hard stops or material information gaps."
+  ]
+ },
+ "DR-090": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.167,
+    "points": 6.7,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.6,
+    "points": 21,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 0,
+    "points": 0,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [
+   "L3_ACTUARIAL"
+  ],
+  "seniorReviewRequired": true,
+  "seniorReviewReasons": [
+   "Level 1 concern: L1_HUMAN_RIGHTS."
+  ],
+  "recommendation": "RECOMMEND_DECLINE",
+  "score": 27.7,
+  "hardStop": true,
+  "reasons": [
+   "Level 1 fail (L1_LEGISLATION): full-stop refusal under the framework."
+  ]
+ },
+ "DR-091": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.75,
+    "points": 30,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.7,
+    "points": 24.5,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 0.5,
+    "points": 12.5,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [
+   "L3_ACTUARIAL"
+  ],
+  "seniorReviewRequired": false,
+  "seniorReviewReasons": [],
+  "recommendation": "REQUEST_MORE_INFORMATION",
+  "score": 67,
+  "hardStop": false,
+  "reasons": [
+   "Score 67 is between 50 and 74.",
+   "Material information gap that could change the outcome (L3_ACTUARIAL)."
+  ]
+ },
+ "DR-092": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.083,
+    "points": 3.3,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.1,
+    "points": 3.5,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 0,
+    "points": 0,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [
+   "L3_ACTUARIAL"
+  ],
+  "seniorReviewRequired": true,
+  "seniorReviewReasons": [
+   "Level 1 concern: L1_HUMAN_RIGHTS."
+  ],
+  "recommendation": "RECOMMEND_DECLINE",
+  "score": 6.8,
+  "hardStop": false,
+  "reasons": [
+   "High-severity fail at Levels 2-4 (L2_ACCURATE, L2_NO_DISCRIMINATION, L2_ACCESSIBLE, L3_NOT_SUBJECTIVE, L3_RISK_LINK, L4_PUBLIC_POLICY)."
+  ]
+ },
+ "DR-093": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.417,
+    "points": 16.7,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.8,
+    "points": 28,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 0,
+    "points": 0,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [
+   "L3_ACTUARIAL"
+  ],
+  "seniorReviewRequired": true,
+  "seniorReviewReasons": [
+   "Level 1 concern: L1_HUMAN_RIGHTS."
+  ],
+  "recommendation": "RECOMMEND_DECLINE",
+  "score": 44.7,
+  "hardStop": false,
+  "reasons": [
+   "High-severity fail at Levels 2-4 (L2_ACCESSIBLE, L4_PUBLIC_POLICY)."
+  ]
+ },
+ "DR-094": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.417,
+    "points": 16.7,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.7,
+    "points": 24.5,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 0,
+    "points": 0,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [
+   "L3_ACTUARIAL"
+  ],
+  "seniorReviewRequired": true,
+  "seniorReviewReasons": [
+   "Level 1 concern: L1_HUMAN_RIGHTS."
+  ],
+  "recommendation": "RECOMMEND_DECLINE",
+  "score": 41.2,
+  "hardStop": true,
+  "reasons": [
+   "Level 1 fail (L1_LEGISLATION): full-stop refusal under the framework."
+  ]
+ },
+ "DR-095": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.833,
+    "points": 33.3,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.7,
+    "points": 24.5,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 1,
+    "points": 25,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [],
+  "seniorReviewRequired": false,
+  "seniorReviewReasons": [],
+  "recommendation": "APPROVE_WITH_CONDITIONS",
+  "score": 82.8,
+  "hardStop": false,
+  "reasons": [
+   "Score 82.8 is 75 or above, with no hard stops or material information gaps."
+  ]
+ },
  "DR-096": {
   "levels": [
    {
@@ -3270,6 +3527,118 @@
   "hardStop": false,
   "reasons": [
    "High-severity fail at Levels 2-4 (L2_ACCURATE, L2_NO_DISCRIMINATION, L3_RISK_LINK, L4_PUBLIC_POLICY)."
+  ]
+ },
+ "DR-097": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.5,
+    "points": 20,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.5,
+    "points": 17.5,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 0.5,
+    "points": 12.5,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [
+   "L3_ACTUARIAL"
+  ],
+  "seniorReviewRequired": false,
+  "seniorReviewReasons": [],
+  "recommendation": "RECOMMEND_DECLINE",
+  "score": 50,
+  "hardStop": false,
+  "reasons": [
+   "High-severity fail at Levels 2-4 (L2_ACCESSIBLE)."
+  ]
+ },
+ "DR-098": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.333,
+    "points": 13.3,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.7,
+    "points": 24.5,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 0,
+    "points": 0,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [
+   "L3_ACTUARIAL"
+  ],
+  "seniorReviewRequired": true,
+  "seniorReviewReasons": [
+   "Level 1 concern: L1_HUMAN_RIGHTS."
+  ],
+  "recommendation": "RECOMMEND_DECLINE",
+  "score": 37.8,
+  "hardStop": false,
+  "reasons": [
+   "High-severity fail at Levels 2-4 (L2_NO_DISCRIMINATION, L2_ACCESSIBLE, L4_PUBLIC_POLICY)."
+  ]
+ },
+ "DR-099": {
+  "levels": [
+   {
+    "level": 2,
+    "weight": 40,
+    "average": 0.25,
+    "points": 10,
+    "criteria": 6
+   },
+   {
+    "level": 3,
+    "weight": 35,
+    "average": 0.4,
+    "points": 14,
+    "criteria": 5
+   },
+   {
+    "level": 4,
+    "weight": 25,
+    "average": 0,
+    "points": 0,
+    "criteria": 1
+   }
+  ],
+  "materialInsufficient": [
+   "L3_ACTUARIAL"
+  ],
+  "seniorReviewRequired": true,
+  "seniorReviewReasons": [
+   "Level 1 concern: L1_HUMAN_RIGHTS."
+  ],
+  "recommendation": "RECOMMEND_DECLINE",
+  "score": 24,
+  "hardStop": false,
+  "reasons": [
+   "High-severity fail at Levels 2-4 (L2_ACCESSIBLE, L3_RISK_LINK)."
   ]
  },
  "DR-100": {

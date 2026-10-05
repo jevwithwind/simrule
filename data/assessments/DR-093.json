@@ -1,0 +1,328 @@
+{
+  "id": "DR-093",
+  "extracted": {
+    "trigger": "Transporting foster children",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Foster carers who drive foster children under a government-sponsored arrangement",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on transporting foster children. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "transport foster children"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "Caring for children is family status, a protected ground. The Code's insurance provision allows family-status distinctions only on reasonable and bona fide grounds, which this rule is unlikely to meet.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "foster children"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The approved special-use rules (AP-08, AP-10) concern misuse of the vehicle or police work, which this is not.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Driving children to school and appointments is ordinary family driving. More trips can be rated like any other increase in use.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "frequent short trips to schools, appointments, and agency offices"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "Foster carers would be treated worse than parents driving their own children the same way. That is a family-status distinction without justification.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "foster children"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Foster carers need a vehicle to meet the children's needs. Refusing them coverage could make fostering impossible.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "government-sponsored foster care arrangement"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Foster carers pushed elsewhere would pay more, adding cost to a public service. Any added exposure can be rated.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer can rate passenger exposure and mileage. Refusing foster carers outright is not balanced.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "additional passenger liability"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on foster care transport and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "transport foster children"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Foster care status is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no threshold. Its defect is the trigger and the public policy conflict.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale cites passenger liability and short trips, which apply equally to any parent. The link to elevated risk is not shown.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "introduces additional passenger liability"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Government-sponsored foster care is a defined arrangement. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "as part of a government-sponsored foster care arrangement"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing insurance to foster carers would undermine a public child-welfare program that depends on volunteers. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-043",
+      "similarity": 0.254,
+      "relation": "similar",
+      "explanation": "Same insurer (Lakefield Mutual) declines volunteer emergency responders. Both refuse people for public-service activities. Review together."
+    },
+    {
+      "refId": "AP-10",
+      "similarity": 0.254,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines vehicles used for police work. Foster care transport is ordinary family driving, not occupational patrol."
+    },
+    {
+      "refId": "DR-080",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines households with children under 16. Same family-status concern."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Foster carers who drive foster children to school, appointments and agency visits.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Foster families",
+      "Children in care"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "What data shows that foster carers have more claims than other parents?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal; rating for mileage or passengers would address the stated exposure."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on public policy and accessibility grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Review with DR-043 (same insurer) for consistent treatment of public-service activities.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
