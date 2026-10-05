@@ -1,0 +1,121 @@
+1
+00:00:05,630 --> 00:00:11,780
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Welcome to your final project. For the past three weeks, you've been building AI prototypes for a fictional startup.
+
+2
+00:00:11,900 --> 00:00:15,740
+You've created avatars, websites, chat bots, and business applications.
+
+3
+00:00:15,950 --> 00:00:19,550
+Now we're going to apply everything you've learned to a real world challenge.
+
+4
+00:00:20,360 --> 00:00:25,490
+For this final assignment, you'll be working on a problem that keeps executives in regulated industries up at night.
+
+5
+00:00:25,640 --> 00:00:32,810
+How do we make complex, high stakes decisions faster and more consistently, while maintaining the human judgment that accountability requires?
+
+6
+00:00:33,500 --> 00:00:40,220
+Specifically, you'll be prototyping an AI system that could help regulators review and approve applications from insurance companies.
+
+7
+00:00:40,610 --> 00:00:47,839
+Every year, regulators process thousands of applications from insurers wanting to change their products, adjusting prices.
+
+8
+00:00:47,840 --> 00:00:50,540
+Modifying coverage. Introducing new offerings.
+
+9
+00:00:50,690 --> 00:00:58,100
+Each application must be checked against regulations compared to historical precedents, and evaluated for its impact on consumers.
+
+10
+00:00:58,310 --> 00:01:05,510
+It's exactly the kind of complex, knowledge intensive work where AI could provide enormous value if implemented thoughtfully.
+
+11
+00:01:06,600 --> 00:01:09,600
+This assignment is more ambitious than anything you've done so far.
+
+12
+00:01:09,630 --> 00:01:11,940
+You'll create four integrated components.
+
+13
+00:01:12,240 --> 00:01:20,340
+First, a web based prototype using vibe coding tools that shows what an AI assisted regulatory review dashboard could look like.
+
+14
+00:01:20,640 --> 00:01:26,460
+Think document uploads, compliance flags, recommendation panels, and decision workflows.
+
+15
+00:01:27,360 --> 00:01:34,950
+Second, a chat bot trained on regulatory concepts that could help both reviewers and applicants understand requirements and navigate the process.
+
+16
+00:01:35,700 --> 00:01:42,930
+Third, an AI avatar video like the one you created in week one, but this time presenting your complete solution concept to screen.
+
+17
+00:01:43,260 --> 00:01:47,430
+And finally, a solution architecture diagram showing how all the pieces fit together.
+
+18
+00:01:48,210 --> 00:01:52,420
+I want to be clear about why this challenge exists. This isn't an academic exercise.
+
+19
+00:01:52,440 --> 00:01:58,800
+We developed this assignment in collaboration with senior executives from Ontario's financial services regulatory sector.
+
+20
+00:01:58,950 --> 00:02:03,179
+The problem is real, the constraints are real and the approach you're taking.
+
+21
+00:02:03,180 --> 00:02:10,470
+Rapid prototyping, iterative development, human centered design is exactly how organizations are exploring AI adoption right now.
+
+22
+00:02:11,370 --> 00:02:17,010
+Here's what I want you to focus on this assignment. Test your ability to think systematically about AI implementation.
+
+23
+00:02:17,160 --> 00:02:20,670
+Not just can I build something, but how should a system like this work?
+
+24
+00:02:20,910 --> 00:02:25,170
+Where do humans stay in the loop? How do we maintain transparency and accountability?
+
+25
+00:02:25,770 --> 00:02:27,330
+These are the questions that matter.
+
+26
+00:02:27,360 --> 00:02:34,590
+When AI moves from prototype to production, your reflection on limitations and risks is just as important as the prototype itself.
+
+27
+00:02:35,430 --> 00:02:40,920
+You have two weeks, the scope is larger, the expectations are higher, and the problem is worth solving.
+
+28
+00:02:41,040 --> 00:02:44,610
+In my years as a CIO, the hardest challenge wasn't building technology.
+
+29
+00:02:44,850 --> 00:02:48,360
+It was building technology that humans trusted and could actually use.
+
+30
+00:02:48,600 --> 00:02:51,090
+That's what you're prototyping here. Make it count.
+
