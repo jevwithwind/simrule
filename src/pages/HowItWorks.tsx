@@ -73,6 +73,26 @@ export default function HowItWorks() {
         </p>
       </section>
 
+      <section aria-label="Solution architecture" className="card p-5" data-testid="architecture">
+        <SectionTitle title="Solution architecture">
+          <a className="btn btn-secondary py-1 text-xs" href="./architecture.svg" target="_blank" rel="noreferrer">
+            <ExternalLink size={13} aria-hidden /> Open full size
+          </a>
+        </SectionTitle>
+        <p className="mb-3 text-sm text-[var(--color-ink-muted)]">
+          Four swimlanes: insurer, AI services, human reviewers, and records and accountability. Each AI box shows what this prototype uses and what production would need. H marks a human touchpoint; A marks an accountability control.
+        </p>
+        <figure className="overflow-x-auto">
+          <img
+            src="./architecture.svg"
+            width={1650}
+            height={1275}
+            className="h-auto w-full min-w-[720px] rounded-md border border-[var(--color-line)]"
+            alt="Simrule architecture. 1 insurer submits a rule. AI services: 2 intake and parsing, 3 scope and completeness, 4 structured extraction, 5 criteria assessment L1 to L4 with retrieval over a versioned knowledge base, 6 precedent similarity, 7 deterministic scoring. Human reviewers: confirm extraction, 8 recommendation panel, 9 validate or override, 10 senior sign-off, 11 decision and rationale. Records: 12 audit trail, 13 precedent registry, 14 consistency monitoring, plus the versioned knowledge base. A chatbot answers insurers and reviewers from the same knowledge base."
+          />
+        </figure>
+      </section>
+
       <section aria-labelledby="levels-h" className="card p-5">
         <SectionTitle title="The framework: four Levels, fifteen criteria" />
         <div className="space-y-4">
