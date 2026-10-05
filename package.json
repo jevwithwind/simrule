@@ -15,7 +15,9 @@
     "validate": "tsx scripts/validate-assessments.ts",
     "score": "tsx scripts/score-all.ts",
     "audit": "tsx scripts/consistency-audit.ts",
-    "typecheck": "tsc -b --noEmit"
+    "typecheck": "tsc -b --noEmit",
+    "e2e": "playwright test",
+    "samples": "tsx scripts/make-samples.ts"
   },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^5.3.0",

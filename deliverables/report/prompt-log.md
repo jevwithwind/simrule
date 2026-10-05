@@ -85,3 +85,14 @@ Problems found by reading the pilot output, each mapped to a v2 rule:
 - **Fixes:** applied as explicit patches in `data/authoring/audit-fixes.ts` and recorded in each assessment's `auditNotes`: 14 precedent comparisons rewritten or added, 22 market-check findings given the pending flag, 2 findings corrected (DR-049 severity aligned with the other copycat rules; DR-063 copycat code removed because an employer is not an insurer).
 - **After:** 0 unexplained pairs, 0 missing flags, 9 code groups each with a written explanation. 29 assessments changed (38 changes). No recommendation changed.
 - **Lesson:** the automated "is there an explanation?" check was too weak on its own: it passed 15 of 16 pairs, but reading them showed 8 explanations that never said why the outcomes differed.
+
+## 11. Testing iteration (Phase 4)
+
+- **Unit tests first (vitest, 129 tests):** parser (100 rules, every field), deterministic scoring (Level 1 hard stop, out of scope, the 75 and 50 edges, material information gap, senior-review flag), similarity anchors, keyword triage, all 100 assessments against the schema and content rules, workflow seeding and sign-off triggers. All passed on first run, which confirms the Phase 2 validators and the app share one source of truth.
+- **End-to-end tests found what unit tests could not:**
+  1. Uploading a PDF failed in Chromium with "getOrInsertComputed is not a function". The modern `pdfjs-dist` build uses a JavaScript method browsers do not ship yet. Switched to the legacy build, which includes the polyfill. A reviewer on an ordinary browser would have hit this in the demo.
+  2. The audit trail showed raw keys such as `APPROVE_WITH_CONDITIONS` and `AI_MISREAD_RULE`. Not plain English, so the display and the Markdown export now map them to labels; the JSON export keeps the keys for traceability.
+  3. At 390 px the dashboard toolbar and two tables pushed the page sideways. Fixed with wrapping and scroll containers; a test now fails on any horizontal scroll.
+- **Accessibility (axe):** one serious issue on 5 screens (small uppercase labels under 4.5:1 contrast). Darkened the token; 0 violations on 9 screens.
+- **Lesson:** the flow test is the closest thing to a real reviewer. Three of four bugs were invisible to type checks and unit tests.
+

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AlertTriangle, ArrowLeftRight, CheckCircle2, FileDown, FileJson, Gavel, Printer, Send, ShieldCheck, Undo2, Wand2 } from 'lucide-react';
-import { decisionLabel, framework, recommendationLabel, stageLabel } from '../../data';
+import { decisionLabel, framework, humaniseAuditText, recommendationLabel, stageLabel } from '../../data';
 import type { Assessment, Criterion, Rule } from '../../lib/schema';
 import type { ScoreResult } from '../../lib/scoring';
 import { signOffTriggers, validatedCount, type AuditEvent, type CaseState, type DecisionKey, type Override } from '../../lib/workflow';
@@ -94,7 +94,7 @@ export default function DecisionPanel({
     !ownership && 'Confirm ownership of the rationale.',
   ].filter(Boolean) as string[];
 
-  const recordInput = { rule, assessment, ai, human, caseState, audit, labels: { recommendation: recommendationLabel, decision: decisionLabel, stage: stageLabel } };
+  const recordInput = { rule, assessment, ai, human, caseState, audit, labels: { recommendation: recommendationLabel, decision: decisionLabel, stage: stageLabel, text: humaniseAuditText } };
 
   const exports = (
     <div className="flex flex-wrap gap-2 border-t border-[var(--color-line)] pt-3">

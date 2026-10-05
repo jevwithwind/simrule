@@ -15,8 +15,8 @@ export interface ExtractedRule {
 export async function extractTextFromFile(file: File): Promise<string> {
   const name = file.name.toLowerCase();
   if (name.endsWith('.pdf')) {
-    const pdfjs = await import('pdfjs-dist');
-    const workerUrl = (await import('pdfjs-dist/build/pdf.worker.min.mjs?url')).default;
+    const pdfjs = await import('pdfjs-dist/legacy/build/pdf.mjs');
+    const workerUrl = (await import('pdfjs-dist/legacy/build/pdf.worker.min.mjs?url')).default;
     pdfjs.GlobalWorkerOptions.workerSrc = workerUrl;
     const doc = await pdfjs.getDocument({ data: new Uint8Array(await file.arrayBuffer()) }).promise;
     const pages: string[] = [];

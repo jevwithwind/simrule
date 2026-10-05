@@ -1,0 +1,14 @@
+Underwriting rule filing: Northlake General
+Fictional sample filing for the Simrule academic prototype. Not a real insurer or rule.
+
+Rule 1
+Submitting Insurer: Northlake General
+Date Submitted: 2024-12-09
+Proposed Decline Rule: Decline to offer optional collision coverage on any vehicle more than 15 years old.
+Insurer's Stated Rationale: The repair cost of older vehicles frequently exceeds their actual cash value, so collision coverage provides little value to the consumer.
+Rule Category: Vehicle Type
+
+Rule 2
+Proposed Decline Rule: Decline to offer third-party liability limits above $2,000,000 to applicants with 2 or more at-fault accidents in the preceding 3 years.
+Insurer's Stated Rationale: Higher limits concentrate severe-loss exposure on drivers with a demonstrated pattern of at-fault accidents.
+Rule Category: Driving Record

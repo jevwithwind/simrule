@@ -1,6 +1,7 @@
 import { History } from 'lucide-react';
 import type { AuditEvent } from '../../lib/workflow';
 import { cx } from '../ui';
+import { humaniseAuditText as h, humaniseFinding } from '../../data';
 
 export default function AuditTimeline({ events }: { events: AuditEvent[] }) {
   const sorted = [...events].sort((a, b) => b.at.localeCompare(a.at));
@@ -14,7 +15,7 @@ export default function AuditTimeline({ events }: { events: AuditEvent[] }) {
         {sorted.map((e) => (
           <li key={e.id} className="border-l-2 border-[var(--color-line)] pl-3 text-xs">
             <div className="flex flex-wrap items-center gap-x-2">
-              <span className="font-semibold text-[var(--color-ink)]">{e.action}</span>
+              <span className="font-semibold text-[var(--color-ink)]">{h(e.action)}</span>
             </div>
             <div className="text-[var(--color-ink-muted)]">
               {new Date(e.at).toLocaleString('en-CA', { dateStyle: 'medium', timeStyle: 'short' })} ·{' '}
@@ -22,13 +23,13 @@ export default function AuditTimeline({ events }: { events: AuditEvent[] }) {
                 {e.actor} · {e.role}
               </span>
             </div>
-            {e.detail && <div className="mt-0.5 text-[var(--color-ink)]">{e.detail}</div>}
+            {e.detail && <div className="mt-0.5 text-[var(--color-ink)]">{h(e.detail)}</div>}
             {(e.before || e.after) && (
               <div className="mt-0.5">
-                {e.before && <span className="text-[var(--color-ink-muted)] line-through">{e.before}</span>} {e.after && <span>→ {e.after}</span>}
+                {e.before && <span className="text-[var(--color-ink-muted)] line-through">{humaniseFinding(e.before)}</span>} {e.after && <span>→ {humaniseFinding(e.after)}</span>}
               </div>
             )}
-            {e.reason && <div className="mt-0.5 italic">Reason: {e.reason}</div>}
+            {e.reason && <div className="mt-0.5 italic">Reason: {h(e.reason)}</div>}
           </li>
         ))}
       </ol>

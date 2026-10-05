@@ -37,6 +37,16 @@ export const stageLabel = (k: string) => stages.find((s) => s.key === k)?.label 
 export const recommendationLabel = (k: string) => framework.recommendations.find((r) => r.key === k)?.label ?? k;
 export const decisionLabel = (k: string) => framework.decisionOptions.find((d) => d.key === k)?.label ?? k;
 
+// Plain-English display of workflow keys inside audit text. Issue codes and criterion keys stay as codes
+// because the product shows them as codes everywhere else.
+const KEY_LABELS = new Map<string, string>(
+  [...framework.recommendations, ...framework.decisionOptions, ...framework.overrideReasonCodes, ...framework.seniorSignOffTriggers, ...framework.workflowStages].map((x) => [x.key, x.label]),
+);
+const STATUS_LABELS = new Map<string, string>(framework.statuses.map((s) => [s.key, s.label]));
+export const humaniseAuditText = (t: string) => t.replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (m) => KEY_LABELS.get(m) ?? m);
+export const humaniseFinding = (t: string) =>
+  t.replace(/\b(insufficient_information|pass|concern|fail)\b(?= \/)/g, (m) => STATUS_LABELS.get(m) ?? m);
+
 export interface CandidateSet {
   id: string;
   candidates: { id: string; kind: 'submission' | 'precedent'; score: number; insurer: string | null; sameInsurer: boolean }[];

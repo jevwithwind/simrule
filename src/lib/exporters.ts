@@ -11,7 +11,7 @@ export interface DecisionRecordInput {
   human: ScoreResult;
   caseState: CaseState;
   audit: AuditEvent[];
-  labels: { recommendation: (k: string) => string; decision: (k: string) => string; stage: (k: string) => string };
+  labels: { recommendation: (k: string) => string; decision: (k: string) => string; stage: (k: string) => string; text: (s: string) => string };
 }
 
 export function decisionRecordJson(i: DecisionRecordInput): string {
@@ -61,7 +61,7 @@ export function decisionRecordMarkdown(i: DecisionRecordInput): string {
     );
   }
   out.push(`## Audit trail\n\n| Time | Actor | Role | Action | Detail |\n|---|---|---|---|---|\n${i.audit
-    .map((e) => `| ${e.at} | ${e.actor} | ${e.role} | ${e.action} | ${[e.detail, e.before && `before: ${e.before}`, e.after && `after: ${e.after}`, e.reason && `reason: ${e.reason}`].filter(Boolean).join('; ').replace(/\|/g, '/')} |`)
+    .map((e) => `| ${e.at} | ${e.actor} | ${e.role} | ${i.labels.text(e.action)} | ${i.labels.text([e.detail, e.before && `before: ${e.before}`, e.after && `after: ${e.after}`, e.reason && `reason: ${e.reason}`].filter(Boolean).join('; ')).replace(/\|/g, '/')} |`)
     .join('\n')}`);
   return out.join('\n\n') + '\n';
 }

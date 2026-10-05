@@ -130,7 +130,7 @@ export default function Dashboard() {
           </div>
           <ul className="mt-2 grid gap-x-6 gap-y-0.5 text-sm sm:grid-cols-2">
             {STAGE_ORDER.map((s) => (
-              <li key={s} className="flex justify-between gap-2">
+              <li key={s} className="flex items-start justify-between gap-2">
                 <button type="button" className="text-left text-[var(--color-ink-muted)] underline-offset-2 hover:text-[var(--color-pine-900)] hover:underline" onClick={() => setStage(s)}>
                   {stageLabel(s)}
                 </button>
@@ -161,7 +161,7 @@ export default function Dashboard() {
       <section aria-label="Review queue" className="card p-4">
         <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-xl font-semibold">Queue</h2>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <label className="flex items-center gap-2 text-sm">
               <span className="text-[var(--color-ink-muted)]">Sort</span>
               <select className="field w-auto py-1" value={sort} onChange={(e) => setSort(e.target.value as SortKey)} aria-label="Sort queue">
