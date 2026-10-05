@@ -17,7 +17,9 @@
     "audit": "tsx scripts/consistency-audit.ts",
     "typecheck": "tsc -b --noEmit",
     "e2e": "playwright test",
-    "samples": "tsx scripts/make-samples.ts"
+    "samples": "tsx scripts/make-samples.ts",
+    "architecture": "tsx scripts/make-architecture.ts",
+    "report": "tsx scripts/make-report.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",

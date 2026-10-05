@@ -104,3 +104,10 @@ Problems found by reading the pilot output, each mapped to a v2 rule:
 - **Post-checks:** the same validator as the seeded assessments. Quotes that are not word for word are removed and noted; sentence-count problems are shown as warnings (rejecting a paid run for a five-sentence finding would waste the visitor's money); missing criteria or unknown ids reject the run.
 - **Not done:** no live run was possible from the build environment (no key), so the call is tested against a mocked API. A real run should be spot-checked against the seeded assessment for the same rule before relying on it.
 
+## 13. Companion deliverables (Phase 6)
+
+- **Architecture diagram:** first render had two connectors (decision notice back to the insurer, and the precedent registry back to similarity search) that crossed a flow arrow and sat under number badges. Replaced both with text references ("From step 11", "for step 6") and kept the drawn feedback loop that matters most (audit trail to precedent registry to consistency monitoring to the recommendation panel). The chatbot box was rewritten into two columns so it could show Prototype and Production like the other AI boxes.
+- **Chatbase pack:** first draft of the 10 sources came to 60,810 characters; trimmed duplicated sections to 59,641. While writing source 05 I found that `PROGRESS.md` quoted issue-code counts as occurrences across findings while the dashboard counts rules; the chatbot now uses the per-rule counts that match the app, and PROGRESS lists both.
+- **HeyGen script:** first draft was 370 words (top of the range); trimmed to 363, replaced "first language" with the rule's actual wording ("primary language"), and changed "found and fixed thirty eight issues" to "made thirty eight fixes" to match the audit record exactly.
+- **Report:** generated from code so the yellow-highlighted reflection sentences and `reflection-to-personalise.md` come from one source. First export: 5 pages (body 4, appendix 1), within the limit, so no cuts were needed.
+

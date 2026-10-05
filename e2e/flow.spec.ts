@@ -111,6 +111,9 @@ test.describe('Simrule end-to-end', () => {
     await page.goto('./#/precedents');
     await shot(page, '12-precedents');
     await page.goto('./#/how-it-works');
+    const diagram = page.getByTestId('architecture').locator('img');
+    await expect(diagram).toBeVisible();
+    expect(await diagram.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
     await shot(page, '13-how-it-works');
     await page.goto('./#/');
     await page.getByRole('button', { name: 'Guided demo' }).click();

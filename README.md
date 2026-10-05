@@ -57,6 +57,18 @@ Data pipeline scripts (already run; outputs are committed): `npm run parse-rules
 - **Scoring.** `src/lib/scoring.ts`. Level 1 is a gate (any fail is a hard stop). Levels 2 to 4 are weighted 40, 35 and 25. Approve with conditions at 75 or above; request more information at 50 to 74 or when a material information gap exists; recommend decline below 50 or on any high-severity fail.
 - **Similarity.** `src/lib/similarity.ts`. TF-IDF cosine on the rule wording blended with structured feature overlap (categories, trigger types, thresholds, lookbacks).
 
+## Companion deliverables
+
+| Deliverable | Files |
+|---|---|
+| Architecture diagram | `deliverables/architecture/` (SVG, PNG, PDF, `architecture.md`); regenerate with `npm run architecture` |
+| Chatbot pack (Chatbase) | `deliverables/chatbot/` (10 source files, Q&A pairs, instructions, test script, setup guide) |
+| Avatar video script (HeyGen) | `deliverables/avatar/heygen-script.md` |
+| Screen recording script | `deliverables/demo/screen-recording-script.md` |
+| Written report | `deliverables/report/Simrule-report.docx` and `.pdf`; regenerate with `npm run report` (needs LibreOffice) |
+| Build logs | `PROGRESS.md`, `deliverables/report/prompt-log.md`, `deliverables/VERIFY.md` |
+| Demo assets | `deliverables/demo/` (sample filings, screenshots, accessibility report) |
+
 ## Honest limitations
 
 - Legal citations could not be checked against the official sources from the build environment, so every legal reference is marked "section not verified". See [`deliverables/VERIFY.md`](deliverables/VERIFY.md).
