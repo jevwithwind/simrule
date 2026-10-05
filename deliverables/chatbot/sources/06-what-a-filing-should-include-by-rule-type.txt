@@ -1,0 +1,67 @@
+SOURCE 06: WHAT A FILING SHOULD INCLUDE, BY RULE TYPE
+
+Disclaimer: academic prototype for Ivey Online coursework; not affiliated with or representative of FSRA; fictional data; not legal advice. Check the regulator's official filing guidelines for current requirements; Simrule's checklist is a prototype and the guideline items are marked unverified.
+
+SIMRULE'S PROTOTYPE COMPLETENESS CHECKLIST (12 ITEMS)
+For each rule:
+1. Submitting insurer identified.
+2. Date submitted.
+3. Proposed rule wording.
+4. Insurer's stated rationale.
+5. Rule category.
+6. Confirmation that it is a decline rule, not an eligibility rule for optional coverage.
+7. Definitions and explanations of key terms (from the regulator's filing guidelines, unverified).
+8. Actuarial data or analysis supporting the rule. A statement that data exists is not the data.
+9. How declined consumers are told the reason (from the Clear Consumer Communications principle).
+For the filing package:
+10. Summary of information form (filing guidelines, unverified).
+11. Certificate of an official (filing guidelines, unverified).
+12. Consolidated list of the insurer's underwriting rules (filing guidelines, unverified).
+
+WHAT EVERY RULE SHOULD STATE CLEARLY
+- The trigger, in objective and verifiable terms.
+- Any threshold (how many events) and lookback period (how far back), with the reason for each.
+- Who the rule applies to: the named insured, every listed driver, or the vehicle.
+- Definitions of every key term.
+- The data that links the trigger to claims frequency or severity.
+- How a declined consumer is told the reason and can correct an error.
+
+DRIVING RECORD RULES (accidents, convictions, suspensions)
+Include: the type of event (at-fault accident, minor or major conviction, Criminal Code conviction, suspension), the number, the lookback period, and whether it counts for every driver on the policy.
+Approved examples in the framework: 2 or more at-fault accidents in 3 years; 1 or more Criminal Code convictions in 3 years; combinations of minor convictions and non-payment cancellations within 3 years.
+Watch for: charges rather than convictions (ALLEGATION_NOT_CONVICTION); lookbacks longer or thresholds lower than comparable approved rules without data (ARBITRARY_THRESHOLD); suspensions caused by administrative reasons rather than driving, which guidance restricts (PROHIBITED_FACTOR).
+
+VEHICLE USE RULES (commercial use, racing, delivery, rideshare)
+Include: a clear definition of the use (for example "commercial purposes" or "racing"), whether occasional use counts, and why standard personal auto coverage does not fit.
+Approved examples: any automobile used for commercial purposes; used on a racetrack or in any race, speed test or competition; vehicles used for police work; vehicles used for a purpose they were not designed for.
+Watch for: undefined frequency words such as "occasional" or "regular" (VAGUE_LANGUAGE); declining when an endorsement or commercial policy referral would serve the consumer better (LESS_RESTRICTIVE_ALTERNATIVE).
+
+VEHICLE TYPE RULES (modifications, rebuilt, salvage, value, age, theft risk)
+Include: an objective list or definition of the modifications or vehicle status, and how the insurer verifies it.
+Approved examples: any vehicle modified for speed or used for racing; any vehicle with unacceptable customizations or modifications (the filing should define "unacceptable"); declining rebuilt vehicles is common approved practice.
+Watch for: theft-risk rules such as "top stolen models", which the framework gives as a non-compliant example; rating or anti-theft requirements are the usual alternative. Undefined terms such as "high-performance" or "exotic" (VAGUE_LANGUAGE).
+
+CLAIMS AND FRAUD HISTORY RULES
+Include: whether the trigger is a conviction or a final finding, the lookback period, and the definition of fraud or misrepresentation used.
+Approved example: 1 or more convictions for auto insurance fraud in the preceding 10 years. A previous fraud conviction is common approved practice.
+Watch for: suspicion, investigation or a special investigations unit referral without a final outcome (ALLEGATION_NOT_CONVICTION); counting not-at-fault claims, which do not reflect the applicant's driving (NOT_RISK_RELEVANT).
+
+PAYMENT HISTORY RULES (non-payment cancellations, outstanding premium)
+Include: the number of cancellations for non-payment, the lookback period, and whether the debt is owed to this insurer or its affiliates.
+Approved examples: failure to pay outstanding premium owed to the insurer or its affiliates for the same named insured; combinations of non-payment cancellations with convictions or accidents.
+Watch for: credit scores, bankruptcy, collections or other financial information, which guidance restricts (PROHIBITED_FACTOR); debts owed to unrelated companies.
+
+LICENSING RULES
+Include: the licence requirement, who must hold it, and how licences from other provinces or countries are treated.
+Approved examples: no driver of the insured vehicle holds a valid Canadian licence; improper class of licence or invalid licence.
+Watch for: years since first licensed, graduated licence stages or new drivers (DISCRIMINATORY_IMPACT_NEW_DRIVERS); declining foreign licences instead of verifying foreign driving history (DISCRIMINATORY_IMPACT_NEW_TO_CANADA); administrative lapses such as unpaid fines (PROHIBITED_FACTOR).
+
+GEOGRAPHIC RULES (postal code, region, where the vehicle is kept)
+Include: the exact geographic definition, the data linking it to claims, and why rating by territory is not enough.
+There is no approved geographic decline rule in the framework's examples. Location is a recognised rating factor, so a full decline is hard to justify.
+Watch for: postal codes or neighbourhoods that track place of origin, ethnic origin or income (PROXY_FOR_PROTECTED_GROUND); access to mandatory coverage for whole communities (ACCESSIBILITY_IMPACT); a rating approach as the less restrictive option (LESS_RESTRICTIVE_ALTERNATIVE).
+
+STANDARD CONDITIONS SIMRULE ATTACHES TO "APPROVE WITH CONDITIONS"
+1. Supporting actuarial analysis must be filed before the rule is used. No submission in Simrule's test set includes actuarial data.
+2. Key terms must be defined in the filing.
+3. The insurer must tell declined consumers the specific reason and how to correct inaccurate information.

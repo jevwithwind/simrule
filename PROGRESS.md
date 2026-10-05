@@ -57,7 +57,8 @@ Resume rule: find the last phase marked done below and continue from the next on
 - Recommendation distribution: Approve with conditions 21; Request more information 22; Recommend decline 57; Out of scope 0.
 - Confidence distribution: high 64; medium 36; low 0.
 - Level 1 hard stops: 13. Senior review flagged by the AI: 52 (any Level 1 concern or low confidence).
-- Most frequent issue codes: NO_ACTUARIAL_SUPPORT 100, ACCESSIBILITY_IMPACT 100, PROXY_FOR_PROTECTED_GROUND 74, PUBLIC_POLICY_CONFLICT 69, WEAK_RISK_LINK 67.
+- Most frequent issue codes by occurrences across the 1,500 findings (a code can appear on several criteria of one rule): ACCESSIBILITY_IMPACT 100, NO_ACTUARIAL_SUPPORT 100, PROXY_FOR_PROTECTED_GROUND 74, PUBLIC_POLICY_CONFLICT 69, WEAK_RISK_LINK 67.
+- Most frequent issue codes by number of rules (as the dashboard chart counts them): NO_ACTUARIAL_SUPPORT 100, ACCESSIBILITY_IMPACT 88, VAGUE_LANGUAGE 66, PUBLIC_POLICY_CONFLICT 63, UNFAIR_COST_SHIFT 59.
 - Consistency audit before -> after: unexplained different-outcome pairs 1 (+8 inadequate on manual review) -> 0; missing pending flags 29 (22 assessments) -> 0; mixed-status code groups without explanation 9 -> 0; findings misapplied 2 -> 0. Assessments changed by audit: 29 (38 changes). Recommendations changed: 0.
 - Spot check (15 rules): 12 agree, 1 partial (DR-071), 2 disagree (DR-085, DR-097). Sanity anchors: 13 of 13 match.
 - Similarity sanity: DR-012 top-1 = AP-07 (0.896); DR-001 top-1 = AP-02 (0.988); DR-013 top-1 = NC-05 (0.557).

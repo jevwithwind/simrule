@@ -1,0 +1,61 @@
+SOURCE 07: THE REVIEW WORKFLOW AND HUMAN OVERSIGHT
+
+Disclaimer: academic prototype for Ivey Online coursework; not affiliated with or representative of FSRA; fictional data; not legal advice. The AI advises; people decide.
+
+THE WORKFLOW STAGES
+Every submission in Simrule moves through these stages:
+1. Received: the filing has arrived.
+2. Intake and completeness check: the rule is extracted, the reviewer confirms the extraction, and the 12-item checklist runs.
+3. AI pre-assessment: the AI produces findings for all 15 criteria and the scoring code produces an advisory recommendation.
+4. Analyst review: an analyst validates every finding and proposes a decision.
+5. Information requested: the insurer has been asked for more information; the case waits for the response.
+6. Senior sign-off: a senior reviewer checks decisions that need a second person.
+7. Decision recorded: a human decision is final and written to the audit trail.
+8. Closed.
+
+STEP BY STEP FOR A REVIEWER
+1. Intake. Upload the filing (PDF, DOCX, TXT or Markdown), paste it, or fill the form. Check every extracted field and tick the confirmation box. Nothing runs until a person confirms the extraction.
+2. Triage. For a new upload, Simrule runs a scope check, the completeness checklist, keyword triage and a similarity search. Keyword triage is labelled "low confidence"; it is a pointer, not an assessment.
+3. Read the AI recommendation (advisory). The recommendation panel shows the score breakdown by Level, the formula, the 15 findings with evidence quotes highlighted in the rule text, citations with "verified" or "section not verified" badges, similar rules, the consumer lens, questions for the insurer, what would change the recommendation, and next steps.
+4. Validate every finding. For each criterion choose Accept or Override. An override needs a reason code and a note of at least 10 characters. The score and recommendation recompute live, and the human change is clearly marked. A decision cannot be recorded until all 15 findings are validated.
+5. Choose a decision. Options: Approve with conditions, Request information from insurer, Decline, Escalate. For an out-of-scope rule: Route to eligibility-rule process.
+6. Write the rationale. Simrule can draft it from the validated findings. Edit it in your own words.
+7. Confirm ownership. Tick "I have reviewed this rationale and take ownership of it". The rationale is not final until this is ticked.
+8. Senior sign-off, if triggered. Otherwise the decision is recorded.
+9. Export. The decision record can be exported as Markdown or JSON, or printed.
+
+OVERRIDE REASON CODES
+- AI misread the rule wording.
+- Reviewer has context the AI did not.
+- Different legal or regulatory interpretation.
+- Weighs the evidence differently.
+- Precedent applies differently.
+- Current public policy priority.
+- Other (explain).
+
+WHEN SENIOR SIGN-OFF IS REQUIRED
+- The decision differs from the AI recommendation.
+- A Level 1 finding was overridden.
+- AI confidence is low.
+- The AI flagged a Level 1 concern.
+- The analyst escalated the decision.
+A senior reviewer can sign off, or return the case to the analyst with a note. A senior reviewer can also record a decision directly.
+
+THE AUDIT TRAIL
+Every action is logged with the time, the person, their role, what changed (before and after) and the reason. This includes the AI pre-assessment, each acceptance or override, the proposed decision, the sign-off and any information request. The audit trail is shown on every rule and included in the export.
+
+CONSISTENCY TOOLS
+- Similar rules panel: for every rule, the most similar precedents and pending submissions, each labelled same, similar or materially different with a reason.
+- Review together: pending similar submissions from different insurers can be opened side by side.
+- Consistency monitor: lists similar rules with different outcomes and whether the difference is explained, and shows which issue codes reviewers override most. A code that is often overridden may need a clearer definition or a prompt change.
+- Precedent library: approved precedents, illustrative non-compliant examples, and reviewer decisions made in Simrule, which become new precedents.
+
+WHY HUMANS STAY IN THE LOOP
+- AI can misread wording, miss context, or reflect bias in its training.
+- Legal interpretation and public policy judgment belong to accountable people.
+- Requiring a decision on each finding prevents rubber-stamping. Simrule also shows how often reviewers accept findings without change; very high agreement can be a warning sign, not only a success.
+- Senior sign-off adds a second person where the risk of error is highest.
+- The ownership confirmation makes clear who is responsible for the rationale.
+
+WHAT INSURERS SHOULD EXPECT
+After a decision, an insurer receives one of: approval with conditions (for example, file the supporting data, define key terms, tell declined consumers the reason), a request for more information with specific questions, or a decline with reasons. A rule that is an eligibility rule is routed to a different process. In Simrule these steps are simulated; real timelines and channels are set by the regulator.
