@@ -1,0 +1,337 @@
+{
+  "id": "DR-059",
+  "extracted": {
+    "trigger": "Recent home or tenant insurance claim",
+    "thresholdCount": null,
+    "lookbackYears": 2,
+    "populationAffected": "Applicants who claimed on a homeowner's or tenant's policy in the preceding 2 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 2 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a property insurance claim. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "made a claim on a homeowner's or tenant's insurance policy"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Property claims history is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Similar submissions from other insurers are pending (DR-031, DR-082) and should be reviewed together.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "A property claim, such as a burst pipe or a break-in, says nothing about driving behaviour, experience, distance, location or vehicle. The rule does not reflect auto risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Cross-line claims activity indicates a general propensity to file claims."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Property claims are more common in areas with more break-ins and flooding, which can correlate with income and protected groups. The effect is indirect.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Anyone who used their home insurance as intended, for example after a flood or theft, would be refused auto coverage for 2 years. That would discourage people from using the insurance they pay for.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 2 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Penalising legitimate claims pushes consumers into higher-cost markets for unrelated events. That shifts cost onto people who suffered a loss.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Treating a valid claim on another policy as a reason to refuse auto insurance turns the purpose of insurance against the consumer. It is not a balanced use of underwriting.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "a general propensity to file claims"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers would not expect a home insurance claim to affect auto coverage. The decline would come as a surprise and be hard to contest.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "homeowner's or tenant's insurance policy"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A property insurance claim is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for 2 years or for counting a single claim. The threshold is not tied to measured auto risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 2 years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale relies on a general \"propensity to file claims\", not a link to driving. The framework rejects rules not based on a risk-relevant characteristic of the insured.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "applicants with recent property claims also have higher auto claims frequency"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale refers to internal analysis without supplying it. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Our internal analysis shows"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A claim on a homeowner's or tenant's policy is a clear, recorded event. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "made a claim on a homeowner's or tenant's insurance policy"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory auto insurance because someone made a valid home insurance claim would penalise victims of floods and break-ins. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-031",
+      "similarity": 0.375,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines not-at-fault auto claims. Both treat making a legitimate claim as a risk in itself. Review together."
+    },
+    {
+      "refId": "DR-082",
+      "similarity": 0.43,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule declines repeated comprehensive claims. Same approach, within auto rather than across lines."
+    },
+    {
+      "refId": "DR-049",
+      "similarity": 0.175,
+      "relation": "materially_different",
+      "explanation": "Same insurer (Granite Mutual Insurance) proposes declining alleged fraudulent claims. DR-049 concerns alleged wrongdoing; DR-059 concerns ordinary, valid claims."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone who claimed on home or tenant insurance in the last 2 years, such as after a flood, fire or break-in.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Victims of break-ins and floods",
+      "Tenants in older buildings"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "What explains the correlation the insurer found between property and auto claims?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. Property claims are not an auto risk characteristic."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on risk-relevance and public policy grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Review with DR-031 and DR-082 for consistent treatment of claims-history rules.",
+      "owner": "Analyst",
+      "reason": "Consistency."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-031, DR-082 on the market check."
+  ]
+}

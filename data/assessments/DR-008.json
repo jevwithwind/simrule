@@ -1,0 +1,332 @@
+{
+  "id": "DR-008",
+  "extracted": {
+    "trigger": "Criminal Code driving convictions",
+    "thresholdCount": 1,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants with 1 or more Criminal Code convictions related to driving in the preceding 3 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "Criminal Code convictions",
+      "preceding 3 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on Criminal Code convictions for operating a motor vehicle. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "1 or more Criminal Code convictions related to the operation of a motor vehicle"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A criminal driving conviction is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "Criminal Code convictions"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "The rule matches AP-01 (Harbourview Assurance, 2017): 1 or more Criminal Code convictions in the preceding 3 years. DR-008 limits the trigger to convictions related to operating a motor vehicle, so it is slightly narrower than the approved rule.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "1 or more Criminal Code convictions related to the operation of a motor vehicle in the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Criminal driving convictions are direct evidence of dangerous driving behaviour. The rule reflects the applicant's own record.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Criminal Code driving convictions indicate a pattern of dangerous behaviour"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A criminal driving conviction does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule affects a narrow group with serious driving offences and is no broader than the approved rule. Affected consumers keep access to the residual market.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "related to the operation of a motor vehicle"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Serious driving offences are linked to high-severity claims, so the rule helps limit costs spread across other policyholders. It creates no new cost for accepted consumers.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule targets serious, proven conduct and mirrors an existing approved rule. It balances the insurer's risk appetite with fair treatment.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a criminal driving conviction and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "Criminal Code convictions"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A Criminal Code conviction is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "Criminal Code convictions"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "COPYCAT_REFERENCE"
+      ],
+      "reasoning": "The threshold and 3-year lookback match the approved precedent. However, the rationale justifies the rule as \"consistent with industry practice\", and the framework does not accept another insurer's practice as a reason; the insurer should support the rule with its own analysis.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "This rule is consistent with industry practice."
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Criminal driving convictions link directly to dangerous driving and claims exposure. The risk link is clear on the face of the rule.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "materially elevates risk"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale offers industry practice instead of data. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "consistent with industry practice"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "\"Criminal Code convictions related to the operation of a motor vehicle\" is a clear, checkable category. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "Criminal Code convictions related to the operation of a motor vehicle"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Declining recent criminal driving offenders is consistent with road safety and with an approved market rule.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-01",
+      "similarity": 0.702,
+      "relation": "same",
+      "explanation": "Same threshold (1 or more), same 3-year lookback and the same Criminal Code trigger. DR-008 narrows the trigger to driving-related convictions, which is no broader than the approved rule."
+    },
+    {
+      "refId": "DR-042",
+      "similarity": 0.373,
+      "relation": "materially_different",
+      "explanation": "Pending Northern Shield Insurance rule declines people charged but not convicted. DR-008 requires a conviction, which is the key difference the framework draws."
+    },
+    {
+      "refId": "DR-040",
+      "similarity": 0.259,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group driving-record rule also cites \"industry practice\". Both need the same copycat condition."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers convicted of a Criminal Code driving offence in the last 3 years.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Drivers with recent serious offences"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Please replace \"consistent with industry practice\" with the insurer's own claims analysis for this group."
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If the insurer cannot provide its own supporting analysis, the copycat concern would remain and approval should wait."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with the standard actuarial condition and a condition to replace the industry-practice rationale.",
+      "owner": "Analyst",
+      "reason": "Substance matches AP-01; justification relies on others' practice."
+    },
+    {
+      "action": "Submit supporting analysis for the rule.",
+      "owner": "Insurer",
+      "reason": "The framework approves existing rules for another insurer only with supporting analysis."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurer and approval year are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

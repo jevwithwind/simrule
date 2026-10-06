@@ -1,0 +1,342 @@
+{
+  "id": "DR-098",
+  "extracted": {
+    "trigger": "Driving instruction, paid or unpaid",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who intend to use their vehicle for driving instruction, paid or unpaid",
+    "ruleType": "decline",
+    "definedTerms": [
+      "driving instruction"
+    ],
+    "undefinedTerms": [
+      "whether paid or unpaid"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on driving instruction use. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "intend to use their vehicle for driving instruction"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Unpaid instruction is mostly parents teaching their children, so the rule touches family status and, through the learners, age. The insurance provision allows those distinctions only on reasonable and bona fide grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "whether paid or unpaid"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Paid instruction is a commercial use that fits AP-06 (Oakridge Lane Mutual, 2015). Unpaid instruction is ordinary family use, so the rule as a whole is materially broader than the precedent and is assessed on its own merits.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "whether paid or unpaid"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "A learner driving does change the risk while they drive. But the graduated licensing system requires supervised practice, and rating can reflect a learner on the policy.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "introduces a materially different and elevated risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "DISCRIMINATORY_IMPACT_NEW_DRIVERS"
+      ],
+      "reasoning": "Refusing households where a learner practises would block new drivers from the supervised experience they need. The framework names declining new drivers as a discriminatory impact.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "whether paid or unpaid"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Every family teaching a teenager or new adult to drive would be refused. That is a very large group.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "driving instruction, whether paid or unpaid"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Families would pay more elsewhere or pay for professional lessons. The learner's risk can be rated.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Limiting the rule to paid instruction, and rating learners on family policies, would protect the insurer. The current wording is not balanced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on driving instruction use and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "driving instruction"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "The trigger is a stated intention on the application, which may change. The insurer would rely on predictions.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "intend to use"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no threshold. Its defect is the inclusion of unpaid family instruction.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Paid instruction is a commercial use with clear exposure. Supervised family practice is part of normal licensing, and the rationale gives no claims evidence for it.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "a learner operating the vehicle under supervision"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "\"Driving instruction, whether paid or unpaid\" is clear about its scope. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "driving instruction, whether paid or unpaid"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: Ontario's graduated licensing system relies on supervised practice with experienced drivers, and this rule would penalise families for doing it. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "HTA"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-06",
+      "similarity": 0.315,
+      "relation": "materially_different",
+      "explanation": "Approved commercial-use rule fits paid instruction only. Unpaid family instruction is not commercial use."
+    },
+    {
+      "refId": "DR-024",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group rule declines G1 and G2 holders. Both would make it harder for new drivers to learn and be insured."
+    },
+    {
+      "refId": "DR-003",
+      "similarity": 0.315,
+      "relation": "materially_different",
+      "explanation": "Pending Grandview Insurance Group delivery rule. A legitimate commercial-use rule; DR-098 would be similar only if limited to paid instruction."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Families who plan to teach a learner to drive in their own car, and paid instructors.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Parents of new drivers",
+      "Learner drivers",
+      "Newcomers learning to drive"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Would the insurer limit the rule to paid instruction?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Removing \"or unpaid\" would leave a commercial-use rule that could be approved with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline as written; note that a paid-only version would be approvable.",
+      "owner": "Analyst",
+      "reason": "High-severity fails from unpaid instruction."
+    },
+    {
+      "action": "Review with DR-024 and DR-018 as part of the new-driver cluster.",
+      "owner": "Senior reviewer",
+      "reason": "Consistency; Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

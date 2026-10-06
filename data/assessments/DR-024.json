@@ -1,0 +1,352 @@
+{
+  "id": "DR-024",
+  "extracted": {
+    "trigger": "Graduated licence holders",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants holding a G1 or G2 graduated licence",
+    "ruleType": "decline",
+    "definedTerms": [
+      "G1 or G2 graduated licence",
+      "full G licence"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on licence class within the graduated licensing system. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "holds a G1 or G2 graduated licence"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Graduated licence holders are mostly young people and newcomers working through the licensing system. The rule would have an indirect effect on age and place of origin.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "G1 or G2 graduated licence"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The approved licence rules (AP-09, AP-12) concern invalid or improper licences; a G1 or G2 is a valid licence. Similar submissions from other insurers are pending (DR-018) and should be reviewed together.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Inexperience is a named risk factor but belongs in rating. Graduated licence holders already drive under restrictions designed to manage their risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Graduated licence holders are subject to driving restrictions that reflect their limited experience."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "DISCRIMINATORY_IMPACT_NEW_DRIVERS"
+      ],
+      "reasoning": "The rule refuses every driver who has not completed graduated licensing. The framework names declining newly licensed drivers as a discriminatory impact.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "G1 or G2 graduated licence (not a full G licence)"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Graduated licensing takes time to complete, so the rule shuts new drivers out for that whole period. Those without a family policy to join would struggle to get insured at all.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "New drivers pushed to the residual market pay more. Rating already captures their higher claims frequency.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer says its data shows higher claims for G1 and G2 drivers, which supports a surcharge, not a refusal. Refusal protects the book at the expense of a whole cohort.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Our actuarial data shows significantly higher claims frequency for G1 and G2 drivers."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on licence class and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "G1 or G2"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Licence class is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The line follows the licensing system's own stages rather than an invented threshold. It is not arbitrary, though it is too broad.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "not a full G licence"
+        }
+      ],
+      "citationIds": [
+        "HTA"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Inexperience links to claims frequency at group level, and the insurer claims data for it. The link supports pricing more than refusal.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "significantly higher claims frequency"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale says the insurer's actuarial data shows higher claims frequency. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Our actuarial data shows"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "G1, G2 and full G are defined licence classes. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "G1 or G2 graduated licence"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: the graduated licensing system exists to bring new drivers on the road safely, and refusing them insurance would undermine it. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "HTA"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-018",
+      "similarity": 0.455,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines licences held under 12 months. Different trigger (tenure rather than class) but the same new-driver population. Review together."
+    },
+    {
+      "refId": "DR-007",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines drivers under 21. Overlapping population of young, new drivers."
+    },
+    {
+      "refId": "AP-12",
+      "similarity": 0.223,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines improper or invalid licences. A G1 or G2 is a valid licence for the driving it permits."
+    },
+    {
+      "refId": "DR-098",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines vehicles used for driving instruction, paid or unpaid. Both would make it harder for new drivers to learn and get insured."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Every driver who holds a G1 or G2 licence.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving. New drivers without a family policy to join would be hit hardest.",
+    "vulnerableGroups": [
+      "Young drivers",
+      "Newcomers working through graduated licensing",
+      "Older first-time drivers"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would a surcharge based on the claimed data not address the risk?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing the decline with rating would remove the discriminatory impact."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and record the discriminatory impact on new drivers.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 2 fail."
+    },
+    {
+      "action": "Review with DR-018, DR-007 and DR-053 as a cluster.",
+      "owner": "Senior reviewer",
+      "reason": "Consistency and Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-018 on the market check."
+  ]
+}

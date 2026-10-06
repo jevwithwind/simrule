@@ -1,0 +1,335 @@
+{
+  "id": "DR-076",
+  "extracted": {
+    "trigger": "Voluntary licence surrender and reinstatement",
+    "thresholdCount": null,
+    "lookbackYears": 2,
+    "populationAffected": "Applicants who voluntarily surrendered and later reinstated their licence in the preceding 2 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 2 years"
+    ],
+    "undefinedTerms": [
+      "voluntarily surrendered"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on licence history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "A voluntary surrender is an administrative lapse in the licence, often for medical reasons, not a suspension for a driving conviction. FSRA guidance restricts using administrative and medical lapses in underwriting, so the rule is contrary to that guidance. The guidance could not be verified and should be confirmed.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "voluntarily surrendered their licence and subsequently had it reinstated"
+        }
+      ],
+      "citationIds": [
+        "FSRA_ADMIN_LAPSE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "People often surrender a licence temporarily because of a health condition, which is a disability under the Code. The rule may have an indirect effect on people with disabilities.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "avoid mandatory reporting of medical conditions"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "A reinstated licence means the licensing authority considers the person fit to drive. The rule disregards that and the person's record.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subsequently had it reinstated"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Many surrenders are for health reasons. The rule could therefore act as an indirect proxy for disability.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People who responsibly stopped driving while unwell would be refused when they recover. That limits access for people who did the right thing.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "voluntarily surrendered"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would pay more elsewhere. No claims saving is shown.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Penalising voluntary surrender discourages responsible behaviour that protects the public. That does not balance the insurer's interests with fair treatment.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on licence surrender history and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "voluntarily surrendered their licence"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A licence surrender and reinstatement is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for a 2-year lookback. It is not tied to a measured risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 2 years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT",
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "The rationale speculates that surrender \"may indicate\" an attempt to reset a record or hide a medical condition. That imputes motive without evidence and has no demonstrated link to claims.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate an attempt to reset a problematic driving record"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Surrender and reinstatement are recorded licence events. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "voluntarily surrendered their licence and subsequently had it reinstated"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: road safety policy encourages people to stop driving when they are not fit, and this rule would punish them for it. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-090",
+      "similarity": 0.308,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines past medical licence refusals even after reinstatement. Same administrative and medical lapse problem. Review together."
+    },
+    {
+      "refId": "DR-094",
+      "similarity": 0.26,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group rule declines suspensions for unpaid fines. Another administrative lapse the guidance restricts."
+    },
+    {
+      "refId": "AP-12",
+      "similarity": 0.184,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines invalid licences. DR-076 applicants hold a valid, reinstated licence."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "People who gave up their licence for a time, often for health reasons, and have since had it reinstated.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People recovering from illness",
+      "Older drivers",
+      "People with disabilities"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "What evidence supports the claim that surrender is used to reset driving records?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal; the guidance restricts administrative lapses as a trigger."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Restricted factor."
+    },
+    {
+      "action": "Verify the administrative lapse guidance.",
+      "owner": "Senior reviewer",
+      "reason": "Unverified source; Level 1 concern."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "FSRA administrative lapse guidance could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

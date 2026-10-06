@@ -1,0 +1,333 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1650 1275" width="1650" height="1275" role="img" aria-labelledby="t d">
+<title id="t">Simrule solution architecture</title>
+<desc id="d">Swimlane diagram. An insurer submits a decline rule. AI services parse it, check scope and completeness, extract fields, assess 15 criteria with retrieval over a versioned knowledge base, find similar precedents, and deterministic code computes an advisory recommendation. Human reviewers confirm the extraction, validate or override each finding, obtain senior sign-off when required, and own the decision and rationale. Every action goes to an audit trail; decisions become precedents that feed similarity search and consistency monitoring. A chatbot answers insurers and reviewers from the same knowledge base.</desc>
+<defs><marker id="head" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#05473a"/></marker><marker id="headPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b4a8b"/></marker></defs>
+<rect width="1650" height="1275" fill="#ffffff"/>
+<text x="40" y="56" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#05473a">Simrule: AI-assisted review of auto insurance decline rules</text>
+<text x="40" y="92" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#4a5752">Solution architecture. The AI advises; people decide; every step is recorded. Numbers follow the review flow.</text>
+<rect x="40" y="120" width="1585" height="170" fill="#faf8f3" stroke="#d9d3c4" stroke-width="1.5"/>
+<rect x="40" y="120" width="150" height="170" fill="#05473a"/>
+<text x="115" y="199" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Insurer</text>
+<text x="115" y="223" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">(applicant)</text>
+<rect x="40" y="290" width="1585" height="305" fill="#ffffff" stroke="#d9d3c4" stroke-width="1.5"/>
+<rect x="40" y="290" width="150" height="305" fill="#05473a"/>
+<text x="115" y="448.5" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">AI services</text>
+<rect x="40" y="595" width="1585" height="255" fill="#faf8f3" stroke="#d9d3c4" stroke-width="1.5"/>
+<rect x="40" y="595" width="150" height="255" fill="#05473a"/>
+<text x="115" y="716.5" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Human</text>
+<text x="115" y="740.5" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">reviewers</text>
+<rect x="40" y="850" width="1585" height="225" fill="#ffffff" stroke="#d9d3c4" stroke-width="1.5"/>
+<rect x="40" y="850" width="150" height="225" fill="#05473a"/>
+<text x="115" y="956.5" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Records and</text>
+<text x="115" y="980.5" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">accountability</text>
+<path d="M 311 272 V 306" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 311 272 V 306" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 417 354 H 438.6" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 417 354 H 438.6" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 652.6 354 H 674.2" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 652.6 354 H 674.2" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 888.2 354 H 909.8" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 888.2 354 H 909.8" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 1123.8 354 H 1145.4" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1123.8 354 H 1145.4" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 1359.4 354 H 1381" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1359.4 354 H 1381" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 311 576 V 611" fill="none" stroke="#05473a" stroke-width="2.5" marker-start="url(#head)" marker-end="url(#head)"/>
+<path d="M 1489 574 V 613" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1489 574 V 613" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 1383 661 H 1361.4" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1383 661 H 1361.4" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 1147.4 661 H 1125.8" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1147.4 661 H 1125.8" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 911.8 661 H 890.2" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 911.8 661 H 890.2" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#head)"/>
+<path d="M 782.2 828 V 868" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 782.2 828 V 868" fill="none" stroke="#5b4a8b" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#headPurple)"/>
+<path d="M 1017.8 828 V 868" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1017.8 828 V 868" fill="none" stroke="#5b4a8b" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#headPurple)"/>
+<path d="M 1123.8000000000002 930 H 1145.4" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1123.8000000000002 930 H 1145.4" fill="none" stroke="#5b4a8b" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#headPurple)"/>
+<path d="M 1359.4 930 H 1381" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1359.4 930 H 1381" fill="none" stroke="#5b4a8b" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#headPurple)"/>
+<path d="M 1489 870 V 830" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1489 870 V 830" fill="none" stroke="#5b4a8b" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#headPurple)"/>
+<path d="M 1595 178 H 1612 V 778 H 1597" fill="none" stroke="#ffffff" stroke-width="7.5" stroke-linejoin="round"/>
+<path d="M 1595 178 H 1612 V 778 H 1597" fill="none" stroke="#05473a" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6" marker-end="url(#head)"/>
+<g data-box="submit">
+<rect data-frame="1" x="205" y="138" width="212" height="134" rx="10" fill="#f2f1ed" stroke="#6b7280" stroke-width="2.5"/>
+<text x="240" y="166" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Submit rule</text>
+<text x="218" y="191" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Rule wording,</text>
+<text x="218" y="212" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">rationale, terms, data</text>
+<text x="218" y="233" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">(PDF, DOCX or text)</text>
+</g>
+<circle cx="207" cy="140" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="207" y="146" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<g data-box="notice">
+<rect data-frame="1" x="440.6" y="138" width="212" height="134" rx="10" fill="#f2f1ed" stroke="#6b7280" stroke-width="2.5"/>
+<text x="453.6" y="166" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Receive decision</text>
+<text x="453.6" y="191" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">From step 11:</text>
+<text x="453.6" y="212" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">reasons, conditions</text>
+<text x="453.6" y="233" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">or a request for</text>
+<text x="453.6" y="254" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">more information</text>
+</g>
+<g data-box="chatbot">
+<rect data-frame="1" x="911.8" y="138" width="683.2" height="134" rx="10" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="924.8" y="166" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Simrule Regulatory Assistant (chatbot)</text>
+<text x="924.8" y="191" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Answers insurers and reviewers</text>
+<text x="924.8" y="212" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">from the same knowledge base.</text>
+<text x="924.8" y="233" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Explains the framework; never</text>
+<text x="924.8" y="254" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">predicts or decides an approval.</text>
+<text x="1287.56" y="191" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
+<text x="1287.56" y="212" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">Chatbase, 10 source files</text>
+<text x="1287.56" y="235" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
+<text x="1287.56" y="256" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Retrieval over the corpus</text>
+</g>
+<rect x="1550" y="128" width="38" height="24" rx="12" fill="#ffffff" stroke="#136b58" stroke-width="2"/>
+<text x="1569" y="146" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#136b58" text-anchor="middle">KB</text>
+<g data-box="intake">
+<rect data-frame="1" x="205" y="308" width="212" height="266" rx="10" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="240" y="336" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Intake and parsing</text>
+<text x="218" y="361" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Finds each rule and</text>
+<text x="218" y="382" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">its labelled fields</text>
+<text x="218" y="407" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
+<text x="218" y="428" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">pdf.js and mammoth</text>
+<text x="218" y="449" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">in the browser</text>
+<text x="218" y="472" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
+<text x="218" y="493" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Document AI with</text>
+<text x="218" y="514" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">OCR and tables</text>
+</g>
+<circle cx="207" cy="310" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="207" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<g data-box="scope">
+<rect data-frame="1" x="440.6" y="308" width="212" height="266" rx="10" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="475.6" y="336" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Scope and</text>
+<text x="453.6" y="359" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">completeness</text>
+<text x="453.6" y="384" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Decline rule or</text>
+<text x="453.6" y="405" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">eligibility rule?</text>
+<text x="453.6" y="426" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">12-item checklist</text>
+<text x="453.6" y="451" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
+<text x="453.6" y="472" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">Keyword rules</text>
+<text x="453.6" y="495" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
+<text x="453.6" y="516" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Rules plus a</text>
+<text x="453.6" y="537" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">trained classifier</text>
+</g>
+<circle cx="442.6" cy="310" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="442.6" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<g data-box="extract">
+<rect data-frame="1" x="676.2" y="308" width="212" height="266" rx="10" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="711.2" y="336" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Structured</text>
+<text x="689.2" y="359" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">extraction</text>
+<text x="689.2" y="384" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Trigger, threshold,</text>
+<text x="689.2" y="405" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">lookback, terms</text>
+<text x="689.2" y="430" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
+<text x="689.2" y="451" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">Batch output; keyword</text>
+<text x="689.2" y="472" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">triage for uploads</text>
+<text x="689.2" y="495" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
+<text x="689.2" y="516" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Server-side model</text>
+<text x="689.2" y="537" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">with a fixed schema</text>
+</g>
+<circle cx="678.2" cy="310" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="678.2" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<g data-box="assess">
+<rect data-frame="1" x="911.8" y="308" width="212" height="266" rx="10" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="946.8" y="336" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Criteria</text>
+<text x="924.8" y="359" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">assessment L1-L4</text>
+<text x="924.8" y="384" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">15 findings, verbatim</text>
+<text x="924.8" y="405" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">evidence, citations</text>
+<text x="924.8" y="430" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
+<text x="924.8" y="451" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">100 batch results,</text>
+<text x="924.8" y="472" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">prompt v2, schema</text>
+<text x="924.8" y="495" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
+<text x="924.8" y="516" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Server-side model</text>
+<text x="924.8" y="537" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">with retrieval over</text>
+<text x="924.8" y="558" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">a versioned corpus</text>
+</g>
+<circle cx="913.8" cy="310" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="913.8" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="1046.8" y="298" width="38" height="24" rx="12" fill="#ffffff" stroke="#136b58" stroke-width="2"/>
+<text x="1065.8" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#136b58" text-anchor="middle">KB</text>
+<rect x="1090.8" y="297" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="1103.8" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<g data-box="similar">
+<rect data-frame="1" x="1147.4" y="308" width="212" height="266" rx="10" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="1182.4" y="336" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Precedent</text>
+<text x="1160.4" y="359" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">similarity</text>
+<text x="1160.4" y="384" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Top 5 similar rules</text>
+<text x="1160.4" y="405" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">with reasons</text>
+<text x="1160.4" y="430" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
+<text x="1160.4" y="451" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">TF-IDF plus</text>
+<text x="1160.4" y="472" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">feature overlap</text>
+<text x="1160.4" y="495" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
+<text x="1160.4" y="516" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Embeddings with</text>
+<text x="1160.4" y="537" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">a vector store</text>
+</g>
+<circle cx="1149.4" cy="310" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="1149.4" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<rect x="1314.4" y="298" width="38" height="24" rx="12" fill="#ffffff" stroke="#136b58" stroke-width="2"/>
+<text x="1333.4" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#136b58" text-anchor="middle">KB</text>
+<g data-box="score">
+<rect data-frame="1" x="1383" y="308" width="212" height="266" rx="10" fill="#ffffff" stroke="#05473a" stroke-width="2.5"/>
+<text x="1418" y="336" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Deterministic</text>
+<text x="1396" y="359" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">scoring</text>
+<text x="1396" y="384" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Level 1 gate; weights</text>
+<text x="1396" y="405" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">40, 35, 25; approve</text>
+<text x="1396" y="426" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">at 75, decline</text>
+<text x="1396" y="447" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">below 50</text>
+<text x="1396" y="468" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Code, not the model,</text>
+<text x="1396" y="489" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">sets the advisory</text>
+<text x="1396" y="510" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">recommendation</text>
+</g>
+<circle cx="1385" cy="310" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="1385" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+<rect x="1562" y="297" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="1575" y="316" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<g data-box="confirm">
+<rect data-frame="1" x="205" y="615" width="212" height="213" rx="10" fill="#e7f2ed" stroke="#136b58" stroke-width="2.5"/>
+<text x="218" y="643" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Confirm</text>
+<text x="218" y="666" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">extraction</text>
+<text x="218" y="691" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Reviewer checks and</text>
+<text x="218" y="712" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">edits the fields</text>
+<text x="218" y="733" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">before triage runs</text>
+</g>
+<circle cx="397" cy="617" r="13" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5"/>
+<text x="397" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#5c4700" text-anchor="middle">H</text>
+<g data-box="panel">
+<rect data-frame="1" x="1383" y="615" width="212" height="213" rx="10" fill="#e7f2ed" stroke="#136b58" stroke-width="2.5"/>
+<text x="1418" y="643" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Recommendation</text>
+<text x="1396" y="666" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">panel</text>
+<text x="1396" y="691" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">AI recommendation</text>
+<text x="1396" y="712" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">(advisory): evidence,</text>
+<text x="1396" y="733" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">similar rules,</text>
+<text x="1396" y="754" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">consumer lens,</text>
+<text x="1396" y="775" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">next steps</text>
+</g>
+<circle cx="1385" cy="617" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="1385" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">8</text>
+<circle cx="1575" cy="617" r="13" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5"/>
+<text x="1575" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#5c4700" text-anchor="middle">H</text>
+<g data-box="validate">
+<rect data-frame="1" x="1147.4" y="615" width="212" height="213" rx="10" fill="#e7f2ed" stroke="#136b58" stroke-width="2.5"/>
+<text x="1182.4" y="643" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Validate or</text>
+<text x="1160.4" y="666" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">override</text>
+<text x="1160.4" y="691" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Accept or override</text>
+<text x="1160.4" y="712" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">all 15 findings;</text>
+<text x="1160.4" y="733" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">override needs a</text>
+<text x="1160.4" y="754" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">reason code and note</text>
+</g>
+<circle cx="1149.4" cy="617" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="1149.4" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">9</text>
+<circle cx="1307.4" cy="617" r="13" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5"/>
+<text x="1307.4" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#5c4700" text-anchor="middle">H</text>
+<rect x="1326.4" y="604" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="1339.4" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<g data-box="signoff">
+<rect data-frame="1" x="911.8" y="615" width="212" height="213" rx="10" fill="#e7f2ed" stroke="#136b58" stroke-width="2.5"/>
+<text x="946.8" y="643" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Senior sign-off</text>
+<text x="924.8" y="668" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">When the decision</text>
+<text x="924.8" y="689" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">differs from the AI,</text>
+<text x="924.8" y="710" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">a Level 1 finding is</text>
+<text x="924.8" y="731" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">overridden, or</text>
+<text x="924.8" y="752" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">confidence is low</text>
+</g>
+<circle cx="913.8" cy="617" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="913.8" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">10</text>
+<circle cx="1071.8" cy="617" r="13" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5"/>
+<text x="1071.8" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#5c4700" text-anchor="middle">H</text>
+<rect x="1090.8" y="604" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="1103.8" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<g data-box="decide">
+<rect data-frame="1" x="676.2" y="615" width="212" height="213" rx="10" fill="#e7f2ed" stroke="#136b58" stroke-width="2.5"/>
+<text x="711.2" y="643" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Decision and</text>
+<text x="689.2" y="666" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">rationale</text>
+<text x="689.2" y="691" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">A person decides;</text>
+<text x="689.2" y="712" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">the rationale is final</text>
+<text x="689.2" y="733" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">only after the</text>
+<text x="689.2" y="754" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">reviewer confirms</text>
+<text x="689.2" y="775" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">ownership</text>
+</g>
+<circle cx="678.2" cy="617" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="678.2" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">11</text>
+<circle cx="836.2" cy="617" r="13" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5"/>
+<text x="836.2" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#5c4700" text-anchor="middle">H</text>
+<rect x="855.2" y="604" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="868.2" y="623" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<g data-box="kb">
+<rect data-frame="1" x="205" y="870" width="447.6" height="188" rx="10" fill="#efecf6" stroke="#5b4a8b" stroke-width="2.5"/>
+<text x="218" y="898" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Versioned knowledge base</text>
+<text x="218" y="923" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Framework 1.0.0, 25 issue codes, citation</text>
+<text x="218" y="944" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">registry with verified flags, 25 precedents</text>
+<text x="218" y="969" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
+<text x="218" y="990" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">JSON files in the repository</text>
+<text x="218" y="1013" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
+<text x="218" y="1034" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Governed corpus with change control</text>
+</g>
+<rect x="575.6" y="860" width="38" height="24" rx="12" fill="#ffffff" stroke="#136b58" stroke-width="2"/>
+<text x="594.6" y="878" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#136b58" text-anchor="middle">KB</text>
+<rect x="619.6" y="859" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="632.6" y="878" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<g data-box="audit">
+<rect data-frame="1" x="676.2" y="870" width="447.6" height="188" rx="10" fill="#efecf6" stroke="#5b4a8b" stroke-width="2.5"/>
+<text x="711.2" y="898" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Audit trail</text>
+<text x="689.2" y="923" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Every action: time, person, role, before</text>
+<text x="689.2" y="944" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">and after, reason. Markdown or JSON export.</text>
+<text x="689.2" y="969" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
+<text x="689.2" y="990" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">Stored in the browser</text>
+<text x="689.2" y="1013" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
+<text x="689.2" y="1034" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Secure records store with retention</text>
+</g>
+<circle cx="678.2" cy="872" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="678.2" y="878" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">12</text>
+<rect x="1090.8000000000002" y="859" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="1103.8000000000002" y="878" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<g data-box="registry">
+<rect data-frame="1" x="1147.4" y="870" width="212" height="188" rx="10" fill="#efecf6" stroke="#5b4a8b" stroke-width="2.5"/>
+<text x="1182.4" y="898" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Precedent</text>
+<text x="1160.4" y="921" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">registry</text>
+<text x="1160.4" y="946" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Decided rules</text>
+<text x="1160.4" y="967" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">become precedents</text>
+<text x="1160.4" y="988" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">for step 6</text>
+</g>
+<circle cx="1149.4" cy="872" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="1149.4" y="878" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">13</text>
+<g data-box="monitor">
+<rect data-frame="1" x="1383" y="870" width="212" height="188" rx="10" fill="#efecf6" stroke="#5b4a8b" stroke-width="2.5"/>
+<text x="1418" y="898" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Consistency</text>
+<text x="1396" y="921" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">monitoring</text>
+<text x="1396" y="946" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Similar rules with</text>
+<text x="1396" y="967" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">different outcomes;</text>
+<text x="1396" y="988" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">overrides by code</text>
+<text x="1396" y="1009" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">(bias and drift)</text>
+</g>
+<circle cx="1385" cy="872" r="17" fill="#05473a" stroke="#ffffff" stroke-width="3"/>
+<text x="1385" y="878" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">14</text>
+<rect x="1562" y="859" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="1575" y="878" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<text x="790.2" y="864" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#5b4a8b" font-style="italic">logged</text>
+<text x="1025.8" y="864" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#5b4a8b" font-style="italic">logged</text>
+<text x="1497" y="864" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#5b4a8b" font-style="italic">alerts</text>
+<rect x="40" y="1092" width="1585" height="138" rx="10" fill="#ffffff" stroke="#d9d3c4" stroke-width="1.5"/>
+<text x="60" y="1122" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#05473a">Legend</text>
+<rect x="60" y="1142" width="34" height="22" rx="5" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="104" y="1158" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">AI component (advisory): shows Prototype and Production</text>
+<rect x="60" y="1174" width="34" height="22" rx="5" fill="#ffffff" stroke="#05473a" stroke-width="2.5"/>
+<text x="104" y="1190" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Deterministic code (same in prototype and production)</text>
+<rect x="60" y="1204" width="34" height="22" rx="5" fill="#e7f2ed" stroke="#136b58" stroke-width="2.5"/>
+<text x="104" y="1220" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Human step</text>
+<rect x="300" y="1204" width="34" height="22" rx="5" fill="#efecf6" stroke="#5b4a8b" stroke-width="2.5"/>
+<text x="344" y="1220" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Record</text>
+<circle cx="640" cy="1152" r="13" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5"/>
+<text x="640" y="1158" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#5c4700" text-anchor="middle">H</text>
+<text x="664" y="1158" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Human touchpoint: a person validates, overrides or approves</text>
+<rect x="627" y="1171" width="26" height="26" rx="5" fill="#5b4a8b"/>
+<text x="640" y="1190" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+<text x="664" y="1190" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Accountability control: version stamps, override reasons, sign-off,</text>
+<text x="664" y="1211" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">ownership, audit trail, verified citations, bias and drift monitoring</text>
+<rect x="1202" y="1140" width="38" height="24" rx="12" fill="#ffffff" stroke="#136b58" stroke-width="2"/>
+<text x="1221" y="1158" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#136b58" text-anchor="middle">KB</text>
+<text x="1249" y="1158" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Reads the versioned knowledge base</text>
+<path d="M 1203 1184 H 1241" stroke="#05473a" stroke-width="2.5" marker-end="url(#head)"/>
+<text x="1249" y="1190" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Review flow (numbered steps)</text>
+<path d="M 1203 1216 H 1241" stroke="#5b4a8b" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#headPurple)"/>
+<text x="1249" y="1222" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Records and feedback loops</text>
+<text x="40" y="1262" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4a5752">Academic prototype for Ivey Online coursework. Not affiliated with or representative of the Financial Services Regulatory Authority of Ontario (FSRA). All insurer submissions and precedent records are fictional.</text>
+</svg>

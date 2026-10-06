@@ -1,0 +1,354 @@
+{
+  "id": "DR-092",
+  "extracted": {
+    "trigger": "Name similar to an internal fraud watchlist",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants whose name is similar to a name on the insurer's internal fraud watchlist",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "similar",
+      "internal fraud watchlist"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a name match. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "name that is similar to a name on our internal fraud watchlist"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Names are strongly linked to ethnic origin and ancestry, and \"similar\" names cluster within communities. The rule would refuse innocent people from the same communities as anyone on the list, which is indirect discrimination on grounds the Code's insurance provision does not cover.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "a name that is similar to a name"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending Beacon Fire & Casualty rule DR-045 (surname matches a sanctions list) uses the same approach.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Having a name like someone else's says nothing about the applicant's risk. The rule does not reflect any individual characteristic.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "similar to a name"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Name similarity falls along ethnic and cultural lines, so the rule works as a proxy for ethnic origin. The principle bars indirect proxies for protected grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "name that is similar"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Common names could match many entries, so large numbers of innocent applicants could be refused. The watchlist is internal, so they could never check it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "internal fraud watchlist"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Wrongly matched applicants would pay more elsewhere. Proper identity verification would cost the insurer less.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Verifying identity with date of birth and address, then investigating real matches, would address fraud rings without refusing innocent people. The rule is not balanced.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may be linked to organized fraud rings"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Applicants could not know the list, the match or how to clear their name. The decline would also imply a link to fraud.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "our internal fraud watchlist"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "How \"similar\" a name must be is undefined and left to the insurer's judgment or software settings. There is no objective test.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "similar to a name"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Matching on similarity rather than identity draws the line in the wrong place. It is arbitrary relative to the fraud concern.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "similar"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT",
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "The applicant is not accused of anything; only their name resembles someone else's. The framework rejects rules not based on a characteristic of the insured.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Name similarity to known fraud perpetrators warrants caution."
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Similar\" and \"internal fraud watchlist\" are undefined. The framework lists vague language as a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "similar to a name on our internal fraud watchlist"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance because a name resembles one on a secret list would cause arbitrary, ethnically concentrated exclusion. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-045",
+      "similarity": 0.336,
+      "relation": "similar",
+      "explanation": "Pending Beacon Fire & Casualty rule declines surname matches to sanctions lists. DR-092 is looser (similar names, internal list). Review together."
+    },
+    {
+      "refId": "DR-005",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance language rule. Both act as proxies for ethnic origin."
+    },
+    {
+      "refId": "FX-06",
+      "similarity": 0.222,
+      "relation": "materially_different",
+      "explanation": "Framework common example declines a previous fraud conviction. FX-06 relies on the applicant's own conviction; DR-092 relies on a name."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone whose name resembles a name on the insurer's internal fraud list.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People with common names in some communities",
+      "Newcomers"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "How is name similarity measured, and who is on the internal list?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal; identity verification and fraud investigation are the proper tools."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on discrimination, subjectivity and risk-relevance grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Review with DR-045 as the name-matching cluster.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

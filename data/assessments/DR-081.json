@@ -1,0 +1,336 @@
+{
+  "id": "DR-081",
+  "extracted": {
+    "trigger": "Dual citizenship with a non-reciprocal country",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Dual citizens of countries without a reciprocal licence agreement with Ontario",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "reciprocal licence recognition agreement"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations or the UDAP Rule in the registry addresses citizenship directly. The legal defect is a human rights one and is recorded under the Human Rights Code criterion.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "holds dual citizenship"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "Citizenship is a protected ground under the Code, and the rule uses it directly. The insurance provision does not cover citizenship, so no reasonable and bona fide defence applies. A Canadian with only Canadian citizenship and the same foreign driving history would not be refused.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "holds dual citizenship with a country"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE",
+        "CHARTER"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Same insurer (Clearwater General Insurance) also filed the language rule DR-005.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Holding a second citizenship says nothing about where or how a person learned to drive. The rule does not reflect any risk factor.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "raises questions about the validity and equivalency of driving experience obtained abroad"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND",
+        "DISCRIMINATORY_IMPACT_NEW_TO_CANADA"
+      ],
+      "reasoning": "The rule uses citizenship directly and falls on immigrants. The framework names declining drivers new to Canada as a discriminatory impact.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "dual citizenship"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Many Ontario residents hold a second citizenship, including people born in Canada. They would be refused regardless of record.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant who holds dual citizenship"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would pay more elsewhere. There is no risk reason to justify that cost.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "If the concern is foreign driving experience, the insurer can rate based on the applicant's actual licence and record. Citizenship is not needed to do that.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers would not know which countries have reciprocal agreements. The decline would also reveal that citizenship was the reason.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "reciprocal licence recognition agreement"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Citizenship is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "Licence reciprocity concerns licences, not citizenship. Linking the two draws an arbitrary line.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "a country that does not have a reciprocal licence recognition agreement"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale concerns foreign driving experience, but the rule uses citizenship, which does not measure experience. The framework rejects rules not based on a risk-relevant characteristic.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "validity and equivalency of driving experience obtained abroad"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Citizenship and reciprocity status can be determined. The rule would be applied consistently, which does not make it acceptable.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "dual citizenship"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance because of citizenship is direct discrimination. A consumer protection regulator cannot approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-028",
+      "similarity": 0.254,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines everyone born outside Canada. Same protected-ground family (place of origin and citizenship). Review together."
+    },
+    {
+      "refId": "DR-005",
+      "similarity": 0.254,
+      "relation": "similar",
+      "explanation": "Same insurer (Clearwater General Insurance) also proposes a language rule. Two protected-ground filings from one insurer."
+    },
+    {
+      "refId": "AP-09",
+      "similarity": 0.191,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines when no driver holds a valid Canadian licence. AP-09 looks at licences; DR-081 looks at citizenship, which is the defect."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Dual citizens of countries without a licence reciprocity agreement, including people born in Canada.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Immigrants",
+      "Canadian-born dual citizens"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would the applicant's actual licence and driving record not answer the experience question?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 human rights hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Direct use of citizenship."
+    },
+    {
+      "action": "Review the place-of-origin cluster (DR-005, DR-028, DR-053) together.",
+      "owner": "Senior reviewer",
+      "reason": "Consistency."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

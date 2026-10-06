@@ -1,0 +1,331 @@
+{
+  "id": "DR-037",
+  "extracted": {
+    "trigger": "Commute distance over 80 km",
+    "thresholdCount": 80,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who commute more than 80 km one way to work",
+    "ruleType": "decline",
+    "definedTerms": [
+      "more than 80 kilometres one way"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on commuting distance. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "commutes more than 80 kilometres one way"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Commuting distance is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The principle names driving distance as a risk factor for pricing. Long commutes add exposure, but rating by distance reflects that more accurately than refusal.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "accumulate significantly more annual kilometres"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Commuting distance does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Rural and exurban residents often have no choice but to commute long distances. They would be refused because of where jobs are.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 80 kilometres one way"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Long-distance commuters already pay more through distance rating. Refusal adds cost without adding accuracy.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer can price the extra kilometres. Refusing coverage protects its book but leaves commuters with fewer options.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on commuting distance and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "commutes more than 80 kilometres"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Commute distance is declared and varies with route and remote-work days. Verifying it would require some judgment.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "one way to their place of employment"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The insurer says its data shows an inflection point at 80 km but does not supply it. Until then, the threshold cannot be checked.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Our data shows a clear inflection point at 80 km."
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "More kilometres mean more exposure to collisions, which is a direct link. The question is whether that justifies refusal rather than rating.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "increasing exposure to collision risk proportionally"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale cites an inflection point in the insurer's data. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Our data shows a clear inflection point at 80 km."
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say how often the commute must occur (daily or occasionally) or how hybrid work is treated. The same person could be in or out.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "commutes more than 80 kilometres one way"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Maybe: distance is a fair rating factor, but refusing long-distance commuters would hit rural workers hardest. The data needs to show why rating is not enough.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-046",
+      "similarity": 0.34,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines students driving over 15,000 km a year. Both use distance as a decline trigger; DR-046 adds student status."
+    },
+    {
+      "refId": "DR-087",
+      "similarity": 0.254,
+      "relation": "similar",
+      "explanation": "Same insurer (Maplewood Mutual) proposes declining regular cross-border work travel, also justified by kilometres. Review together."
+    },
+    {
+      "refId": "AP-06",
+      "similarity": 0.157,
+      "relation": "materially_different",
+      "explanation": "Approved commercial-use rule. Commuting is personal use, so the precedent does not apply."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Workers who commute more than 80 km each way, often from rural or exurban areas.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Rural workers",
+      "Exurban commuters",
+      "Shift workers without transit options"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Please provide the data showing the inflection point at 80 km.",
+    "Why is distance-based rating not sufficient?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Data showing a sharp risk increase that rating cannot reflect would support approval; replacing refusal with a distance rating would resolve the concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request the inflection-point data.",
+      "owner": "Insurer",
+      "reason": "The insurer says it exists."
+    },
+    {
+      "action": "Review with DR-046 and DR-087 for consistent treatment of distance-based rules.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

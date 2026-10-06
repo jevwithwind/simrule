@@ -1,0 +1,321 @@
+{
+  "id": "DR-091",
+  "extracted": {
+    "trigger": "More than 5 personal vehicles",
+    "thresholdCount": 6,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who own more than 5 vehicles registered for personal use",
+    "ruleType": "decline",
+    "definedTerms": [
+      "more than 5 vehicles"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on the number of vehicles owned. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "owns more than 5 vehicles"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The number of vehicles owned is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Owning many vehicles does not by itself change how any one vehicle is driven. Collectors often drive each vehicle very little.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "A large personal fleet increases the likelihood of unlisted drivers"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle count does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Collectors, farm families and large households could be refused for all their vehicles. Specialty products may exist for collectors.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 5 vehicles"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Unlisted drivers and misdeclared use would raise costs for others. The concern is legitimate.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Requiring disclosure of drivers and use for each vehicle would address the concern without refusing the owner. Refusal is broader than needed.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "difficulty monitoring aggregate exposure across multiple vehicles"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on the number of vehicles owned and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 5 vehicles"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle registrations is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for more than 5. The difficulty of monitoring does not jump at a particular count.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 5 vehicles"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale describes administrative difficulty and possible misdeclaration, not demonstrated claims. The link to risk is indirect.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "increases the likelihood of unlisted drivers, inaccurate usage declarations"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The number of vehicles registered for personal use is clear. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 5 vehicles registered for personal use"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Maybe: the concern about unlisted drivers is reasonable, but disclosure rules would address it. The effect on farm families and collectors needs checking.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-004",
+      "similarity": 0.406,
+      "relation": "materially_different",
+      "explanation": "Pending Beacon Fire & Casualty rule declines non-owners. Both use ownership as a stand-in for risk, at opposite ends."
+    },
+    {
+      "refId": "DR-089",
+      "similarity": 0.058,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule requires disclosure of household drivers. Disclosure is the less restrictive tool for DR-091's concern."
+    },
+    {
+      "refId": "DR-025",
+      "similarity": 0.267,
+      "relation": "similar",
+      "explanation": "Pending Beacon Fire & Casualty business-registration rule. Another rule based on how vehicles are held rather than used."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners of 6 or more personal vehicles, such as collectors and farm families.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Farm families",
+      "Classic car collectors"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "What data shows higher claims for owners of more than 5 vehicles?",
+    "Would disclosure of drivers and use for each vehicle address the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing refusal with disclosure requirements, or data supporting the threshold, would move it toward approval."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request data and ask whether disclosure would meet the concern.",
+      "owner": "Insurer",
+      "reason": "Threshold is unsupported."
+    },
+    {
+      "action": "Review with DR-089 for the disclosure alternative.",
+      "owner": "Analyst",
+      "reason": "Consistency."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

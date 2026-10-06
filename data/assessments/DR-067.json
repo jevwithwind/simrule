@@ -1,0 +1,341 @@
+{
+  "id": "DR-067",
+  "extracted": {
+    "trigger": "Social media showing dangerous driving",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants whose social media depicts reckless or dangerous driving",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "social media presence",
+      "reckless or dangerous driving behaviour"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "CONTRARY_TO_LEGISLATION"
+      ],
+      "reasoning": "Collecting and judging applicants' social media raises privacy-law questions about consent and accuracy. No provision in the registry addresses it directly, so it is flagged for legal review.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "social media presence"
+        }
+      ],
+      "citationIds": [
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Social media content is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "Dangerous driving is relevant to risk, but a post is not proof of who was driving, when, or whether the clip is real. The rule does not rely on the applicant's verified record.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "even if it has not resulted in a conviction or claim"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Social media use and content vary by age, and reviewers' judgments about \"reckless\" content can be biased. The rule risks indirect discrimination on age and race.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "depicts reckless or dangerous driving"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Applicants could be refused for content posted by others or years ago. There is no time limit or route back.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "has a social media presence"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Reviewing social media adds cost, and wrongly declined consumers pay more elsewhere. The benefit is not shown.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "Monitoring personal online activity as a condition of compulsory insurance goes well beyond what the insurer needs. Driving records already capture dangerous driving that leads to charges or claims.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers would not know which posts were judged, by whom, or how to contest the judgment. A decline would be hard to understand.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "social media presence"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Deciding that a post \"depicts reckless or dangerous driving\" is a subjective judgment by the insurer's staff. There is no objective record behind it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "depicts reckless or dangerous driving behaviour"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "The rule has no time limit, no requirement that the applicant was driving, and no standard for what counts. It is open-ended.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "has a social media presence"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "Real dangerous driving links to risk, but unverified online content is closer to an accusation than a finding. The framework treats declining on unproven conduct as non-compliant.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "even if it has not resulted in a conviction or claim"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Social media presence\" and \"reckless or dangerous driving behaviour\" are not defined. The framework lists vague language as a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "social media presence that depicts reckless or dangerous driving behaviour"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT",
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "Yes: making online surveillance and subjective judgment of posts a gate to compulsory insurance is a serious privacy intrusion. Driving records and the courts are the proper source of evidence.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-023",
+      "similarity": 0.157,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual telematics-consent rule. Both rely on intrusive monitoring as a gate to coverage."
+    },
+    {
+      "refId": "NC-04",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Non-compliant example declines people accused but not convicted. Social media content is unproven in the same way."
+    },
+    {
+      "refId": "DR-100",
+      "similarity": 0.096,
+      "relation": "materially_different",
+      "explanation": "Pending Birchwood Insurance Group rule declines public advocates. Both judge online or public content, but DR-100 targets opinions; DR-067 targets depicted driving."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone whose social media includes content the insurer judges to show dangerous driving, whoever posted it and whenever.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Young people active on social media"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Who would review social media, against what standard, and with what consent?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. Verified driving records already capture dangerous driving."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on subjectivity, vagueness and privacy grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Review the privacy-law concern.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

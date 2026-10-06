@@ -1,0 +1,337 @@
+{
+  "id": "DR-058",
+  "extracted": {
+    "trigger": "Household member with a suspended licence",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants with any household member whose licence is suspended, even if not a listed driver",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "household member"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a household member's suspended licence. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "household member with a suspended licence"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule judges the applicant by a family member's status, which touches family status. The Code's insurance provision allows family-status distinctions only on reasonable and bona fide grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "household member"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Similar submissions from other insurers are pending (DR-026) and should be reviewed together.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "A suspended household member could drive the vehicle without permission, so there is a real exposure. But the rule ignores the applicant's own record and any steps taken to prevent access.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may operate the insured vehicle without the policyholder's knowledge or consent"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule falls on families and penalises people for a relative's situation. The effect on family status is indirect.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Parents of a suspended teenager or spouses of a suspended driver would lose access even with clean records. The whole household could be left without coverage.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "even if that person is not listed as a driver"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Unauthorised use by a suspended driver is a real cost risk. Addressing it is legitimate.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "A driver exclusion endorsement can remove the suspended person from coverage without refusing the household. That would balance the insurer's concern with fair treatment.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "represent an undisclosed exposure"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a household member's licence status and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "suspended licence"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A household member's licence suspension is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no numeric threshold and turns on a recorded status. It is not arbitrary in form.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The link depends on the suspended person actually using the vehicle, which the rationale says \"may\" happen. The risk is plausible but not demonstrated.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "as they may operate the insured vehicle"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data on unauthorised use is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Household member\" is not defined, and the rule does not say whether the suspension must relate to driving. A roommate suspended for unpaid fines would count.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "household member"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Maybe: preventing suspended drivers from using an insured car is sensible, but refusing the whole household goes further than needed. A driver exclusion would be the proportionate tool.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-026",
+      "similarity": 0.532,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines households with more than 4 licensed drivers. Both judge the applicant by other household members; DR-058 at least ties to a person barred from driving."
+    },
+    {
+      "refId": "DR-074",
+      "similarity": 0.115,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group rule declines anyone living with a person convicted of fraud. Same household approach, but DR-074 targets a relationship and a speculative collusion risk; DR-058 targets vehicle access."
+    },
+    {
+      "refId": "DR-089",
+      "similarity": 0.354,
+      "relation": "materially_different",
+      "explanation": "Pending Granite Mutual Insurance rule declines refusal to disclose household drivers. Disclosure plus exclusion is the less restrictive route DR-058 should use."
+    },
+    {
+      "refId": "DR-002",
+      "similarity": 0.307,
+      "relation": "materially_different",
+      "explanation": "Pending Northern Shield Insurance rule declines the applicant's own impaired-driving suspension. DR-058 concerns someone else's suspension."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants who live with anyone whose licence is suspended, including parents of suspended teenagers and spouses.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Families with a suspended member",
+      "People in shared housing"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Would the insurer accept a driver exclusion endorsement for the suspended person instead?",
+    "Does the suspension need to relate to driving?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing refusal with a mandatory driver exclusion for the suspended person would move the rule toward approval."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request the insurer consider a driver exclusion alternative and define \"household member\".",
+      "owner": "Insurer",
+      "reason": "Less restrictive tool available."
+    },
+    {
+      "action": "Review with DR-026 and DR-074 for consistent treatment of household rules.",
+      "owner": "Analyst",
+      "reason": "Consistency."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-026 on the market check."
+  ]
+}

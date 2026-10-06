@@ -1,0 +1,349 @@
+{
+  "id": "DR-042",
+  "extracted": {
+    "trigger": "Criminal driving charge without conviction",
+    "thresholdCount": null,
+    "lookbackYears": 3,
+    "populationAffected": "Applicants charged with but not convicted of a driving-related Criminal Code offence in the preceding 3 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 3 years"
+    ],
+    "undefinedTerms": [
+      "charged with"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a criminal charge. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "charged with but not convicted of a Criminal Code offence"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Charge rates differ across communities in ways that convictions may not, so relying on charges risks indirect discrimination on race. Approving a rule that treats the presumption of innocence as irrelevant would also sit poorly with Charter values.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "charged with but not convicted"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "CHARTER"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PRECEDENT_NON_COMPLIANT_MATCH"
+      ],
+      "reasoning": "The framework gives \"deny insurance to someone accused of a crime they were not convicted of\" as an illustrative non-compliant rule (NC-04). DR-042 is that example applied to driving offences: the only difference is that the charge must relate to driving, which does not cure the defect.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "charged with but not convicted of a Criminal Code offence"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "The alleged conduct concerns driving, so it is closer to risk than many triggers. But a charge is not proof the conduct happened.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "related to driving"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Using charges rather than convictions can import any bias in who is charged. The principle requires decisions free of indirect bias.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People acquitted or whose charges were withdrawn would still be refused for 3 years. That limits access for people the courts have cleared.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Cleared applicants would pay more elsewhere. The cost has no proven risk basis.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "The insurer wants to avoid exposure while a case is pending, but the rule keeps applying after acquittal. That favours the insurer well beyond the interim period it describes.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Waiting for conviction outcomes would leave us exposed during the interim period."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a criminal charge and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "charged with"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A laid charge is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The 3-year lookback matches the approved conviction rule (AP-01). The defect is the trigger, not the period.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 3 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "The framework treats declining someone for a crime they were not convicted of as non-compliant. The rationale openly asks to act on charges \"even without conviction\".",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Criminal charges, even without conviction, indicate involvement in serious driving incidents"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data on claims by people charged but not convicted is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "\"Charged with but not convicted of a Criminal Code offence related to driving\" is clear. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "charged with but not convicted of a Criminal Code offence related to driving"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance on a charge, including after acquittal, conflicts with the presumption of innocence. The framework names this exact pattern as non-compliant.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "CHARTER"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "NC-04",
+      "similarity": 0.343,
+      "relation": "same",
+      "explanation": "Non-compliant example: deny insurance to someone accused of a crime they were not convicted of. DR-042 is the same rule limited to driving offences."
+    },
+    {
+      "refId": "AP-01",
+      "similarity": 0.43,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines Criminal Code convictions in 3 years. Same lookback and offence type, but AP-01 requires a conviction; DR-042 does not."
+    },
+    {
+      "refId": "DR-008",
+      "similarity": 0.373,
+      "relation": "materially_different",
+      "explanation": "Pending Lakeshore Indemnity rule declines driving-related Criminal Code convictions. DR-008 is the approvable, conviction-based version of DR-042."
+    },
+    {
+      "refId": "DR-034",
+      "similarity": 0.251,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group restraining-order rule. Same allegation-not-conviction defect."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "People charged with a driving-related criminal offence in the last 3 years, including those acquitted or whose charges were withdrawn.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People who were acquitted or had charges withdrawn",
+      "Communities with higher charge rates"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Would the rule continue to apply after an acquittal or withdrawal?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing the charge with a conviction would turn this into the approvable DR-008 or AP-01 rule."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and cite NC-04.",
+      "owner": "Analyst",
+      "reason": "Matches a framework non-compliant example."
+    },
+    {
+      "action": "Confirm the non-compliant-example match.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

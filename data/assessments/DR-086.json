@@ -1,0 +1,346 @@
+{
+  "id": "DR-086",
+  "extracted": {
+    "trigger": "Facility Association insured moving to the voluntary market",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Facility Association insureds seeking voluntary-market coverage with no change in risk profile",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "no change in their risk profile"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "CONTRARY_TO_LEGISLATION"
+      ],
+      "reasoning": "Take All Comers requires the insurer to accept any applicant who meets its approved rules. Declining someone because they are in the residual market, rather than because they fail an approved risk rule, risks bypassing that duty.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "currently insured through Facility Association"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "FSRA_TAC_INFO",
+        "FSRA_FA"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Residual market status is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Same insurer's DR-056 (Facility Association denial) uses the same approach.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Residual-market placement may reflect circumstances that have since changed, or another insurer's rules. The insurer's own approved rules should decide, not the placement.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Without a demonstrated improvement in risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Residual market status does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "The rule would trap consumers in the most expensive part of the market. Moving back to the voluntary market is how they regain normal access.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "seeking to transfer to the voluntary market"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "FSRA_FA"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Keeping people in the residual market keeps their premiums high. The rule passes cost onto consumers who may meet the insurer's own rules.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "COPYCAT_REFERENCE"
+      ],
+      "reasoning": "The insurer relies on other insurers' past refusals rather than its own assessment. That favours the insurer's convenience.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "no voluntary market insurer would accept the risk"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers would not know what \"change in risk profile\" they need to show. They would have no clear path out of the residual market.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "no change in their risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "COPYCAT_REFERENCE",
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "The trigger is residual-market placement, which reflects other insurers' decisions, plus the insurer's judgment of whether the risk profile \"changed\". The framework lists reliance on other insurers' actions as a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "currently insured through Facility Association"
+        },
+        {
+          "source": "ruleText",
+          "quote": "with no change in their risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No standard is given for what counts as a change in risk profile. The test is open-ended.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "no change in their risk profile"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale assumes placement reflects risk that still exists. If the applicant meets the insurer's own rules, placement adds no risk information.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "the same conditions that led to residual market placement still apply"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"No change in their risk profile\" is undefined. The insurer could apply it to almost anyone in the residual market.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "no change in their risk profile"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: the residual market is meant to be a safety net, not a trap. A rule that blocks the way back to normal coverage undermines Take All Comers.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FSRA_FA"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-056",
+      "similarity": 0.455,
+      "relation": "similar",
+      "explanation": "Same insurer (Ridgeline Insurance Co.) proposes declining people denied by Facility Association. Both use residual-market status as a decline ground. Review together."
+    },
+    {
+      "refId": "DR-009",
+      "similarity": 0.017,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule relies on another insurer's cancellation. Same copycat pattern."
+    },
+    {
+      "refId": "NC-01",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Non-compliant example declines people with no insurance history. DR-086 similarly judges people by their insurance history rather than their risk."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers currently insured through Facility Association who want to return to the voluntary market.",
+    "likelyConsequence": "They would remain in the residual market, usually paying much higher premiums, even if they meet this insurer's approved rules.",
+    "vulnerableGroups": [
+      "Drivers rebuilding after past problems"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "If an applicant meets all of the insurer's approved rules, why would residual-market placement matter?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal; the insurer's approved rules already apply."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on copycat and public policy grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Assess the Take All Comers concern with DR-056.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

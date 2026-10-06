@@ -1,0 +1,52 @@
+SOURCE 04: THE SIX PRINCIPLES AND FAIR CONSUMER OUTCOMES (LEVEL 2)
+
+Disclaimer: academic prototype for Ivey Online coursework; not affiliated with or representative of FSRA; fictional data; not legal advice.
+
+WHERE THESE COME FROM
+The six principles and their fair consumer outcomes are taken from the appendix of the course framework, which draws on the regulator's proposed guidance on automobile insurance rating and underwriting. They describe the outcome a rule should achieve, not only the letter of the law. This is why Level 2 is called "Interpretation of principles and fair consumer outcomes". The regulator describes its overall approach as principles-based regulation.
+
+PRINCIPLE 1: ACCURATE PRICING AND UNDERWRITING (criterion L2_ACCURATE)
+Fair consumer outcome: premiums and coverages closely reflect each consumer's individual risk profile. Risk profiles are determined by driving behaviour, experience, driving distance, location, vehicle and other relevant risk factors.
+What a reviewer looks for: does the rule turn on something about this applicant's own driving or vehicle, or on a group label that many low-risk people share?
+Common issue codes: NOT_RISK_RELEVANT, WEAK_RISK_LINK, OVERBROAD_SCOPE.
+
+PRINCIPLE 2: ABSENCE OF UNFAIR DISCRIMINATION, BIAS OR PROXIES (criterion L2_NO_DISCRIMINATION)
+Fair consumer outcome: rating and underwriting practices are free from unfair discrimination and bias. Decisions are not directly or indirectly influenced by grounds protected under the Ontario Human Rights Code. Criteria are not used that are direct or indirect proxies for protected or prohibited variables.
+What a reviewer looks for: a neutral-sounding trigger that mostly affects a protected group. Examples of possible proxies: language spoken, place of birth, postal code or neighbourhood, newcomer status, foreign licence, or receiving social assistance or disability benefits.
+Common issue codes: PROXY_FOR_PROTECTED_GROUND, DISCRIMINATORY_IMPACT_NEW_DRIVERS, DISCRIMINATORY_IMPACT_NEW_TO_CANADA.
+How to fix: replace the proxy with a direct, behaviour-based risk factor, and test the rule for disparate impact.
+
+PRINCIPLE 3: ACCESSIBLE PRODUCTS AND COVERAGES (criterion L2_ACCESSIBLE)
+Fair consumer outcome: rating and underwriting practices balance pricing accuracy with accessibility and suitability. Decisions would not unfairly affect consumers' ability to access critical auto insurance coverage.
+What a reviewer looks for: because auto insurance is compulsory, a decline pushes the consumer to another insurer or the residual market, usually at a higher cost. Would a rating surcharge, an endorsement, a driver exclusion or a verification step address the risk without a full decline?
+Common issue codes: ACCESSIBILITY_IMPACT, LESS_RESTRICTIVE_ALTERNATIVE.
+
+PRINCIPLE 4: COST MITIGATION (criterion L2_COST_MITIGATION)
+Fair consumer outcome: insurers prevent unnecessary and excessive costs from being passed on to consumers.
+What a reviewer looks for: does the rule push consumers into higher-cost markets without a matching risk reason? Does it create cost for the wider system?
+Common issue code: UNFAIR_COST_SHIFT.
+
+PRINCIPLE 5: BALANCED PROFITABILITY AND CONSUMER INTERESTS (criterion L2_BALANCED)
+Fair consumer outcome: insurers balance their need for sustainable growth and profitability with fair treatment of consumers. Premiums are based on reasonable profit assumptions.
+What a reviewer looks for: is the rule mainly about avoiding administrative effort or selecting only the most profitable customers, rather than managing a real risk?
+Common issue codes: LESS_RESTRICTIVE_ALTERNATIVE, ACCESSIBILITY_IMPACT.
+
+PRINCIPLE 6: CLEAR CONSUMER COMMUNICATIONS (criterion L2_CLEAR_COMMUNICATION)
+Fair consumer outcome: communications affecting policyholder rights are clear and timely. Consumers can access information to understand the factors influencing pricing, underwriting and implications for future claims. Communications use convenient, current channels.
+What a reviewer looks for: could a declined consumer understand the reason, check the facts it relies on, and correct an error? Rules that depend on hidden scores, vague terms or insurer judgment are hard to explain.
+Common issue code: UNCLEAR_CONSUMER_COMMUNICATION.
+Standard condition in Simrule: the insurer must tell declined consumers the specific reason and how to correct inaccurate information.
+
+HOW LEVEL 2 AFFECTS THE OUTCOME
+Level 2 carries 40 of the 100 score points. Each of the six criteria counts equally within Level 2. A high-severity "does not meet standard" at Level 2 leads to a decline recommendation on its own. A medium or high severity Insufficient information finding at Level 2 routes the rule to Request more information.
+
+CONSUMER LENS
+For every rule, Simrule shows a consumer lens: who could be refused, the likely consequence (for example, moving to the residual market at a higher cost, or being unable to drive legally), groups that may be most affected, and the severity of the impact. This keeps the consumer visible throughout the review, which is one of Simrule's four principles.
+
+WHAT INSURERS CAN DO TO ALIGN A RULE WITH THE PRINCIPLES
+- Base the rule on the applicant's own driving behaviour, vehicle use or claims history.
+- Avoid characteristics that track protected grounds, even indirectly.
+- Consider whether rating or an endorsement would manage the risk instead of a decline.
+- Define every key term so the rule is applied the same way to everyone.
+- Explain how declined consumers will be told the reason and how to correct errors.
+- Supply data showing the link between the trigger and claims frequency or severity.

@@ -1,0 +1,323 @@
+{
+  "id": "DR-014",
+  "extracted": {
+    "trigger": "Insurance fraud conviction",
+    "thresholdCount": 1,
+    "lookbackYears": 10,
+    "populationAffected": "Applicants convicted of insurance fraud in the preceding 10 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "convicted of insurance fraud",
+      "preceding 10 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on an insurance fraud conviction. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "convicted of insurance fraud"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A fraud conviction is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "The rule matches AP-05 (Kestrel Point Insurance, 2018): 1 or more convictions for auto insurance fraud in the preceding 10 years. DR-014 covers insurance fraud of any kind, which is slightly broader than auto fraud only, with the same 10-year lookback.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "convicted of insurance fraud within the preceding 10 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A fraud conviction is direct, proven evidence of moral hazard relevant to the insured risk. The rule reflects the applicant's own conduct.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Fraud convictions represent the most direct evidence of moral hazard."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A fraud conviction does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule affects a small group with proven fraud and mirrors an approved rule. Affected consumers keep access to the residual market.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Fraud costs are passed to all policyholders, so excluding convicted fraudsters directly supports cost mitigation. The rule adds no cost for others.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule targets proven, serious conduct. It balances the insurer's protection against fraud with fair treatment of everyone else.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a fraud conviction and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "convicted of insurance fraud"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A conviction is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "convicted"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The 10-year lookback matches the approved precedent. The rationale explains it as proportionate to the severity of the offence.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "A 10-year lookback is proportionate to the severity of the offence."
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Proven insurance fraud links directly to future fraudulent claims exposure. The framework's common examples include a previous fraud conviction.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "most direct evidence of moral hazard"
+        }
+      ],
+      "citationIds": [
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is qualitative. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Insurance fraud\" is not limited to auto insurance, unlike the approved rule. The insurer should confirm whether fraud on other lines, such as property or life insurance, is intended.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "insurance fraud"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Excluding proven fraud protects honest policyholders and matches an approved rule.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-05",
+      "similarity": 0.634,
+      "relation": "similar",
+      "explanation": "Same threshold (a conviction), same 10-year lookback. AP-05 is limited to auto insurance fraud; DR-014 covers insurance fraud generally, which reaches slightly more people."
+    },
+    {
+      "refId": "FX-06",
+      "similarity": 0.359,
+      "relation": "similar",
+      "explanation": "Framework common example: a previous fraud conviction. DR-014 adds a 10-year lookback, which limits it."
+    },
+    {
+      "refId": "DR-074",
+      "similarity": 0.501,
+      "relation": "materially_different",
+      "explanation": "Same insurer (Grandview Insurance Group) also proposes declining anyone who lives with a person convicted of fraud. DR-014 concerns the applicant's own conviction; DR-074 penalises a relationship."
+    },
+    {
+      "refId": "DR-049",
+      "similarity": 0.193,
+      "relation": "materially_different",
+      "explanation": "Pending Granite Mutual Insurance rule declines alleged fraudulent claims without a conviction. DR-014 requires a conviction, which is what makes it approvable."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "People convicted of insurance fraud in the last 10 years.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People with past fraud convictions seeking to rebuild"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Does \"insurance fraud\" include fraud on non-auto lines?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If the rule were extended to fraud allegations without a conviction, it would move towards decline."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite AP-05.",
+      "owner": "Analyst",
+      "reason": "Matches an approved precedent."
+    },
+    {
+      "action": "Confirm the scope of \"insurance fraud\" and file supporting analysis.",
+      "owner": "Insurer",
+      "reason": "Standard conditions."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurer and approval year are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

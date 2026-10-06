@@ -1,0 +1,321 @@
+{
+  "id": "DR-052",
+  "extracted": {
+    "trigger": "Salvage title from any jurisdiction",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles with a salvage title from any jurisdiction",
+    "ruleType": "decline",
+    "definedTerms": [
+      "salvage title"
+    ],
+    "undefinedTerms": [
+      "from any jurisdiction"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a vehicle's salvage history. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "salvage title from any jurisdiction"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle title branding is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The framework lists \"deny insurance on any rebuilt vehicles\" as a common decline rule (FX-03), and a salvage title is the same structural-history concern. Ridgeline Insurance Co.'s rebuilt-vehicle rule (DR-006) is pending and should be reviewed alongside it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "salvage title"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A vehicle written off for serious damage carries structural and safety uncertainty, which is a vehicle risk factor. The rule reflects the condition of the insured vehicle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "structural integrity and safety system reliability cannot be guaranteed"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle title branding does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT",
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "A vehicle once branded salvage elsewhere may have been properly rebuilt and certified since. Refusing it forever reaches further than the safety concern requires.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "from any jurisdiction"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Avoiding vehicles of uncertain structural integrity limits injury and dispute costs for others. No new cost is created.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows a common market practice for a recognised vehicle risk. It is balanced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a vehicle's salvage title and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "salvage title"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Title branding is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "salvage title"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule uses a recorded vehicle status rather than a numeric threshold. It matches a common approved practice.",
+      "evidence": [],
+      "citationIds": [
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Serious prior damage links directly to structural safety and claims disputes. The rationale states the mechanism clearly.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Salvage-titled vehicles have sustained damage significant enough to be written off."
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is qualitative. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "Title brands differ between jurisdictions, and \"salvage\" in one may correspond to \"rebuilt\" or \"irreparable\" in another. The filing should say how foreign brands are mapped.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "from any jurisdiction"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Declining salvage vehicles follows common practice; the overbreadth point is a condition.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "FX-03",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Framework common example: deny insurance on any rebuilt vehicles. DR-052 uses salvage title, an earlier or equivalent brand, for the same structural-history concern."
+    },
+    {
+      "refId": "DR-006",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines vehicles declared a total loss and rebuilt. Same concern, different brand; review together so rebuilt and salvage vehicles are treated consistently."
+    },
+    {
+      "refId": "AP-14",
+      "similarity": 0.157,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines unacceptable modifications. Both concern vehicle condition, but salvage history follows damage, not owner choices."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners of vehicles that carry a salvage brand from any jurisdiction, including some later rebuilt and certified.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Price-sensitive buyers of used vehicles",
+      "Buyers of imported used vehicles"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Will a vehicle that has since passed structural inspection and been rebranded as rebuilt still be declined?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "An exception for certified rebuilt vehicles would remove the overbreadth concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite FX-03.",
+      "owner": "Analyst",
+      "reason": "Matches a framework common rule."
+    },
+    {
+      "action": "Review with DR-006 for consistent treatment of rebuilt and salvage vehicles.",
+      "owner": "Analyst",
+      "reason": "Pending similar submission."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "id": "DR-010",
+  "extracted": {
+    "trigger": "High average claims cost postal codes",
+    "thresholdCount": 150,
+    "lookbackYears": null,
+    "populationAffected": "Residents of postal codes where average claims cost exceeds 150% of the provincial average",
+    "ruleType": "decline",
+    "definedTerms": [
+      "150% of the provincial average"
+    ],
+    "undefinedTerms": [
+      "average claims cost"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on where the applicant lives. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on postal code. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "resides in a postal code"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Postal codes in Ontario cities often track race, ethnic origin and income. A rule that refuses whole areas risks constructive discrimination against protected groups concentrated there, even though location is not itself a protected ground.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "resides in a postal code"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Approved rules do not use territory to decline; location is normally a rating factor.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Location is a named risk factor under the principle, but for pricing, not refusal. Declining everyone in an area ignores each resident's own driving record.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Geographic concentration of high-cost claims"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Area-based refusal is a recognised indirect proxy for race, ethnic origin and income. The principle bars criteria that are indirect proxies for protected or prohibited variables.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "postal code where the average claims cost exceeds 150% of the provincial average"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Every resident of the affected postal codes would be refused, regardless of record. Whole neighbourhoods could lose access to this insurer's mandatory coverage.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant who resides in a postal code"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Residents pushed to the residual market would pay more on top of already high territorial rates. Careful drivers in those areas bear the cost of others' claims.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer's goal is portfolio risk management, which territorial rating already addresses. Refusal shifts the insurer's problem onto consumers.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "manage portfolio risk in areas with demonstrated adverse loss experience"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers cannot see area-level claims costs or know in advance whether their postal code qualifies. The list of postal codes would also change over time.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "average claims cost exceeds 150%"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Average claims cost by postal code is a calculated figure from data. Applying it does not need a judgment call, once the data source is fixed.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "average claims cost"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for 150% of the provincial average. The cut-off decides which neighbourhoods are refused, so it needs a reason.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "exceeds 150% of the provincial average"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Area claims cost reflects many factors, including traffic density and fraud, rather than the applicant's behaviour. The link to an individual applicant is indirect.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Geographic concentration of high-cost claims"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale refers to demonstrated adverse loss experience without data. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "demonstrated adverse loss experience"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say whose claims data, which years or which coverages define \"average claims cost\". The affected areas could shift without notice.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "average claims cost"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance to entire neighbourhoods would amount to area-based exclusion that a consumer protection regulator should not approve. Take All Comers exists to prevent this kind of outcome.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FSRA_TAC_INFO"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-050",
+      "similarity": 0.28,
+      "relation": "similar",
+      "explanation": "Same insurer (Birchwood Insurance Group) also proposes declining rural residents far from a body shop. Both refuse people by location rather than rating them; the insurer's filings show a pattern."
+    },
+    {
+      "refId": "DR-032",
+      "similarity": 0.254,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule declines street parking overnight. Another location-linked rule that falls on dense urban areas."
+    },
+    {
+      "refId": "DR-064",
+      "similarity": 0.254,
+      "relation": "materially_different",
+      "explanation": "Pending Grandview Insurance Group rule requires a permanent Ontario address. That is about jurisdiction and garaging, not refusing high-cost areas."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Every resident of postal codes with average claims costs above 150% of the provincial average.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Residents of lower-income urban neighbourhoods",
+      "Racialized communities",
+      "Newcomers"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Which postal codes would be affected and what is their demographic profile?",
+    "Why is territorial rating not sufficient?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. Location belongs in rating, not in a decline rule."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and record the proxy and accessibility fails.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 2 fails."
+    },
+    {
+      "action": "Review the indirect discrimination concern.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 human rights concern triggers senior review."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "The demographic make-up of the affected postal codes is not provided; the proxy finding relies on general knowledge of Ontario cities."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

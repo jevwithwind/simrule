@@ -1,0 +1,335 @@
+{
+  "id": "DR-097",
+  "extracted": {
+    "trigger": "Imported from outside North America and under 15 years old",
+    "thresholdCount": 15,
+    "lookbackYears": null,
+    "populationAffected": "Drivers of vehicles imported from outside North America that are less than 15 years old",
+    "ruleType": "decline",
+    "definedTerms": [
+      "less than 15 years old"
+    ],
+    "undefinedTerms": [
+      "imported from outside North America"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle origin. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on vehicle origin and age. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "imported from outside North America and is less than 15 years old"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle origin is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Similar submissions from other insurers are pending (DR-019, DR-054) and should be reviewed together.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "The concern seems to be privately imported vehicles that may not meet Canadian standards. Read literally, though, the rule covers many mainstream new vehicles built overseas and sold by Canadian dealers.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may not meet Canadian safety standards"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle origin does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT",
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "As written, owners of a large share of recent vehicles on Ontario roads could be refused. That would remove access far beyond the grey-market imports the rationale describes.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "imported from outside North America"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Owners pushed elsewhere would pay more. The parts and valuation concern applies only to some imports.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Limiting the rule to privately imported vehicles not certified to Canadian standards would address the concern. The broad version is not balanced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers would not know whether a dealer-sold car built overseas counts as \"imported\". The rule could surprise ordinary buyers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "imported from outside North America"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Country of manufacture and model year is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No reason is given for 15 years. The cut-off is not tied to measured risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "less than 15 years old"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Parts availability and valuation affect physical damage claims for some imports. They do not link to collision risk or to most overseas-built vehicles.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may lack compatible parts for repair, and present valuation challenges"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Imported from outside North America\" could mean manufactured overseas or privately imported. The two readings differ enormously in who is affected, which the framework lists as a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "imported from outside North America"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Maybe: excluding uncertified grey-market imports is reasonable. Excluding mainstream vehicles built overseas would not be.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-019",
+      "similarity": 0.482,
+      "relation": "similar",
+      "explanation": "Pending Granite Mutual Insurance rule declines vehicles over 25 years old. Both use vehicle age thresholds; DR-019 reaches a limited group and needs data, while DR-097's undefined \"imported\" wording reaches far more owners, which is why DR-097 is a decline as written."
+    },
+    {
+      "refId": "DR-054",
+      "similarity": 0.365,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group right-hand drive rule. Both concern imported vehicles; DR-054 is narrow and needs data, while DR-097 is a decline as written because its undefined wording reaches mainstream vehicles."
+    },
+    {
+      "refId": "DR-068",
+      "similarity": 0.348,
+      "relation": "materially_different",
+      "explanation": "Pending Lakeshore Indemnity automation rule. Another vehicle-type rule, based on technology rather than origin."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers of vehicles under 15 years old that were imported from outside North America, which as written could include many mainstream overseas-built cars.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Owners of mainstream imported vehicles",
+      "Owners of private imports"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Does \"imported\" mean manufactured outside North America, or privately imported by an individual?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Narrowing to privately imported vehicles not certified to Canadian standards would move it toward approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline as written and record the narrowing path.",
+      "owner": "Analyst",
+      "reason": "High-severity accessibility fail from overbroad wording."
+    },
+    {
+      "action": "Invite a redraft limited to uncertified private imports.",
+      "owner": "Insurer",
+      "reason": "The underlying concern is legitimate for that group."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "The insurer's intended meaning of \"imported\" is unclear; the finding assumes the literal reading."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-019, DR-054 on the market check.",
+    "Consistency audit: rewrote the comparison with DR-019. Explanation described the similarity but not why the outcomes differ.",
+    "Consistency audit: rewrote the comparison with DR-054. Explanation described the similarity but not why the outcomes differ."
+  ]
+}

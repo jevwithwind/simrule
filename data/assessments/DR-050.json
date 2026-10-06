@@ -1,0 +1,347 @@
+{
+  "id": "DR-050",
+  "extracted": {
+    "trigger": "Rural distance from a body shop",
+    "thresholdCount": 50,
+    "lookbackYears": null,
+    "populationAffected": "Rural residents more than 50 km from the nearest auto body repair facility",
+    "ruleType": "decline",
+    "definedTerms": [
+      "more than 50 kilometres"
+    ],
+    "undefinedTerms": [
+      "rural area"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on location. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on distance from a repair facility. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 50 kilometres from the nearest auto body repair facility"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Remote areas of Ontario include many First Nations and northern communities. Refusing coverage by distance from services risks indirect discrimination on ancestry and place of origin.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "resides in a rural area"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Location is a named rating factor, and remoteness can raise physical damage claim costs. That supports rating, not refusal.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "inflate claims costs significantly"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Distance from services correlates with Indigenous and northern communities. The rule could work as an indirect proxy for them.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "rural area"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Remote residents depend on driving because transit is limited or absent. Refusing them removes access where it matters most.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant who resides in a rural area more than 50 kilometres"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Towing and rental costs are real but affect physical damage claims only. Pushing remote residents to costlier markets shifts that cost onto them.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "increase towing costs, delay repairs"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer could rate physical damage coverage by remoteness. Refusing mandatory liability coverage because repairs cost more is not balanced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers would not know the distance the insurer used or how it is measured. A new or closed body shop could change their eligibility without notice.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "nearest auto body repair facility"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Distance to the nearest repair facility is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for 50 km. The line is not tied to measured claims cost.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "more than 50 kilometres"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Remoteness affects repair logistics and cost, not the likelihood of a collision or the driver's behaviour. The link is to claims cost, not to the insured's risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Remote locations increase towing costs, delay repairs"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No claims cost data by distance is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Rural area\" and \"auto body repair facility\" are not defined. The distance measure (road or straight line) is also unclear.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "rural area"
+        },
+        {
+          "source": "ruleText",
+          "quote": "auto body repair facility"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance to remote and northern residents because services are far away would deepen existing inequalities. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-010",
+      "similarity": 0.28,
+      "relation": "similar",
+      "explanation": "Same insurer (Birchwood Insurance Group) also proposes declining high-claims-cost postal codes. Both refuse by location instead of rating; the insurer's filings show a pattern."
+    },
+    {
+      "refId": "DR-032",
+      "similarity": 0.175,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance street-parking rule. Another location-linked rule, falling on urban rather than rural residents."
+    },
+    {
+      "refId": "DR-064",
+      "similarity": 0.175,
+      "relation": "materially_different",
+      "explanation": "Pending Grandview Insurance Group rule requires a permanent Ontario address. That concerns jurisdiction; DR-050 concerns remoteness within Ontario."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Rural residents more than 50 km from a body shop, including many northern and First Nations communities.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Northern residents",
+      "First Nations communities",
+      "Farm households"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would rating physical damage coverage by remoteness not address the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal; the cost concern belongs in rating."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on accessibility and public policy grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails."
+    },
+    {
+      "action": "Review with DR-010 (same insurer) and the indirect discrimination concern.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

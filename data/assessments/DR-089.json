@@ -1,0 +1,310 @@
+{
+  "id": "DR-089",
+  "extracted": {
+    "trigger": "Refusal to disclose household drivers",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who refuse to name all licensed drivers in their household",
+    "ruleType": "decline",
+    "definedTerms": [
+      "licensed drivers residing in their household"
+    ],
+    "undefinedTerms": [
+      "refuses to disclose"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on refusal to disclose material application information. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "refuses to disclose the names of all licensed drivers"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Refusal to disclose information is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Disclosure of household drivers is standard application information.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Knowing who can drive the vehicle is essential to rating it accurately. The rule supports accurate pricing by requiring basic information.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Full household driver disclosure is essential for accurate risk assessment."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Refusal to disclose household drivers does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Consumers can meet the requirement by providing the information. The rule refuses only those who choose not to.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "refuses to disclose"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Undisclosed drivers lead to mispricing and disputed claims that others pay for. The rule prevents that.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Asking for standard information and declining only on refusal is balanced. The insurer is not judging who the household members are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Applicants in shared housing may not know every licensed person living there. The insurer should explain what is required and accept good-faith answers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "all licensed drivers residing in their household"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Telling a refusal from a genuine inability to know requires some judgment. A clear process would reduce it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "refuses to disclose"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no threshold and turns on a basic disclosure requirement. It is not arbitrary.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Undisclosed drivers with access to the vehicle are a direct exposure. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may be concealing high-risk drivers who would have access to the insured vehicle"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rule rests on a disclosure requirement rather than a statistical claim. No actuarial data or analysis is attached to the submission. The rule rests on a legal or administrative requirement rather than a statistical claim, so the gap is unlikely to change the outcome.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Household\" is not defined; roommates and boarders may or may not be included. The filing should say.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "residing in their household"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Requiring disclosure of who can drive the vehicle is a basic, fair condition.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-026",
+      "similarity": 0.443,
+      "relation": "materially_different",
+      "explanation": "Pending Ridgeline Insurance Co. rule declines households with more than 4 licensed drivers. DR-089 asks for disclosure rather than refusing large households, which is the less restrictive tool DR-026 should use."
+    },
+    {
+      "refId": "DR-058",
+      "similarity": 0.354,
+      "relation": "materially_different",
+      "explanation": "Pending Lakeshore Indemnity rule declines households with a suspended member. Disclosure plus a driver exclusion would address that concern too."
+    },
+    {
+      "refId": "DR-085",
+      "similarity": 0.058,
+      "relation": "similar",
+      "explanation": "Pending Beacon Fire & Casualty rule declines inconsistent applications. Both concern completeness and accuracy of information; DR-089 is narrower and clearer."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants who refuse to name the licensed drivers in their home.",
+    "likelyConsequence": "They can provide the information and be considered. Those who refuse would need to find another insurer.",
+    "vulnerableGroups": [
+      "People in shared housing who may not know all occupants"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "How will the insurer treat applicants who cannot reasonably know every licensed occupant, such as boarders?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If the rule were applied to good-faith inability to know, rather than refusal, it would need an exception."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions: define \"household\" and accept good-faith answers.",
+      "owner": "Analyst",
+      "reason": "Reasonable disclosure requirement."
+    },
+    {
+      "action": "Note DR-089 as the less restrictive model for DR-026 and DR-058.",
+      "owner": "Analyst",
+      "reason": "Consistency across household rules."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

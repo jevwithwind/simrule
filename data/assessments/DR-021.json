@@ -1,0 +1,358 @@
+{
+  "id": "DR-021",
+  "extracted": {
+    "trigger": "Diagnosed medical condition that may impair driving",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants diagnosed with any medical condition that may impair safe driving",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "medical condition",
+      "may impair"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Medical fitness to drive is decided through the licensing system, and FSRA guidance restricts using medical licence lapses in underwriting. A rule that second-guesses a valid licence on medical grounds may sit uneasily with that guidance, which could not be verified.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "diagnosed with a medical condition"
+        }
+      ],
+      "citationIds": [
+        "FSRA_ADMIN_LAPSE",
+        "HTA"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "A diagnosed medical condition is a disability under the Human Rights Code. The insurance provision allows distinctions on disability only on reasonable and bona fide grounds, and a rule triggered by any condition that \"may\" impair driving, without individual assessment, would be hard to defend.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "medical condition that may impair their ability to drive safely"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "A condition that actually impairs driving is relevant to risk, but \"may impair\" reaches people whose condition is controlled and who hold a valid licence. The rule does not assess the individual.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "may impair"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule uses disability directly, as a class, without individual assessment. The principle bars decisions influenced by protected grounds unless justified.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "diagnosed with a medical condition"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People with conditions such as diabetes, epilepsy in remission or sleep apnoea who are licensed to drive would be refused. Many rely on a car for medical care and work.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant who has been diagnosed"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Licensed drivers with managed conditions would pay more elsewhere. No claims analysis shows they cost more.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The licensing system already decides medical fitness to drive. Relying on that decision, rather than a broad diagnosis test, would protect the insurer without excluding fit drivers.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "This rule protects both the applicant and other road users."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION",
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "Consumers would not know which diagnoses count and would have to disclose sensitive health information. A decline would be hard to understand or contest.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "medical condition that may impair"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Deciding whether a condition \"may\" impair driving is a medical judgment that the insurer is not placed to make. Different underwriters would reach different answers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "may impair their ability to drive safely"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "There is no severity threshold, recency test or link to licensing status. Any diagnosis at any time could count.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "has been diagnosed"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Actual impairment links to accident risk, but a diagnosis does not show impairment. The rationale assumes the link rather than demonstrating it.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Medical conditions that affect driving ability increase accident risk."
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data by condition is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "Neither \"medical condition\" nor \"may impair\" is defined. The framework lists vague language that invites many interpretations as a reason to reject.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "a medical condition that may impair"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing licensed drivers because of a diagnosis would override the licensing system's medical decisions and exclude people with disabilities. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-090",
+      "similarity": 0.208,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines past medical licence refusals even after reinstatement. Both second-guess medical fitness decisions made by the licensing system. Review together."
+    },
+    {
+      "refId": "DR-038",
+      "similarity": 0.096,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines drivers over 80 citing age-related decline. Same reliance on assumed impairment rather than individual assessment."
+    },
+    {
+      "refId": "AP-12",
+      "similarity": 0.035,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines invalid licences. If the medical concern is real, the licence would be suspended and AP-12 would already apply."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Licensed drivers with any diagnosed condition that might affect driving, such as diabetes, epilepsy in remission or sleep apnoea.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People with disabilities",
+      "Older drivers",
+      "People with chronic illness"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Which conditions does the insurer intend to cover, and how would it learn of a diagnosis?",
+    "Why is a valid licence not sufficient evidence of medical fitness?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Relying on licence status (already covered by approved rules) instead of diagnosis would remove the concern; the rule as written cannot be fixed by definitions alone."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and record disability and vague-language findings.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 2 fail."
+    },
+    {
+      "action": "Confirm the reasonable and bona fide analysis under the Code's insurance provision.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 human rights concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "FSRA guidance on medical licence lapses could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

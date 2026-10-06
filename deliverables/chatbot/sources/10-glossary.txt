@@ -1,0 +1,86 @@
+SOURCE 10: GLOSSARY
+
+Disclaimer: academic prototype for Ivey Online coursework; not affiliated with or representative of FSRA; fictional data; not legal advice.
+
+Actuarial support: data or analysis showing how a rule's trigger relates to claims frequency or severity. Criterion L3_ACTUARIAL. No submission in Simrule's test set includes it.
+
+AI recommendation (advisory): the recommendation calculated by Simrule's scoring code from the AI's findings. It is advice to a human reviewer, never a decision.
+
+Approve with conditions: a recommendation or decision that the rule may be used if conditions are met, such as filing supporting data, defining key terms and telling declined consumers the reason.
+
+Approved precedent: a rule already approved for another insurer. In Simrule, AP-01 to AP-14, taken from the framework with invented insurer names and illustrative years. A match is a consideration, not a guarantee.
+
+Audit trail: the record of every action on a submission: time, person, role, what changed and why.
+
+Consistency monitor: the Simrule screen that lists similar rules with different outcomes and shows which issue codes reviewers override most.
+
+Consumer lens: the panel on every rule that shows who could be refused, the likely consequence, groups that may be most affected, and the severity.
+
+Copycat rule: a rule justified by another insurer's actions or "industry practice" rather than the insurer's own risk analysis. Issue code COPYCAT_REFERENCE.
+
+Criterion: one of the 15 questions in the framework, for example L2_ACCESSIBLE (accessible products and coverages).
+
+Decision: the outcome chosen by a human reviewer: Approve with conditions, Request information from insurer, Decline, Escalate, or Route to eligibility-rule process.
+
+Decline rule (underwriting decline rule): an insurer's approved right to decline to offer an auto insurance policy to a consumer. An approved exception to Take All Comers. In scope for Simrule.
+
+Deterministic scoring: fixed, published code that turns findings into a recommendation. The same findings always give the same result.
+
+Eligibility rule (underwriting eligibility rule): criteria for optional coverages or coverage limits. Out of scope for Simrule; routed to the eligibility-rule process.
+
+Evidence quote: the exact words from the rule or the insurer's rationale that a finding relies on. Simrule checks that every quote appears word for word.
+
+Facility Association: the residual market for drivers who cannot get coverage in the voluntary market, generally at a higher cost.
+
+Finding: the AI's assessment of one criterion: status, severity, issue codes, reasoning, evidence and citations.
+
+Hard stop (Level 1 hard stop): any Level 1 criterion that does not meet the standard. It leads to a decline recommendation regardless of the score.
+
+Human-in-the-loop: the principle that AI augments and never replaces human judgment. Reviewers validate, override or approve every recommendation.
+
+Insufficient information: a status meaning the filing does not contain what is needed to judge the criterion. Medium or high severity insufficient information at Levels 2 to 4 leads to Request more information.
+
+Issue code: a standard label for a problem, for example PROXY_FOR_PROTECTED_GROUND. Simrule uses 25 codes.
+
+Level 1: Basic Compliance. Legislation and guidance, human rights, and whether the rule already exists in the market. A gate.
+Level 2: Interpretation of Principles and Fair Consumer Outcomes. Weight 40.
+Level 3: Check that the risk is not subjective or arbitrary and has a direct relationship with the risk. Weight 35.
+Level 4: Public Policy Filter. Weight 25.
+
+Lookback period: how far back a rule looks, for example "in the preceding 3 years".
+
+Override: a reviewer's change to an AI finding. It needs a reason code and a note, and it is logged.
+
+Ownership confirmation: the statement "I have reviewed this rationale and take ownership of it", which a reviewer must tick before a rationale is final.
+
+Pending similar submission: a similar rule from another insurer that is still under review. Issue code PENDING_SIMILAR_SUBMISSION. Reviewers can assess them together.
+
+Protected ground: a characteristic protected by the Ontario Human Rights Code, such as race, place of origin, ethnic origin, citizenship, creed, sex, age, marital status, family status or disability.
+
+Proxy: a neutral-looking factor that closely tracks a protected ground, for example language spoken or neighbourhood. Issue code PROXY_FOR_PROTECTED_GROUND.
+
+Rationale (insurer's stated rationale): the insurer's explanation of why the rule is needed.
+
+Rationale (decision rationale): the reviewer's written reasons for the decision.
+
+Recommend decline: a recommendation that the rule should not be approved, because of a Level 1 hard stop, a high-severity problem, or a score below 50.
+
+Request more information: a recommendation or decision to ask the insurer specific questions before deciding. Used for scores from 50 to 74 or for material information gaps.
+
+Senior sign-off: a second reviewer's approval, required when a decision differs from the AI, a Level 1 finding is overridden, AI confidence is low, the AI flagged a Level 1 concern, or the case is escalated.
+
+Severity: low, medium or high. How much a finding matters to the outcome.
+
+Similarity score: how closely two rules match, combining word overlap (TF-IDF) with shared features such as category, trigger type, threshold and lookback.
+
+Status: Meets standard, Concern, Does not meet standard, or Insufficient information.
+
+Take All Comers: the Ontario rule that private insurers may not decline auto insurance unless the regulator has approved the ground in advance.
+
+Threshold: the number of events that triggers a rule, for example "2 or more at-fault accidents".
+
+Trigger: the event or characteristic that causes a decline, for example a fraud conviction.
+
+UDAP Rule: the regulator's rule on Unfair or Deceptive Acts or Practices.
+
+Workflow stages: Received; Intake and completeness check; AI pre-assessment; Analyst review; Information requested; Senior sign-off; Decision recorded; Closed.

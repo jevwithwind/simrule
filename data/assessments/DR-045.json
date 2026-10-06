@@ -1,0 +1,345 @@
+{
+  "id": "DR-045",
+  "extracted": {
+    "trigger": "Surname matches a sanctions or watchlist name",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants whose surname matches a name on a federal sanctions or watchlist",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "surname matches",
+      "watchlist"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "CONTRARY_TO_LEGISLATION"
+      ],
+      "reasoning": "Insurers do have federal sanctions and anti-money laundering screening duties, but those duties are normally met by verifying a full identity match, not by refusing everyone who shares a surname. Declining on a surname alone is not required by those laws and may sit poorly with Take All Comers.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Compliance with federal anti-money laundering and sanctions requirements is a legal obligation."
+        }
+      ],
+      "citationIds": [
+        "INS_ACT"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Surnames are strongly linked to ethnic origin, ancestry and place of origin. A surname-only match would refuse many innocent people from the same communities as listed individuals, which is indirect discrimination on grounds the Code's insurance provision does not cover.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "whose surname matches a name on a federal sanctions or watchlist"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending Northern Shield Insurance rule DR-092 (name similar to an internal fraud watchlist) uses the same approach.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Sharing a surname with a listed person says nothing about an applicant's driving or claims risk. The rule does not reflect any individual risk factor.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "surname matches"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Surname matching would fall almost entirely on people from the ethnic and national groups represented on sanctions lists. That is a direct proxy for ethnic origin.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "surname matches a name"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Common surnames appear on sanctions lists, so very large numbers of applicants could be refused. The \"pending verification\" decline gives no route back.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Name matches warrant a decline pending further verification."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Wrongly matched applicants would pay more elsewhere. Proper identity verification would cost the insurer far less.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Screening full name and date of birth, then verifying possible matches before binding, meets the legal duty. Refusing on a surname alone is not balanced.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "pending further verification"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Applicants would not know why their surname caused a refusal or how to clear it. The decline letter would also imply a link to sanctioned persons.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "surname matches"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A surname string match is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Matching on surname alone, rather than on full identity, draws the line in the wrong place. It is arbitrary relative to the legal purpose.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "surname matches"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rule has no link to driver behaviour or claims exposure, and the rationale does not claim one. The framework rejects rules not based on a risk-relevant characteristic.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Compliance with federal anti-money laundering and sanctions requirements"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied; the rationale is legal compliance. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Federal sanctions or watchlist\" does not name which lists are used. \"Watchlist\" could include lists with no legal effect.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "federal sanctions or watchlist"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing people because their surname matches a listed person would cause widespread, ethnically concentrated exclusion. Legal compliance does not require it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-092",
+      "similarity": 0.336,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule declines names \"similar to\" an internal fraud watchlist. Same name-matching approach with a looser test. Review together."
+    },
+    {
+      "refId": "DR-083",
+      "similarity": 0.096,
+      "relation": "materially_different",
+      "explanation": "Pending Lakefield Mutual rule declines active arrest warrants. DR-083 concerns the applicant's own legal status; DR-045 concerns a name match to someone else."
+    },
+    {
+      "refId": "DR-005",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance language rule. Both act as proxies for ethnic origin."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone whose surname matches a name on any federal sanctions or watchlist.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People from communities whose common surnames appear on sanctions lists",
+      "Newcomers"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Which lists are used, and why is full-identity screening with verification before binding not sufficient?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing the surname rule with full-identity screening and a verification step would meet the legal duty without a decline rule."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on discrimination and risk-relevance grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 2 fails."
+    },
+    {
+      "action": "Confirm the legal screening duty and the indirect discrimination analysis.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concerns."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Federal sanctions screening requirements were not verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

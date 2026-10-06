@@ -1,0 +1,322 @@
+{
+  "id": "DR-071",
+  "extracted": {
+    "trigger": "Racing or stunt driving conviction",
+    "thresholdCount": 1,
+    "lookbackYears": 5,
+    "populationAffected": "Applicants convicted of racing or stunt driving under the Highway Traffic Act in the preceding 5 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "conviction for racing or stunt driving",
+      "preceding 5 years"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on driving record. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a racing or stunt driving conviction. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "conviction for racing or stunt driving under the Highway Traffic Act"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A driving conviction is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "Approved rules decline vehicles used for racing (AP-07, AP-13) and a single Criminal Code conviction in 3 years (AP-01, Harbourview Assurance, 2017). DR-071 treats a single stunt-driving conviction like AP-01 but over 5 years, so it is stricter than the precedent and is assessed on its own merits. Related conviction rules DR-051 (same insurer) and DR-065 are pending.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Racing and stunt driving are among the most dangerous driving behaviours. A conviction is direct evidence of the applicant's conduct.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Stunt driving and racing convictions represent the most extreme form of dangerous driving behaviour."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A driving conviction does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule affects a small group convicted of serious offences. Ordinary drivers are unaffected.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Stunt driving is linked to severe collisions, so declining convicted drivers limits costs for others. No new cost is created.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A single conviction for a serious offence is treated like the approved single Criminal Code conviction rule. That is a balanced approach, subject to the lookback.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a racing or stunt driving conviction and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "conviction for racing or stunt driving"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A conviction under the Highway Traffic Act is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "A single conviction matches the approved Criminal Code rule, but the 5-year lookback is longer than its 3 years. The rationale asserts sustained risk without data.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "The 5-year lookback reflects the sustained risk these individuals present."
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Racing and stunt driving link directly to high-speed collisions. The link is clear.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "the most extreme form of dangerous driving behaviour"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The 5-year lookback is longer than the approved 3-year conviction rule, so data matters. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "The 5-year lookback"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Racing and stunt driving are defined Highway Traffic Act offences. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "under the Highway Traffic Act"
+        }
+      ],
+      "citationIds": [
+        "HTA"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Declining recent stunt-driving offenders supports road safety.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-01",
+      "similarity": 0.161,
+      "relation": "similar",
+      "explanation": "Approved rule declines a single Criminal Code conviction in 3 years. DR-071 applies the same single-conviction approach to a serious provincial offence, with a 5-year lookback."
+    },
+    {
+      "refId": "AP-13",
+      "similarity": 0.188,
+      "relation": "similar",
+      "explanation": "Approved rule declines vehicles modified for speed or used for racing. DR-071 looks at the driver's conviction rather than the vehicle."
+    },
+    {
+      "refId": "DR-065",
+      "similarity": 0.408,
+      "relation": "similar",
+      "explanation": "Pending Beacon Fire & Casualty rule declines a single distracted-driving conviction in 2 years. Both use one conviction; stunt driving is more severe, which supports treating it like a Criminal Code offence. Review together."
+    },
+    {
+      "refId": "DR-051",
+      "similarity": 0.322,
+      "relation": "similar",
+      "explanation": "Same insurer (Clearwater General Insurance) declines 2 serious speeding convictions in 3 years. Related speed offences with different thresholds and lookbacks."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers convicted of racing or stunt driving in the last 5 years.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Young drivers with a stunt conviction"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "What data supports a 5-year lookback rather than the 3 years in the approved conviction rule?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Data supporting 5 years, or aligning the lookback to 3 years, would move it to approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request data for the 5-year lookback.",
+      "owner": "Insurer",
+      "reason": "Stricter than the approved precedent."
+    },
+    {
+      "action": "Review with DR-051 and DR-065 for consistent conviction thresholds.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

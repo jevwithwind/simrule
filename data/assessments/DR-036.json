@@ -1,0 +1,343 @@
+{
+  "id": "DR-036",
+  "extracted": {
+    "trigger": "Bankruptcy",
+    "thresholdCount": null,
+    "lookbackYears": 7,
+    "populationAffected": "Applicants who declared bankruptcy in the preceding 7 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 7 years"
+    ],
+    "undefinedTerms": [
+      "declared bankruptcy"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Bankruptcy is part of a person's credit history, and Ontario restricts the use of credit information, including past debt payment history, in auto insurance underwriting. A decline on bankruptcy is contrary to that restriction. The provisions could not be verified and should be confirmed.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "declared bankruptcy within the preceding 7 years"
+        }
+      ],
+      "citationIds": [
+        "REG_664",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Bankruptcy often follows illness, disability or family breakdown. The rule may have an indirect effect on those protected grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "declared bankruptcy"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending credit-score rule DR-011 relies on the same category of information.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Bankruptcy describes past financial circumstances, not driving behaviour, experience, distance, location or vehicle. It does not reflect the individual driving risk profile.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Bankruptcy is a strong indicator of financial instability"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Bankruptcy correlates with medical crisis and family breakdown. It can therefore act as an indirect proxy for disability and family status.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People rebuilding after bankruptcy often need a car to work. Refusing them for 7 years blocks recovery.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 7 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers pay more elsewhere at a time of financial strain. The payment risk could be handled with payment terms.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Approved rules already address actual non-payment of premium. Refusing people for past bankruptcy goes beyond protecting the insurer.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "correlates with premium non-payment, policy lapse"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a bankruptcy and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "declared bankruptcy"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A bankruptcy filing is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for 7 years. The period seems to follow credit-reporting practice rather than measured insurance risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 7 years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The insurer claims a correlation with non-payment and moral hazard in its actuarial analysis. That is a financial link, not a link to driving behaviour.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "in our actuarial analysis"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale refers to the insurer's actuarial analysis without supplying it. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "in our actuarial analysis"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A declared bankruptcy is a defined legal event with a date. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "declared bankruptcy"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: bankruptcy law exists to give people a fresh start, and Ontario has kept credit information out of auto insurance. Refusing compulsory insurance for 7 years after bankruptcy would conflict with both.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "REG_664"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-011",
+      "similarity": 0.298,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines credit scores below 600. Same category of credit information; both face the same Level 1 restriction."
+    },
+    {
+      "refId": "DR-017",
+      "similarity": 0.221,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines benefit recipients. Same financial-hardship population."
+    },
+    {
+      "refId": "DR-066",
+      "similarity": 0.137,
+      "relation": "similar",
+      "explanation": "Same insurer (Ridgeline Insurance Co.) proposes declining self-employed people without proof of income. Both rely on financial information."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone who declared bankruptcy in the last 7 years, regardless of driving record.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "People recovering from illness or job loss",
+      "People after separation or divorce"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "On what basis does the insurer consider bankruptcy usable given the credit information restriction?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Confirmation that bankruptcy falls outside the credit restriction would remove the hard stop, but the Level 2 fails would remain."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Restricted credit information."
+    },
+    {
+      "action": "Verify the credit information restriction.",
+      "owner": "Senior reviewer",
+      "reason": "Unverified source."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "Credit information restriction could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "id": "DR-006",
+  "extracted": {
+    "trigger": "Rebuilt after total loss",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles declared a total loss and later rebuilt",
+    "ruleType": "decline",
+    "definedTerms": [
+      "declared a total loss",
+      "subsequently rebuilt"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle history. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a vehicle's total-loss and rebuild history. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "declared a total loss and subsequently rebuilt"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A vehicle's rebuild history is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "The framework lists \"deny insurance on any rebuilt vehicles\" as a common decline rule (FX-03). DR-006 has the same trigger and is, if anything, narrower because it applies only to vehicles that were declared a total loss before being rebuilt. A related submission from Northern Shield Insurance (DR-052, salvage title) is pending.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "declared a total loss and subsequently rebuilt"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A vehicle's structural history affects its safety and repair cost, which are vehicle risk factors under the principle. The rule reflects the condition of the insured vehicle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "elevated mechanical and structural risk"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A vehicle's rebuild history does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT",
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Rebuilt vehicles are often bought by price-sensitive consumers, and some will have passed structural inspection. Declining all of them, rather than only those without a valid inspection, reaches further than the safety concern requires.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any vehicle that has been declared a total loss"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Disputes over pre-existing damage add claims-handling cost that is passed on to other policyholders. Avoiding those disputes is a legitimate cost concern.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "disputes over pre-existing damage versus new damage"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows an established market practice for a recognised vehicle risk. It does not target a group of people.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on a vehicle's rebuilt status and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subsequently rebuilt"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A vehicle's total-loss declaration and rebuilt status is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "declared a total loss"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule uses a recognised vehicle status rather than a numeric threshold. It matches a common approved practice.",
+      "evidence": [],
+      "citationIds": [
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Structural damage and uncertain repair quality link directly to injury severity and claims disputes. The rationale gives a clear mechanism.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Rebuilt vehicles carry elevated mechanical and structural risk"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is qualitative. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "\"Declared a total loss and subsequently rebuilt\" corresponds to a vehicle's recorded branding history. It would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "declared a total loss and subsequently rebuilt"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. The rule matches a common market practice; the overbreadth point is a condition, not a policy objection.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "FX-03",
+      "similarity": 0.596,
+      "relation": "same",
+      "explanation": "Framework common example: deny insurance on any rebuilt vehicles. Same trigger; DR-006 adds the requirement of a prior total-loss declaration, so it is no broader."
+    },
+    {
+      "refId": "DR-052",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule declines vehicles with a salvage title from any jurisdiction. Same structural-history risk, slightly different trigger (title branding in any jurisdiction). Review together."
+    },
+    {
+      "refId": "AP-14",
+      "similarity": 0.157,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines vehicles with unacceptable customizations or modifications. Both concern vehicle condition, but modifications are owner choices while rebuild history follows an accident."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners of rebuilt vehicles, including those that have passed structural inspection.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Price-sensitive buyers of used vehicles"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Will the rule apply to rebuilt vehicles that hold a valid structural inspection certificate?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Narrowing the rule to rebuilt vehicles without a valid structural inspection would remove the overbreadth concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite FX-03; ask the insurer to consider an inspection exception.",
+      "owner": "Analyst",
+      "reason": "Matches a framework common rule."
+    },
+    {
+      "action": "Review alongside DR-052 for consistent treatment of vehicle history rules.",
+      "owner": "Analyst",
+      "reason": "Pending similar submission."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "id": "DR-075",
+  "extracted": {
+    "trigger": "Foreign plates not re-registered within 90 days",
+    "thresholdCount": 90,
+    "lookbackYears": null,
+    "populationAffected": "Applicants with a foreign-plated vehicle not re-registered in Ontario within 90 days of residency",
+    "ruleType": "decline",
+    "definedTerms": [
+      "within 90 days of establishing residency"
+    ],
+    "undefinedTerms": [
+      "establishing residency"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on registration status. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on failure to re-register a vehicle. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "has not re-registered it in Ontario within 90 days of establishing residency"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Foreign-plated vehicles belong mostly to newcomers and returning residents. The trigger is non-compliance rather than origin, so the risk of indirect discrimination is low but present.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "foreign licence plate"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending Birchwood Insurance Group rule DR-060 (out-of-province registration) has a similar purpose.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A vehicle that should be registered in Ontario but is not creates uncertainty about jurisdiction and coverage. The rule reflects a real issue with the insured vehicle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "creates ambiguity about the applicable jurisdiction"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "DISCRIMINATORY_IMPACT_NEW_TO_CANADA"
+      ],
+      "reasoning": "The rule falls on people new to Ontario. Because it targets a registration lapse rather than origin, the effect is limited, but the insurer should offer a route to comply.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "foreign licence plate"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Applicants can fix the problem by registering the vehicle. Access is reduced only until they do.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Avoiding jurisdictional disputes in claims protects other policyholders. The concern is legitimate.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Requiring legal registration is a reasonable condition. The rule is balanced if applicants are told how to comply.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on vehicle registration status and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "has not re-registered it in Ontario"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "The date someone \"established residency\" is not a recorded fact and may need judgment. The registration date itself is objective.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "establishing residency"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The rationale calls 90 days \"the required timeframe\", but the legal re-registration deadline for new residents could not be verified. If the rule's period differs from the law, it would be arbitrary, so this could change the outcome.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Failure to re-register a vehicle within the required timeframe is a regulatory violation"
+        }
+      ],
+      "citationIds": [
+        "HTA"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The link is to legal compliance and jurisdiction, not to claims frequency. That is a legitimate product reason rather than a driving-risk link.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "creates ambiguity about the applicable jurisdiction for claims and coverage"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is legal rather than statistical. No actuarial data or analysis is attached to the submission. The rule rests on a legal or administrative requirement rather than a statistical claim, so the gap is unlikely to change the outcome.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Establishing residency\" is not defined. Students, seasonal workers and returning residents could be treated differently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "establishing residency"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Requiring vehicles to be legally registered is reasonable, provided the period matches the law and applicants are told how to comply.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-060",
+      "similarity": 0.211,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines vehicles registered in another province. Same registration-jurisdiction purpose, for vehicles from inside Canada."
+    },
+    {
+      "refId": "DR-053",
+      "similarity": 0.067,
+      "relation": "materially_different",
+      "explanation": "Pending Lakefield Mutual rule declines newcomers by status. DR-075 targets a registration lapse that the applicant can fix, which is a material difference."
+    },
+    {
+      "refId": "AP-12",
+      "similarity": 0.172,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines invalid licences. DR-075 concerns vehicle registration rather than the driver's licence."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "New residents whose vehicle still has foreign plates more than 90 days after arriving.",
+    "likelyConsequence": "They can register the vehicle in Ontario and reapply. Until then they would need to find other coverage.",
+    "vulnerableGroups": [
+      "Newcomers",
+      "Returning Canadians"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Does the 90-day period match the legal re-registration requirement for new residents?",
+    "How is \"establishing residency\" determined?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Confirmation that 90 days matches the legal requirement would move it to approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Ask the insurer to cite the legal re-registration period.",
+      "owner": "Insurer",
+      "reason": "The period must match the law."
+    },
+    {
+      "action": "Verify the legal period independently.",
+      "owner": "Analyst",
+      "reason": "The Highway Traffic Act requirement could not be fetched."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "The legal re-registration period for new residents was not verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

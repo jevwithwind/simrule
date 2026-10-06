@@ -1,0 +1,354 @@
+{
+  "id": "DR-049",
+  "extracted": {
+    "trigger": "Fraudulent claim without conviction",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who previously submitted a fraudulent claim, whether or not convicted",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "fraudulent claim",
+      "documented evidence"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on an alleged fraudulent claim. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "previously submitted a fraudulent claim"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Claims history is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PRECEDENT_NON_COMPLIANT_MATCH"
+      ],
+      "reasoning": "Approved fraud rules (AP-05, FX-06) require a conviction. Without one, the closest framework example is NC-04: declining someone accused but not convicted. DR-049 expressly removes the conviction requirement, so it shares NC-04's defect.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "regardless of whether a conviction was obtained"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "Proven fraud is highly relevant to risk. But the rule relies on an insurer's own view that a claim was fraudulent, with no independent finding.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "when the insurer has documented evidence of fraud"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Claims history does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "There is no lookback, so an allegation could exclude someone for life. Consumers wrongly suspected would have no way back.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "previously submitted a fraudulent claim to any insurer"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Fraud raises costs for every policyholder, so the concern is legitimate. The issue is the standard of proof, not the goal.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "The insurer becomes judge of fraud on claims made to \"any insurer\". That puts the insurer's suspicion ahead of fair treatment.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "to any insurer"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "The consumer may never have been told that a past claim was considered fraudulent. They could not easily understand or contest the decline.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "regardless of whether a conviction was obtained"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT",
+        "COPYCAT_REFERENCE"
+      ],
+      "reasoning": "Whether a claim was \"fraudulent\" without a conviction is a judgment, often another insurer's. The rule would depend on that judgment rather than a verifiable fact.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "submitted a fraudulent claim to any insurer"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "There is no time limit, while the approved conviction rule uses 10 years. The rule is unbounded.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "previously submitted"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "The framework treats declining someone for conduct they were not convicted of as non-compliant. The rationale openly argues that a conviction should not be required.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "A conviction should not be required when the insurer has documented evidence of fraud."
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Fraudulent claim\" and \"documented evidence\" are not defined. Exaggeration, error and deliberate fraud could all be swept in.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "fraudulent claim"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: allowing insurers to refuse compulsory coverage for life on their own fraud suspicions removes the protection of an independent finding. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-05",
+      "similarity": 0.162,
+      "relation": "materially_different",
+      "explanation": "Approved rule declines auto insurance fraud convictions in 10 years. AP-05 requires a conviction and a lookback; DR-049 has neither."
+    },
+    {
+      "refId": "NC-04",
+      "similarity": 0.035,
+      "relation": "similar",
+      "explanation": "Non-compliant example declines people accused but not convicted. DR-049 is the same defect applied to insurance fraud."
+    },
+    {
+      "refId": "DR-014",
+      "similarity": 0.193,
+      "relation": "materially_different",
+      "explanation": "Pending Grandview Insurance Group rule declines fraud convictions in 10 years. DR-014 is the approvable, conviction-based version."
+    },
+    {
+      "refId": "DR-009",
+      "similarity": 0.205,
+      "relation": "similar",
+      "explanation": "Same insurer (Granite Mutual Insurance) also proposes relying on another insurer's misrepresentation finding. Same pattern; review together."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Anyone an insurer has ever considered to have made a fraudulent claim, convicted or not, with no time limit.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Consumers wrongly suspected of fraud",
+      "Consumers whose claims were disputed"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "What would count as \"documented evidence\", and would the applicant have a chance to respond?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Requiring a conviction and a lookback would turn this into the approvable DR-014 or AP-05 rule."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on the allegation-not-conviction ground.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 3 fail."
+    },
+    {
+      "action": "Confirm the non-compliant-example comparison and review with DR-009.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: changed L3_NOT_SUBJECTIVE. COPYCAT_REFERENCE on L3_NOT_SUBJECTIVE is high severity where the trigger is another insurer's judgment (DR-009, DR-056, DR-086). DR-049 had the same defect at medium."
+  ]
+}

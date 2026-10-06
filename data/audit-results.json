@@ -1,0 +1,1447 @@
+{
+ "before": {
+  "summary": {
+   "label": "before",
+   "pairsDifferentOutcome": 16,
+   "pairsUnexplained": 1,
+   "contradictoryCodeGroups": 9,
+   "missingPendingFlags": 29
+  },
+  "pairs": [
+   {
+    "a": "DR-026",
+    "b": "DR-058",
+    "similarity": 0.532,
+    "recA": "RECOMMEND_DECLINE",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-026",
+     "DR-058"
+    ]
+   },
+   {
+    "a": "DR-014",
+    "b": "DR-074",
+    "similarity": 0.501,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "RECOMMEND_DECLINE",
+    "explained": true,
+    "explainedBy": [
+     "DR-014",
+     "DR-074"
+    ]
+   },
+   {
+    "a": "DR-019",
+    "b": "DR-097",
+    "similarity": 0.482,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "RECOMMEND_DECLINE",
+    "explained": true,
+    "explainedBy": [
+     "DR-019",
+     "DR-097"
+    ]
+   },
+   {
+    "a": "DR-026",
+    "b": "DR-089",
+    "similarity": 0.443,
+    "recA": "RECOMMEND_DECLINE",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-026",
+     "DR-089"
+    ]
+   },
+   {
+    "a": "DR-040",
+    "b": "DR-048",
+    "similarity": 0.431,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": false,
+    "explainedBy": []
+   },
+   {
+    "a": "DR-051",
+    "b": "DR-065",
+    "similarity": 0.42,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-051",
+     "DR-065"
+    ]
+   },
+   {
+    "a": "DR-060",
+    "b": "DR-064",
+    "similarity": 0.415,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-060",
+     "DR-064"
+    ]
+   },
+   {
+    "a": "DR-054",
+    "b": "DR-084",
+    "similarity": 0.401,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-084"
+    ]
+   },
+   {
+    "a": "DR-016",
+    "b": "DR-084",
+    "similarity": 0.396,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-016",
+     "DR-084"
+    ]
+   },
+   {
+    "a": "DR-064",
+    "b": "DR-072",
+    "similarity": 0.393,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-064",
+     "DR-072"
+    ]
+   },
+   {
+    "a": "DR-003",
+    "b": "DR-020",
+    "similarity": 0.38,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-003",
+     "DR-020"
+    ]
+   },
+   {
+    "a": "DR-008",
+    "b": "DR-042",
+    "similarity": 0.373,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "RECOMMEND_DECLINE",
+    "explained": true,
+    "explainedBy": [
+     "DR-008",
+     "DR-042"
+    ]
+   },
+   {
+    "a": "DR-054",
+    "b": "DR-097",
+    "similarity": 0.365,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "RECOMMEND_DECLINE",
+    "explained": true,
+    "explainedBy": [
+     "DR-054",
+     "DR-097"
+    ]
+   },
+   {
+    "a": "DR-022",
+    "b": "DR-044",
+    "similarity": 0.358,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-044"
+    ]
+   },
+   {
+    "a": "DR-039",
+    "b": "DR-072",
+    "similarity": 0.355,
+    "recA": "RECOMMEND_DECLINE",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-039",
+     "DR-072"
+    ]
+   },
+   {
+    "a": "DR-058",
+    "b": "DR-089",
+    "similarity": 0.354,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-058",
+     "DR-089"
+    ]
+   }
+  ],
+  "codeFindings": [
+   {
+    "criterion": "L1_LEGISLATION",
+    "code": "PROHIBITED_FACTOR",
+    "statuses": {
+     "concern/medium": [
+      "DR-002",
+      "DR-017",
+      "DR-031",
+      "DR-033"
+     ],
+     "fail/high": [
+      "DR-011",
+      "DR-027",
+      "DR-036",
+      "DR-066",
+      "DR-076",
+      "DR-077",
+      "DR-090",
+      "DR-094"
+     ],
+     "concern/low": [
+      "DR-021"
+     ]
+    }
+   },
+   {
+    "criterion": "L2_ACCESSIBLE",
+    "code": "ACCESSIBILITY_IMPACT",
+    "statuses": {
+     "concern/low": [
+      "DR-002",
+      "DR-003",
+      "DR-006",
+      "DR-025",
+      "DR-033",
+      "DR-048",
+      "DR-052",
+      "DR-054",
+      "DR-060",
+      "DR-065",
+      "DR-068",
+      "DR-070",
+      "DR-072",
+      "DR-073",
+      "DR-075",
+      "DR-079",
+      "DR-084",
+      "DR-088",
+      "DR-091",
+      "DR-095"
+     ],
+     "fail/medium": [
+      "DR-004",
+      "DR-015",
+      "DR-023",
+      "DR-026",
+      "DR-027",
+      "DR-030",
+      "DR-031",
+      "DR-034",
+      "DR-036",
+      "DR-037",
+      "DR-042",
+      "DR-043",
+      "DR-046",
+      "DR-049",
+      "DR-055",
+      "DR-059",
+      "DR-061",
+      "DR-063",
+      "DR-066",
+      "DR-069",
+      "DR-074",
+      "DR-076",
+      "DR-082",
+      "DR-090",
+      "DR-094",
+      "DR-096",
+      "DR-100"
+     ],
+     "fail/high": [
+      "DR-005",
+      "DR-007",
+      "DR-010",
+      "DR-011",
+      "DR-017",
+      "DR-018",
+      "DR-021",
+      "DR-024",
+      "DR-028",
+      "DR-032",
+      "DR-038",
+      "DR-039",
+      "DR-041",
+      "DR-045",
+      "DR-050",
+      "DR-053",
+      "DR-056",
+      "DR-062",
+      "DR-077",
+      "DR-080",
+      "DR-081",
+      "DR-086",
+      "DR-092",
+      "DR-093",
+      "DR-097",
+      "DR-098",
+      "DR-099"
+     ],
+     "concern/medium": [
+      "DR-009",
+      "DR-013",
+      "DR-016",
+      "DR-019",
+      "DR-020",
+      "DR-022",
+      "DR-057",
+      "DR-058",
+      "DR-064",
+      "DR-067",
+      "DR-078",
+      "DR-083",
+      "DR-085",
+      "DR-087"
+     ]
+    }
+   },
+   {
+    "criterion": "L4_PUBLIC_POLICY",
+    "code": "PUBLIC_POLICY_CONFLICT",
+    "statuses": {
+     "concern/low": [
+      "DR-002",
+      "DR-057",
+      "DR-058",
+      "DR-073",
+      "DR-085",
+      "DR-088"
+     ],
+     "concern/medium": [
+      "DR-004",
+      "DR-009",
+      "DR-068"
+     ],
+     "fail/high": [
+      "DR-005",
+      "DR-007",
+      "DR-010",
+      "DR-011",
+      "DR-015",
+      "DR-017",
+      "DR-018",
+      "DR-021",
+      "DR-023",
+      "DR-024",
+      "DR-028",
+      "DR-031",
+      "DR-032",
+      "DR-034",
+      "DR-036",
+      "DR-038",
+      "DR-039",
+      "DR-041",
+      "DR-042",
+      "DR-043",
+      "DR-045",
+      "DR-049",
+      "DR-050",
+      "DR-053",
+      "DR-056",
+      "DR-059",
+      "DR-061",
+      "DR-062",
+      "DR-063",
+      "DR-067",
+      "DR-069",
+      "DR-074",
+      "DR-076",
+      "DR-077",
+      "DR-080",
+      "DR-081",
+      "DR-082",
+      "DR-086",
+      "DR-090",
+      "DR-092",
+      "DR-093",
+      "DR-096",
+      "DR-098",
+      "DR-100"
+     ],
+     "fail/medium": [
+      "DR-013",
+      "DR-026",
+      "DR-027",
+      "DR-030",
+      "DR-046",
+      "DR-055",
+      "DR-066",
+      "DR-083",
+      "DR-094",
+      "DR-099"
+     ]
+    }
+   },
+   {
+    "criterion": "L2_NO_DISCRIMINATION",
+    "code": "PROXY_FOR_PROTECTED_GROUND",
+    "statuses": {
+     "concern/low": [
+      "DR-003",
+      "DR-004",
+      "DR-015",
+      "DR-019",
+      "DR-022",
+      "DR-023",
+      "DR-031",
+      "DR-034",
+      "DR-058",
+      "DR-059",
+      "DR-063",
+      "DR-064",
+      "DR-083",
+      "DR-085"
+     ],
+     "fail/high": [
+      "DR-005",
+      "DR-010",
+      "DR-011",
+      "DR-017",
+      "DR-026",
+      "DR-045",
+      "DR-046",
+      "DR-053",
+      "DR-092",
+      "DR-096",
+      "DR-100"
+     ],
+     "concern/medium": [
+      "DR-030",
+      "DR-032",
+      "DR-036",
+      "DR-039",
+      "DR-042",
+      "DR-050",
+      "DR-055",
+      "DR-062",
+      "DR-066",
+      "DR-067",
+      "DR-076",
+      "DR-082",
+      "DR-094",
+      "DR-099"
+     ]
+    }
+   },
+   {
+    "criterion": "L3_NOT_SUBJECTIVE",
+    "code": "SUBJECTIVE_JUDGMENT",
+    "statuses": {
+     "concern/low": [
+      "DR-003",
+      "DR-020",
+      "DR-030",
+      "DR-032",
+      "DR-035",
+      "DR-037",
+      "DR-046",
+      "DR-053",
+      "DR-055",
+      "DR-057",
+      "DR-062",
+      "DR-064",
+      "DR-066",
+      "DR-075",
+      "DR-078",
+      "DR-079",
+      "DR-087",
+      "DR-089",
+      "DR-095",
+      "DR-098"
+     ],
+     "fail/medium": [
+      "DR-005",
+      "DR-021",
+      "DR-049",
+      "DR-063",
+      "DR-085",
+      "DR-100"
+     ],
+     "fail/high": [
+      "DR-009",
+      "DR-067",
+      "DR-086",
+      "DR-092"
+     ],
+     "concern/medium": [
+      "DR-096",
+      "DR-099"
+     ]
+    }
+   },
+   {
+    "criterion": "L2_ACCESSIBLE",
+    "code": "OVERBROAD_SCOPE",
+    "statuses": {
+     "fail/medium": [
+      "DR-004"
+     ],
+     "concern/low": [
+      "DR-006",
+      "DR-052",
+      "DR-070"
+     ],
+     "fail/high": [
+      "DR-097"
+     ]
+    }
+   },
+   {
+    "criterion": "L3_RISK_LINK",
+    "code": "WEAK_RISK_LINK",
+    "statuses": {
+     "concern/medium": [
+      "DR-004",
+      "DR-007",
+      "DR-010",
+      "DR-011",
+      "DR-016",
+      "DR-018",
+      "DR-019",
+      "DR-021",
+      "DR-022",
+      "DR-025",
+      "DR-026",
+      "DR-031",
+      "DR-036",
+      "DR-038",
+      "DR-043",
+      "DR-046",
+      "DR-050",
+      "DR-053",
+      "DR-054",
+      "DR-055",
+      "DR-056",
+      "DR-057",
+      "DR-058",
+      "DR-062",
+      "DR-068",
+      "DR-082",
+      "DR-085",
+      "DR-086",
+      "DR-087",
+      "DR-091",
+      "DR-093",
+      "DR-094",
+      "DR-097",
+      "DR-098"
+     ],
+     "fail/medium": [
+      "DR-013",
+      "DR-077"
+     ],
+     "concern/low": [
+      "DR-020",
+      "DR-024",
+      "DR-032",
+      "DR-041",
+      "DR-060",
+      "DR-064",
+      "DR-072",
+      "DR-075",
+      "DR-078"
+     ],
+     "fail/high": [
+      "DR-030"
+     ]
+    }
+   },
+   {
+    "criterion": "L1_HUMAN_RIGHTS",
+    "code": "PROXY_FOR_PROTECTED_GROUND",
+    "statuses": {
+     "fail/high": [
+      "DR-005",
+      "DR-017",
+      "DR-053"
+     ],
+     "concern/medium": [
+      "DR-010",
+      "DR-011",
+      "DR-018",
+      "DR-024",
+      "DR-026",
+      "DR-032",
+      "DR-039",
+      "DR-042",
+      "DR-046",
+      "DR-050",
+      "DR-076",
+      "DR-077",
+      "DR-098",
+      "DR-099"
+     ],
+     "concern/low": [
+      "DR-023",
+      "DR-027",
+      "DR-030",
+      "DR-034",
+      "DR-036",
+      "DR-055",
+      "DR-058",
+      "DR-062",
+      "DR-064",
+      "DR-066",
+      "DR-075",
+      "DR-083",
+      "DR-085",
+      "DR-088",
+      "DR-094"
+     ],
+     "concern/high": [
+      "DR-045",
+      "DR-092",
+      "DR-096"
+     ]
+    }
+   },
+   {
+    "criterion": "L2_NO_DISCRIMINATION",
+    "code": "DISCRIMINATORY_IMPACT_NEW_TO_CANADA",
+    "statuses": {
+     "fail/high": [
+      "DR-005",
+      "DR-028",
+      "DR-053",
+      "DR-077",
+      "DR-081"
+     ],
+     "concern/medium": [
+      "DR-027"
+     ],
+     "concern/low": [
+      "DR-075"
+     ]
+    }
+   }
+  ],
+  "missingPending": [
+   {
+    "id": "DR-003",
+    "other": "DR-070",
+    "similarity": 0.447
+   },
+   {
+    "id": "DR-003",
+    "other": "DR-020",
+    "similarity": 0.38
+   },
+   {
+    "id": "DR-007",
+    "other": "DR-038",
+    "similarity": 0.559
+   },
+   {
+    "id": "DR-016",
+    "other": "DR-084",
+    "similarity": 0.396
+   },
+   {
+    "id": "DR-018",
+    "other": "DR-024",
+    "similarity": 0.455
+   },
+   {
+    "id": "DR-019",
+    "other": "DR-097",
+    "similarity": 0.482
+   },
+   {
+    "id": "DR-020",
+    "other": "DR-003",
+    "similarity": 0.38
+   },
+   {
+    "id": "DR-024",
+    "other": "DR-018",
+    "similarity": 0.455
+   },
+   {
+    "id": "DR-026",
+    "other": "DR-058",
+    "similarity": 0.532
+   },
+   {
+    "id": "DR-031",
+    "other": "DR-082",
+    "similarity": 0.436
+   },
+   {
+    "id": "DR-031",
+    "other": "DR-059",
+    "similarity": 0.375
+   },
+   {
+    "id": "DR-034",
+    "other": "DR-096",
+    "similarity": 0.374
+   },
+   {
+    "id": "DR-038",
+    "other": "DR-007",
+    "similarity": 0.559
+   },
+   {
+    "id": "DR-054",
+    "other": "DR-097",
+    "similarity": 0.365
+   },
+   {
+    "id": "DR-054",
+    "other": "DR-068",
+    "similarity": 0.446
+   },
+   {
+    "id": "DR-058",
+    "other": "DR-026",
+    "similarity": 0.532
+   },
+   {
+    "id": "DR-059",
+    "other": "DR-031",
+    "similarity": 0.375
+   },
+   {
+    "id": "DR-059",
+    "other": "DR-082",
+    "similarity": 0.43
+   },
+   {
+    "id": "DR-060",
+    "other": "DR-064",
+    "similarity": 0.415
+   },
+   {
+    "id": "DR-064",
+    "other": "DR-072",
+    "similarity": 0.393
+   },
+   {
+    "id": "DR-064",
+    "other": "DR-060",
+    "similarity": 0.415
+   },
+   {
+    "id": "DR-064",
+    "other": "DR-078",
+    "similarity": 0.5
+   },
+   {
+    "id": "DR-068",
+    "other": "DR-054",
+    "similarity": 0.446
+   },
+   {
+    "id": "DR-072",
+    "other": "DR-064",
+    "similarity": 0.393
+   },
+   {
+    "id": "DR-078",
+    "other": "DR-064",
+    "similarity": 0.5
+   },
+   {
+    "id": "DR-084",
+    "other": "DR-016",
+    "similarity": 0.396
+   },
+   {
+    "id": "DR-096",
+    "other": "DR-034",
+    "similarity": 0.374
+   },
+   {
+    "id": "DR-097",
+    "other": "DR-019",
+    "similarity": 0.482
+   },
+   {
+    "id": "DR-097",
+    "other": "DR-054",
+    "similarity": 0.365
+   }
+  ]
+ },
+ "after": {
+  "summary": {
+   "label": "after",
+   "pairsDifferentOutcome": 16,
+   "pairsUnexplained": 0,
+   "contradictoryCodeGroups": 9,
+   "missingPendingFlags": 0
+  },
+  "pairs": [
+   {
+    "a": "DR-026",
+    "b": "DR-058",
+    "similarity": 0.532,
+    "recA": "RECOMMEND_DECLINE",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-026",
+     "DR-058"
+    ]
+   },
+   {
+    "a": "DR-014",
+    "b": "DR-074",
+    "similarity": 0.501,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "RECOMMEND_DECLINE",
+    "explained": true,
+    "explainedBy": [
+     "DR-014",
+     "DR-074"
+    ]
+   },
+   {
+    "a": "DR-019",
+    "b": "DR-097",
+    "similarity": 0.482,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "RECOMMEND_DECLINE",
+    "explained": true,
+    "explainedBy": [
+     "DR-019",
+     "DR-097"
+    ]
+   },
+   {
+    "a": "DR-026",
+    "b": "DR-089",
+    "similarity": 0.443,
+    "recA": "RECOMMEND_DECLINE",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-026",
+     "DR-089"
+    ]
+   },
+   {
+    "a": "DR-040",
+    "b": "DR-048",
+    "similarity": 0.431,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-040",
+     "DR-048"
+    ]
+   },
+   {
+    "a": "DR-051",
+    "b": "DR-065",
+    "similarity": 0.42,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-051",
+     "DR-065"
+    ]
+   },
+   {
+    "a": "DR-060",
+    "b": "DR-064",
+    "similarity": 0.415,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-060",
+     "DR-064"
+    ]
+   },
+   {
+    "a": "DR-054",
+    "b": "DR-084",
+    "similarity": 0.401,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-054",
+     "DR-084"
+    ]
+   },
+   {
+    "a": "DR-016",
+    "b": "DR-084",
+    "similarity": 0.396,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-016",
+     "DR-084"
+    ]
+   },
+   {
+    "a": "DR-064",
+    "b": "DR-072",
+    "similarity": 0.393,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-064",
+     "DR-072"
+    ]
+   },
+   {
+    "a": "DR-003",
+    "b": "DR-020",
+    "similarity": 0.38,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "REQUEST_MORE_INFORMATION",
+    "explained": true,
+    "explainedBy": [
+     "DR-003",
+     "DR-020"
+    ]
+   },
+   {
+    "a": "DR-008",
+    "b": "DR-042",
+    "similarity": 0.373,
+    "recA": "APPROVE_WITH_CONDITIONS",
+    "recB": "RECOMMEND_DECLINE",
+    "explained": true,
+    "explainedBy": [
+     "DR-008",
+     "DR-042"
+    ]
+   },
+   {
+    "a": "DR-054",
+    "b": "DR-097",
+    "similarity": 0.365,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "RECOMMEND_DECLINE",
+    "explained": true,
+    "explainedBy": [
+     "DR-054",
+     "DR-097"
+    ]
+   },
+   {
+    "a": "DR-022",
+    "b": "DR-044",
+    "similarity": 0.358,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-022",
+     "DR-044"
+    ]
+   },
+   {
+    "a": "DR-039",
+    "b": "DR-072",
+    "similarity": 0.355,
+    "recA": "RECOMMEND_DECLINE",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-039",
+     "DR-072"
+    ]
+   },
+   {
+    "a": "DR-058",
+    "b": "DR-089",
+    "similarity": 0.354,
+    "recA": "REQUEST_MORE_INFORMATION",
+    "recB": "APPROVE_WITH_CONDITIONS",
+    "explained": true,
+    "explainedBy": [
+     "DR-058",
+     "DR-089"
+    ]
+   }
+  ],
+  "codeFindings": [
+   {
+    "criterion": "L1_LEGISLATION",
+    "code": "PROHIBITED_FACTOR",
+    "statuses": {
+     "concern/medium": [
+      "DR-002",
+      "DR-017",
+      "DR-031",
+      "DR-033"
+     ],
+     "fail/high": [
+      "DR-011",
+      "DR-027",
+      "DR-036",
+      "DR-066",
+      "DR-076",
+      "DR-077",
+      "DR-090",
+      "DR-094"
+     ],
+     "concern/low": [
+      "DR-021"
+     ]
+    }
+   },
+   {
+    "criterion": "L2_ACCESSIBLE",
+    "code": "ACCESSIBILITY_IMPACT",
+    "statuses": {
+     "concern/low": [
+      "DR-002",
+      "DR-003",
+      "DR-006",
+      "DR-025",
+      "DR-033",
+      "DR-048",
+      "DR-052",
+      "DR-054",
+      "DR-060",
+      "DR-065",
+      "DR-068",
+      "DR-070",
+      "DR-072",
+      "DR-073",
+      "DR-075",
+      "DR-079",
+      "DR-084",
+      "DR-088",
+      "DR-091",
+      "DR-095"
+     ],
+     "fail/medium": [
+      "DR-004",
+      "DR-015",
+      "DR-023",
+      "DR-026",
+      "DR-027",
+      "DR-030",
+      "DR-031",
+      "DR-034",
+      "DR-036",
+      "DR-037",
+      "DR-042",
+      "DR-043",
+      "DR-046",
+      "DR-049",
+      "DR-055",
+      "DR-059",
+      "DR-061",
+      "DR-063",
+      "DR-066",
+      "DR-069",
+      "DR-074",
+      "DR-076",
+      "DR-082",
+      "DR-090",
+      "DR-094",
+      "DR-096",
+      "DR-100"
+     ],
+     "fail/high": [
+      "DR-005",
+      "DR-007",
+      "DR-010",
+      "DR-011",
+      "DR-017",
+      "DR-018",
+      "DR-021",
+      "DR-024",
+      "DR-028",
+      "DR-032",
+      "DR-038",
+      "DR-039",
+      "DR-041",
+      "DR-045",
+      "DR-050",
+      "DR-053",
+      "DR-056",
+      "DR-062",
+      "DR-077",
+      "DR-080",
+      "DR-081",
+      "DR-086",
+      "DR-092",
+      "DR-093",
+      "DR-097",
+      "DR-098",
+      "DR-099"
+     ],
+     "concern/medium": [
+      "DR-009",
+      "DR-013",
+      "DR-016",
+      "DR-019",
+      "DR-020",
+      "DR-022",
+      "DR-057",
+      "DR-058",
+      "DR-064",
+      "DR-067",
+      "DR-078",
+      "DR-083",
+      "DR-085",
+      "DR-087"
+     ]
+    }
+   },
+   {
+    "criterion": "L4_PUBLIC_POLICY",
+    "code": "PUBLIC_POLICY_CONFLICT",
+    "statuses": {
+     "concern/low": [
+      "DR-002",
+      "DR-057",
+      "DR-058",
+      "DR-073",
+      "DR-085",
+      "DR-088"
+     ],
+     "concern/medium": [
+      "DR-004",
+      "DR-009",
+      "DR-068"
+     ],
+     "fail/high": [
+      "DR-005",
+      "DR-007",
+      "DR-010",
+      "DR-011",
+      "DR-015",
+      "DR-017",
+      "DR-018",
+      "DR-021",
+      "DR-023",
+      "DR-024",
+      "DR-028",
+      "DR-031",
+      "DR-032",
+      "DR-034",
+      "DR-036",
+      "DR-038",
+      "DR-039",
+      "DR-041",
+      "DR-042",
+      "DR-043",
+      "DR-045",
+      "DR-049",
+      "DR-050",
+      "DR-053",
+      "DR-056",
+      "DR-059",
+      "DR-061",
+      "DR-062",
+      "DR-063",
+      "DR-067",
+      "DR-069",
+      "DR-074",
+      "DR-076",
+      "DR-077",
+      "DR-080",
+      "DR-081",
+      "DR-082",
+      "DR-086",
+      "DR-090",
+      "DR-092",
+      "DR-093",
+      "DR-096",
+      "DR-098",
+      "DR-100"
+     ],
+     "fail/medium": [
+      "DR-013",
+      "DR-026",
+      "DR-027",
+      "DR-030",
+      "DR-046",
+      "DR-055",
+      "DR-066",
+      "DR-083",
+      "DR-094",
+      "DR-099"
+     ]
+    }
+   },
+   {
+    "criterion": "L2_NO_DISCRIMINATION",
+    "code": "PROXY_FOR_PROTECTED_GROUND",
+    "statuses": {
+     "concern/low": [
+      "DR-003",
+      "DR-004",
+      "DR-015",
+      "DR-019",
+      "DR-022",
+      "DR-023",
+      "DR-031",
+      "DR-034",
+      "DR-058",
+      "DR-059",
+      "DR-063",
+      "DR-064",
+      "DR-083",
+      "DR-085"
+     ],
+     "fail/high": [
+      "DR-005",
+      "DR-010",
+      "DR-011",
+      "DR-017",
+      "DR-026",
+      "DR-045",
+      "DR-046",
+      "DR-053",
+      "DR-092",
+      "DR-096",
+      "DR-100"
+     ],
+     "concern/medium": [
+      "DR-030",
+      "DR-032",
+      "DR-036",
+      "DR-039",
+      "DR-042",
+      "DR-050",
+      "DR-055",
+      "DR-062",
+      "DR-066",
+      "DR-067",
+      "DR-076",
+      "DR-082",
+      "DR-094",
+      "DR-099"
+     ]
+    }
+   },
+   {
+    "criterion": "L3_NOT_SUBJECTIVE",
+    "code": "SUBJECTIVE_JUDGMENT",
+    "statuses": {
+     "concern/low": [
+      "DR-003",
+      "DR-020",
+      "DR-030",
+      "DR-032",
+      "DR-035",
+      "DR-037",
+      "DR-046",
+      "DR-053",
+      "DR-055",
+      "DR-057",
+      "DR-062",
+      "DR-064",
+      "DR-066",
+      "DR-075",
+      "DR-078",
+      "DR-079",
+      "DR-087",
+      "DR-089",
+      "DR-095",
+      "DR-098"
+     ],
+     "fail/medium": [
+      "DR-005",
+      "DR-021",
+      "DR-063",
+      "DR-085",
+      "DR-100"
+     ],
+     "fail/high": [
+      "DR-009",
+      "DR-049",
+      "DR-067",
+      "DR-086",
+      "DR-092"
+     ],
+     "concern/medium": [
+      "DR-096",
+      "DR-099"
+     ]
+    }
+   },
+   {
+    "criterion": "L2_ACCESSIBLE",
+    "code": "OVERBROAD_SCOPE",
+    "statuses": {
+     "fail/medium": [
+      "DR-004"
+     ],
+     "concern/low": [
+      "DR-006",
+      "DR-052",
+      "DR-070"
+     ],
+     "fail/high": [
+      "DR-097"
+     ]
+    }
+   },
+   {
+    "criterion": "L3_RISK_LINK",
+    "code": "WEAK_RISK_LINK",
+    "statuses": {
+     "concern/medium": [
+      "DR-004",
+      "DR-007",
+      "DR-010",
+      "DR-011",
+      "DR-016",
+      "DR-018",
+      "DR-019",
+      "DR-021",
+      "DR-022",
+      "DR-025",
+      "DR-026",
+      "DR-031",
+      "DR-036",
+      "DR-038",
+      "DR-043",
+      "DR-046",
+      "DR-050",
+      "DR-053",
+      "DR-054",
+      "DR-055",
+      "DR-056",
+      "DR-057",
+      "DR-058",
+      "DR-062",
+      "DR-068",
+      "DR-082",
+      "DR-085",
+      "DR-086",
+      "DR-087",
+      "DR-091",
+      "DR-093",
+      "DR-094",
+      "DR-097",
+      "DR-098"
+     ],
+     "fail/medium": [
+      "DR-013",
+      "DR-077"
+     ],
+     "concern/low": [
+      "DR-020",
+      "DR-024",
+      "DR-032",
+      "DR-041",
+      "DR-060",
+      "DR-064",
+      "DR-072",
+      "DR-075",
+      "DR-078"
+     ],
+     "fail/high": [
+      "DR-030"
+     ]
+    }
+   },
+   {
+    "criterion": "L1_HUMAN_RIGHTS",
+    "code": "PROXY_FOR_PROTECTED_GROUND",
+    "statuses": {
+     "fail/high": [
+      "DR-005",
+      "DR-017",
+      "DR-053"
+     ],
+     "concern/medium": [
+      "DR-010",
+      "DR-011",
+      "DR-018",
+      "DR-024",
+      "DR-026",
+      "DR-032",
+      "DR-039",
+      "DR-042",
+      "DR-046",
+      "DR-050",
+      "DR-076",
+      "DR-077",
+      "DR-098",
+      "DR-099"
+     ],
+     "concern/low": [
+      "DR-023",
+      "DR-027",
+      "DR-030",
+      "DR-034",
+      "DR-036",
+      "DR-055",
+      "DR-058",
+      "DR-062",
+      "DR-064",
+      "DR-066",
+      "DR-075",
+      "DR-083",
+      "DR-085",
+      "DR-088",
+      "DR-094"
+     ],
+     "concern/high": [
+      "DR-045",
+      "DR-092",
+      "DR-096"
+     ]
+    }
+   },
+   {
+    "criterion": "L2_NO_DISCRIMINATION",
+    "code": "DISCRIMINATORY_IMPACT_NEW_TO_CANADA",
+    "statuses": {
+     "fail/high": [
+      "DR-005",
+      "DR-028",
+      "DR-053",
+      "DR-077",
+      "DR-081"
+     ],
+     "concern/medium": [
+      "DR-027"
+     ],
+     "concern/low": [
+      "DR-075"
+     ]
+    }
+   }
+  ],
+  "missingPending": []
+ }
+}

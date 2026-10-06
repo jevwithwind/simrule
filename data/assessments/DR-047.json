@@ -1,0 +1,304 @@
+{
+  "id": "DR-047",
+  "extracted": {
+    "trigger": "Police, security patrol or private investigation use",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles used for police work, security patrol or private investigation",
+    "ruleType": "decline",
+    "definedTerms": [
+      "police work, security patrol, or private investigation"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on police, security or investigation use. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "used for police work, security patrol, or private investigation"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle use is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "The rule extends AP-10 (Fenwick & Hale Mutual, 2016): vehicles used for police work. Security patrol and private investigation are commercial uses already covered in principle by AP-06 (Oakridge Lane Mutual, 2015), so the extension is consistent with approved rules.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "used for police work, security patrol, or private investigation"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Patrol, pursuit and surveillance driving are distinct uses with different exposure. The rule reflects the vehicle's actual use.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "pursuit driving, extended idling, and exposure to confrontational situations"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle use does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "These are occupational uses with commercial coverage options. Personal use of the same people's vehicles is not affected.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Keeping occupational patrol exposure out of personal pools avoids cross-subsidy. No new cost is created for others.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows approved practice for a clear category of use. It is balanced.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on the vehicle's occupational use and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "police work, security patrol, or private investigation"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The vehicle's declared occupational use is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no threshold and follows approved categories. It is not arbitrary.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Pursuit, patrol and surveillance driving link directly to collision and liability exposure. The rationale explains the mechanism.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "fall outside the scope of personal auto coverage"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is qualitative. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "It should be clear that a security guard commuting to work in a personal car is not \"security patrol\". The filing should define use as the vehicle being used for the work itself.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "security patrol"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Separating occupational patrol use from personal coverage follows approved practice.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-10",
+      "similarity": 0.593,
+      "relation": "similar",
+      "explanation": "Approved rule declines vehicles used for police work. DR-047 adds security patrol and private investigation, which have similar patrol and surveillance exposure."
+    },
+    {
+      "refId": "AP-06",
+      "similarity": 0.157,
+      "relation": "similar",
+      "explanation": "Approved rule declines vehicles used for commercial purposes. Security patrol and private investigation are commercial uses."
+    },
+    {
+      "refId": "DR-043",
+      "similarity": 0.236,
+      "relation": "materially_different",
+      "explanation": "Pending Lakefield Mutual rule declines volunteer emergency responders. Those use personal vehicles occasionally and unpaid; DR-047 covers occupational use."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners whose vehicle is used for policing, security patrol or private investigation work.",
+    "likelyConsequence": "They would need commercial coverage. Personal driving is unaffected.",
+    "vulnerableGroups": [],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Please confirm that commuting to a security job in a personal car is not covered by the rule."
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If applied to commuting, the rule would become overbroad."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite AP-10 and AP-06.",
+      "owner": "Analyst",
+      "reason": "Consistent with approved rules."
+    },
+    {
+      "action": "Define \"used for\" as use of the vehicle in the work itself.",
+      "owner": "Insurer",
+      "reason": "Definitions condition."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurers and years are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

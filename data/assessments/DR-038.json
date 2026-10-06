@@ -1,0 +1,347 @@
+{
+  "id": "DR-038",
+  "extracted": {
+    "trigger": "Applicant age over 80",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "All applicants over 80",
+    "ruleType": "decline",
+    "definedTerms": [
+      "over the age of 80"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy on age. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on age as such; the legal question is a human rights one. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "over the age of 80"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "Age is a protected ground. The Code's insurance provision allows age-based distinctions in auto insurance only on reasonable and bona fide grounds, and a blanket refusal of every driver over 80 is much harder to justify than rating. A senior reviewer should judge whether the test could be met.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "over the age of 80"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. The pending Maplewood Mutual rule DR-007 (under 21) uses the same ground at the other end of the range. Similar submissions from other insurers are pending (DR-007) and should be reviewed together.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Age-related decline varies widely between individuals, and the rule ignores each driver's record and health. Ontario's licensing system already screens older drivers when they renew.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "age-related declines in reaction time, vision, and cognitive processing"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "HTA"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule refuses a whole age group on a protected ground, without individual assessment. The principle requires decisions not to be influenced by protected grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant over the age of 80"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Many people over 80 depend on driving for independence, especially outside cities. Refusing them all removes access for a vulnerable group.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "over the age of 80"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Older drivers pushed to other insurers would pay more, often on fixed incomes. Rating already reflects age-related risk.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Relying on the licensing system's medical screening and on driving records would protect the insurer without a blanket age cut-off. Refusal is not a balanced response.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on age and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "over the age of 80"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Age is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No reason is given for 80 rather than another age. Decline in driving ability is gradual and individual.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "over the age of 80"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The rationale cites medical literature and claims data on age-related decline. Those describe averages; they do not show that every driver over 80 is high risk.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "well documented in medical literature and reflected in our claims data"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale says the decline is reflected in the insurer's claims data. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "reflected in our claims data"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The age threshold is precise. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "over the age of 80"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing every driver over 80 would override the licensing system's individual assessment and cut older people off from independent travel. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "CAIA"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-007",
+      "similarity": 0.559,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines drivers under 21. Same protected ground (age) at the other end of the range; review both under the Code's insurance provision."
+    },
+    {
+      "refId": "DR-021",
+      "similarity": 0.096,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines medical conditions that may impair driving. Same reliance on assumed impairment rather than individual assessment."
+    },
+    {
+      "refId": "DR-090",
+      "similarity": 0.017,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines past medical licence refusals. Also second-guesses the licensing system's medical decisions."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Every driver over 80, regardless of record or health.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Older drivers",
+      "Rural seniors without transit",
+      "Seniors on fixed incomes"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would the licensing system's renewal screening and age-based rating not address the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Replacing the cut-off with reliance on licence status and driving record would remove the discriminatory effect."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline and record the age-based findings.",
+      "owner": "Analyst",
+      "reason": "High-severity Level 2 fail."
+    },
+    {
+      "action": "Review alongside DR-007 for consistent treatment of age rules.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 human rights concern."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "The Human Rights Code insurance provision and the senior driver renewal program could not be verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-007 on the market check."
+  ]
+}

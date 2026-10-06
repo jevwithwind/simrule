@@ -1,0 +1,379 @@
+{
+  "id": "DR-096",
+  "extracted": {
+    "trigger": "Child protective services investigation",
+    "thresholdCount": null,
+    "lookbackYears": 5,
+    "populationAffected": "Applicants who were the subject of a child protective services investigation in the preceding 5 years",
+    "ruleType": "decline",
+    "definedTerms": [
+      "preceding 5 years"
+    ],
+    "undefinedTerms": [
+      "subject of a child protective services investigation"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a child protective services investigation. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "child protective services investigation"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Child protection investigations fall disproportionately on some racialized and Indigenous families and on families with disabilities, so the rule risks indirect discrimination on protected grounds. It also targets family status, which the Code's insurance provision allows only on reasonable and bona fide grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subject of a child protective services investigation"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "concern",
+      "severity": "high",
+      "issueCodes": [
+        "PRECEDENT_NON_COMPLIANT_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The closest framework example is NC-04: declining someone accused of a crime they were not convicted of. An investigation is not even an accusation of a driving offence, so DR-096 shares and goes beyond NC-04's defect. Similar submissions from other insurers are pending (DR-034) and should be reviewed together.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subject of a child protective services investigation"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "A child protection investigation says nothing about driving behaviour, experience, distance, location or vehicle. The rationale relies on a vague link to \"household instability\".",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may indicate household instability and behavioural patterns"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Because investigations are unevenly distributed across communities, the rule would act as an indirect proxy for race, Indigenous identity and disability. The principle bars indirect proxies for protected grounds.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "child protective services investigation"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Parents, including those cleared by the investigation, would lose access to this insurer for 5 years. Families often depend on a car for school, work and medical appointments.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined families would pay more elsewhere without any driving-risk reason. The rule adds cost to households that may already be under strain.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The insurer cites risk \"across multiple insurance lines\" rather than auto risk. Excluding families on that basis does not balance profitability with fair treatment.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "elevated risk across multiple insurance lines"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION",
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "Child protection records are confidential, so the consumer would not know how the insurer learned of an investigation or how to correct it. A decline letter would itself disclose highly sensitive information.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "child protective services investigation"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Whether someone was the \"subject\" of an investigation is not on any record the insurer can normally see. Applying the rule would depend on disclosures or inference.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subject of a child protective services investigation"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "No basis is given for a 5-year lookback. The period is not tied to any measured change in risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "within the preceding 5 years"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT",
+        "ALLEGATION_NOT_CONVICTION"
+      ],
+      "reasoning": "An investigation is not a finding of wrongdoing, and the alleged conduct is not driving. The framework rejects rules based on allegations and on characteristics not relevant to the risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subject of a child protective services investigation"
+        },
+        {
+          "source": "rationale",
+          "quote": "may indicate household instability"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION",
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale asserts a correlation across insurance lines without evidence. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "correlate with elevated risk"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say whether a referral, an assessment or a full investigation counts, or whether the applicant must be the parent investigated. That leaves wide room for inconsistent application.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "subject of a child protective services investigation"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT",
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "Yes: penalising families for being investigated would discourage reporting and cooperation with child protection, and requires intrusive use of confidential records. A consumer protection regulator should not approve it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "NC-04",
+      "similarity": 0.175,
+      "relation": "similar",
+      "explanation": "Non-compliant example declines people accused but not convicted. DR-096 relies on an investigation, which is weaker than an accusation, and the conduct investigated is not driving."
+    },
+    {
+      "refId": "DR-034",
+      "similarity": 0.374,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group rule declines the subject of a restraining order. Same pattern: a family or civil process with no driving link and no conviction. Review together."
+    },
+    {
+      "refId": "DR-042",
+      "similarity": 0.196,
+      "relation": "similar",
+      "explanation": "Pending Northern Shield Insurance rule declines drivers charged but not convicted. Shares the allegation-not-conviction defect, although DR-042 at least concerns driving."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Parents and caregivers investigated by child protective services in the last 5 years, including those cleared.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Low-income families",
+      "Indigenous and racialized families",
+      "Parents with disabilities",
+      "Single parents"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "How would the insurer learn of an investigation, and with what consent?",
+    "What auto claims data supports the link to household instability?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. The trigger is not risk-relevant and relies on an investigation rather than any finding."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline; record not risk-relevant, allegation-not-conviction and public policy conflict.",
+      "owner": "Analyst",
+      "reason": "Multiple high-severity fails."
+    },
+    {
+      "action": "Review the indirect discrimination concern.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 human rights concern triggers senior review."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Evidence on disproportionate investigation rates is general knowledge, not drawn from a verified source in the registry."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-034 on the market check."
+  ]
+}

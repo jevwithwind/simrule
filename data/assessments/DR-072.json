@@ -1,0 +1,312 @@
+{
+  "id": "DR-072",
+  "extracted": {
+    "trigger": "Post office box with no physical address",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who give only a post office box and cannot provide a physical residential address",
+    "ruleType": "decline",
+    "definedTerms": [
+      "physical residential address"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on the absence of a physical address. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cannot provide a physical residential address"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Address information is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending address rules DR-064 and DR-078 share the purpose. Similar submissions from other insurers are pending (DR-064) and should be reviewed together.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Garaging location is a core rating input, and a post office box does not show where the vehicle is kept. The rule protects rating accuracy.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "A physical address is required to determine garaging location and appropriate territory rating."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Address information does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "People experiencing homelessness or living in remote areas that use post office boxes may struggle to give a physical address. The insurer should accept a description of where the vehicle is kept.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cannot provide a physical residential address"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Accurate garaging prevents mispricing that other policyholders would pay for. The concern is legitimate.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule applies only when no physical address can be given at all, which is a narrow and reasonable line. It is balanced.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "and cannot provide a physical residential address"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on the need for a physical address and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "physical residential address"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Whether a physical address is provided is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows a rating requirement, not an invented threshold. It is not arbitrary.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The link is to rating accuracy, not to claims frequency. That is a legitimate product reason rather than a driving-risk link.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "does not allow us to verify where the vehicle is kept"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is administrative rather than statistical. No actuarial data or analysis is attached to the submission. The rule rests on a legal or administrative requirement rather than a statistical claim, so the gap is unlikely to change the outcome.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A post office box versus a physical residential address is a clear distinction. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primary mailing address and cannot provide a physical residential address"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Requiring a physical address to rate garaging is reasonable, provided the insurer accepts a description of where the vehicle is kept.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-064",
+      "similarity": 0.393,
+      "relation": "similar",
+      "explanation": "Pending Grandview Insurance Group rule requires a \"permanent\" Ontario address. DR-072 is narrower and clearer: it only declines when no physical address can be given. The difference supports approving DR-072 while asking DR-064 for a definition."
+    },
+    {
+      "refId": "DR-078",
+      "similarity": 0.349,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines vehicles garaged away from the stated address. Same garaging purpose."
+    },
+    {
+      "refId": "DR-039",
+      "similarity": 0.355,
+      "relation": "materially_different",
+      "explanation": "Pending Granite Mutual Insurance email rule. Both concern contact details, but DR-072 has a rating reason and DR-039 does not."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants who can give only a post office box and no physical address.",
+    "likelyConsequence": "They would need to provide a description of where the vehicle is kept, or seek coverage elsewhere.",
+    "vulnerableGroups": [
+      "People experiencing homelessness",
+      "Remote residents using post office boxes"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Will the insurer accept a rural route or description of where the vehicle is kept where no civic address exists?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "If the rule were applied to remote residents who have no civic address, it would need an exception."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions: accept descriptions of garaging location where no civic address exists.",
+      "owner": "Analyst",
+      "reason": "Narrow, reasonable rating rule."
+    },
+    {
+      "action": "Review with DR-064 and DR-078 for consistent address rules.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-064 on the market check."
+  ]
+}

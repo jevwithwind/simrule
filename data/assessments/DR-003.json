@@ -1,0 +1,356 @@
+{
+  "id": "DR-003",
+  "extracted": {
+    "trigger": "App-based food delivery use",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles primarily used for app-based food delivery",
+    "ruleType": "decline",
+    "definedTerms": [
+      "food delivery through app-based platforms"
+    ],
+    "undefinedTerms": [
+      "primarily used"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle use. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on commercial delivery use of a personal vehicle. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primarily used for food delivery through app-based platforms"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The delivery use of a vehicle is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH",
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "The framework lists part-time use of a vehicle for package delivery (FX-02) and business use (FX-01) as common decline rules, and AP-06 (Oakridge Lane Mutual, 2015) declines any automobile used for commercial purposes. DR-003 applies the same logic to app-based food delivery and limits it to vehicles \"primarily\" used that way, so it is no broader than the approved commercial-use rule. Similar submissions from other insurers are pending (DR-070, DR-020) and should be reviewed together.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primarily used for food delivery"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Delivery work changes how much and where a vehicle is driven, which the principle names as risk factors. The rule reflects the actual use of the insured vehicle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "significantly increases kilometres driven, time on the road, and frequency of stops in high-traffic areas"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "App-based delivery work is concentrated among newcomers and students, so the rule could fall unevenly on those groups. The trigger itself is vehicle use, so this is a low-level indirect effect to monitor rather than a proxy.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "app-based platforms"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Delivery drivers still need coverage, and a decline pushes them to find a commercial or delivery-specific product. Access is reasonable only if such products are available at a workable price.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "Decline to insure any vehicle primarily used for food delivery"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Keeping commercial delivery exposure out of the personal auto pool stops other policyholders from subsidising it. The rule does not add cost for consumers who drive only for personal use.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "beyond what personal auto rating contemplates"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule targets a real change in use rather than a group of people. Limiting it to primary use is a proportionate line.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primarily used"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "Consumers who deliver a few evenings a week may not know whether they count as \"primarily\" using the vehicle for delivery. The insurer should explain the test and point them to suitable coverage.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primarily used"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "Whether use is \"primary\" will depend on the applicant's declaration and the underwriter's reading of it. A measurable test would remove the judgment call.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primarily used"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule follows an established category of decline (commercial delivery use) rather than an invented threshold. There is no numeric cut-off that needs justifying.",
+      "evidence": [],
+      "citationIds": [
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "More kilometres, more time on the road and frequent stops in traffic link directly to collision exposure. The rationale states a clear, plausible mechanism.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "elevate claims exposure"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale explains the exposure mechanism but gives no figures. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "\"Primarily used\" is not defined, for example by hours or share of kilometres. Without a definition the same driver could be treated differently by different brokers.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "primarily used"
+        }
+      ],
+      "citationIds": [
+        "FSRA_UW_TECH"
+      ]
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Separating commercial delivery from personal coverage is established practice, provided delivery drivers can buy suitable coverage.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "FX-02",
+      "similarity": 0.441,
+      "relation": "similar",
+      "explanation": "Framework common example: part-time use of a vehicle for package delivery. DR-003 covers food delivery and applies only to primary use, which is narrower than \"part-time\"."
+    },
+    {
+      "refId": "AP-06",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Approved rule declines any automobile used for commercial purposes. App-based delivery is one kind of commercial use; DR-003 is a specific application of the same principle."
+    },
+    {
+      "refId": "DR-070",
+      "similarity": 0.447,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines peer-to-peer car sharing \"even occasionally\". Same commercial-use logic, but DR-070 has no primary-use limit; review together so occasional versus primary use is treated consistently."
+    },
+    {
+      "refId": "DR-020",
+      "similarity": 0.38,
+      "relation": "similar",
+      "explanation": "Pending Birchwood Insurance Group rule declines home-based business owners making more than 3 client visits a week. DR-003 is limited to primary delivery use, which matches the commercial-use precedent (approvable); DR-020 sets an unsupported weekly count that reaches occasional business use, so it needs data."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Gig workers whose vehicle is mainly used for app-based food delivery.",
+    "likelyConsequence": "They would need a commercial or delivery-specific policy or endorsement. If none is available at a workable price, they may lose their income source.",
+    "vulnerableGroups": [
+      "Gig workers",
+      "Newcomers and students doing delivery work"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "How will \"primarily used\" be measured (hours, trips or share of kilometres)?",
+    "Will declined applicants be referred to a delivery or commercial product?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Evidence that no suitable delivery coverage exists in the market would raise the accessibility concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions, including a definition of \"primarily used\".",
+      "owner": "Analyst",
+      "reason": "Consistent with the commercial-use precedent."
+    },
+    {
+      "action": "Review alongside DR-070 and DR-020 for consistent treatment of occasional business use.",
+      "owner": "Analyst",
+      "reason": "Pending similar submissions."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Availability and price of delivery endorsements in the market were not checked."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-070, DR-020 on the market check.",
+    "Consistency audit: rewrote the comparison with DR-020. Explanation described the similarity but not why the outcomes differ."
+  ]
+}

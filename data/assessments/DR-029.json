@@ -1,0 +1,314 @@
+{
+  "id": "DR-029",
+  "extracted": {
+    "trigger": "Aftermarket performance modifications",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Owners of vehicles with turbochargers, superchargers, nitrous oxide systems or lowering kits added after sale",
+    "ruleType": "decline",
+    "definedTerms": [
+      "turbochargers, superchargers, nitrous oxide systems, or suspension lowering kits"
+    ],
+    "undefinedTerms": [
+      "aftermarket performance parts"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on vehicle modification. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on aftermarket performance modifications. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "modified with aftermarket performance parts"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle modifications is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [
+        "PRECEDENT_APPROVED_MATCH"
+      ],
+      "reasoning": "Two approved rules cover the same ground: any vehicle modified for speed or used for racing (AP-13, Oakridge Lane Mutual, 2020) and any vehicle with unacceptable customizations or modifications (AP-14, Westerly Indemnity, 2023). DR-029 is more specific than both because it lists the modifications.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "turbochargers, superchargers, nitrous oxide systems, or suspension lowering kits"
+        }
+      ],
+      "citationIds": [
+        "FW_APPROVED",
+        "FW_CONTEXT"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Modifications that increase speed capability change the vehicle's risk, which is a named risk factor. The rule reflects the actual insured vehicle.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "increase vehicle speed capability and alter handling characteristics"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Vehicle modifications does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Performance modifications are a voluntary choice and specialty coverage exists. Owners of standard vehicles are unaffected.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Keeping high-performance modified vehicles out of the standard pool protects other policyholders from their higher losses. No new cost is created for others.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule is targeted and follows approved practice. It balances the insurer's exposure with fair treatment.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Listing the specific parts makes the rule easier to understand than the approved \"unacceptable customizations\" wording. Consumers can tell whether it applies to them.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "turbochargers, superchargers, nitrous oxide systems, or suspension lowering kits"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The presence of listed aftermarket parts is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "turbochargers, superchargers, nitrous oxide systems"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Turbochargers, superchargers and nitrous systems clearly raise speed capability. Suspension lowering kits mainly change ride height and appearance, so including them stretches the stated speed rationale.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "suspension lowering kits"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Added power and changed handling link directly to collision severity. The rationale states a clear mechanism.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "directly linked to increased collision severity"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "The rationale is qualitative. No actuarial data or analysis is attached to the submission. Because a comparable approved rule exists and this one is no stricter, the gap is unlikely to change the outcome, but the analysis should be on file before approval.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The parenthetical list defines \"aftermarket performance parts\" by example. That is clearer than the approved precedents.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "(turbochargers, superchargers, nitrous oxide systems, or suspension lowering kits)"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No: nothing about this proposal appears inappropriate for a consumer protection regulator to approve. Declining performance-modified vehicles is established, approved practice.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "AP-13",
+      "similarity": 0.283,
+      "relation": "similar",
+      "explanation": "Approved rule declines vehicles modified for speed or used for racing. DR-029 covers the speed-modification part with a specific list; it does not cover racing use."
+    },
+    {
+      "refId": "AP-14",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Approved rule declines vehicles with unacceptable customizations or modifications. DR-029 is narrower and more precise, which is an improvement on the approved wording."
+    },
+    {
+      "refId": "DR-006",
+      "similarity": 0.157,
+      "relation": "materially_different",
+      "explanation": "Pending Ridgeline Insurance Co. rebuilt-vehicle rule. Both are about vehicle condition, but rebuild history follows an accident while modifications are owner choices."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Owners of vehicles with added turbochargers, superchargers, nitrous systems or lowering kits.",
+    "likelyConsequence": "They would need specialty or modified-vehicle coverage, usually at higher cost.",
+    "vulnerableGroups": [],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "Is the suspension lowering kit included for handling risk, and is there data for it?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Evidence that lowering kits alone carry no added risk would support removing them from the list."
+  ],
+  "nextSteps": [
+    {
+      "action": "Approve with conditions and cite AP-13 and AP-14.",
+      "owner": "Analyst",
+      "reason": "Consistent with approved modification rules."
+    },
+    {
+      "action": "File supporting analysis, including for lowering kits.",
+      "owner": "Insurer",
+      "reason": "Standard condition."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Precedent insurers and years are illustrative."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "id": "DR-066",
+  "extracted": {
+    "trigger": "Self-employed without proof of income",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Self-employed applicants who cannot provide proof of income",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": [
+      "proof of income"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PROHIBITED_FACTOR"
+      ],
+      "reasoning": "Ontario's restriction on credit information is understood to cover information about income and ability to pay, not just credit scores. Requiring proof of income as a condition of coverage would be contrary to that restriction. The provision could not be verified and should be confirmed.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cannot provide proof of income"
+        }
+      ],
+      "citationIds": [
+        "REG_664",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Self-employed people without formal income records include many newcomers and informal workers. The effect is indirect.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "self-employed"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending credit-information rules DR-011 and DR-036 face the same restriction.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Income documentation is not driving behaviour, experience, distance, location or vehicle. Ability to pay is a payment question, not a risk profile.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "assess the applicant's ability to maintain premium payments"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "The rule applies only to the self-employed, and informal self-employment is more common among newcomers and some communities. It could act as an indirect proxy.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "self-employed"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "New business owners and gig workers often lack formal income proof. They would be refused even with clean records.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "cannot provide proof of income"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would pay more elsewhere. Payment risk can be handled with payment terms.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Vehicle use can be verified by asking about use directly, and payment risk by payment terms. Requiring income proof is not a balanced way to do either.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "validates the stated vehicle use"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "Asking for income documents is intrusive and unexpected in auto insurance. Consumers would not know why it matters.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "proof of income"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "SUBJECTIVE_JUDGMENT"
+      ],
+      "reasoning": "What counts as acceptable \"proof of income\" is left to the insurer. Different staff could accept different documents.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "proof of income"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "OVERBROAD_SCOPE"
+      ],
+      "reasoning": "Applying the requirement only to the self-employed singles out one group. No risk reason is given for treating them differently from employees.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "self-employed"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale links income proof to payment ability and use verification, not to claims risk. The framework rejects rules not based on a risk-relevant characteristic.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Without it, we cannot adequately assess the risk."
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "Neither \"self-employed\" nor \"proof of income\" is defined. The rule could be applied inconsistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "self-employed"
+        },
+        {
+          "source": "ruleText",
+          "quote": "proof of income"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: requiring income documents for compulsory insurance would bring financial screening back into auto insurance. It would hit small business owners and gig workers hardest.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "REG_664"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-011",
+      "similarity": 0.155,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance credit-score rule. Both use financial information that the credit restriction covers."
+    },
+    {
+      "refId": "DR-036",
+      "similarity": 0.137,
+      "relation": "similar",
+      "explanation": "Same insurer (Ridgeline Insurance Co.) proposes declining bankruptcy. Both financial-information rules from the same insurer."
+    },
+    {
+      "refId": "DR-030",
+      "similarity": 0.181,
+      "relation": "materially_different",
+      "explanation": "Pending Birchwood Insurance Group rideshare rule. Both concern work arrangements, but DR-030 targets occupation while DR-066 targets income documents."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Self-employed people without formal income documents, such as new business owners and gig workers.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Gig workers",
+      "New business owners",
+      "Newcomers in informal work"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "Why is income information needed to assess auto risk, given the credit information restriction?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Removing the income requirement and asking directly about vehicle use would resolve the concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Restricted financial information."
+    },
+    {
+      "action": "Verify that income information falls within the credit information restriction.",
+      "owner": "Senior reviewer",
+      "reason": "Unverified source."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "Whether income information falls within the credit information restriction was not verified."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

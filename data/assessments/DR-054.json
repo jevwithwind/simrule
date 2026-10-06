@@ -1,0 +1,320 @@
+{
+  "id": "DR-054",
+  "extracted": {
+    "trigger": "Right-hand drive vehicle",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who drive a right-hand drive vehicle",
+    "ruleType": "decline",
+    "definedTerms": [
+      "right-hand drive"
+    ],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy based on a vehicle characteristic. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations, the UDAP Rule or FSRA guidance in the registry appears to bar a decline based on a right-hand drive configuration. Under Take All Comers the rule still needs the regulator's approval before the insurer may use it.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "vehicle equipped with right-hand drive"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT",
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Steering configuration is not a protected ground under the Human Rights Code. Nothing in the wording suggests it would act as a close proxy for one, because it applies to every applicant on the same factual basis.",
+      "evidence": [],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [
+        "PENDING_SIMILAR_SUBMISSION"
+      ],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Similar submissions from other insurers are pending (DR-097, DR-068) and should be reviewed together.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "Steering position plausibly affects visibility when passing and turning, which is a vehicle factor. Whether it changes claims enough to justify refusal is not shown.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "present visibility and manoeuvrability challenges"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Steering configuration does not use a protected ground and is not a known proxy for one. The rule turns on the applicant's own conduct or vehicle, not on who they are.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "The affected group is small, mostly enthusiasts with imported vehicles and some rural workers. Specialty coverage may be available.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "right-hand drive"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "If the configuration raises claims, keeping it out of the standard pool avoids cross-subsidy. No new cost is created.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "A surcharge would reflect any added risk without refusing coverage. Refusal is a blunt choice for a small group.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on steering configuration and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "right-hand drive"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Steering position is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule uses a clear vehicle category, not a numeric threshold. It is not arbitrary in form.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "WEAK_RISK_LINK"
+      ],
+      "reasoning": "The visibility mechanism is plausible but unproven. The framework asks the insurer to demonstrate the link to claims exposure.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "that increase collision risk"
+        }
+      ],
+      "citationIds": [
+        "FW_QUESTIONS"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No claims data for right-hand drive vehicles is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Right-hand drive is a clear vehicle characteristic. The rule would be applied consistently.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "right-hand drive"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Maybe: the concern is plausible but the group is small and some may use these vehicles for work. Evidence would settle it.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-097",
+      "similarity": 0.365,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule declines recent imports from outside North America. Many right-hand drive vehicles are such imports, but the outcomes differ: DR-054 affects a small group and turns on data (request more information), while DR-097's wording could reach most overseas-built vehicles (decline as written)."
+    },
+    {
+      "refId": "DR-068",
+      "similarity": 0.446,
+      "relation": "similar",
+      "explanation": "Pending Lakeshore Indemnity rule declines vehicles with autonomous features. Both decline on a vehicle technology or configuration rather than the driver."
+    },
+    {
+      "refId": "NC-03",
+      "similarity": 0.352,
+      "relation": "materially_different",
+      "explanation": "Non-compliant example declines red cars on an assumed link. Steering position has a plausible mechanical basis that colour lacks, but still needs data."
+    },
+    {
+      "refId": "DR-084",
+      "similarity": 0.401,
+      "relation": "materially_different",
+      "explanation": "Same insurer (Grandview Insurance Group) declines vehicles over 4,500 kg on personal policies. DR-084 rests on a product boundary (heavy vehicles need commercial coverage) and is approvable; DR-054 rests on an unproven collision-risk claim, so it needs data first."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Drivers of right-hand drive vehicles, mostly imported enthusiast cars and some rural work vehicles.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Owners of imported vehicles"
+    ],
+    "severity": "low"
+  },
+  "questionsForInsurer": [
+    "What claims data shows higher collision risk for right-hand drive vehicles in Ontario?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Data showing a material increase in claims would support approval with conditions."
+  ],
+  "nextSteps": [
+    {
+      "action": "Request claims data for right-hand drive vehicles.",
+      "owner": "Insurer",
+      "reason": "The risk link is plausible but unproven."
+    },
+    {
+      "action": "Review with DR-097 for consistent treatment of imported vehicles.",
+      "owner": "Analyst",
+      "reason": "Overlapping population."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  },
+  "auditNotes": [
+    "Consistency audit: flagged pending similar submission(s) DR-097, DR-068 on the market check.",
+    "Consistency audit: added the comparison with DR-084. No explanation on this side of a 0.401-similarity pair with different outcomes.",
+    "Consistency audit: rewrote the comparison with DR-097. Explanation described the similarity but not why the outcomes differ."
+  ]
+}

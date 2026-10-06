@@ -1,0 +1,340 @@
+{
+  "id": "DR-023",
+  "extracted": {
+    "trigger": "Refusal of telematics monitoring",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "Applicants who refuse telematics monitoring for the first policy term",
+    "ruleType": "decline",
+    "definedTerms": [
+      "first policy term"
+    ],
+    "undefinedTerms": [
+      "telematics monitoring"
+    ]
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "CONTRARY_TO_LEGISLATION"
+      ],
+      "reasoning": "Making consent to continuous location and driving data collection a condition of compulsory insurance raises privacy-law questions about meaningful consent. No provision in the registry addresses usage-based programs directly, so this is flagged for legal review.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "refuses to consent to the use of telematics monitoring"
+        }
+      ],
+      "citationIds": [
+        "UDAP"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Telematics usually relies on a smartphone app or plug-in device. Older people and people with some disabilities are less able to use them, so refusal may correlate with age and disability.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "telematics monitoring"
+        }
+      ],
+      "citationIds": [
+        "HRC"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Telematics data can improve accuracy for those who choose it. Refusing to share data is not itself a driving risk, so declining refusers does not reflect their risk profile.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Refusal to participate prevents us from assessing the applicant's actual risk profile."
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "PROXY_FOR_PROTECTED_GROUND"
+      ],
+      "reasoning": "Refusal rates are likely higher among older people and people without smartphones. The effect is indirect but plausible.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "Consumers who do not want, or cannot use, monitoring technology would lose access to this insurer. The principle calls for balancing accuracy with accessibility.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "refuses to consent"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Refusers would pay more elsewhere. The insurer can already rate them without telematics, as the market has always done.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "Offering a telematics discount rewards safe drivers without punishing those who decline. Making monitoring mandatory puts the insurer's data interest ahead of consumer choice.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "reward safe driving"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "A consumer could easily understand a decline based on refusing telematics and check the facts it relies on. The insurer can state the specific reason in plain language.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "refuses to consent"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Consent or refusal is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "The rule has no threshold; the first-term limit is clear. Its problem is its basis, not an arbitrary line.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "for the first policy term"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rule turns on a privacy choice, not on any characteristic of the insured that relates to claims. The framework rejects rules not based on a risk-relevant characteristic.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Refusal to participate prevents us from assessing"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data links refusal of monitoring to claims. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "VAGUE_LANGUAGE"
+      ],
+      "reasoning": "The rule does not say what data is collected, by what device or for what use. Consumers cannot give informed consent to an undefined program.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "telematics monitoring"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT",
+        "PRIVACY_INTRUSION"
+      ],
+      "reasoning": "Yes: making surveillance a condition of compulsory insurance removes meaningful choice over personal data. Telematics should be an option consumers can benefit from, not a gate.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "FSRA_FAIR_TREATMENT"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-067",
+      "similarity": 0.157,
+      "relation": "similar",
+      "explanation": "Pending Maplewood Mutual rule uses social media monitoring. Both use intrusive data collection as a gate to coverage."
+    },
+    {
+      "refId": "DR-089",
+      "similarity": 0.135,
+      "relation": "materially_different",
+      "explanation": "Pending Granite Mutual Insurance rule declines applicants who refuse to disclose household drivers. That is standard application information; telematics is continuous monitoring."
+    },
+    {
+      "refId": "DR-015",
+      "similarity": 0.157,
+      "relation": "materially_different",
+      "explanation": "Pending Beacon Fire & Casualty litigation rule. Both penalise a consumer choice rather than a risk, with different triggers."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Applicants who decline monitoring of their driving, location and timing data for the first year.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Older drivers",
+      "People without smartphones",
+      "Privacy-conscious consumers"
+    ],
+    "severity": "medium"
+  },
+  "questionsForInsurer": [
+    "What data would be collected and how would it be used in pricing and claims?",
+    "Why is a voluntary telematics discount not sufficient?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Offering telematics as an optional discount rather than a condition would remove the concern."
+  ],
+  "nextSteps": [
+    {
+      "action": "Recommend decline on risk-relevance and public policy grounds.",
+      "owner": "Analyst",
+      "reason": "High-severity fails at Levels 3 and 4."
+    },
+    {
+      "action": "Review the privacy and consent question.",
+      "owner": "Senior reviewer",
+      "reason": "Level 1 concerns trigger senior review."
+    }
+  ],
+  "confidence": "medium",
+  "uncertainties": [
+    "No verified source on whether Ontario usage-based insurance must be voluntary."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}

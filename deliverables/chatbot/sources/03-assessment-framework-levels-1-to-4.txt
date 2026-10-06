@@ -1,0 +1,90 @@
+SOURCE 03: THE ASSESSMENT FRAMEWORK, LEVELS 1 TO 4
+
+Disclaimer: academic prototype for Ivey Online coursework; not affiliated with or representative of FSRA; fictional data; not legal advice. This explains how a rule would be evaluated; it does not predict whether any specific rule will be approved.
+
+OVERVIEW
+Every proposed decline rule is assessed at four Levels, with 15 criteria in total. The Levels come from the course framework "Auto Insurance Underwriting Rule Assessment: A Regulatory Evaluation Framework". Level 1 is required basic compliance. Levels 2 to 4 are the stretch scope.
+
+For each criterion the AI records:
+- a status: Meets standard, Concern, Does not meet standard, or Insufficient information;
+- a severity: low, medium or high;
+- one or more issue codes for any problem;
+- 2 to 4 sentences of reasoning;
+- evidence: exact words quoted from the rule or the insurer's rationale;
+- citations from the citation registry.
+
+LEVEL 1: BASIC COMPLIANCE (REQUIRED, A GATE)
+What is tested: the Acts, legislation, regulation and guidance; the Human Rights Code and the Canadian Charter of Rights and Freedoms; and whether the rule already exists in the market.
+Result expected: if not compliant, refer to the relevant Act, regulation or guidance. If the rule already exists, reference that rule by another insurer and the year it was approved.
+Role in scoring: a gate. Any Level 1 criterion that does not meet the standard is a full-stop recommendation to decline (a "Level 1 hard stop"). Level 1 does not add to the score.
+
+Criteria:
+- L1_LEGISLATION, Legislation, regulation and guidance: Is the rule compliant with the Insurance Act, its regulations, the Unfair or Deceptive Acts or Practices (UDAP) Rule and published FSRA guidance?
+- L1_HUMAN_RIGHTS, Human Rights Code and Charter: Does the rule use a protected ground, or a close proxy for one, outside what the Human Rights Code allows for insurance contracts?
+- L1_MARKET, Already exists in the market: Has the same or a very similar rule been approved for another insurer? If so, which insurer and when?
+
+How the market check is read:
+- Meets standard: an approved rule with the same or similar intent exists in the precedent registry.
+- Insufficient information (low): no same or similar approved rule was found. The rule is assessed on its own merits.
+- Concern: the closest match is an illustrative non-compliant example, or the matching precedent may no longer meet current standards.
+
+LEVEL 2: INTERPRETATION OF PRINCIPLES AND FAIR CONSUMER OUTCOMES
+What is tested: the six principles and fair consumer outcomes in the framework appendix (see source 04).
+Result expected: list any problematic aspects and explain what does not seem appropriate.
+Role in scoring: weight 40 out of 100.
+
+Criteria:
+- L2_ACCURATE, Accurate pricing and underwriting: Does the rule reflect the individual applicant's risk profile?
+- L2_NO_DISCRIMINATION, Absence of unfair discrimination, bias or proxies: Is the rule free of direct or indirect use of protected grounds or proxies for them?
+- L2_ACCESSIBLE, Accessible products and coverages: Would the rule unfairly limit consumers' access to mandatory auto insurance?
+- L2_COST_MITIGATION, Cost mitigation: Does the rule avoid passing unnecessary or excessive costs to consumers, including declined consumers?
+- L2_BALANCED, Balanced profitability and consumer interests: Does the rule balance the insurer's profitability with fair treatment of consumers?
+- L2_CLEAR_COMMUNICATION, Clear consumer communications: Could a consumer understand why they were declined and what they can do about it?
+
+LEVEL 3: CHECK THAT THE RISK IS NOT SUBJECTIVE OR ARBITRARY AND HAS A DIRECT RELATIONSHIP WITH THE RISK
+What is tested: Does the insurer have actuarial data or analysis? How did it define the rule and what informed it? Can it show a clear link to driver behaviour or claims exposure?
+Role in scoring: weight 35 out of 100.
+
+Criteria:
+- L3_NOT_SUBJECTIVE, Not subjective: Is the rule applied on objective, verifiable facts rather than insurer judgment?
+- L3_NOT_ARBITRARY, Not arbitrary: Are the thresholds and lookback periods reasoned rather than arbitrary?
+- L3_RISK_LINK, Direct relationship to risk: Is there a clear, direct link to driver behaviour or claims exposure?
+- L3_ACTUARIAL, Actuarial support: Has the insurer supplied actuarial data or analysis that supports the rule?
+- L3_DEFINITION, Definition clarity: Are the terms defined clearly enough to be applied the same way every time?
+
+A note on actuarial support: missing actuarial analysis on its own is not a reason to decline. It is recorded as Insufficient information with the issue code NO_ACTUARIAL_SUPPORT. The severity is low when a same or similar approved precedent exists and the rule is no stricter, or when the rule rests on a legal or administrative requirement. It is medium when the rule is new and rests on a statistical claim, or is stricter than the precedent. It is never high.
+
+LEVEL 4: PUBLIC POLICY FILTER
+What is tested: as a government agency responsible for protecting consumers and ensuring fair treatment, is there anything about this proposal that does not seem appropriate?
+Result expected: yes, no or maybe, with an explanation.
+Role in scoring: weight 25 out of 100.
+
+Criterion:
+- L4_PUBLIC_POLICY, Public policy filter. The status maps to the framework's answer:
+  - Meets standard = "No: nothing about the proposal appears inappropriate."
+  - Concern = "Maybe: some aspects need justification."
+  - Insufficient information = "Maybe: cannot judge without more information."
+  - Does not meet standard = "Yes: the proposal conflicts with public policy priorities."
+
+HOW THE SCORE AND RECOMMENDATION ARE CALCULATED
+Simrule's scoring code, not the AI, calculates the recommendation.
+Criterion values: Meets standard 1, Concern 0.5, Insufficient information 0.5, Does not meet standard 0.
+Score = sum over Levels 2 to 4 of (Level weight x average criterion value at that Level). Weights: Level 2 40, Level 3 35, Level 4 25. Maximum 100.
+
+The rules are applied in this order:
+1. The rule is an eligibility rule: Out of scope.
+2. Any Level 1 criterion does not meet the standard: Recommend decline (hard stop).
+3. Any high-severity "does not meet standard" at Levels 2 to 4: Recommend decline.
+4. Score below 50: Recommend decline.
+5. Score 50 to 74, or any medium or high severity Insufficient information finding at Levels 2 to 4: Request more information.
+6. Score 75 or above: Approve with conditions.
+
+Senior review is flagged when AI confidence is low or any Level 1 criterion is a Concern.
+
+WALKING THROUGH A RULE (HOW TO THINK ABOUT IT)
+1. Is it a decline rule or an eligibility rule?
+2. Level 1: does it conflict with legislation or guidance, use a protected ground or a close proxy, or match an approved or non-compliant precedent?
+3. Level 2: is it accurate to the individual's risk, free of proxies, does it keep access to mandatory coverage, avoid unnecessary cost, balance interests, and could a consumer understand it?
+4. Level 3: is it objective, are the threshold and lookback reasoned, is the link to driving risk direct, is there data, are terms defined?
+5. Level 4: is there anything a consumer protection regulator should not approve?
+The answer to each step is a finding a human reviewer must accept or override. The outcome is decided by a person.

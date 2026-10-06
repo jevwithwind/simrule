@@ -1,0 +1,343 @@
+{
+  "id": "DR-028",
+  "extracted": {
+    "trigger": "Place of birth outside Canada",
+    "thresholdCount": null,
+    "lookbackYears": null,
+    "populationAffected": "All applicants born outside Canada",
+    "ruleType": "decline",
+    "definedTerms": [],
+    "undefinedTerms": []
+  },
+  "scope": {
+    "inScope": true,
+    "note": "Declines the whole policy. This is a decline rule."
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "key": "L1_LEGISLATION",
+      "label": "Legislation, regulation and guidance",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No provision of the Insurance Act, its regulations or the UDAP Rule in the registry addresses place of birth directly. The legal defect is a human rights one and is recorded under the Human Rights Code criterion.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "born outside of Canada"
+        }
+      ],
+      "citationIds": [
+        "INS_ACT"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_HUMAN_RIGHTS",
+      "label": "Human Rights Code and Charter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND"
+      ],
+      "reasoning": "Place of origin is a protected ground under the Human Rights Code, and this rule uses it directly. The Code's insurance provision does not cover place of origin, so no reasonable and bona fide defence is available. Asking the regulator to approve it would also engage Charter equality values.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant born outside of Canada"
+        }
+      ],
+      "citationIds": [
+        "HRC",
+        "HRC_INSURANCE",
+        "CHARTER"
+      ]
+    },
+    {
+      "level": 1,
+      "key": "L1_MARKET",
+      "label": "Already exists in the market",
+      "status": "insufficient_information",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "No approved precedent in the registry has the same or a similar trigger. The rule is assessed on its own merits under Levels 2 to 4. Pending submissions on language (DR-005), citizenship (DR-081) and newcomer status (DR-053) target the same protected-ground family.",
+      "evidence": [],
+      "citationIds": [
+        "FW_APPROVED"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCURATE",
+      "label": "Accurate pricing and underwriting",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "Place of birth is not driving behaviour, experience, distance, location or vehicle. A person born abroad may have decades of Canadian driving history.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "may have driving experience in jurisdictions with different road rules"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_NO_DISCRIMINATION",
+      "label": "Absence of unfair discrimination, bias or proxies",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "HUMAN_RIGHTS_PROTECTED_GROUND",
+        "DISCRIMINATORY_IMPACT_NEW_TO_CANADA"
+      ],
+      "reasoning": "The rule uses a protected ground directly and falls on every immigrant to Canada. The framework names declining drivers new to Canada as a discriminatory impact.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "born outside of Canada"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES",
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_ACCESSIBLE",
+      "label": "Accessible products and coverages",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "ACCESSIBILITY_IMPACT"
+      ],
+      "reasoning": "A large share of Ontario residents were born outside Canada. All of them would lose access to this insurer, whatever their record.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "any applicant born outside of Canada"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_COST_MITIGATION",
+      "label": "Cost mitigation",
+      "status": "concern",
+      "severity": "medium",
+      "issueCodes": [
+        "UNFAIR_COST_SHIFT"
+      ],
+      "reasoning": "Declined consumers would pay more elsewhere. No claims-based reason supports that cost.",
+      "evidence": [],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_BALANCED",
+      "label": "Balanced profitability and consumer interests",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "LESS_RESTRICTIVE_ALTERNATIVE"
+      ],
+      "reasoning": "The insurer's concern is the reliability of foreign driving experience, which it can assess by verifying driving records. Refusing everyone born abroad is not a balanced response.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "making risk assessment less reliable"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 2,
+      "key": "L2_CLEAR_COMMUNICATION",
+      "label": "Clear consumer communications",
+      "status": "concern",
+      "severity": "low",
+      "issueCodes": [
+        "UNCLEAR_CONSUMER_COMMUNICATION"
+      ],
+      "reasoning": "A decline letter would tell consumers they were refused for where they were born. That is clear but could not be corrected by the consumer and would be deeply unfair.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "born outside of Canada"
+        }
+      ],
+      "citationIds": [
+        "FW_PRINCIPLES"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_SUBJECTIVE",
+      "label": "Not subjective",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Place of birth is a recorded, verifiable fact. Applying the rule does not require a judgment call by the insurer.",
+      "evidence": [],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_NOT_ARBITRARY",
+      "label": "Not arbitrary",
+      "status": "fail",
+      "severity": "medium",
+      "issueCodes": [
+        "ARBITRARY_THRESHOLD"
+      ],
+      "reasoning": "The line between born in Canada and born elsewhere has no connection to how long or how well someone has driven in Canada. It is arbitrary as a measure of risk.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "born outside of Canada"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 3,
+      "key": "L3_RISK_LINK",
+      "label": "Direct relationship to risk",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "NOT_RISK_RELEVANT"
+      ],
+      "reasoning": "The rationale concerns foreign driving experience, but the rule uses birthplace, which does not measure experience at all. The framework rejects rules not based on a risk-relevant characteristic.",
+      "evidence": [
+        {
+          "source": "rationale",
+          "quote": "Applicants born outside Canada may have driving experience in jurisdictions with different road rules"
+        }
+      ],
+      "citationIds": [
+        "FW_REJECTION"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_ACTUARIAL",
+      "label": "Actuarial support",
+      "status": "insufficient_information",
+      "severity": "medium",
+      "issueCodes": [
+        "NO_ACTUARIAL_SUPPORT"
+      ],
+      "reasoning": "No data is supplied. No actuarial data or analysis is attached to the submission. The analysis could change the outcome, so it should be obtained before a decision.",
+      "evidence": [],
+      "citationIds": [
+        "FW_QUESTIONS",
+        "FSRA_UW_FILING"
+      ]
+    },
+    {
+      "level": 3,
+      "key": "L3_DEFINITION",
+      "label": "Definition clarity",
+      "status": "pass",
+      "severity": "low",
+      "issueCodes": [],
+      "reasoning": "Place of birth is clear and recorded. The rule would be applied consistently, which does not make it acceptable.",
+      "evidence": [
+        {
+          "source": "ruleText",
+          "quote": "born outside of Canada"
+        }
+      ],
+      "citationIds": []
+    },
+    {
+      "level": 4,
+      "key": "L4_PUBLIC_POLICY",
+      "label": "Public policy filter",
+      "status": "fail",
+      "severity": "high",
+      "issueCodes": [
+        "PUBLIC_POLICY_CONFLICT"
+      ],
+      "reasoning": "Yes: refusing compulsory insurance because of place of birth is direct discrimination that a consumer protection regulator cannot approve. It would also undermine newcomers' ability to work and settle.",
+      "evidence": [],
+      "citationIds": [
+        "FSRA_ACT",
+        "CAIA"
+      ]
+    }
+  ],
+  "precedents": [
+    {
+      "refId": "DR-005",
+      "similarity": 0.315,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines on primary language. DR-005 reaches the same group by proxy; DR-028 uses place of origin directly. Same protected-ground family."
+    },
+    {
+      "refId": "DR-053",
+      "similarity": 0.305,
+      "relation": "similar",
+      "explanation": "Pending Lakefield Mutual rule declines newcomers with under 24 months of Canadian licence. Narrower than DR-028 but the same discriminatory impact on people new to Canada."
+    },
+    {
+      "refId": "DR-081",
+      "similarity": 0.254,
+      "relation": "similar",
+      "explanation": "Pending Clearwater General Insurance rule declines dual citizens of non-reciprocal countries. Citizenship is a related protected ground."
+    }
+  ],
+  "consumerImpact": {
+    "whoCouldBeRefused": "Everyone born outside Canada, including long-time residents and citizens.",
+    "likelyConsequence": "Auto insurance is compulsory, so a declined consumer must find another insurer or the residual market (Facility Association), usually at a higher premium, or stop driving.",
+    "vulnerableGroups": [
+      "Immigrants",
+      "Refugees",
+      "Racialized communities"
+    ],
+    "severity": "high"
+  },
+  "questionsForInsurer": [
+    "Why would verifying the applicant's actual driving record not address the concern?"
+  ],
+  "whatWouldChangeTheOutcome": [
+    "Nothing short of withdrawal. Place of origin cannot be a decline trigger."
+  ],
+  "nextSteps": [
+    {
+      "action": "Record a Level 1 human rights hard stop and recommend decline.",
+      "owner": "Analyst",
+      "reason": "Direct use of a protected ground not covered by the insurance provision."
+    },
+    {
+      "action": "Review the protected-ground cluster (DR-005, DR-053, DR-081) together.",
+      "owner": "Senior reviewer",
+      "reason": "Consistency across insurers."
+    }
+  ],
+  "confidence": "high",
+  "uncertainties": [
+    "Human Rights Code sections could not be verified; cited at instrument level."
+  ],
+  "provenance": {
+    "generatedBy": "Claude (batch AI analyst, Claude Code build session)",
+    "promptVersion": "v2",
+    "frameworkVersion": "1.0.0",
+    "generatedOn": "2026-10-05"
+  }
+}
