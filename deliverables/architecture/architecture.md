@@ -40,12 +40,12 @@ Four swimlanes, top to bottom: **Insurer (applicant)**, **AI services**, **Human
 | 13 Precedent registry | Records | Decided rules become precedents for step 6. | Precedent library screen | Governed registry |
 | 14 Consistency monitoring (**A**) | Records | Similar rules with different outcomes; overrides by issue code as a bias and drift signal. Alerts go back to reviewers. | Consistency monitor screen | Scheduled monitoring and reporting |
 | Versioned knowledge base (**KB**, **A**) | Records | Framework 1.0.0, 25 issue codes, citation registry with verified flags, 25 precedents. | JSON files in the repository | Governed corpus with change control |
-| Simrule Regulatory Assistant (**KB**) | Insurer and reviewers | Answers insurers and reviewers from the same knowledge base. Explains the framework; never predicts or decides an approval. | Chatbase agent with 10 source files | Retrieval over the versioned corpus |
+| Regulatory assistant chatbot, planned (**KB**) | Insurer and reviewers | Would answer insurers and reviewers from the same knowledge base, explaining the framework without ever predicting or deciding an approval. | Not built | Retrieval over the versioned corpus |
 
 ## Design choices the diagram makes visible
 
 - **Judgment and scoring are separate.** The AI produces findings (step 5). Fixed code turns them into a recommendation (step 7). That is why step 7 is drawn as deterministic code, not as an AI box.
 - **Humans sit under every AI output.** The extraction is confirmed before triage, every finding is validated before a decision, and divergence triggers a second person.
-- **One knowledge base, one vocabulary.** The assessment, similarity search and chatbot read the same framework, issue codes, citations and precedents, so the app, chatbot, report and video use the same names.
+- **One knowledge base, one vocabulary.** The assessment and similarity search read the same framework, issue codes, citations and precedents (as a production chatbot would), so the app, diagram and report use the same names.
 - **Records close the loop.** Decisions become precedents, and the consistency monitor feeds alerts back to the recommendation panel.
 - **Prototype versus production is explicit.** Each AI box says what this static prototype does and what a production system would need, so the gap is honest rather than hidden.

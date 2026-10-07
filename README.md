@@ -53,7 +53,7 @@ Data pipeline scripts (already run; outputs are committed): `npm run parse-rules
 
 - **Static site, no backend.** React 19, TypeScript, Vite, Tailwind CSS. Built into `/docs` and served by GitHub Pages from the `main` branch `/docs` folder. No GitHub Actions.
 - **Knowledge layer.** `knowledge/framework.json` (levels, criteria, issue codes, scoring, workflow vocabulary), `knowledge/precedents.json` (illustrative precedents) and `knowledge/citations.json` (every reference, with a verified flag).
-- **Assessments.** `data/assessments/DR-001.json` to `DR-100.json`, written with a versioned prompt (`prompts/assessment-prompt.md`), validated against a schema and content rules, then audited for consistency. See `deliverables/report/prompt-log.md`.
+- **Assessments.** `data/assessments/DR-001.json` to `DR-100.json`, written with a versioned prompt (`prompts/assessment-prompt.md`), validated against a schema and content rules, then audited for consistency. See `deliverables/process/prompt-log.md`.
 - **Scoring.** `src/lib/scoring.ts`. Level 1 is a gate (any fail is a hard stop). Levels 2 to 4 are weighted 40, 35 and 25. Approve with conditions at 75 or above; request more information at 50 to 74 or when a material information gap exists; recommend decline below 50 or on any high-severity fail.
 - **Similarity.** `src/lib/similarity.ts`. TF-IDF cosine on the rule wording blended with structured feature overlap (categories, trigger types, thresholds, lookbacks).
 
@@ -61,17 +61,16 @@ Data pipeline scripts (already run; outputs are committed): `npm run parse-rules
 
 | Deliverable | Files |
 |---|---|
-| Architecture diagram | `deliverables/architecture/` (SVG, PNG, PDF, `architecture.md`); regenerate with `npm run architecture` |
-| Chatbot pack (Chatbase) | `deliverables/chatbot/` (10 source files, Q&A pairs, instructions, test script, setup guide) |
-| Avatar video script (HeyGen) | `deliverables/avatar/heygen-script.md` |
-| Screen recording script | `deliverables/demo/screen-recording-script.md` |
 | Written report | `deliverables/report/Simrule-report.docx` and `.pdf`; regenerate with `npm run report` (needs LibreOffice) |
-| Build logs | `PROGRESS.md`, `deliverables/report/prompt-log.md`, `deliverables/VERIFY.md` |
-| Demo assets | `deliverables/demo/` (sample filings, screenshots, accessibility report) |
+| Architecture diagram | `deliverables/architecture/` (SVG, PNG, PDF, `architecture.md`); regenerate with `npm run architecture` |
+| Demo assets | `deliverables/demo/` (screen-recording script, sample filings, screenshots, accessibility report) |
+| Process records | `deliverables/process/` (prompt and iteration log, consistency audit, spot check, items to verify) and `PROGRESS.md` |
+
+The optional chatbot and avatar video were not built. The architecture diagram shows the chatbot as a planned production component.
 
 ## Honest limitations
 
-- Legal citations could not be checked against the official sources from the build environment, so every legal reference is marked "section not verified". See [`deliverables/VERIFY.md`](deliverables/VERIFY.md).
+- Legal citations could not be checked against the official sources from the build environment, so every legal reference is marked "section not verified". See [`deliverables/process/VERIFY.md`](deliverables/process/VERIFY.md).
 - The 100 assessments were generated once and frozen; new uploads get keyword triage (low confidence) and similarity search only, and wait for a full assessment.
 - **Optional live assessment (stretch).** On an uploaded rule, a visitor can tick "run it now with your own Anthropic API key". It is off by default. The key is held in that page's memory only (never in browser storage, the store or the audit trail) and is sent directly from the browser to Anthropic's API. The response must match a strict output schema whose enums only allow known criteria, issue codes, citations and precedents; quotes that are not word for word are dropped; Simrule's scoring code, not the model, computes the recommendation; and the rule then goes to Analyst review like any other. Tested end to end against a mocked API.
 - The scoring weights were checked against 13 anchor rules but not against real regulatory decisions.
@@ -88,5 +87,5 @@ scripts/         parsing, similarity, expansion, validation, scoring, audit, sam
 src/             web app
 tests/, e2e/     unit, end-to-end and accessibility tests
 docs/            built site (GitHub Pages)
-deliverables/    report, demo assets, architecture, chatbot pack, avatar script
+deliverables/    report, architecture diagram, demo assets, process records
 ```

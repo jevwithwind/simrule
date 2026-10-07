@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { ChevronDown, Compass, Download, MessageCircleQuestion, MoreHorizontal, RotateCcw, UserRound } from 'lucide-react';
+import { ChevronDown, Compass, Download, MoreHorizontal, RotateCcw, UserRound } from 'lucide-react';
 import { useStore } from '../store/store';
-import { integrations } from '../config/integrations';
 import { download } from '../lib/exporters';
 import { cx } from './ui';
 import type { Role } from '../lib/workflow';
@@ -77,11 +76,6 @@ export default function Header() {
           </ul>
         </nav>
         <div className="ml-auto flex flex-wrap items-center gap-2">
-          {integrations.chatbaseHelpUrl && (
-            <a href={integrations.chatbaseHelpUrl} target="_blank" rel="noreferrer" className="btn btn-ghost text-white hover:bg-white/10 hover:text-white">
-              <MessageCircleQuestion size={16} aria-hidden /> Ask the Regulatory Assistant
-            </a>
-          )}
           <button
             type="button"
             className="btn btn-gold"

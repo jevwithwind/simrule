@@ -1,5 +1,5 @@
-// Builds the written report: DOCX with the docx package, PDF with LibreOffice, and the list of
-// highlighted reflection sentences. Run: npx tsx scripts/make-report.ts
+// Builds the written report: DOCX with the docx package and PDF with LibreOffice.
+// Run: npx tsx scripts/make-report.ts
 // Every number in the text comes from PROGRESS.md > Numbers or prompt-log.md.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
@@ -28,21 +28,14 @@ const PINE = '05473A';
 const MUTED = '4A5752';
 
 // ---------- Inline markup ----------
-// A paragraph is a list of pieces: plain text, { b } bold, { i } italic, { hl } a sentence Kevin must
-// personalise (yellow highlight), { link: [text, url] }.
-type Piece = string | { b: string } | { i: string } | { hl: string } | { link: [string, string] };
-const highlighted: { section: string; text: string }[] = [];
-let currentSection = '';
+// A paragraph is a list of pieces: plain text, { b } bold, { i } italic, { link: [text, url] }.
+type Piece = string | { b: string } | { i: string } | { link: [string, string] };
 
 function runs(pieces: Piece[], size = 22) {
   return pieces.map((p) => {
     if (typeof p === 'string') return new TextRun({ text: p, font: FONT, size });
     if ('b' in p) return new TextRun({ text: p.b, bold: true, font: FONT, size });
     if ('i' in p) return new TextRun({ text: p.i, italics: true, font: FONT, size });
-    if ('hl' in p) {
-      highlighted.push({ section: currentSection, text: p.hl.trim() });
-      return new TextRun({ text: p.hl, highlight: 'yellow', font: FONT, size });
-    }
     return new ExternalHyperlink({ link: p.link[1], children: [new TextRun({ text: p.link[0], style: 'Hyperlink', font: FONT, size })] });
   });
 }
@@ -50,10 +43,8 @@ function runs(pieces: Piece[], size = 22) {
 const para = (pieces: Piece[], o: { after?: number; size?: number; align?: (typeof AlignmentType)[keyof typeof AlignmentType] } = {}) =>
   new Paragraph({ children: runs(pieces, o.size), spacing: { after: o.after ?? 100, line: 252 }, alignment: o.align });
 const bullet = (pieces: Piece[]) => new Paragraph({ children: runs(pieces), bullet: { level: 0 }, spacing: { after: 50, line: 252 } });
-const h1 = (t: string, pageBreakBefore = false) => {
-  currentSection = t;
-  return new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore, children: [new TextRun({ text: t, font: FONT })], spacing: { before: 160, after: 80 } });
-};
+const h1 = (t: string, pageBreakBefore = false) =>
+  new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore, children: [new TextRun({ text: t, font: FONT })], spacing: { before: 160, after: 80 } });
 const h2 = (t: string) => new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun({ text: t, font: FONT })], spacing: { before: 100, after: 50 } });
 
 function table(header: string[], rows: string[][], widths: number[]) {
@@ -82,9 +73,8 @@ const DISCLAIMER =
 
 const header = [
   new Paragraph({ children: [new TextRun({ text: 'Simrule: AI-Assisted Review of Auto Insurance Underwriting Decline Rules', bold: true, font: FONT, size: 32, color: PINE })], spacing: { after: 60 } }),
-  para(['<YOUR FULL NAME>  |  AI Prototyping for Business Innovation (Ivey Online, delivered on Uplimit), Weeks 4-5 Innovation Challenge  |  October 5, 2026'], { size: 19, after: 30 }),
+  para(['Kazumi Li  |  AI Prototyping for Business Innovation (Ivey Online, delivered on Uplimit), Weeks 4-5 Innovation Challenge  |  October 7, 2026'], { size: 19, after: 30 }),
   para([{ b: 'Live app: ' }, { link: [LIVE, LIVE] }, '   ', { b: 'Code: ' }, { link: [REPO, REPO] }], { size: 19, after: 30 }),
-  para([{ b: 'Regulatory Assistant chatbot: ' }, '[link added after Chatbase setup]   ', { b: 'Avatar video: ' }, '[link added after recording]'], { size: 19, after: 30 }),
   new Paragraph({
     children: [new TextRun({ text: DISCLAIMER, italics: true, font: FONT, size: 17, color: MUTED })],
     spacing: { after: 120 },
@@ -109,7 +99,7 @@ const executive = [
     { b: 'recommendation panel' },
     ' with similar rules, a consumer lens and next steps; and a ',
     { b: 'decision workflow' },
-    ' in which reviewers accept or override every finding, divergence triggers senior sign-off, and the reviewer must confirm ownership of the rationale. A chatbot pack, an architecture diagram and an avatar script share the same vocabulary.',
+    ' in which reviewers accept or override every finding, divergence triggers senior sign-off, and the reviewer must confirm ownership of the rationale. A one-page architecture diagram and a screen-recording script use the same vocabulary.',
   ]),
   para([
     'The central design choice is that the AI never writes the recommendation. It produces structured findings; fixed, published scoring code turns them into an advisory recommendation; a person decides. All 100 test rules have a recommendation (21 approve with conditions, 22 request more information, 57 recommend decline), reasoning against every criterion, explained similar rules and next steps. The potential impact is a review that starts from structured evidence rather than a blank page, applies one standard to every filing and leaves a complete audit trail, while every outcome remains a human decision.',
@@ -118,21 +108,20 @@ const executive = [
 
 const methodology = [
   h1('2. Methodology'),
-  para(['Each component was built with the tool that best fitted its job:'], { after: 60 }),
+  para(['Each component was built with the tool that best fitted its job. The optional chatbot and avatar video were not built.'], { after: 60 }),
   table(
     ['Component', 'Tool', 'Why'],
     [
       ['Web app (all five features)', 'Claude Code building React, TypeScript and Vite; GitHub Pages', 'Used instead of Bolt, Lovable or Replit because the project needed a data pipeline, tests and version control in one repository, not only screens. No backend; state stays in the browser.'],
       ['100 assessments', 'Claude as a batch assessment analyst, versioned prompt, schema validator', 'Precomputing gives every rule a full, reviewable assessment and lets the same checks run on all of them.'],
       ['Similar rules', 'TF-IDF plus structured feature overlap', 'Transparent and fast in a browser; embeddings are the production path.'],
-      ['Chatbot', 'Chatbase: 10 source files, 28 Q&A pairs', 'Quick to configure; shares the knowledge base and vocabulary of the app.'],
-      ['Avatar and diagram', 'HeyGen script; hand-laid SVG exported to PNG and PDF', 'An executive summary under three minutes and a one-page view of where humans stay in control.'],
+      ['Architecture diagram', 'Hand-laid SVG exported to PNG and PDF', 'A one-page view of where humans stay in control and what production would need.'],
     ],
     [1900, 2900, 4560],
   ),
   h2('What worked best'),
   bullet([{ b: 'Schema-first prompting. ' }, 'Every assessment had to pass a schema and content validator: all 15 criteria, 2 to 4 sentences of reasoning, a question for the insurer and two next steps. The validator, not my impression, decided when the prompt was good enough.']),
-  bullet([{ b: 'An issue-code taxonomy. ' }, "The brief's 21 codes plus four I added (prohibited factor, less restrictive alternative, subjective judgment, privacy intrusion) gave findings one vocabulary that the dashboard, consistency monitor and chatbot reuse."]),
+  bullet([{ b: 'An issue-code taxonomy. ' }, "The brief's 21 codes plus four I added (prohibited factor, less restrictive alternative, subjective judgment, privacy intrusion) gave findings one vocabulary that the dashboard, consistency monitor and decision records reuse."]),
   bullet([{ b: 'Judgment separated from scoring. ' }, 'Level 1 is a gate; Levels 2 to 4 are weighted 40, 35 and 25; thresholds are 75 and 50. All 15 weight and threshold variants matched the 13 anchor rules, so the starting values were frozen rather than tuned.']),
   bullet([{ b: 'Verbatim evidence and a verified-citation registry. ' }, 'All 940 evidence quotes are tested as exact substrings, so the app can highlight them. Official legal sites were blocked from the build environment, so the 21 legal references are held at instrument level and marked "section not verified".']),
   h2('How I iterated'),
@@ -166,24 +155,24 @@ const reflection = [
   h1('4. Personal Reflection'),
   para([
     'I came to this project from quantitative finance, where I model limit order book data and judge a model by its out-of-sample error. ',
-    { hl: 'Building Simrule changed what I think AI is for in a regulated industry: its main value is not deciding faster, but making each judgment explicit enough for a person to check. ' },
+    'Building Simrule changed what I think AI is for in a regulated industry: its main value is not deciding faster, but making each judgment explicit enough for a person to check. ',
     'The pilot showed this directly. The first prompt already pointed in the right direction on all 10 pilot rules, yet 9 of the 10 assessments failed validation because the reasoning and evidence were too thin to show a reviewer. ',
-    { hl: 'For a regulator, a correct answer that cannot be explained is close to worthless, so I now see transparency as the product rather than a feature. ' },
+    'For a regulator, a correct answer that cannot be explained has no value, so I now see transparency as the product rather than an add-on feature. ',
     'Separating the findings from a deterministic scoring rule is what made the system auditable: the same findings always give the same recommendation, and a reviewer can point to the exact finding they disagree with.',
   ]),
   para([
     'I am a CEMS MIM student, currently on exchange in London. ',
-    { hl: 'I want to work in quantitative or AI roles in Japan, where I expect model governance to be at least as demanding as in this project. ' },
-    { hl: 'I plan to carry three habits from Simrule into that work: write the schema before the prompt, keep model judgment separate from the rule that acts on it, and test a model’s explanations as rigorously as its accuracy. ' },
-    { hl: 'In trading research I would apply the same split, letting a model propose signals with evidence while transparent, versioned code decides how they are used, so a risk committee can audit both. ' },
-    { hl: 'I also want to design the audit trail first rather than last, because it is the feature that makes everything else trustworthy.' },
+    'I want to work in quantitative or AI roles in Japan, where I expect model governance to be at least as demanding as in this project. ',
+    'I plan to carry three habits from Simrule into that work: write the schema cautiously before the prompt, keep model judgment separate from the rule that acts on it, and test a model’s explanations as rigorously as its accuracy. ',
+    'In trading research I would apply the same split, letting a model propose signals with evidence while transparent, versioned code decides how they are used, so a risk committee can audit both. ',
+    'I also want to design the audit trail first rather than last, since the accuracy and integrity is the most crucial element of all, and it is the feature that makes everything else trustworthy.',
   ]),
   para([
-    { hl: 'What surprised me most was how often the checks I trusted were too weak. ' },
+    'What surprised me most was how often the checks I trusted were too weak to hold AI reach at bay. ',
     'The automated consistency check passed 15 of 16 similar pairs with different outcomes, but reading them showed that 8 explanations described the similarity without ever saying why the outcomes differed. The end-to-end test, not the unit tests, found that PDF upload failed in Chromium because a library called a JavaScript method the browser does not yet support. ',
-    { hl: 'I was also surprised that the hardest problems were not technical: deciding how severe a missing actuarial study should be, or when a postal code becomes a proxy, needed judgment I could only write down after seeing many cases. ' },
+    'I was also surprised that the hardest problems were not technical: deciding how severe a missing actuarial study should be, or when a postal code becomes a proxy, needed judgment I could only write down after seeing many cases. ',
     'The actuarial severity rule had to be clarified at batch 7, when read literally it would have sent every novel administrative rule to an information request. ',
-    { hl: 'The lesson I take away is that trust in AI is earned by making disagreement easy: a reviewer must see the evidence, be able to override it with a reason, and know that someone else will check.' },
+    'The lesson I take away is that trust in AI is earned by making disagreement easy: a reviewer must read the output line by line, or at least block by block, see the evidence, be able to override it with a reason, while knowing that someone else will check.',
   ]),
 ];
 
@@ -204,14 +193,14 @@ const appendix = [
   ),
   h2('AI-use disclosure'),
   para([
-    'Claude Code (Anthropic) was the engineering and analysis partner for this assignment. Working from my written brief, it wrote the application code and tests, generated the 100 structured assessments with a versioned prompt (the deterministic scoring code, not the model, produces each recommendation), produced the chatbot sources, avatar script and diagram, and drafted this report from the project logs (PROGRESS.md and prompt-log.md). Every number in the report comes from those logs. Legal references were not verified against official sources and are listed for checking in VERIFY.md. ',
-    { hl: 'I reviewed the outputs, made the final design decisions, and rewrote the personal reflection in my own words.' },
+    'Claude Code (Anthropic) was the engineering and analysis partner for this assignment. Working from my written brief, it wrote the application code and tests, generated the 100 structured assessments with a versioned prompt (the deterministic scoring code, not the model, produces each recommendation), produced the architecture diagram and screen-recording script, and drafted this report from the project logs (PROGRESS.md and prompt-log.md). Every number in the report comes from those logs. Legal references were not verified against official sources and are listed for checking in VERIFY.md. ',
+    'I reviewed the outputs, made the final design decisions, and rewrote the personal reflection in my own words.',
   ]),
 ];
 
 // ---------- Document ----------
 const doc = new Document({
-  creator: '<YOUR FULL NAME>',
+  creator: 'Kazumi Li',
   title: 'Simrule: AI-Assisted Review of Auto Insurance Underwriting Decline Rules',
   description: 'Written report for AI Prototyping for Business Innovation (Ivey Online)',
   styles: {
@@ -265,20 +254,7 @@ for (let i = 1; i <= pages; i++) {
 const bodyPages = appendixPage - 1;
 const words = execFileSync('pdftotext', [pdfPath, '-']).toString().split(/\s+/).filter(Boolean).length;
 
-// The list of highlighted sentences, regenerated with the report so the two never drift apart.
-const md = [
-  '# Reflection sentences to personalise',
-  '',
-  'Each sentence below is highlighted in yellow in `Simrule-report.docx`. They state an opinion, a feeling or a plan, so they must be in your own voice. Rewrite each one (keep the meaning only if it is true for you), remove the yellow highlight, then regenerate the PDF or export it from Word. Keep the report within 5 pages.',
-  '',
-  ...highlighted.map((h, i) => `${i + 1}. **${h.section}:** ${h.text}`),
-  '',
-  'Also replace `<YOUR FULL NAME>` in the header and the document properties, and add the chatbot and video links after Phase 7.',
-  '',
-].join('\n');
-writeFileSync(`${OUT}/reflection-to-personalise.md`, md);
-
-console.log(JSON.stringify({ pages, bodyPages, appendixPage, words, highlighted: highlighted.length }));
+console.log(JSON.stringify({ pages, bodyPages, appendixPage, words }));
 if (pages > 5) {
   console.error('Report exceeds 5 pages');
   process.exit(1);

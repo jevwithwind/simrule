@@ -3,7 +3,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Tour from './components/Tour';
-import ChatbaseWidget from './components/ChatbaseWidget';
 import Dashboard from './pages/Dashboard';
 import Intake from './pages/Intake';
 import RuleReview from './pages/RuleReview';
@@ -39,7 +38,6 @@ export default function App() {
       </main>
       <Footer />
       <Tour />
-      <ChatbaseWidget />
     </div>
   );
 }

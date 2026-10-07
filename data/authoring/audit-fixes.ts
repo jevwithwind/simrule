@@ -1,6 +1,6 @@
 // Changes made by the consistency audit (scripts/consistency-audit.ts), applied by the expander after the
 // batch drafts. Kept as explicit patches so every audit-driven change is visible and counted.
-// See deliverables/report/consistency-audit.md for the before/after numbers.
+// See deliverables/process/consistency-audit.md for the before/after numbers.
 
 export interface PrecedentPatch {
   id: string;
