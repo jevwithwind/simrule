@@ -8,7 +8,7 @@ Placeholders filled at run time: `{{FRAMEWORK}}` (levels, criteria, principles, 
 
 ## v2 (current)
 
-v2 = v1 plus the rules below. Each addition fixes a problem found when the v1 pilot was reviewed (see `deliverables/report/prompt-log.md`, entry 6).
+v2 = v1 plus the rules below. Each addition fixes a problem found when the v1 pilot was reviewed (see `deliverables/process/prompt-log.md`, entry 6).
 
 ### Additional rules in v2
 

@@ -72,13 +72,13 @@
 </g>
 <g data-box="chatbot">
 <rect data-frame="1" x="911.8" y="138" width="683.2" height="134" rx="10" fill="#fbf4dc" stroke="#b08a14" stroke-width="2.5" stroke-dasharray="7 5"/>
-<text x="924.8" y="166" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Simrule Regulatory Assistant (chatbot)</text>
-<text x="924.8" y="191" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Answers insurers and reviewers</text>
-<text x="924.8" y="212" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">from the same knowledge base.</text>
-<text x="924.8" y="233" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Explains the framework; never</text>
+<text x="924.8" y="166" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1d2a26">Regulatory assistant chatbot (planned)</text>
+<text x="924.8" y="191" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">Would answer insurers and reviewers</text>
+<text x="924.8" y="212" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">from the same knowledge base;</text>
+<text x="924.8" y="233" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">explains the framework, never</text>
 <text x="924.8" y="254" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#1d2a26">predicts or decides an approval.</text>
 <text x="1287.56" y="191" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#4a5752">Prototype:</text>
-<text x="1287.56" y="212" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">Chatbase, 10 source files</text>
+<text x="1287.56" y="212" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#4a5752">Not built</text>
 <text x="1287.56" y="235" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#05473a">Production:</text>
 <text x="1287.56" y="256" font-family="Arial, Liberation Sans, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#05473a">Retrieval over the corpus</text>
 </g>

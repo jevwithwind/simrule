@@ -4,7 +4,7 @@ Every significant prompt, revision and iteration in the Simrule build. Newest en
 
 ## 1. Build brief (Phase 0)
 
-- **Prompt:** Kevin's "Claude Code Build Brief: Simrule" (phases 1-7, ground rules, sanity anchors).
+- **Prompt:** the author's "Claude Code Build Brief: Simrule" (phases 1-7, ground rules, sanity anchors).
 - **Tool:** Claude Code (cloud session) as sole engineer, analyst and writer.
 - **Key constraints taken from the brief:** advisory-only AI; deterministic scoring separate from model judgment; no unverified section-level citations; fictional data labelled on every screen; static site, no backend.
 
@@ -110,4 +110,10 @@ Problems found by reading the pilot output, each mapped to a v2 rule:
 - **Chatbase pack:** first draft of the 10 sources came to 60,810 characters; trimmed duplicated sections to 59,641. While writing source 05 I found that `PROGRESS.md` quoted issue-code counts as occurrences across findings while the dashboard counts rules; the chatbot now uses the per-rule counts that match the app, and PROGRESS lists both.
 - **HeyGen script:** first draft was 370 words (top of the range); trimmed to 363, replaced "first language" with the rule's actual wording ("primary language"), and changed "found and fixed thirty eight issues" to "made thirty eight fixes" to match the audit record exactly.
 - **Report:** generated from code so the yellow-highlighted reflection sentences and `reflection-to-personalise.md` come from one source. First export: 5 pages (body 4, appendix 1), within the limit, so no cuts were needed.
+
+## 14. Post-merge scope change and final report
+
+- **Scope change:** after the first pull request was merged and GitHub Pages went live, the author skipped the two optional components. The chatbot could not be created on the free Chatbase plan, which allows no further agents, and the avatar video was dropped for privacy because the repository is public. The drafted Chatbase pack and HeyGen script were deleted, the chatbot slot was removed from the app, and the architecture diagram now shows the chatbot as a planned production component marked "Not built".
+- **Report:** the author supplied their name and rewrote all 10 highlighted sentences. The rewrites went into `scripts/make-report.ts` as plain text, unchanged except for one article ("a add-on" to "an add-on"). The yellow highlights and the `reflection-to-personalise.md` list were removed. The regenerated report is still 5 pages (4 body, 1 appendix).
+- **Organisation:** process records moved to `deliverables/process/` so `deliverables/report/` holds only the report.
 

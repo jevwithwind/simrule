@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Bot, Calculator, ExternalLink, Scale, UserCheck } from 'lucide-react';
 import { assessments, citations, framework, precedents, rules } from '../data';
-import { integrations } from '../config/integrations';
 import { CitationBadge, SectionTitle } from '../components/ui';
 
 const ICONS: Record<string, React.ReactNode> = {
@@ -23,18 +22,6 @@ export default function HowItWorks() {
           Simrule helps a regulatory analyst review auto insurers' proposed underwriting decline rules, the exceptions to Ontario's Take All Comers requirement. An AI partner reads each submission, structures it,
           checks it against a four-level framework, compares it with precedents and similar submissions, and drafts reasons. A person validates every finding and makes every decision.
         </p>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {integrations.chatbaseHelpUrl && (
-            <a className="btn btn-primary" href={integrations.chatbaseHelpUrl} target="_blank" rel="noreferrer">
-              Ask the Regulatory Assistant <ExternalLink size={14} aria-hidden />
-            </a>
-          )}
-          {integrations.avatarVideoUrl && (
-            <a className="btn btn-secondary" href={integrations.avatarVideoUrl} target="_blank" rel="noreferrer">
-              Watch the 2-minute overview <ExternalLink size={14} aria-hidden />
-            </a>
-          )}
-        </div>
       </div>
 
       <section aria-labelledby="principles-h">
@@ -245,7 +232,7 @@ export default function HowItWorks() {
         <SectionTitle title="Limitations" />
         <ul className="list-disc space-y-1 pl-5 text-sm">
           <li>Prototype only: no authentication, no server, and state lives in your browser (reset from the header menu).</li>
-          <li>Legal references could not be verified against official sources; see deliverables/VERIFY.md.</li>
+          <li>Legal references could not be verified against official sources; see deliverables/process/VERIFY.md.</li>
           <li>Assessments are precomputed; new uploads get keyword triage only (low confidence) until a full assessment runs. An optional live assessment is available on an uploaded rule with your own API key: off by default, the key stays in page memory only, and the output goes through the same validation and scoring.</li>
           <li>The weights were calibrated on 13 anchor rules and have not been validated against historical regulator decisions.</li>
           <li>The same AI wrote the findings and the spot check, so agreement there is weak evidence. Human analysts must validate.</li>

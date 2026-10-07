@@ -35,6 +35,6 @@ The build environment blocked www.ontario.ca, www.fsrao.ca and www.ohrc.on.ca, s
 5. Contents of an underwriting rule filing per FSRA's Filing Guidelines for Underwriting Rules (drives the prototype completeness checklist).
 6. Whether the Proposed Automobile Insurance Rating and Underwriting Supervision Guidance has since been finalised.
 7. Precedent insurer names and approval years are invented for the prototype and flagged illustrative. They are not real approvals.
-8. The companion deliverables restate the unverified references above at instrument level: Chatbase sources `06-what-a-filing-should-include-by-rule-type.txt` and `08-legislation-and-guidance-references.txt`, the Q&A pairs, and the report. If the official text differs from claims 1 to 6, update those files too, then retrain the Chatbase agent.
-9. Report numbers: every figure in `deliverables/report/Simrule-report.docx` comes from `PROGRESS.md` > Numbers and `deliverables/report/prompt-log.md`. Re-check them if any assessment is regenerated.
+8. The report restates the unverified references above at instrument level. If the official text differs from claims 1 to 6, update `knowledge/citations.json`, the affected assessments and the report.
+9. Report numbers: every figure in `deliverables/report/Simrule-report.docx` comes from `PROGRESS.md` > Numbers and `deliverables/process/prompt-log.md`. Re-check them if any assessment is regenerated.
 

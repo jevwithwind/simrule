@@ -239,7 +239,7 @@ export default function Consistency() {
       </div>
       <p className="text-xs text-[var(--color-ink-muted)]">
         The batch consistency audit run during the build is documented in
-        deliverables/report/consistency-audit.md. Scoring weights: Level 2{" "}
+        deliverables/process/consistency-audit.md. Scoring weights: Level 2{" "}
         {framework.scoring.weights["2"]}, Level 3{" "}
         {framework.scoring.weights["3"]}, Level 4{" "}
         {framework.scoring.weights["4"]}.

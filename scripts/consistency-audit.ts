@@ -2,7 +2,7 @@
 // 1. High-similarity pairs with different recommendations: is the difference explained in precedents[]?
 // 2. Issue codes carrying contradictory statuses on the same criterion.
 // 3. Pending similar submissions from other insurers not flagged with PENDING_SIMILAR_SUBMISSION.
-// Writes deliverables/report/consistency-audit.md and data/audit-results.json. Pass --label=before|after.
+// Writes data/audit-results.json (the before and after counts summarised in deliverables/process/consistency-audit.md). Pass --label=before|after.
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Assessment, Rule } from '../src/lib/schema';
