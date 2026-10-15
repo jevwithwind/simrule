@@ -117,3 +117,10 @@ Problems found by reading the pilot output, each mapped to a v2 rule:
 - **Report:** the author supplied their name and rewrote all 10 highlighted sentences. The rewrites went into `scripts/make-report.ts` as plain text, unchanged except for one article ("a add-on" to "an add-on"). The yellow highlights and the `reflection-to-personalise.md` list were removed. The regenerated report is still 5 pages (4 body, 1 appendix).
 - **Organisation:** process records moved to `deliverables/process/` so `deliverables/report/` holds only the report.
 
+## 15. Report restructured to the submission rules
+
+- **Rules applied:** 3 to 5 pages; Executive Summary (half page, then a page break), Methodology (1 page), Limitations and Risks (1 to 2 pages), Personal Reflection (1 page). Requested tone: technical, concise, natural.
+- **Layout:** each section after the summary now starts on a new page, and the generator checks that every section starts on its expected page (1 to 5), so a section that overflows fails the build instead of silently shifting the layout.
+- **Edits:** every section rewritten for shorter, more technical sentences; methodology table gained a "Recommendation" row (deterministic scoring). Limitations gained two risks drawn from the build: correlated errors (the same AI drafted the assessments and ran the audit; the spot check was done by the builder) and shallow text matching (keyword triage once flagged "race" in "organized race" as a protected ground; the pattern was fixed and a unit test now guards it).
+- **Reflection:** the author's sentences kept; three were lightly edited for grammar and flow (sentences on the audit trail, on weak checks, and the closing lesson). Two factual sentences were added to bring the section closer to a full page.
+
